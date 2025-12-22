@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1464.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1466.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条（特定口座内保管上場株式等の譲渡等に係る所得計算等の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>改正法附則第七十八条第二項の移管は、同項に規定する特定口座を開設している新法第三十七条の十一の三第三項第一号の証券業者に開設されている当該特定口座以外の口座においてその決済が終了していない発行日取引（改正法附則第七十八条第二項に規定する発行日取引をいう。）につきその者からの当該証券業者の当該特定口座以外の口座（当該特定口座を開設している者が有するものに限る。）を開設している営業所の長への依頼に基づき、当該営業所の長が、その移管の際に、当該発行日取引のすべてについて、当該特定口座以外の口座から当該特定口座への振替の方法により行わなければならないものとする。</p>

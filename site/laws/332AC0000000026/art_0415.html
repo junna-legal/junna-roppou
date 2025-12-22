@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0414.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0416.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十二条（特定国際船舶等の所有権の保存登記等の税率の軽減）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>海上運送業を営む者で政令で定めるもの（以下この条において「海上運送事業者」という。）が、平成十八年四月一日から令和九年三月三十一日までの間に海上運送法第四十四条の二に規定する国際船舶のうち特に輸送能力の高いものとして政令で定めるもの（次項において「対象船舶」という。）で同法第三十九条の十九第一項に規定する特定船舶に該当するもの（以下この項及び第三項において「特定国際船舶」という。）を同法第三十九条の二十三に規定する認定特定船舶導入計画（第三項において「認定特定船舶導入計画」という。）に基づき建造した場合において、当該特定国際船舶で事業の用に供したことのないものの所有権の保存の登記を受けるときは、当該特定国際船舶の所有権の保存の登記に係る登録免許税の税率は、財務省令で定めるところにより当該期間内に登記を受けるものに限り、登録免許税法第九条の規定にかかわらず、千分の二とする。</p>

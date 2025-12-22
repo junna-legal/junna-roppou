@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0094.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0096.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の十四（銀行主要株主に対する改善計画の提出の求め等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>内閣総理大臣は、銀行主要株主（銀行の総株主の議決権の百分の五十を超える議決権の保有者に限る。以下この条において同じ。）の業務又は財産の状況（銀行主要株主が会社その他の法人である場合にあつては、当該銀行主要株主の子会社その他の当該銀行主要株主と内閣府令で定める特殊の関係のある会社の財産の状況を含む。）に照らして、当該銀行の業務の健全かつ適切な運営を確保するため特に必要があると認めるときは、その必要の限度において、当該銀行主要株主に対し、措置を講ずべき事項及び期限を示して、当該銀行の経営の健全性を確保するための改善計画の提出を求め、若しくは提出された改善計画の変更を命じ、又はその必要の限度において監督上必要な措置を命ずることができる。</p>

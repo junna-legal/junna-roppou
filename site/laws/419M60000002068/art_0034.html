@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0033.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0035.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>公益社団法人及び公益財団法人の認定等に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十四条（使途不特定財産額の保有の上限額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第十六条第一項の内閣府令で定めるところにより算定した額（以下「基準額」という。）は、当該事業年度の開始の日前五年以内に開始した各事業年度における第一号から第三号までに掲げる額の合計額から第四号から第六号までに掲げる額の合計額を控除して得た額（当該各事業年度のうちその期間が一年でない事業年度については、当該控除して得た額をその事業年度の月数で除し、これに十二を乗じて得た額）の一事業年度当たりの平均額とする。</p>

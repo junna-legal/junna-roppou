@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0011.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0013.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条（国又は地方公共団体の機関の請求による住民基本台帳の一部の写しの閲覧）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国又は地方公共団体の機関は、法令で定める事務の遂行のために必要である場合には、市町村長に対し、当該市町村が備える住民基本台帳のうち第七条第一号から第三号まで及び第七号に掲げる事項（同号に掲げる事項については、住所とする。以下この項において同じ。）に係る部分の写し（第六条第三項の規定により磁気ディスクをもつて住民票を調製することにより住民基本台帳を作成している市町村にあつては、当該住民基本台帳に記録されている事項のうち第七条第一号から第三号まで及び第七号に掲げる事項を記載した書類。以下この条、次条及び第五十条において「住民基本台帳の一部の写し」という。）を当該国又は地方公共団体の機関の職員で当該国又は地方公共団体の機関が指定するものに閲覧させることを請求することができる。</p>

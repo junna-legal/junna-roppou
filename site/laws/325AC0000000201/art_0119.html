@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0118.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0120.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十八条の九</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第六条第一項第三号の規定に基づき、都道府県知事が関係市町村の意見を聴いて指定する区域内においては、地方公共団体は、当該区域内における土地利用の状況等を考慮し、適正かつ合理的な土地利用を図るため必要と認めるときは、政令で定める基準に従い、条例で、建築物又はその敷地と道路との関係、建築物の容積率、建築物の高さその他の建築物の敷地又は構造に関して必要な制限を定めることができる。</p>

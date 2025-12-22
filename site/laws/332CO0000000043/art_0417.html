@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0416.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0418.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の八の九（医療法人の持分に係る経済的利益についての贈与税の納税猶予及び免除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第七十条の七の九第一項の規定の適用を受けようとする同項に規定する受贈者（以下この条において「受贈者」という。）が行う担保の提供については、国税通則法施行令第十六条に定める手続によるほか、同項の規定の適用に係る同項に規定する認定医療法人（以下この条において「認定医療法人」という。）の法第七十条の七の九第二項第二号に規定する持分（以下第四十条の八の十三までにおいて「持分」という。）を担保として提供する場合には、当該受贈者が当該持分を担保として提供することを約する書類その他の財務省令で定める書類を納税地の所轄税務署長に提出する方法によるものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1649.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1651.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の場合においては、軽油引取税の徴収は、申告納付の方法によるものとし、当該販売業者は、この法律中軽油引取税に関する部分の施行の日から起算して十五日以内に、前条の規定により特約業者から行つた引取とみなされる軽油の所持に係る軽油引取税の課税標準量、税額その他当該道府県の条例で定める事項を記載した申告書を当該販売業者の事務所又は事業所所在地の道府県知事に提出し、及びその申告した税額を当該道府県に納付しなければならない。</p>

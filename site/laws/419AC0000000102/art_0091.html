@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0090.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0092.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>電子記録債権法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十七条（記録事項の開示）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>次の各号に掲げる者及びその相続人その他の一般承継人並びにこれらの者の財産の管理及び処分をする権利を有する者は、電子債権記録機関に対し、その営業時間内は、いつでも、業務規程の定める費用を支払って、当該各号に定める事項（債務者口座を除く。）について、主務省令で定める方法により表示したものの閲覧又は当該事項の全部若しくは一部を証明した書面若しくは電磁的記録の提供の請求（以下この条において「開示請求」という。）をすることができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0132.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0134.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十八条（株式等の譲渡の対価に係る支払調書等の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>所得税法第二百二十五条第一項第十号又は第十一号に掲げる者は、財務省令で定めるところにより、これらの規定に規定する支払又は交付に関する調書を同一の個人又は同号に規定する内国法人若しくは外国法人に対する一回の支払又は交付ごとに作成する場合には、同項の規定にかかわらず、当該調書をその支払又は交付の確定した日の属する月の翌月末日までに税務署長に提出しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0017.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0019.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条の二（農産物検査に係る登録検査機関の登録又は変更登録で課税するものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第八十六号（一）に規定する政令で定めるものは、農産物検査法（昭和二十六年法律第百四十四号）第二条第五項（登録検査機関の登録）の登録で、農産物検査法施行令（平成七年政令第三百五十七号）第五条第一項（都道府県が処理する事務）の規定により都道府県知事が行うこととされる事務（同項第二号に係るものに限る。）に係るもの以外のものとする。</p>

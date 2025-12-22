@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3235.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3237.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百十四条（沖縄の特定地域において工業用機械等を取得した場合の法人税額の特別控除に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>四年新措置法第四十二条の九第二項の規定の適用については、同条第三項に規定する繰越税額控除限度超過額には、同項の法人の同条第二項の規定の適用を受けようとする事業年度開始の日前四年以内に開始した各連結事業年度（当該事業年度まで連続して青色申告書の提出（連結事業年度にあっては、当該法人又は当該法人に係る連結親法人による連結確定申告書の提出）をしている場合の各連結事業年度に限る。）における四年旧措置法第六十八条の十三第一項に規定する税額控除限度額（当該法人に係るものに限る。）のうち、同項の規定による控除をしてもなお控除しきれない金額（既に四年新措置法第四十二条の九第二項又は四年旧措置法第四十二条の九第二項の規定により当該事業年度開始の日前四年以内に開始した事業年度において四年新措置法第四十二条の四第十九項第二号に規定する調整前法人税額又は四年旧措置法第四十二条の四第八項第二号に規定する調整前法人税額から控除された金額（既に四年旧措置法第六十八条の十三第二項の規定により当該各連結事業年度において法人税の額から控除された金額のうち当該法人に係るものを含む。以下この項において「控除済金額」という。）がある場合には、当該控除済金額を控除した残額）を含むものとする。</p>

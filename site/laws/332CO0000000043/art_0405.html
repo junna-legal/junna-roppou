@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0404.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0406.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の七の七（特定の美術品についての相続税の納税猶予及び免除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第七十条の六の七第一項の寄託していた者（以下この条において「被相続人」という。）から同項の規定の適用に係る相続又は遺贈（贈与をした者の死亡により効力を生ずる贈与を含む。以下この条において同じ。）により法第七十条の六の七第二項第一号に規定する特定美術品（以下この条において「特定美術品」という。）の取得をした当該被相続人の相続人（包括受遺者を含む。以下この項及び第二十四項において同じ。）が第一次寄託相続人（当該被相続人からの相続又は遺贈によりその有する特定美術品の取得をした相続人で、当該相続又は遺贈に係る法第七十条の六の七第一項に規定する相続税の申告書の提出期限前に当該相続税の申告書を提出しないで死亡したものをいう。）に該当する場合で、第二次寄託相続人（当該第一次寄託相続人からの相続又は遺贈により当該特定美術品の取得をした当該第一次寄託相続人の相続人をいう。）があるときは、当該第一次寄託相続人に係る同条第一項の規定の適用については、同項中次の表の上欄に掲げる字句は、同表の下欄に掲げる字句とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0339.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0341.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の三十七（法人の事業税に係る故意不申告の罪）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>正当な事由がなくて第七十二条の二十五第一項、第七十二条の二十八第一項又は第七十二条の二十九第一項、第三項若しくは第五項の規定による申告書を当該各項に規定する申告書の提出期限内に提出しなかつた場合には、法人の代表者（法人課税信託の受託者である個人を含む。）、代理人、使用人その他の従業者でその違反行為をした者は、一年以下の拘禁刑又は五十万円以下の罰金に処する。</p>

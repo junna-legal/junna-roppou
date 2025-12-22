@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3419.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3421.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条（海軍販売所等に対する物品の譲渡に係る免税に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新租税特別措置法第八十六条の二第三項の規定は、令和五年五月一日以後に行われる物品の譲渡（租税特別措置法第八十六条の二第一項に規定する物品の譲渡をいう。以下この条において同じ。）に係る譲渡又は譲受け（新租税特別措置法第八十六条の二第三項において準用する第六条の規定による改正後の消費税法第八条第四項ただし書の承認を受けないでされる新租税特別措置法第八十六条の二第三項に規定する譲渡又は譲受けをいう。以下この条において同じ。）について適用し、同日前に行われた物品の譲渡に係る譲渡又は譲受けについては、なお従前の例による。</p>

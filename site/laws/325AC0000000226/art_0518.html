@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0517.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0519.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十四条の十九（市町村たばこ税に関する書類の供覧等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県知事が、たばこ税の賦課徴収について、市町村長に対し、市町村たばこ税の納税義務者が市町村長に提出した申告書若しくは修正申告書又は市町村長が当該納税義務者の市町村たばこ税に係る課税標準数量若しくは税額についてした更正若しくは決定に関する書類を閲覧し、又は記録することを請求した場合には、市町村長は、関係書類を道府県知事又はその指定する職員に閲覧させ、又は記録させるものとする。</p>

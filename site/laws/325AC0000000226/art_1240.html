@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1239.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1241.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七百三条の五（国民健康保険税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、国民健康保険税の納税義務者並びにその世帯に属する被保険者及び特定同一世帯所属者につき算定した第三百十四条の二第一項に規定する総所得金額（青色専従者給与額又は事業専従者控除額については、第三百十三条第三項、第四項又は第五項の規定を適用せず、また、所得税法第五十七条第一項、第三項又は第四項の規定の例によらないものとする。以下この項中山林所得金額の算定について同じ。）及び山林所得金額の合算額が、低所得者世帯の負担能力を考慮して政令で定める金額を超えない場合には、政令で定める基準に従い当該市町村の条例で定めるところにより、当該納税義務者に対して課する被保険者均等割額又は世帯別平等割額を減額するものとする。</p>

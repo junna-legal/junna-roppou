@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0352.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0354.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十条の六の三（特定貸付けを行つた農地又は採草放牧地についての相続税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条第一項に規定する特定貸付け（以下この項及び次項において「特定貸付け」という。）を行つている者（以下この項において「特定貸付者」という。）が死亡した場合において、当該特定貸付者の相続人が当該特定貸付者から当該特定貸付けを行つていた農地又は採草放牧地を相続又は遺贈により取得をしたときは、当該特定貸付けを行つていた農地又は採草放牧地は当該特定貸付者がその死亡の日まで農業の用に供していたものとみなして、第七十条の六の規定を適用する。</p>

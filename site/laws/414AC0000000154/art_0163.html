@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0162.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0164.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社更生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百五十三条（担保権の目的である財産についての価額決定の申立て）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>更生担保権者は、その有する更生担保権の内容の確定のために更生債権等査定申立てをした場合において、第百五十一条第一項本文に規定する異議者等のうちに当該更生担保権の調査において担保権の目的である財産の価額について認めず、又は異議を述べた者があるときは、当該者の全員を相手方として、当該更生債権等査定申立てをした日から二週間以内に、裁判所に、当該財産についての価額決定の申立て（以下この款において「価額決定の申立て」という。）をすることができる。</p>

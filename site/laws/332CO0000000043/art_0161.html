@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0160.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0162.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十五条の十二の四（株式等を対価とする株式の譲渡に係る譲渡所得等の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第三十七条の十三の四第一項に規定する政令で定める部分は、同項の規定の適用がある株式交付により譲渡した所有株式（同項に規定する所有株式をいう。以下この項、次項及び第四項第一号において同じ。）のうち、当該所有株式の価額に株式交付割合（当該株式交付により交付を受けた株式交付親会社（同条第一項に規定する株式交付親会社をいう。次項及び第四項において同じ。）の株式の価額が当該株式交付により交付を受けた金銭の額及び金銭以外の資産の価額の合計額（剰余金の配当として交付を受けた金銭の額及び金銭以外の資産の価額の合計額を除く。）のうちに占める割合をいう。同号イにおいて同じ。）を乗じて計算した金額に相当する部分とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0423.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0425.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の十（相続税の延納に伴う利子税の特例の対象となる土地の範囲等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第七十条の九第一項に規定する政令で定める地区内にある土地は、森林法第二十五条又は第二十五条の二の規定により同法第二十五条第一項第一号から第三号までに掲げる目的を達成するため保安林として指定された区域内にある土地（森林保健施設の整備に係る地区内にある土地及び法第七十条の六の四第一項の規定の適用に係る同項に規定する特例山林（土地に限る。）を除く。）とする。</p>

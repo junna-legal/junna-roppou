@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0086.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0088.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建物の区分所有等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十九条（団地内の建物の建替え承認決議）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>一団地内にある数棟の建物（以下この条及び次条において「団地内建物」という。）の全部又は一部が専有部分のある建物であり、かつ、その団地内の特定の建物（以下この条において「特定建物」という。）の所在する土地（これに関する権利を含む。）が当該団地内建物の第六十五条に規定する団地建物所有者（以下この条において単に「団地建物所有者」という。）の共有に属する場合においては、次の各号に掲げる区分に応じてそれぞれ当該各号に定める要件に該当する場合であつて当該土地（これに関する権利を含む。）の共有者である当該団地内建物の団地建物所有者で構成される同条に規定する団体又は団地管理組合法人の集会において議決権の四分の三以上の多数による承認の決議（以下「建替え承認決議」という。）を得たときは、当該特定建物の団地建物所有者は、当該特定建物を取り壊し、かつ、当該土地又はこれと一体として管理若しくは使用をする団地内の土地（当該団地内建物の団地建物所有者の共有に属するものに限る。）に新たに建物を建築することができる。</p>

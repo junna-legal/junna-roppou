@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0387.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0389.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百四十八条の二（業務の執行の社外取締役への委託）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>株式会社（指名委員会等設置会社を除く。）が社外取締役を置いている場合において、当該株式会社と取締役との利益が相反する状況にあるとき、その他取締役が当該株式会社の業務を執行することにより株主の利益を損なうおそれがあるときは、当該株式会社は、その都度、取締役の決定（取締役会設置会社にあっては、取締役会の決議）によって、当該株式会社の業務を執行することを社外取締役に委託することができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0198.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0200.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十二条（外国金融機関等の店頭デリバティブ取引の証拠金に係る利子の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>外国金融機関等が、国内金融機関等との間で令和九年三月三十一日までに行う店頭デリバティブ取引（当該店頭デリバティブ取引に含めて証拠金の計算を行うことができる取引として財務省令で定める取引を含む。以下この項において同じ。）に係る証拠金（店頭デリバティブ取引に付随する契約に基づき、当該店頭デリバティブ取引に係る契約に基づく債務の履行を担保するために相手方に対して預託する金銭をいう。次項及び第十項において同じ。）で財務省令で定める要件を満たすものにつき、当該国内金融機関等から支払を受ける利子（所得税法第百六十一条第一項第十号に掲げる利子をいい、第七条の規定の適用があるものを除く。以下この条において同じ。）については、所得税を課さない。</p>

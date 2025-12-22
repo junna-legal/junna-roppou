@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0395.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0397.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>商法等の一部を改正する等の法律（平成十三年法律第七十九号）による改正前の商法第二百十条ノ二第二項第三号（商法等の一部を改正する等の法律附則第三条第二項の規定によりなおその効力を有するものとされる場合を含む。）又は商法等の一部を改正する法律（平成十三年法律第百二十八号）による改正前の商法第二百八十条ノ十九第一項（商法等の一部を改正する法律附則第六条第一項の規定によりなお従前の例によることとされる場合を含む。）の権利を行使した取締役又は当該権利を有する取締役についての新商法第二百六十六条第七項第一号及び第三号、同条第十項及び第十一項（同条第十六項及び第二十三項において準用する場合を含む。）並びに同条第十二項、第十四項、第十九項第一号及び第三号並びに第二十二項第一号の規定の適用については、同条第七項第三号中「権利ノ数ヲ乗ジタル額」とあるのは、「権利ノ数ヲ乗ジタル額、商法等の一部を改正する等の法律（平成十三年法律第七十九号）ニ依ル改正前ノ第二百十条ノ二第二項第三号（同法附則第三条第二項ノ規定ニ依リ仍其ノ効力ヲ有スルモノトセラレタル場合ヲ含ム）ノ権利ヲ就任後ニ行使シタルトキハ行使ノ時ニ於ケル其ノ会社ノ株式ノ時価ヨリ譲渡ノ価額ヲ控除シタル額ニ譲受ケタル株式ノ数ヲ乗ジタル額、商法等の一部を改正する法律（平成十三年法律第百二十八号）ニ依ル改正前ノ第二百八十条ノ十九第一項（同法附則第六条第一項ノ規定ニ依リ仍従前ノ例ニ依ルコトトセラレタル場合ヲ含ム）ノ権利ヲ就任後ニ行使シタルトキハ行使ノ時ニ於ケル其ノ会社ノ株式ノ時価ヨリ発行価額又ハ移転ヲ受ケタル価額ヲ控除シタル額ニ発行ヲ受ケ又ハ之ニ代ヘテ移転ヲ受ケタル株式ノ数ヲ乗ジタル額」とする。</p>

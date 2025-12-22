@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0090.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0092.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>破産法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十一条（保全管理命令）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>裁判所は、破産手続開始の申立てがあった場合において、債務者（法人である場合に限る。以下この節、第百四十八条第四項及び第百五十二条第二項において同じ。）の財産の管理及び処分が失当であるとき、その他債務者の財産の確保のために特に必要があると認めるときは、利害関係人の申立てにより又は職権で、破産手続開始の申立てにつき決定があるまでの間、債務者の財産に関し、保全管理人による管理を命ずる処分をすることができる。</p>

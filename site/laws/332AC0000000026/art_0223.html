@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0222.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0224.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条（関西文化学術研究都市の文化学術研究地区における文化学術研究施設の特別償却）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>青色申告書を提出する法人が、関西文化学術研究都市建設促進法（昭和六十二年法律第七十二号）第五条第二項に規定する建設計画の同意の日から令和九年三月三十一日までの間に、同法第二条第四項に規定する文化学術研究施設のうち政令で定める要件を満たす研究所用の施設の新設又は増設をする場合において、当該新設若しくは増設に係る研究所用の建物及びその附属設備並びに機械及び装置（機械及び装置にあつては、政令で定める規模のものに限る。以下この項において「研究施設」という。）でその製作若しくは建設の後事業の用に供されたことのないものを取得し、又は研究施設を製作し、若しくは建設して、これを当該法人の事業の用に供したとき（所有権移転外リース取引により取得した当該研究施設をその用に供した場合を除く。）は、その用に供した日を含む事業年度の当該研究施設の償却限度額は、法人税法第三十一条第一項又は第二項の規定にかかわらず、当該研究施設の普通償却限度額と特別償却限度額（当該研究施設の取得価額の百分の十二（建物及びその附属設備については、百分の六）に相当する金額をいう。）との合計額とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0060.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0062.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>信託法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十一条（費用又は報酬の支弁等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第五十九条第五項又は前条第三項若しくは第五項の規定による請求に係る訴えを提起した受益者が勝訴（一部勝訴を含む。）した場合において、当該訴えに係る訴訟に関し、必要な費用（訴訟費用を除く。）を支出したとき、又は弁護士、弁護士法人、弁護士・外国法事務弁護士共同法人、司法書士若しくは司法書士法人に報酬を支払うべきときは、その費用又は報酬は、その額の範囲内で相当と認められる額を限度として、信託財産から支弁する。</p>

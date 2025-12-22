@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1520.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1522.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十五条の三</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>附則第二十五条第六項において読み替えられた附則第十八条第六項第一号から第三号までに掲げる宅地等で令和六年度から令和八年度までの各年度に係る賦課期日において次の表の上欄に掲げる宅地等に該当するもの（第三項の規定の適用を受ける宅地等を除く。）のうち、当該各年度の前年度に係る賦課期日においてそれぞれ同表の下欄に掲げる宅地等に該当したもの（以下この項において「用途変更宅地等」という。）に係る当該各年度分の都市計画税については、附則第十七条第六号に規定する前年度課税標準額は、同号ロの規定にかかわらず、当該用途変更宅地等に係る当該各年度の前年度分の固定資産税の課税標準の基礎となつた価格に、当該用途変更宅地等が当該各年度に係る賦課期日において該当した同表の上欄に掲げる宅地等に当該各年度の前年度に係る賦課期日において該当した土地のうち同年度において都市計画税を課されたもの（以下この項及び次項において「特定用途宅地等」という。）で同年度に係る賦課期日において当該市町村内に所在したものに係る特定用途前年度課税標準額の総額を当該特定用途宅地等で同年度に係る賦課期日において当該市町村内に所在したものに係る同年度分の固定資産税の課税標準の基礎となつた価格の総額で除して得た数値を乗じて得た額とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0275.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0277.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十六条の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人が、その有する株式（以下この項において「所有株式」という。）を発行した他の法人を会社法第七百七十四条の三第一項第一号に規定する株式交付子会社とする株式交付により当該所有株式を譲渡し、当該株式交付に係る株式交付親会社（同号に規定する株式交付親会社をいう。以下この条において同じ。）の株式の交付を受けた場合（当該株式交付により交付を受けた当該株式交付親会社の株式の価額が当該株式交付により交付を受けた金銭の額及び金銭以外の資産の価額の合計額のうちに占める割合が百分の八十に満たない場合並びに当該株式交付の直後の当該株式交付親会社が法人税法第二条第十号に規定する同族会社（同号に規定する同族会社であることについての判定の基礎となつた株主のうちに同号に規定する同族会社でない法人がある場合には、当該法人をその判定の基礎となる株主から除外して判定するものとした場合においても同号に規定する同族会社となるものに限る。）に該当する場合を除く。）における法人税法第六十一条の二第一項の規定の適用については、同項第一号に掲げる金額は、当該所有株式の当該株式交付の直前の帳簿価額に相当する金額に株式交付割合（当該株式交付により交付を受けた当該株式交付親会社の株式の価額が当該株式交付により交付を受けた金銭の額及び金銭以外の資産の価額の合計額（剰余金の配当として交付を受けた金銭の額及び金銭以外の資産の価額の合計額を除く。）のうちに占める割合をいう。）を乗じて計算した金額と当該株式交付により交付を受けた金銭の額及び金銭以外の資産の価額の合計額（当該株式交付親会社の株式の価額並びに剰余金の配当として交付を受けた金銭の額及び金銭以外の資産の価額の合計額を除く。）とを合計した金額とする。</p>

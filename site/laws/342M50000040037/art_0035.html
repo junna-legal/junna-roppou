@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0034.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0036.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十七条（船舶の製造事業等に係る施設又は設備の新設等の許可で課税しないものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第百二十八号（一）に規定する財務省令で定める許可は、造船法（昭和二十五年法律第百二十九号）第二条第一項（施設の新設等の許可等）の規定による許可で、当該許可に係る施設において製造又は修繕をする船舶があらかじめ特定され、かつ、当該船舶の製造又は修繕に要する期間（一年以内の期間に限る。）が定められているものとする。</p>

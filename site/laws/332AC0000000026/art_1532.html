@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1531.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1533.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十四条（租税特別措置法の一部を改正する法律の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定による改正後の租税特別措置法の一部を改正する法律附則第二十二条第三項の規定は、施行日以後に新租税特別措置法第七十八条の三第一項に規定する組合員又は所属員たる中小企業者が同項に規定する事業協同組合等から取得する同項に規定する土地又は建物の所有権の移転の登記に係る登録免許税について適用し、施行日前に行われた旧租税特別措置法第七十八条の三第一項に規定する組合員又は所属員たる中小企業者が同項に規定する事業協同組合等から取得した同項に規定する土地又は建物の所有権の移転の登記に係る登録免許税については、なお従前の例による。</p>

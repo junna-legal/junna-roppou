@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0601.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0603.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（酒税法等の一部改正に伴う一般的経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>改正前の酒税法第二十八条第三項（同法第二十九条第三項において準用する場合を含む。）、砂糖消費税法第十五条第三項（同法第十六条第三項若しくは第十八条第三項又は租税特別措置法第九十一条第三項において準用する場合を含む。）、物品税法第十七条第三項（同法第十九条第三項、第二十二条第三項又は第二十六条第三項において準用する場合を含む。）、揮発油税法第十四条第三項（同法第十五条第三項又は租税特別措置法第九十条第三項において準用する場合を含む。）、石油ガス税法第十一条第三項（同法第十二条第三項において準用する場合を含む。）、トランプ類税法第十五条第三項（同法第十六条第三項において準用する場合を含む。）又は租税特別措置法第八十八条の二第三項に規定する期限が、施行日以後に到来する場合におけるこれらの規定に規定する書類の提出については、なお従前の例による。</p>

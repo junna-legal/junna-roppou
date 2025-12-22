@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3027.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3029.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条（事業所税に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>附則第十八条第二項に定めるものを除き、新法の規定中事業に係る事業所税（新法第七百一条の三十二第一項に規定する事業に係る事業所税をいう。以下この項及び附則第十八条第二項において同じ。）に関する部分は、施行日以後に終了する事業年度分の法人の事業及び平成十二年以後の年分の個人の事業（施行日前に廃止された個人の事業を除く。）に対して課すべき事業に係る事業所税について適用し、施行日前に終了した事業年度分の法人の事業並びに平成十二年前の年分の個人の事業及び平成十二年分の個人の事業で施行日前に廃止されたものに対して課する事業に係る事業所税については、なお従前の例による。</p>

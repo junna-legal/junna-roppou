@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0855.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0857.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七百八十二条（吸収合併契約等に関する書面等の備置き及び閲覧等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>次の各号に掲げる株式会社（以下この目において「消滅株式会社等」という。）は、吸収合併契約等備置開始日から吸収合併、吸収分割又は株式交換（以下この節において「吸収合併等」という。）がその効力を生ずる日（以下この節において「効力発生日」という。）後六箇月を経過する日（吸収合併消滅株式会社にあっては、効力発生日）までの間、当該各号に定めるもの（以下この節において「吸収合併契約等」という。）の内容その他法務省令で定める事項を記載し、又は記録した書面又は電磁的記録をその本店に備え置かなければならない。</p>

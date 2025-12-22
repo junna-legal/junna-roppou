@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0659.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0661.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百七十七条の十二（種別割の徴収の方法の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、納税者が情報通信技術を活用した行政の推進等に関する法律第六条第一項の規定により同項に規定する電子情報処理組織を使用して新規登録の申請を行う場合において、同項の規定により同項に規定する電子情報処理組織を使用して、又は第七百四十七条の二第一項の規定により第七百六十二条第一号に規定する地方税関係手続用電子情報処理組織を使用し、かつ、地方税共同機構を経由して、次条第一項の規定による申告書又は報告書の提出を行うときは、前条第三項から第六項までの規定によるほか、当該道府県の条例で定めるところにより、当該納税者が当該登録の申請をした際に、当該登録の申請に係る自動車に対して課する種別割を総務省令で定める方法により徴収することができる。</p>

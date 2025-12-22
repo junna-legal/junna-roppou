@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0852.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0854.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百四十九条の五（新設大規模償却資産に対する固定資産税の課税標準の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、一の納税義務者が所有する償却資産で新たに建設された一の工場又は発電所若しくは変電所（以下この項において「一の工場」という。）（一の工場に増設された設備で一の工場に類すると認められるものを含む。）の用に供するもののうち、その価額の合計額が、当該償却資産に対して新たに固定資産税が課されることとなつた年度から五年度間のうちいずれか一の年度において、前条第一項の表の上欄に掲げる市町村において同表の下欄に掲げる金額を超えることとなるもの（以下この条及び第七百四十条において「新設大規模償却資産」という。）がある場合には、当該超えることとなつた最初の年度（以下この項及び次項において「第一適用年度」という。）から六年度分の固定資産税に限り、その間において当該新設大規模償却資産の価額の合計額が同欄に掲げる金額に満たないこととなつた場合においても、当該新設大規模償却資産又は当該納税義務者が所有する第一適用年度を異にする他の新設大規模償却資産若しくはこれらの新設大規模償却資産以外の償却資産を区分し、それぞれを各別に一の納税義務者が所有するものとみなして、第三百四十九条の二、第三百四十九条の三、第三百四十九条の三の四、前条及び次項から第五項までの規定により、当該新設大規模償却資産又は当該納税義務者が所有する第一適用年度を異にする他の新設大規模償却資産若しくはこれらの新設大規模償却資産以外の償却資産に対して課する固定資産税の課税標準となるべき金額を算定し、当該金額を課税標準として固定資産税を課するものとする。</p>

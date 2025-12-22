@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>情報通信技術を活用した行政の推進等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（特定法人事項変更登記情報の求め及び提供）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定法人事項変更届出に関して特定法人事項変更登記情報を受けようとする行政機関等は、日曜日その他の主務省令・法務省令で定める日（次項及び次条第二項において「休日」という。）を除き、毎日、法務大臣に対し、特定法人事項変更届出対象法人（当該特定法人事項変更届出に関する他の法令の規定において、特定法人事項を変更した場合にはその旨を行政機関等に対して届け出なければならないことが規定されている法人をいう。以下この節において同じ。）の法人番号その他主務省令・法務省令で定める事項を通知して、特定法人事項変更届出対象法人に係る特定法人事項変更登記情報の提供を求めるものとする。</p>

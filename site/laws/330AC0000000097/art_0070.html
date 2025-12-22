@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0069.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0071.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>自動車損害賠償保障法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十八条の四（共同プール事務）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>保険会社及び組合（責任共済の契約の締結により負う共済責任の全部を他の組合に再共済する契約を締結した組合及び当該再共済の契約の締結により負う再共済責任の全部を他の組合に再再共済する契約を締結した組合を除く。以下この条において同じ。）は、次の各号に掲げる方法により、相互間で共同して、保険料、保険金等の計算、配分及び徴収をする事務（以下この条において「共同プール事務」という。）を行うものとする。</p>

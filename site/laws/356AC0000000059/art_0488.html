@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0487.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0489.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現にされている旧銀行法第十六条の二第七項の規定による認可の申請は、従属業務（新銀行法第十六条の二第二項第一号に規定する従属業務をいう。以下この条において同じ。）を営む会社に係るもの以外のものにあっては新銀行法第十六条の二第四項の規定によりした認可の申請と、従属業務を営む会社に係るものにあっては新銀行法第五十三条第一項（第二号に係る部分に限る。）の規定によりした届出とみなす。</p>

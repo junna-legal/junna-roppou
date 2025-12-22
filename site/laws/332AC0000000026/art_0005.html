@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0004.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0006.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条の二（利子所得等に係る支払調書の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>居住者若しくは恒久的施設を有する非居住者又は内国法人若しくは恒久的施設を有する外国法人に対し国内において平成二十八年一月一日以後に支払うべき所得税法第二十三条第一項に規定する利子等（不適用利子を除く。）又は投資信託（公社債投資信託、特定株式投資信託（信託財産を株式のみに対する投資として運用することを目的とする証券投資信託のうち、その受益権が金融商品取引法第二条第十六項に規定する金融商品取引所に上場されていることその他の政令で定める要件に該当するものをいう。以下この節において同じ。）及び公募公社債等運用投資信託を除く。）若しくは特定受益証券発行信託の収益の分配に係る所得税法第二十四条第一項に規定する配当等（同項に規定する剰余金の配当（以下この節において「剰余金の配当」という。）を除く。）の支払をする者は、財務省令で定めるところにより、当該利子等又は配当等の支払に関する同法第二百二十五条第一項の調書を同一の居住者若しくは恒久的施設を有する非居住者又は内国法人若しくは恒久的施設を有する外国法人に対する一回の支払ごとに作成する場合には、同項の規定にかかわらず、当該調書をその支払の確定した日（無記名の公社債の利子又は無記名の貸付信託、投資信託（特定株式投資信託を除く。）若しくは特定受益証券発行信託の受益証券の収益の分配に関するものについては、その支払をした日）の属する月の翌月末日までに税務署長に提出しなければならない。</p>

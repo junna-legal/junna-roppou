@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0522.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0524.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四百六十八条（事業譲渡等の承認を要しない場合）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定は、同条第一項第一号から第四号までに掲げる行為（以下この章において「事業譲渡等」という。）に係る契約の相手方が当該事業譲渡等をする株式会社の特別支配会社（ある株式会社の総株主の議決権の十分の九（これを上回る割合を当該株式会社の定款で定めた場合にあっては、その割合）以上を他の会社及び当該他の会社が発行済株式の全部を有する株式会社その他これに準ずるものとして法務省令で定める法人が有している場合における当該他の会社をいう。以下同じ。）である場合には、適用しない。</p>

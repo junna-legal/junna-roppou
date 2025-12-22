@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0056.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0058.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法の施行に伴う関係法律の整備等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十七条（委員会等設置会社に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>旧株式会社がこの法律の施行の際現に旧委員会等設置会社である場合又は第六十六条第一項後段に規定する株式会社が旧委員会等設置会社である場合における新株式会社の定款には、取締役会、委員会及び会計監査人を置く旨、会社法第四百五十九条第一項第二号から第四号までに掲げる事項を取締役会が定めることができる旨並びに当該事項を株主総会の決議によっては定めない旨の定めがあるものとみなす。</p>

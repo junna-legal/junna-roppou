@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0034.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0036.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>借地借家法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条（借地上の建物の賃借人の保護）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>借地権の目的である土地の上の建物につき賃貸借がされている場合において、借地権の存続期間の満了によって建物の賃借人が土地を明け渡すべきときは、建物の賃借人が借地権の存続期間が満了することをその一年前までに知らなかった場合に限り、裁判所は、建物の賃借人の請求により、建物の賃借人がこれを知った日から一年を超えない範囲内において、土地の明渡しにつき相当の期限を許与することができる。</p>

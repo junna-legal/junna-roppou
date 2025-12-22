@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0068.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0070.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十七条（社会保険制度に基づく給付の差押禁止）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>社会保険制度に基づき支給される退職年金、老齢年金、普通恩給、休業手当金及びこれらの性質を有する給付（確定給付企業年金法（平成十三年法律第五十号）第三十八条第一項（老齢給付金の支給方法）の規定に基づいて支給される年金、確定拠出年金法（平成十三年法律第八十八号）第三十五条第一項（老齢給付金の支給方法）（同法第七十三条（企業型年金に係る規定の準用）において準用する場合を含む。）の規定に基づいて支給される年金その他政令で定める退職年金を含む。）に係る債権は給料等と、退職一時金、一時恩給及びこれらの性質を有する給付（確定給付企業年金法第三十八条第二項の規定に基づいて支給される一時金及び同法第四十二条（脱退一時金の支給方法）の規定に基づいて支給される脱退一時金、確定拠出年金法第三十五条第二項（同法第七十三条において準用する場合を含む。）の規定に基づいて支給される一時金その他政令で定める退職一時金を含む。）に係る債権は退職手当等とそれぞれみなして、前条の規定を適用する。</p>

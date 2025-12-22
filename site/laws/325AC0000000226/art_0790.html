@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0789.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0791.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百二十一条の七の五（年金所得に係る特別徴収税額の通知等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、第三百二十一条の七の二第一項の規定により年金所得に係る特別徴収税額を特別徴収の方法によつて徴収しようとする場合には、当該年金所得に係る特別徴収税額を特別徴収の方法によつて徴収する旨、当該特別徴収対象年金所得者に係る年金所得に係る特別徴収税額及び支払回数割特別徴収税額その他総務省令で定める事項を、当該特別徴収対象年金所得者に対しては第三百二十条の各納期限のうち最初の納期限の十日前までに、当該年金保険者に対しては当該年度の初日の属する年の七月三十一日までに通知しなければならない。</p>

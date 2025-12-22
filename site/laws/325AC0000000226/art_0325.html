@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0324.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0326.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の二十四の十（仮装経理に基づく過大申告の場合の更正に伴う事業税額の控除及び還付）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>事業を行う法人の各事業年度開始の日前に開始した事業年度（当該各事業年度終了の日以前に行われた当該法人を合併法人（合併により被合併法人（合併によりその有する資産及び負債の移転を行つた法人をいう。以下この節において同じ。）から資産及び負債の移転を受けた法人をいう。以下この節において同じ。）とする適格合併（法人税法第二条第十二号の八に規定する適格合併をいう。以下この節において同じ。）に係る被合併法人の当該適格合併の日前に開始した事業年度（以下この項において「被合併法人事業年度」という。）を含む。）の付加価値割、資本割、所得割又は収入割につき道府県知事が更正をした場合において、当該更正につき次項の規定の適用があつたときは、当該更正に係る同項に規定する仮装経理事業税額（既に第三項又は第七項の規定により還付すべきこととなつた金額及びこの項の規定により控除された金額を除く。）は、当該各事業年度（当該更正の日（当該更正が被合併法人事業年度の付加価値割、資本割、所得割又は収入割につき当該適格合併の日前にしたものである場合には、当該適格合併の日）以後に終了する事業年度に限る。）の付加価値割額、資本割額、所得割額又は収入割額から控除するものとする。</p>

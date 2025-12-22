@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0010.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0012.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>司法書士法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条（司法書士法施行令の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定による改正後の司法書士法施行令第四条の規定の適用については、改正法附則第十二条第一項の規定によりなお従前の例により同項に規定する旧農地売買等事業を実施する同項に規定する旧市町村農地保有合理化法人であって、一般社団法人又は一般財団法人であるものは同令第四条第一号及び第七号に定める農地保有合理化法人とみなし、農業協同組合であるものは同号に定める農地保有合理化法人とみなす。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0414.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0416.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条（訴訟に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律による改正前の法律の規定により不服申立てに対する行政庁の裁決、決定その他の行為を経た後でなければ訴えを提起できないこととされる事項であって、当該不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したもの（当該不服申立てが他の不服申立てに対する行政庁の裁決、決定その他の行為を経た後でなければ提起できないとされる場合にあっては、当該他の不服申立てを提起しないでこの法律の施行前にこれを提起すべき期間を経過したものを含む。）の訴えの提起については、なお従前の例による。</p>

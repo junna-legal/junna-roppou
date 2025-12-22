@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0013.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0015.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不正競争防止法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（当事者尋問等の公開停止）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>不正競争による営業上の利益の侵害に係る訴訟における当事者等が、その侵害の有無についての判断の基礎となる事項であって当事者の保有する営業秘密に該当するものについて、当事者本人若しくは法定代理人又は証人として尋問を受ける場合においては、裁判所は、裁判官の全員一致により、その当事者等が公開の法廷で当該事項について陳述をすることにより当該営業秘密に基づく当事者の事業活動に著しい支障を生ずることが明らかであることから当該事項について十分な陳述をすることができず、かつ、当該陳述を欠くことにより他の証拠のみによっては当該事項を判断の基礎とすべき不正競争による営業上の利益の侵害の有無についての適正な裁判をすることができないと認めるときは、決定で、当該事項の尋問を公開しないで行うことができる。</p>

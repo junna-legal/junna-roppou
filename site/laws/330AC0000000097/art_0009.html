@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0008.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0010.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>自動車損害賠償保障法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九条（自動車損害賠償責任保険証明書の提示）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道路運送車両法第四条、第三十四条第一項、第三十六条の二第五項、第六十条第一項、第六十二条第二項（第六十三条第三項及び第六十七条第四項において準用する場合を含む。）、第六十七条第一項（使用者の変更に係る部分に限る。）、第七十一条第四項若しくは第九十七条の三又は総合特別区域法（平成二十三年法律第八十一号）第二十二条の二第三項に規定する処分を受けようとする者は、当該行政庁（道路運送車両法第七十四条の四の規定の適用があるときは、軽自動車検査協会。次項から第五項までにおいて同じ。）に対して、自動車損害賠償責任保険証明書をも提示しなければならない。</p>

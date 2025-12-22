@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0043.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0045.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>株式会社日本政策金融公庫法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条（決算報告書の作成及び提出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>公庫は、第四十条第二項の規定による貸借対照表等の提出をした後、予算の区分に従い、毎事業年度の決算報告書（当該決算報告書に記載すべき事項を記録した電磁的記録を含む。以下この条から第四十六条までにおいて同じ。）を作成し、当該決算報告書に関する監査役、監査等委員会又は監査委員会の意見を付し、当該提出をした貸借対照表等を添え、遅滞なく主務大臣を経由して財務大臣に提出しなければならない。</p>

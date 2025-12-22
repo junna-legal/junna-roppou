@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0150.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0152.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の三十五（個人信用情報の提供）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>加入貸金業者は、指定信用情報機関と信用情報提供契約を締結したときは、当該信用情報提供契約の締結前に締結した資金需要者である個人の顧客を相手方とする貸付けに係る契約（極度方式基本契約その他の内閣府令で定めるものを除く。次項において同じ。）で当該信用情報提供契約を締結した時点において貸付けの残高があるものに係る次に掲げる事項を、当該指定信用情報機関に提供しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0016.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0018.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>公益社団法人及び公益財団法人の認定等に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十七条（残存剰余額の解消）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>公益法人は、当該事業年度に係る暫定残存剰余額又は過年度残存剰余額（当該事業年度において年度欠損額が生じた場合には、当該年度欠損額を過年度残存剰余額のうち最も古い事業年度に係るものからその額を限度として順次控除したときに、当該過年度残存剰余額から控除することとなる額を除く。以下この条及び次条において同じ。）で零を超えるものがある場合は、その全部又は一部を次の各号に掲げる使途に充てた場合は、当該各号に定める額を当該暫定残存剰余額又は過年度残存剰余額の解消額とすることができる。</p>

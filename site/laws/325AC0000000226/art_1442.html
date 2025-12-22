@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1441.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1443.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九条の三（公益信託に係る地方消費税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>当分の間、公益信託（公益信託ニ関スル法律第一条に規定する公益信託（法人税法第三十七条第六項に規定する特定公益信託を除く。）をいう。次項において同じ。）の委託者又はその相続人その他の一般承継人（以下この項において「委託者等」という。）は当該公益信託の信託財産に属する資産を有するものとみなし、かつ、当該信託財産に属する資産に係る課税資産の譲渡等（第七十二条の七十八第一項に規定する課税資産の譲渡等をいう。以下この項において同じ。）及び特定課税仕入れ（同条第一項に規定する特定課税仕入れをいう。以下この項において同じ。）は当該委託者等の課税資産の譲渡等及び特定課税仕入れとみなして、第二章第三節の規定を適用する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0349.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0351.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十条の五（農地等の贈与者が死亡した場合の相続税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第七十条の四第一項の規定により同項に規定する贈与税について納税の猶予があつた場合において、当該贈与税に係る農地等の贈与者が死亡したとき（その死亡の日前に同項ただし書又は同条第三十項の規定の適用があつた場合、同日前に同条第三十一項の規定による納税の猶予に係る期限の繰上げがあつた場合及びその死亡の時以前に当該贈与税に係る受贈者が死亡した場合を除く。）は、当該贈与者の死亡による相続又は遺贈に係る相続税については、当該農地等の受贈者が当該農地等（同条第十八項に規定する一時的道路用地等の用に供されている農地等を含むものとし、既に同条第四項又は第五項の規定の適用があつた場合には、これらの規定の適用があつた農地等を除くものとする。以下この項において同じ。）をその贈与者から相続（当該受贈者が当該死亡による相続の放棄をした場合には、遺贈。次項において同じ。）により取得したものとみなす。</p>

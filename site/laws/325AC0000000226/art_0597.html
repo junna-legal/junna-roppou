@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0596.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0598.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百四十四条の三十八の二（総務省の職員の軽油引取税に関する調査の事前通知等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>総務大臣は、総務省指定職員に前条第一項第一号に掲げる者（以下この条から第百四十四条の三十八の四までにおいて「元売業者等」という。）に対し実地の調査において前条の規定による質問、検査又は提示若しくは提出の要求（以下この条及び第百四十四条の三十八の四において「質問検査等」という。）を行わせる場合には、あらかじめ、当該元売業者等（当該元売業者等について税務代理人（税理士法第三十条（同法第四十八条の十六において準用する場合を含む。）の書面を提出している税理士若しくは税理士法人又は同法第五十一条第一項の規定による通知をした弁護士若しくは同条第三項の規定による通知をした弁護士法人若しくは弁護士・外国法事務弁護士共同法人をいう。以下この款において同じ。）がある場合には、当該税務代理人を含む。）に対し、その旨及び次に掲げる事項を通知するものとする。</p>

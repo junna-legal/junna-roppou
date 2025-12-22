@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0394.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0396.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（銀行法等の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現に第一条の規定による改正後の銀行法（以下「新銀行法」という。）第二条第十四項に規定する銀行代理業（以下「銀行代理業」という。）を営んでいる者（次条第一項の規定により施行日において新銀行法第五十二条の三十六第一項の許可を受けたものとみなされた者を除く。）は、施行日から起算して三月間（当該期間内に新銀行法第五十二条の三十六第一項の許可に係る申請について不許可の処分があったとき、又は次項の規定により読み替えて適用する新銀行法第五十二条の五十六第一項の規定により銀行代理業の廃止を命じられたときは、当該処分のあった日又は当該廃止を命じられた日までの間）は、新銀行法第五十二条の三十六第一項の規定にかかわらず、引き続き銀行代理業を営むことができる。</p>

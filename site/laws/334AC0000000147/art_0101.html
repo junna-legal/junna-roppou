@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0100.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0102.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百四条の二（次順位買受申込者の決定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>徴収職員は、入札の方法により不動産、船舶、航空機、自動車、建設機械、小型船舶、債権又は電話加入権以外の無体財産権等（以下「不動産等」という。）の公売をした場合において、最高価申込者の入札価額（以下この条において「最高入札価額」という。）に次ぐ高い価額（見積価額以上で、かつ、最高入札価額から公売保証金の額を控除した金額以上であるものに限る。第三項において同じ。）による入札者（前条第二項の規定によりくじで最高価申込者を定めた場合には、当該最高価申込者以外の最高の価額の入札者とする。第三項において同じ。）から次順位による買受けの申込みがあるときは、その者を次順位買受申込者として定めなければならない。</p>

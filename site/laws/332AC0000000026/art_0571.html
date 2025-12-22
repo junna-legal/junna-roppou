@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0570.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0572.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（法人の海外市場開拓準備金に関する経過規定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人の施行日前に開始し、かつ、同日以後に終了する事業年度に係る新法第四十六条の二第一項に規定する基準年度の総収入金額のうちにこの法律による旧法第四十六条の二第二項の規定の改正により同日以後新法第四十六条の二第一項に規定する海外取引に該当しないこととなつた取引による収入金額がある場合における新法第五十四条第一項の規定の適用については、同項中「以下この条及び次条」とあるのは「同条第三項第三号又は第七号に掲げる取引を含む。以下この条」と、「金額の合計額に、当該事業年度の指定期間の月数を乗じてこれを」とあるのは「金額のうち、当該法人の収入金額で同条第三項第三号又は第七号に掲げる取引によるものに係る金額に当該事業年度開始の日から昭和四十年三月三十一日までの期間の月数を乗じて計算した金額と、当該法人の収入金額で同項第三号又は第七号に掲げる取引によるもの以外のものに係る金額に当該事業年度の指定期間の月数を乗じて計算した金額との合計額を」とする。</p>

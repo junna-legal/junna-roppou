@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0001.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0003.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>仮登記担保契約に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（所有権移転の効力の制限等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>仮登記担保契約が土地又は建物（以下「土地等」という。）の所有権の移転を目的とするものである場合には、予約を完結する意思を表示した日、停止条件が成就した日その他のその契約において所有権を移転するものとされている日以後に、債権者が次条に規定する清算金の見積額（清算金がないと認めるときは、その旨）をその契約の相手方である債務者又は第三者（以下「債務者等」という。）に通知し、かつ、その通知が債務者等に到達した日から二月を経過しなければ、その所有権の移転の効力は、生じない。</p>

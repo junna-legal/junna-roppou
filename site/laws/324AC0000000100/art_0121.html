@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0120.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0122.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の二十九（総合評定値の通知）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国土交通大臣又は都道府県知事は、経営規模等評価の申請をした建設業者から請求があつたときは、遅滞なく、国土交通省令で定めるところにより、当該建設業者に対して、総合評定値（経営状況分析の結果に係る数値及び経営規模等評価の結果に係る数値を用いて国土交通省令で定めるところにより算出した客観的事項の全体についての総合的な評定の結果に係る数値をいう。以下同じ。）を通知しなければならない。</p>

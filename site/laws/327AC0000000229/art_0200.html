@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0199.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0201.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十一条（自主的な取組の促進及び検討）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>政府は、この法律に基づく農業協同組合及び農業委員会に関する制度の改革の趣旨及び内容の周知徹底を図るとともに、組合の事業及び組織の在り方についての当該組合の構成員と役職員との徹底した議論並びに農地等の利用の最適化の推進（新農業委員会法第六条第二項に規定する農地等の利用の最適化の推進をいう。次項において同じ。）についての農業の担い手をはじめとする農業者その他の関係者の間での徹底した議論を促すことにより、これらの関係者の意識の啓発を図り、当該改革の趣旨に沿った自主的な取組を促進するものとする。</p>

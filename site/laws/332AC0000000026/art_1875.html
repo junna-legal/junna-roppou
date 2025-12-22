@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1874.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1876.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百三十一条（手持品課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成十五年七月一日に、製造たばこの製造場又は保税地域以外の場所で製造たばこを販売のため所持する製造たばこの製造者又は販売業者がある場合において、その所持する製造たばこの本数（たばこ税法第十条の規定により、たばこ税の課税標準となる製造たばこの本数とし、二以上の場所で製造たばこを所持する場合には、その合計本数とする。）が三万本以上であるときは、当該製造たばこについては、その者が製造たばこの製造者として当該製造たばこを同日にその者の製造たばこの製造場から移出したものとみなして、次の各号に掲げる製造たばこの区分に応じ当該各号に定める税率によりたばこ税を課する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0132.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0134.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の四十七（臨時休業等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定銀行代理業者は、内閣府令で定める場合を除き、天災その他のやむを得ない理由によりその特定銀行代理行為に係る業務を行う営業所又は事務所において臨時に当該業務の全部又は一部を休止するときは、直ちにその旨を、理由を付して内閣総理大臣に届け出るとともに、当該営業所又は事務所の店頭に掲示し、かつ、その事業の規模が著しく小さい場合その他の内閣府令で定める場合を除き、内閣府令で定めるところにより、電気通信回線に接続して行う自動公衆送信により公衆の閲覧に供しなければならない。</p>

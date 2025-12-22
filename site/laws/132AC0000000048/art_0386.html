@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0385.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0387.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（端株主の権利に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際端株主に対してこの法律による改正前の商法（以下「旧商法」という。）第三百四十一条ノ二第二項第六号及び第三百四十一条ノ八第二項第八号の引受権を受ける権利を与えない旨の定款の定めがある株式会社（この法律の施行前に定款の認証を受け、この法律の施行後に成立するもの（以下この条において「設立中の会社」という。）を含む。）については、この法律の施行の日（設立中の会社にあっては、その成立の日）において、端株主に対してこの法律による改正後の商法（以下「新商法」という。）第二百八十条ノ二十第二項第十二号及び第三百四十一条ノ三第一項第九号の引受権を受ける権利を与えない旨の定款の変更の決議があったものとみなす。</p>

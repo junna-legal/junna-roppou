@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十九条の三（機構への戸籍の附票の記載事項の提供）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>本籍地の市町村長は、番号利用法第二十一条の二第二項（番号利用法第二十六条において準用する場合を含む。）の規定による通知（番号利用法第十九条第八号又は第九号に規定する情報提供者又は条例事務関係情報提供者が番号利用法第九条第三項の法務大臣である場合におけるものに限る。）を受けたときは、政令で定めるところにより、当該通知に係る者の戸籍の附票に記載をされている第十七条第二号、第三号、第五号及び第六号に掲げる事項を地方公共団体情報システム機構（以下「機構」という。）に提供するものとする。</p>

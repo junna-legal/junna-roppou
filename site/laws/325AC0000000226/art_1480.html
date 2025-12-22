@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1479.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1481.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条の五（自動車税の種別割の賦課徴収の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県知事は、自動車税の種別割の賦課徴収に関し、自動車が附則第十二条の三第二項又は第三項に規定する窒素酸化物の排出量又はエネルギー消費効率についての基準（以下この項において「窒素酸化物排出量等基準」という。）につき同条第二項又は第三項の規定の適用を受ける自動車（以下この項において「減税対象車」という。）に該当するかどうかの判断をするときは、国土交通大臣の認定等（申請に基づき国土交通大臣が行つた自動車についての認定又は評価であつて、当該認定又は評価の事実に基づき自動車が窒素酸化物排出量等基準につき減税対象車に該当するかどうかの判断をすることが適当であるものとして総務省令で定めるものをいう。次項及び第五項において同じ。）に基づき当該判断をするものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0405.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0407.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十六条（マンション建替事業の施行者等が受ける権利変換手続開始の登記等の免税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>マンションの建替え等の円滑化に関する法律第二条第一項第五号に規定する施行者、同法第五十八条第一項第二号の施行再建マンションの区分所有権若しくは敷地利用権を与えられることとなるもの又は同項第五号の担保権等の登記に係る権利を有する者が、同法の施行の日から令和八年三月三十一日までの間に、同法第二条第一項第四号に規定するマンション建替事業（良好な居住環境の確保に資するものとして政令で定めるものに限る。）に伴い受ける次に掲げる登記については、財務省令で定めるところにより当該期間内に登記を受けるものに限り、登録免許税を課さない。</p>

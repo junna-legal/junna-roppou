@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0058.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0060.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十三条（他業会社への転移等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>銀行が第四十一条第一号の規定に該当して第四条第一項の内閣総理大臣の免許が効力を失つた場合において、当該銀行であつた会社に従前の預金又は定期積金等の債務が残存するときは、政令で定める場合を除き、内閣総理大臣は、当該会社が当該債務を完済する日又は当該免許が効力を失つた日以後十年を経過する日のいずれか早い日まで、当該会社に対し、当該債務の総額を限度として財産の供託を命じ、又は預金者等の保護を図るため当該債務の処理若しくは資産の管理若しくは運用に関し必要な命令をすることができる。</p>

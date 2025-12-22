@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0246.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0248.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事再生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百二十一条（手続開始の要件等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人である債務者のうち、将来において継続的に又は反復して収入を得る見込みがあり、かつ、再生債権の総額（住宅資金貸付債権の額、別除権の行使によって弁済を受けることができると見込まれる再生債権の額及び再生手続開始前の罰金等の額を除く。）が五千万円を超えないものは、この節に規定する特則の適用を受ける再生手続（以下「小規模個人再生」という。）を行うことを求めることができる。</p>

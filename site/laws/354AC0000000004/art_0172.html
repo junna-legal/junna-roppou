@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0171.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0173.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事執行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百六十一条（譲渡命令等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>差し押さえられた債権が、条件付若しくは期限付であるとき、又は反対給付に係ることその他の事由によりその取立てが困難であるときは、執行裁判所は、差押債権者の申立てにより、その債権を執行裁判所が定めた価額で支払に代えて差押債権者に譲渡する命令（以下「譲渡命令」という。）、取立てに代えて、執行裁判所の定める方法によりその債権の売却を執行官に命ずる命令（以下「売却命令」という。）又は管理人を選任してその債権の管理を命ずる命令（以下「管理命令」という。）その他相当な方法による換価を命ずる命令（第百六十七条の十第一項において「譲渡命令等」と総称する。）を発することができる。</p>

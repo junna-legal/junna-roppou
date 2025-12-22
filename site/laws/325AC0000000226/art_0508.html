@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0507.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0509.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十四条の十（たばこ税の申告納付の手続）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定によつてたばこ税を申告納付すべき者（以下この節において「申告納税者」という。）は、総務省令で定める様式によつて、毎月末日までに、前月の初日から末日までの間における当該道府県の区域内に所在する小売販売業者の営業所に係る第七十四条の二第一項の売渡し又は当該道府県の区域内に所在する卸売販売業者等の事務所又は事業所が直接管理する製造たばこに係る同条第二項の売渡し若しくは消費等に係る製造たばこの品目ごとの課税標準たる本数の合計数（以下この節において「課税標準数量」という。）及び当該課税標準数量に対するたばこ税額、第七十四条の六第一項の規定により免除を受けようとする場合にあつては同項の適用を受けようとする製造たばこに係るたばこ税額並びに第七十四条の十四第一項の規定により控除を受けようとする場合にあつては同項の適用を受けようとするたばこ税額その他必要な事項を記載した申告書を当該道府県知事に提出するとともに、その申告書により納付すべき税額を当該道府県に納付しなければならない。</p>

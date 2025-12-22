@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0200.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0202.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十二条の二の二（支払調書等の提出の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第八条の四第九項、第九条の四の二第二項、第二十九条の二第六項若しくは第七項、第三十七条の十一の三第七項、第三十七条の十四第三十五項、第三十七条の十四の二第二十七項又は第四十一条の二の三第二項の規定により提出するこれらの規定に規定する報告書及び調書（以下この条において「調書等」という。）のうち、当該調書等の提出期限の属する年の前々年の一月一日から十二月三十一日までの間に提出すべきであつた当該調書等の枚数として財務省令で定めるところにより算出した数が百以上であるものについては、当該調書等を提出すべき者は、これらの規定にかかわらず、当該調書等に記載すべきものとされるこれらの規定に規定する事項（以下この条において「記載事項」という。）を次に掲げる方法のいずれかによりこれらの規定に規定する税務署長に提供しなければならない。</p>

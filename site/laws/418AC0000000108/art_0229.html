@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0228.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0230.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>信託法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百二十八条（欠損が生じた場合の責任）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>受託者が受益者に対する信託財産に係る給付をした場合において、当該給付をした日後最初に到来する第二百二十二条第四項の時期に欠損額（貸借対照表上の負債の額が資産の額を上回る場合において、当該負債の額から当該資産の額を控除して得た額をいう。以下この項において同じ。）が生じたときは、次の各号に掲げる者は、連帯して（第二号に掲げる受益者にあっては、現に受けた個別の給付額の限度で連帯して）、当該各号に定める義務を負う。</p>

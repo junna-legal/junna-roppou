@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0205.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0207.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条の四の四（令和六年分の所得税の予定納税額の減額承認申請に係る申告納税見積額の計算の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>居住者の令和六年分の所得税につき法第四十一条の三の四第二号の規定により読み替えて適用される所得税法第百十一条第一項又は第二項の規定による申請をしようとする場合における同条第四項に規定する申告納税見積額の計算については、所得税法施行令第二百六十一条第二号中「所得税の額」とあるのは、「所得税の額（租税特別措置法第四十一条の三の七から第四十一条の三の九まで（令和六年六月以後に支払われる給与等に係る特別控除の額の控除等）の規定の適用がないものとした場合における源泉徴収をされる所得税の額をいう。）」とする。</p>

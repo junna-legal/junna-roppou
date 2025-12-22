@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0493.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0495.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事訴訟法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（特許権等に関する訴え及び意匠権等に関する訴えに係る訴訟の管轄等に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現に係属している特許権、実用新案権、回路配置利用権又はプログラムの著作物についての著作者の権利に関する訴え（第四項において「特許権等に関する訴え」という。）及び意匠権、商標権、著作者の権利（プログラムの著作物についての著作者の権利を除く。）、出版権、著作隣接権若しくは育成者権に関する訴え又は不正競争（不正競争防止法（平成五年法律第四十七号）第二条第一項に規定する不正競争をいう。）による営業上の利益の侵害に係る訴えに係る訴訟の管轄及び移送については、なお従前の例による。</p>

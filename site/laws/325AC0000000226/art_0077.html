@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0076.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0078.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十六条の五（担保の処分）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>徴収の猶予、職権による換価の猶予又は申請による換価の猶予を受けた者がその猶予に係る地方団体の徴収金をその猶予の期限までに納付若しくは納入をせず、又は地方団体の長が第十五条の三第一項（第十五条の五の三第二項及び第十五条の六の三第二項において読み替えて準用する場合を含む。）の規定によりその猶予を取り消したことによつて、その猶予に係る地方団体の徴収金を徴収する場合において、その地方団体の徴収金について徴した担保があるときは、地方団体の長は、滞納処分の例によりその担保財産を処分して、その徴収すべき地方団体の徴収金及び担保財産の処分費に充て、又は保証人にその地方団体の徴収金を納付し、若しくは納入させる。</p>

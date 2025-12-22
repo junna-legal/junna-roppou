@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0005.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0007.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事訴訟法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条の四（消費者契約及び労働関係に関する訴えの管轄権）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>消費者（個人（事業として又は事業のために契約の当事者となる場合におけるものを除く。）をいう。以下同じ。）と事業者（法人その他の社団又は財団及び事業として又は事業のために契約の当事者となる場合における個人をいう。以下同じ。）との間で締結される契約（労働契約を除く。以下「消費者契約」という。）に関する消費者からの事業者に対する訴えは、訴えの提起の時又は消費者契約の締結の時における消費者の住所が日本国内にあるときは、日本の裁判所に提起することができる。</p>

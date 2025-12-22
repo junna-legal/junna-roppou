@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0396.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0398.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の六十三の四（総務省の職員の個人の事業税に関する調査の終了の際の手続）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>総務大臣は、個人の行う事業に対する事業税に関する実地の調査を行つた結果、課税標準額の総額の更正若しくは決定又は事務所若しくは事業所の従業者の数（第七十二条の五十四第二項に規定する従業者の数をいう。以下この項及び次項において同じ。）の修正若しくは決定の必要があると認められない場合には、納税義務者であつて当該調査において質問検査等の相手方となつた者に対し、その時点において課税標準額の総額の更正若しくは決定又は事務所若しくは事業所の従業者の数の修正若しくは決定の必要があると認められない旨を書面により通知するものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0009.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0011.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>外国為替及び外国貿易法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十六条（支払等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>主務大臣は、我が国が締結した条約その他の国際約束を誠実に履行するため必要があると認めるとき、国際平和のための国際的な努力に我が国として寄与するため特に必要があると認めるとき、又は第十条第一項の閣議決定が行われたときは、支払等が、これらと同一の見地から許可又は承認を受ける義務を課した取引又は行為に係る支払等である場合を除き、政令で定めるところにより、本邦から外国へ向けた支払をしようとする居住者若しくは非居住者又は非居住者との間で支払等をしようとする居住者に対し、当該支払又は支払等について、許可を受ける義務を課することができる。</p>

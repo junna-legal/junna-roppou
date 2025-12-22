@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2878.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2880.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（市街化区域農地に対して課する固定資産税又は都市計画税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成八年度分の固定資産税について地方税法等の一部を改正する法律（平成五年法律第四号。以下「平成五年改正法」という。）附則第九条第三項の規定により読み替えて適用される旧法附則第十九条の四第一項の規定の適用を受けた平成五年改正法による改正前の地方税法附則第十九条の二第一項に規定する市街化区域農地（以下この条において「平成五年改正法附則適用市街化区域農地」という。）に係る平成九年度分の固定資産税に限り、新法附則第十七条第四号に規定する前年度課税標準額は、同号イの規定にかかわらず、旧法附則第十九条の四第一項に規定する平成八年度分の固定資産税の課税標準となるべき額（当該土地が同年度分の固定資産税額の算定について平成五年改正法附則第九条第二項の規定においてなお効力を有するものとして読み替えて適用される平成五年改正法による改正前の地方税法附則第十九条の三第三項において準用する同条第一項ただし書の規定の適用を受けるものにあっては、当該額を同年度に係る同項の表の下欄に掲げる率で除して得た額とし、当該土地が同年度分の固定資産税について旧法第三百四十九条の三又は附則第十五条から第十五条の三までの規定の適用を受ける土地であるときは当該除して得た額をこれらの規定に定める率で除して得た額とする。）とする。</p>

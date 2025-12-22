@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0964.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0966.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（勤労者財産形成貯蓄及び勤労者財産形成年金貯蓄の利子所得等の非課税に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第四条の二及び第四条の三の規定は、附則第一条第二号に定める日以後に締結する勤労者財産形成促進法（昭和四十六年法律第九十二号）第六条第一項に規定する勤労者財産形成貯蓄契約又は同条第二項に規定する勤労者財産形成年金貯蓄契約に基づく預入、信託若しくは購入又は払込み（以下この条において「預入等」という。）をする新法第四条の二第一項に規定する財産形成貯蓄又は新法第四条の三第一項に規定する財産形成年金貯蓄について適用する。</p>

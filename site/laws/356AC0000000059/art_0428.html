@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0427.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0429.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十一条（検討）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>政府は、この法律の施行後三年以内に、この法律による改正後のそれぞれの法律（以下「改正後の各法律」という。）に規定する指定紛争解決機関（以下単に「指定紛争解決機関」という。）の指定状況及び改正後の各法律に規定する紛争解決等業務の遂行状況その他経済社会情勢等を勘案し、消費者庁及び消費者委員会設置法（平成二十一年法律第四十八号）附則第三項に係る検討状況も踏まえ、消費者庁の関与の在り方及び業態横断的かつ包括的な紛争解決体制の在り方も含めた指定紛争解決機関による裁判外紛争解決手続に係る制度の在り方について検討を加え、必要があると認めるときは、その結果に基づいて所要の措置を講ずるものとする。</p>

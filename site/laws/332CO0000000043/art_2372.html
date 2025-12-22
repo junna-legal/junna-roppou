@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2371.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2373.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（個人の譲渡所得の課税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新令第二十五条第十二項各号及び第十三項の規定は、個人が施行日以後に新法第三十七条第一項の表の第四号の上欄に掲げる資産の譲渡をし、かつ、当該個人が施行日以後に同号の下欄に掲げる資産の取得（製作を含む。）をする場合（当該資産が施行日前に締結した契約に基づき施行日以後に取得をする新令第二十五条第十二項第一号又は第三号に掲げる船舶（以下この項において「経過船舶」という。）である場合を除く。）における当該譲渡について適用し、個人が施行日前に旧法第三十七条第一項の表の第五号の上欄に掲げる資産の譲渡をした場合、個人が施行日以後に同欄に掲げる資産の譲渡をし、かつ、当該個人が施行日前に同号の下欄に掲げる資産の取得（製作を含む。以下この項において同じ。）をした場合及び個人が施行日以後に同号の上欄に掲げる資産の譲渡をし、かつ、当該個人が施行日以後に同号の下欄に掲げる資産の取得をする場合（当該資産が経過船舶である場合に限る。）におけるこれらの譲渡については、なお従前の例による。</p>

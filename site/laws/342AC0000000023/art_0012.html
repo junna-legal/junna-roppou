@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0011.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0013.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>印紙税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条（預貯金通帳等に係る申告及び納付等の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>別表第一第十八号及び第十九号の課税文書のうち政令で定める通帳（以下この条において「預貯金通帳等」という。）の作成者は、政令で定めるところにより、当該預貯金通帳等を作成しようとする場所の所在地の所轄税務署長の承認を受け、相当印紙の貼付けに代えて、金銭をもつて、当該承認の日以後の各課税期間（四月一日から翌年三月三十一日までの期間をいう。以下この条において同じ。）内に作成する当該預貯金通帳等に係る印紙税を納付することができる。</p>

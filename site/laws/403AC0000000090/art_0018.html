@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0017.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0019.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>借地借家法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十八条（借地契約の更新後の建物の再築の許可）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>契約の更新の後において、借地権者が残存期間を超えて存続すべき建物を新たに築造することにつきやむを得ない事情があるにもかかわらず、借地権設定者がその建物の築造を承諾しないときは、借地権設定者が地上権の消滅の請求又は土地の賃貸借の解約の申入れをすることができない旨を定めた場合を除き、裁判所は、借地権者の申立てにより、借地権設定者の承諾に代わる許可を与えることができる。</p>

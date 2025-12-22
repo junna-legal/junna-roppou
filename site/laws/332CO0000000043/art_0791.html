@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0790.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0792.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条（法人の準備金に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第五十七条第一項の証券取引責任準備金又は同条第二項の商品取引責任準備金を積み立てている法人が施行日以後最初に開始する事業年度（以下この条において「改正事業年度」という。）終了の日において累積限度超過額（同日において新法第五十七条第一項に規定する前事業年度から繰り越された証券取引責任準備金の金額又は同条第二項に規定する前事業年度から繰り越された商品取引責任準備金の金額が同条第一項に規定する証券累積限度額又は同条第二項に規定する商品累積限度額を超える場合のその超える金額をいう。以下第七項までにおいて同じ。）を有する場合における当該累積限度超過額に係る同条第三項の規定の適用については、同項の規定にかかわらず、当該累積限度超過額に当該各事業年度の月数を乗じてこれを六十で除して算出した金額（当該金額が当該各事業年度終了の日における累積限度超過残額（累積限度超過額からその日までにこの項又は次項の規定により益金の額に算入された、又は算入されるべきこととなつた金額を控除した金額をいう。以下第六項までにおいて同じ。）を超える場合には、当該累積限度超過残額）に相当する金額は、改正事業年度から当該事業年度開始の日以後五年を経過した日の前日を含む事業年度までの各事業年度の所得の金額の計算上、益金の額に算入する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0027.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0029.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十条（建設工事の見積り等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>建設業者は、建設工事の請負契約を締結するに際しては、工事内容に応じ、工事の種別ごとの材料費、労務費及び当該建設工事に従事する労働者による適正な施工を確保するために不可欠な経費として国土交通省令で定めるもの（以下この条において「材料費等」という。）その他当該建設工事の施工のために必要な経費の内訳並びに工事の工程ごとの作業及びその準備に必要な日数を記載した建設工事の見積書（以下この条において「材料費等記載見積書」という。）を作成するよう努めなければならない。</p>

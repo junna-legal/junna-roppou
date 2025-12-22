@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0245.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0247.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百二十一条（株券喪失登録簿）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>株券発行会社（株式会社がその株式（種類株式発行会社にあっては、全部の種類の株式）に係る株券を発行する旨の定款の定めを廃止する定款の変更をした日の翌日から起算して一年を経過していない場合における当該株式会社を含む。以下この款（第二百二十三条、第二百二十七条及び第二百二十八条第二項を除く。）において同じ。）は、株券喪失登録簿を作成し、これに次に掲げる事項（以下この款において「株券喪失登録簿記載事項」という。）を記載し、又は記録しなければならない。</p>

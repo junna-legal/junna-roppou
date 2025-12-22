@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0344.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0346.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の三十九の三（法人の事業税の徴収猶予に係る国税庁長官の通知）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国税庁長官は、国税庁長官に対する申立てが行われた場合又は条約相手国等の権限ある当局に対する申立てが行われた場合には、遅滞なく、その旨、これらの申立てに係る租税特別措置法第六十六条の四第二十七項第一号に掲げる更正決定に係る法人税額の課税標準とされた所得その他総務省令で定める事項をこれらの申立てをした法人の事務所又は事業所（二以上の道府県において事務所又は事業所を有する法人にあつては、その主たる事務所又は事業所。次項及び第三項において同じ。）の所在地の道府県知事に通知しなければならない。</p>

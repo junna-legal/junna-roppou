@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0045.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0047.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十二条（措置命令）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、第三十二条第一項各号のいずれかに該当する農地における病害虫の発生、土石その他これに類するものの堆積その他政令で定める事由により、当該農地の周辺の地域における営農条件に著しい支障が生じ、又は生ずるおそれがあると認める場合には、必要な限度において、当該農地の所有者等に対し、期限を定めて、その支障の除去又は発生の防止のために必要な措置（以下この条において「支障の除去等の措置」という。）を講ずべきことを命ずることができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0140.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0142.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商業登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百六条の三（電子証明書の使用の廃止等の届出の方法）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第百一条第一項第四号及び第五号の規定による届出をするには、申請人等は、法務大臣の定めるところに従い、第三十三条の十第一項（第三十三条の十三第六項において準用する場合を含む。次項において同じ。）の書面に記載すべき事項に係る情報に第三十六条第三項に規定する措置を講じたものを送信（第三項において「電子証明書の使用の廃止等の届出に係る書面情報の送信」という。）しなければならない。</p>

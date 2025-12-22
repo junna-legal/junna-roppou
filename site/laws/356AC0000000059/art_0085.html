@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0084.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0086.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の四（銀行議決権保有届出書等に関する特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>銀行、金融商品取引業者（有価証券関連業を営む者に限る。）、信託会社（信託業法第三条又は第五十三条第一項の免許を受けたものに限る。）その他の内閣府令で定める者のうち基準日を内閣総理大臣に届け出た者が保有する議決権で当該議決権に係る株式の発行者である銀行又は銀行持株会社の営業活動を支配することを保有の目的としないもの（議決権保有割合が内閣府令で定める数を超えた場合及び保有の態様その他の事情を勘案して内閣府令で定める場合を除く。以下この条において「特例対象議決権」という。）に係る銀行議決権保有届出書は、第五十二条の二の十一第一項の規定にかかわらず、議決権保有割合が初めて百分の五を超える数となつた基準日における当該議決権の保有状況に関する事項であつて、内閣府令で定めるものを記載したものを、内閣府令で定めるところにより、当該基準日の属する月の翌月十五日までに、内閣総理大臣に提出しなければならない。</p>

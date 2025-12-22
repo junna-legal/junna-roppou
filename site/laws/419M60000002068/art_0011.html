@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0010.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0012.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>公益社団法人及び公益財団法人の認定等に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条（他の公益法人との合併に伴う変更の認定等に係る関係行政庁への通知）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第十一条第一項の変更の認定の申請を受けた行政庁は、直ちに、当該変更の認定の申請が他の公益法人との合併に伴うものである場合にあっては当該他の公益法人を所管する行政庁、事業の譲渡に伴うものであって当該譲渡を受ける者が公益法人である場合若しくは当該譲渡をする者が公益法人である場合にあっては当該公益法人を所管する行政庁にその旨を通知するものとする。</p>

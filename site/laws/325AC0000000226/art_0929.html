@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0928.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0930.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四百十六条（土地価格等縦覧帳簿及び家屋価格等縦覧帳簿の縦覧）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、固定資産税の納税者が、その納付すべき当該年度の固定資産税に係る土地又は家屋について土地課税台帳等又は家屋課税台帳等に登録された価格と当該土地又は家屋が所在する市町村内の他の土地又は家屋の価格とを比較することができるよう、毎年四月一日から、四月二十日又は当該年度の最初の納期限の日のいずれか遅い日以後の日までの間、その指定する場所において、土地価格等縦覧帳簿又はその写し（当該土地価格等縦覧帳簿の作成が前条第二項の規定により電磁的記録の作成をもつて行われている場合にあつては、当該土地価格等縦覧帳簿に記録をされている事項を記載した書類。次項において同じ。）を当該市町村内に所在する土地に対して課する固定資産税の納税者の縦覧に供し、かつ、家屋価格等縦覧帳簿又はその写し（当該家屋価格等縦覧帳簿の作成が前条第二項の規定により電磁的記録の作成をもつて行われている場合にあつては、当該家屋価格等縦覧帳簿に記録をされている事項を記載した書類。次項において同じ。）を当該市町村内に所在する家屋に対して課する固定資産税の納税者の縦覧に供しなければならない。</p>

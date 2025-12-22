@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0604.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0606.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百四十四条の四十三（関税等に関する書類の供覧等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県知事が軽油引取税の賦課徴収について、政府に対し、関税又は外国貨物（関税法第二条第一項第三号に規定する外国貨物をいう。）に係る内国消費税（輸入品に対する内国消費税の徴収等に関する法律第二条第一号に規定する内国消費税をいう。）の納税義務者が政府に提出した申告書、政府がした更正又は決定に関する書類その他参考となるべき帳簿書類を閲覧し、又は記録することを請求した場合においては、政府は、関係帳簿書類を道府県知事又はその指定する職員に閲覧させ、又は記録させるものとする。</p>

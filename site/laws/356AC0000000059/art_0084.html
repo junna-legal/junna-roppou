@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0083.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0085.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の三（銀行議決権保有届出書に関する変更報告書の提出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>銀行議決権大量保有者は、一の銀行の総株主の議決権の百分の五を超える議決権又は一の銀行持株会社の総株主の議決権の百分の五を超える議決権の保有者となつた日の後に、前条第一項各号に掲げる事項の変更があつた場合（議決権保有割合の変更の場合にあつては、百分の一以上増加し又は減少した場合に限る。）には、内閣府令で定めるところにより、その日から五日以内（保有する議決権の数に増加がない場合その他の内閣府令で定める場合にあつては、内閣府令で定める日以内）に、当該変更に係る報告書（以下この条及び次条において「変更報告書」という。）を内閣総理大臣に提出しなければならない。</p>

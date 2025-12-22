@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0326.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0328.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条（国税徴収法の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第六条の規定による改正後の国税徴収法第三十九条の規定は、令和四年一月一日以後に滞納となった国税（同日前に行われた第六条の規定による改正前の国税徴収法第三十九条に規定する無償又は著しく低い額の対価による譲渡、債務の免除その他第三者に利益を与える処分に係るもの（以下この条において「特定国税」という。）を除く。）について適用し、同日前に滞納となっている国税（特定国税を含む。）については、なお従前の例による。</p>

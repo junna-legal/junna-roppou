@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0428.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0430.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の九十三（譲渡割の更正及び決定等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県知事は、第七十二条の八十八第一項若しくは第二項の規定による申告書又は第七十二条の八十九各項の規定による申告書（第七十二条の八十七各項の規定による申告書に係るものを除く。）の提出があつた場合において、当該申告に係る消費税額若しくはこれを課税標準として算定した譲渡割額がその調査により、消費税に関する法律の規定により申告し、修正申告し、更正され、若しくは決定された消費税額（以下本項において「確定消費税額」という。）若しくはこれを課税標準として算定すべき譲渡割額と異なることを発見したとき、又は当該申告に係る譲渡割に係る還付金の額がその調査したところと異なることを発見したときは、当該申告に係る確定消費税額若しくはこれを課税標準として算定した譲渡割額（第三項及び第四項において「譲渡割額等」という。）又は譲渡割に係る還付金の額を更正するものとする。</p>

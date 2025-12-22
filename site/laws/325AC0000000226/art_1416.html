@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1415.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1417.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五条の五（寄附金税額控除における特例控除額の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第三十七条の二の規定の適用を受ける道府県民税の所得割の納税義務者が、同条第十一項第二号若しくは第三号に掲げる場合に該当する場合又は第三十五条第二項に規定する課税総所得金額、課税退職所得金額及び課税山林所得金額を有しない場合であつて、当該納税義務者の前年中の所得について、附則第三十三条の二第一項、附則第三十三条の三第一項、附則第三十四条第一項、附則第三十五条第一項、附則第三十五条の二第一項、附則第三十五条の二の二第一項又は附則第三十五条の四第一項の規定の適用を受けるときは、第三十七条の二第十一項に規定する特例控除額は、同項第二号及び第三号の規定にかかわらず、当該納税義務者が前年中に支出した同条第二項に規定する特例控除対象寄附金の額の合計額のうち二千円を超える金額に、次の各号に掲げる場合の区分に応じ、当該各号に定める割合（当該各号に掲げる場合の二以上に該当するときは、当該各号に定める割合のうち最も低い割合）を乗じて得た金額の五分の二（当該納税義務者が指定都市の区域内に住所を有する場合には、五分の一）に相当する金額（当該金額が当該納税義務者の第三十五条及び第三十七条の規定を適用した場合の所得割の額の百分の二十に相当する金額を超えるときは、当該百分の二十に相当する金額）とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1490.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1492.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条の七（新築された認定長期優良住宅に対する固定資産税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、長期優良住宅の普及の促進に関する法律の施行の日から令和八年三月三十一日までの間に新築された同法第十一条第一項に規定する認定長期優良住宅（以下この条及び附則第十五条の九の二において「認定長期優良住宅」という。）である住宅で政令で定めるものに対して課する固定資産税については、次項又は次条の規定の適用がある場合を除き、当該住宅に対して新たに固定資産税が課されることとなつた年度から五年度分の固定資産税に限り、当該住宅に係る固定資産税額（区分所有に係る住宅にあつてはこの項の規定の適用を受ける部分に係る税額として各区分所有者ごとに政令で定めるところにより算定した額の合算額とし、区分所有に係る住宅以外の住宅（人の居住の用に供する部分以外の部分を有する住宅その他の政令で定める住宅に限る。）にあつてはこの項の規定の適用を受ける部分に係る税額として政令で定めるところにより算定した額とする。）の二分の一に相当する額を当該住宅に係る固定資産税額から減額するものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0035.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0037.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十八条（納付不足額の通知）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>登記機関は、登録免許税の納期限後において登記等を受けた者が第二十一条から第二十三条まで（第三十五条第四項の規定により読み替えて適用する場合を含む。）、第二十四条、第二十四条の二第一項又は第二十六条第二項から第四項までの規定により当該登記等につき納付すべき登録免許税の額の全部又は一部を納付していない事実を知つたときは、第三項の規定の適用がある場合を除き、遅滞なく、当該登記等を受けた者の当該登録免許税に係る第八条第二項の規定による納税地の所轄税務署長に対し、その旨及び財務省令で定める事項を通知しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0898.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0900.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百八十九条（道府県知事又は総務大臣の評価の権限等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県知事（次に掲げる固定資産について関係市町村が二以上の道府県に係るときは、総務大臣。以下この条において同じ。）は、次に掲げる固定資産について、固定資産評価基準により、第四百九条第一項から第三項までの規定の例により評価を行つた後、総務省令で定めるところにより、当該固定資産が所在するものとされる市町村並びにその価格及び第三百四十九条の三、第三百四十九条の三の二又は第三百四十九条の三の四の規定の適用を受ける固定資産についてはその価格にそれぞれこれらの規定に定める率を乗じて得た額（以下固定資産税について「価格等」という。）を決定し、決定した価格等を当該市町村に配分し、毎年三月三十一日までに当該市町村の長に通知しなければならない。</p>

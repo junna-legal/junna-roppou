@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0036.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0038.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商業登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条の三</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>株式会社の設立の登記、本店を他の登記所の管轄区域内に移転した場合の新所在地における登記、代表取締役若しくは代表執行役の就任若しくは住所変更による変更の登記、清算人の登記又は代表清算人の就任若しくは住所変更による変更の登記の申請をする者は、当該登記により登記簿に住所を記録すべき代表取締役、代表執行役又は代表清算人（以下この条において「代表取締役等」という。）の住所が記録される登記簿に係る登記事項証明書又は登記事項要約書に、当該住所につき行政区画以外のものを記載しない措置（以下この条において「代表取締役等住所非表示措置」という。）を講ずるよう申し出ることができる。</p>

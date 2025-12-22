@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0110.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0112.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十条の四十六（中長期在留者等が住所を定めた場合の転入届の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の表の上欄に掲げる者（出生による経過滞在者又は国籍喪失による経過滞在者を除く。以下この条及び次条において「中長期在留者等」という。）が国外から転入をした場合（これに準ずる場合として総務省令で定める場合を含む。）には、当該中長期在留者等は、第二十二条の規定にかかわらず、転入をした日から十四日以内に、同条第一項第一号、第二号及び第五号に掲げる事項、出生の年月日、男女の別、国籍等、外国人住民となつた年月日並びに同表の上欄に掲げる者の区分に応じそれぞれ同表の下欄に掲げる事項を市町村長に届け出なければならない。</p>

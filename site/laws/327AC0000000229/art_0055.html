@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0054.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0056.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十一条（違反転用に対する処分）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>都道府県知事等は、政令で定めるところにより、次の各号のいずれかに該当する者（以下この条において「違反転用者等」という。）に対して、土地の農業上の利用の確保及び他の公益並びに関係人の利益を衡量して特に必要があると認めるときは、その必要の限度において、第四条若しくは第五条の規定によつてした許可を取り消し、その条件を変更し、若しくは新たに条件を付し、又は工事その他の行為の停止を命じ、若しくは相当の期限を定めて原状回復その他違反を是正するため必要な措置（以下この条において「原状回復等の措置」という。）を講ずべきことを命ずることができる。</p>

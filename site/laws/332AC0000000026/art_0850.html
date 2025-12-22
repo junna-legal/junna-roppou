@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0849.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0851.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条（法人の準備金に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第五十三条第一項に規定する法人が施行日以後最初に開始する事業年度（当該事業年度が解散（合併による解散を除く。）の日を含む事業年度である場合を除く。以下次項までにおいて「改正事業年度」という。）において益金算入猶予額を有する場合における当該益金算入猶予額に係る旧法第五十三条第三項の規定の適用については、同項の規定にかかわらず、改正事業年度から改正事業年度開始の日以後三年を経過した日の前日を含む事業年度までの各事業年度において当該益金算入猶予額に当該各事業年度の月数を乗じてこれを三十六で除して算出した金額（当該金額が当該各事業年度終了の日における益金算入猶予残額（益金算入猶予額から同日までに第三項の規定により益金の額に算入された、若しくは算入されるべきこととなつた金額又は同日前に終了した事業年度においてこの項の規定により益金の額に算入された金額を控除した金額をいう。以下この項及び第三項において同じ。）を超える場合には、当該益金算入猶予残額）に相当する金額を当該各事業年度の所得の金額の計算上、益金の額に算入する。</p>

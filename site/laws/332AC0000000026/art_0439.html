@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0438.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0440.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十七条（承認酒類製造者に対する酒税の税率の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>承認酒類製造者のうち、その年度（その年の四月一日からその年の翌年三月三十一日までの間をいう。以下この条において同じ。）の開始前一年間における酒類の製造場（以下この条において単に「製造場」という。）から移出した酒類（酒税法第二十八条第一項若しくは第二十九条第一項の規定又は第八十七条の六第一項の規定の適用を受けるものを除く。）の数量（その年度の前年度の末日において当該承認酒類製造者との間に完全支配関係がある者の当該数量を含む。次項及び第九項において「前年度課税移出数量」という。）が三千キロリットル以下である者が、令和六年四月一日から令和十一年三月三十一日までの間に製造場から当該酒類を移出する場合において、当該承認酒類製造者がその年度に製造場から移出する酒類（当該移出につき同法第三十条第三項（同項に規定する酒類をその移入した製造場から更に移出したときに係る部分に限る。）の規定の適用を受けるものを除くものとし、当該承認酒類製造者が同法第七条第一項の規定により製造免許（同項に規定する製造免許をいう。以下この条、第八十七条の六及び第八十七条の八において同じ。）を受けている酒類と同一の品目（同項に規定する品目をいう。次項において同じ。）のものに限る。次項において同じ。）に係る酒税の税額は、同法第二十三条及び次条の規定にかかわらず、次の各号に掲げる当年度酒税累計額（当該承認酒類製造者がその年度の初日から当該移出をしたときまでに製造場から移出する当該酒類に係る同法第二十三条又は次条に規定する税率により計算した金額の累計額をいう。）の区分に応じ、同法第二十三条又は次条の規定により計算した金額にそれぞれ当該各号に定める割合を乗じて計算した金額とする。</p>

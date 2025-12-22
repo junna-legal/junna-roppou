@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0084.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0086.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>保険法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十五条（危険増加による解除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>傷害疾病定額保険契約の締結後に危険増加（告知事項についての危険が高くなり、傷害疾病定額保険契約で定められている保険料が当該危険を計算の基礎として算出される保険料に不足する状態になることをいう。以下この条及び第八十八条第二項第二号において同じ。）が生じた場合において、保険料を当該危険増加に対応した額に変更するとしたならば当該傷害疾病定額保険契約を継続することができるときであっても、保険者は、次に掲げる要件のいずれにも該当する場合には、当該傷害疾病定額保険契約を解除することができる。</p>

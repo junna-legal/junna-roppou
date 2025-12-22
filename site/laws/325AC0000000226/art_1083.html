@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1082.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1084.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六百三条の二の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、土地の所有者等が、その所有する土地を前条第一項の規定に該当する土地（以下本項において「免除土地」という。）として使用し、又は使用させようとする場合において、市町村長が当該事実を認定したところに基づいて定める日から二年を経過する日までの期間（当該認定に係る建物若しくは構築物の建設又は特定施設の整備に要する期間が通常二年を超えることその他その期間を延長することにつきやむを得ない理由があると市町村長が認める場合には、土地の所有者等の申請に基づき五年を超えない範囲内で市町村長が定める相当の期間。以下本項において「納税義務の免除に係る期間」という。）内に当該土地を免除土地として使用し、又は使用させ、かつ、これらの使用が開始されたことにつき市町村長の確認を受けたときは、当該土地に係る特別土地保有税に係る地方団体の徴収金（納税義務の免除に係る期間に係るものに限るものとし、市町村長の確認を受けた日後の当該期間に係るものを除く。）に係る納税義務を免除するものとする。</p>

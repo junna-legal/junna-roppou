@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0141.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0143.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この政令の施行の際現に住民票に旧氏（この政令による改正後の住民基本台帳法施行令（以下「新令」という。）第三十条の十三に規定する旧氏をいう。以下同じ。）の記載（住民基本台帳法（附則第八条第二項において「法」という。）第六条第三項の規定により磁気ディスクをもって調製する住民票にあっては、記録。以下同じ。）がされている者（既に次項の規定による記載がされた者を除く。）は、施行日から起算して一年以内に限り、住所地市町村長（新令第三十条の十四第一項に規定する住所地市町村長をいう。以下同じ。）に対し、当該旧氏に用いられる文字の読み方を示す文字の住民票への記載を請求することができる。</p>

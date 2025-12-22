@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0084.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0086.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十六条の二（日影による中高層の建築物の高さの制限）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>別表第四（い）欄の各項に掲げる地域又は区域の全部又は一部で地方公共団体の条例で指定する区域（以下この条において「対象区域」という。）内にある同表（ろ）欄の当該各項（四の項にあつては、同項イ又はロのうちから地方公共団体がその地方の気候及び風土、当該区域の土地利用の状況等を勘案して条例で指定するもの）に掲げる建築物は、冬至日の真太陽時による午前八時から午後四時まで（道の区域内にあつては、午前九時から午後三時まで）の間において、それぞれ、同表（は）欄の各項（四の項にあつては、同項イ又はロ）に掲げる平均地盤面からの高さ（二の項及び三の項にあつては、当該各項に掲げる平均地盤面からの高さのうちから地方公共団体が当該区域の土地利用の状況等を勘案して条例で指定するもの）の水平面（対象区域外の部分、高層住居誘導地区内の部分、都市再生特別地区内の部分及び当該建築物の敷地内の部分を除く。）に、敷地境界線からの水平距離が五メートルを超える範囲において、同表（に）欄の（一）、（二）又は（三）の号（同表の三の項にあつては、（一）又は（二）の号）のうちから地方公共団体がその地方の気候及び風土、土地利用の状況等を勘案して条例で指定する号に掲げる時間以上日影となる部分を生じさせることのないものとしなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0328.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0330.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百四十七条（法定相続情報一覧図）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>表題部所有者、登記名義人又はその他の者について相続が開始した場合において、当該相続に起因する登記その他の手続のために必要があるときは、その相続人（第三項第二号に掲げる書面の記載により確認することができる者に限る。以下本条において同じ。）又は当該相続人の地位を相続により承継した者は、被相続人の本籍地若しくは最後の住所地、申出人の住所地又は被相続人を表題部所有者若しくは所有権の登記名義人とする不動産の所在地を管轄する登記所の登記官に対し、法定相続情報（次の各号に掲げる情報をいう。以下同じ。）を記載した書面（以下「法定相続情報一覧図」という。）の保管及び法定相続情報一覧図の写しの交付の申出をすることができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0488.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0490.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現に旧銀行法第五十二条の二十三第二項本文に規定する事由（銀行持株会社（銀行法第二条第十三項に規定する銀行持株会社をいう。以下この条及び次条において同じ。）又はその子会社による旧銀行法第五十二条の二十三第一項第十一号又は第十一号の二に掲げる会社の株式等の取得及び同条第二項ただし書に規定する内閣府令で定める事由を除く。）により子会社対象会社（同条第一項に規定する子会社対象会社をいう。）以外の外国の会社を子会社としている銀行持株会社は、新銀行法第五十二条の二十三第十一項本文に規定する事由（銀行持株会社又はその子会社による同条第一項第十一号から第十三号までに掲げる会社の株式等の取得及び同条第十一項ただし書に規定する内閣府令で定める事由を除く。）により当該子会社対象会社以外の外国の会社を子会社としている銀行持株会社とみなして、同項の規定を適用する。</p>

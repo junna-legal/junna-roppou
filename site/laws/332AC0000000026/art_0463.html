@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0462.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0464.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十条の三の三（特定の用途に供する石炭に係る石油石炭税の軽減）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>石炭のうち次に掲げるもの（以下この条において「特定用途石炭」という。）を、保税地域から引き取ろうとする場合において、当該引き取ろうとする者が政令で定めるところにより、令和八年三月三十一日までに、納税地（石油石炭税法第十五条第一項の規定による国税庁長官の承認を受けている場合には、当該承認を受けていないものとした場合の納税地。以下この節において同じ。）の所轄税関長の承認を受けて当該特定用途石炭を引き取るときは、当該引取りに係る石油石炭税の税額は、前条の規定にかかわらず、同法第九条第三号に定める税率により計算した金額とする。</p>

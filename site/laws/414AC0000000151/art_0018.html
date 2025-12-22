@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0017.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0019.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>情報通信技術を活用した行政の推進等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十八条（民間手続における情報通信技術の活用の促進のための環境整備等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国は、民間手続における情報通信技術の活用の促進を図るため、契約の締結に際しての民間事業者による情報提供の適正化、取引における情報通信技術の適正な利用に関する啓発活動の実施その他の民間事業者とその民間手続の相手方との間の取引における情報通信技術の安全かつ適正な利用を図るために必要な施策を講ずるものとする。</p>

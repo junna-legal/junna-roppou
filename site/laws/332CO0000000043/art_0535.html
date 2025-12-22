@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0534.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0536.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の二（都道府県が行う高等学校の生徒に対する学資としての資金の貸付けに係る消費貸借契約書等の印紙税の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第九十一条の三第一項に規定する政令で定めるものは、都道府県から高等学校等（同項に規定する高等学校等をいう。）の生徒に対して無利息で行う学資としての資金の貸付けに係る事業の費用に充てるための資金の提供（当該資金の提供に当たり当該資金の貸付けの条件を当該都道府県が定めるもの（これに類する資金の提供として財務省令で定めるものを含む。）に限る。）を受けている法人として文部科学大臣が財務大臣と協議して指定したものとする。</p>

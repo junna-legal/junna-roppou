@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0247.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0249.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十七条の九（中小企業者等の貸倒引当金の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人で各事業年度終了の時において法人税法第五十二条第一項第一号イからハまでに掲げる法人（保険業法に規定する相互会社及びこれに準ずるものとして政令で定めるものを除く。次項において「中小企業者等」という。）に該当するもの（同号イに掲げる法人に該当するもの（次項において「中小法人」という。）にあつては、第四十二条の四第十九項第八号に規定する適用除外事業者（以下この条において「適用除外事業者」という。）に該当するもの（通算法人の各事業年度終了の日において当該通算法人との間に通算完全支配関係がある他の通算法人のうちいずれかの法人が適用除外事業者に該当する場合には、当該通算法人を含む。）を除く。）が法人税法第五十二条第二項の規定の適用を受ける場合には、同項の規定にかかわらず、当該事業年度終了の時における同項に規定する一括評価金銭債権（当該法人が当該法人との間に同法第二条第十二号の七の六に規定する完全支配関係がある他の法人に対して有する金銭債権を除く。次項において同じ。）の帳簿価額（政令で定める金銭債権にあつては、政令で定める金額を控除した残額。次項において同じ。）の合計額に政令で定める割合を乗じて計算した金額をもつて、同法第五十二条第二項に規定する政令で定めるところにより計算した金額とすることができる。</p>

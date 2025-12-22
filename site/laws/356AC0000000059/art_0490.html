@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0489.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0491.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新銀行法第五十二条の二十三第三項、第十二項（銀行持株会社が、現に子会社としている同条第一項各号に掲げる会社を当該各号のうち他の号に掲げる会社（同条第三項に規定する子会社対象銀行等に限る。）に該当する子会社としようとするときに係る部分を除く。）及び第十五項の規定は、この法律の施行の際現に銀行持株会社が旧銀行法第五十二条の二十三第六項（同条第八項において準用する場合を含む。）、第七項ただし書又は第九項の規定による認可を受けて当該銀行持株会社又はその子会社が同条第一項第十一号の三に掲げる会社の議決権を合算してその基準議決権数（旧銀行法第五十二条の二十四第一項に規定する基準議決権数をいう。）を超えて保有している場合における当該会社については、適用しない。</p>

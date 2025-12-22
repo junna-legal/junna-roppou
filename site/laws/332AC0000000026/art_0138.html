@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0137.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0139.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の三の二（債務処理計画に基づき資産を贈与した場合の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第四十二条の四第十九項第七号に規定する中小企業者に該当する内国法人の取締役又は業務を執行する社員である個人で当該内国法人の債務の保証に係る保証債務を有するものが、当該個人の有する資産（有価証券を除く。）で当該資産に設定された賃借権、使用貸借権その他資産の使用又は収益を目的とする権利が現に当該内国法人の事業の用に供されているもの（当該資産又は権利のうちに当該内国法人の事業の用以外の用に供されている部分がある場合には、当該内国法人の事業の用に供されている部分として政令で定める部分に限る。以下この条において同じ。）を、当該内国法人について策定された債務処理に関する計画で一般に公表された債務処理を行うための手続に関する準則に基づき策定されていることその他の政令で定める要件を満たすもの（以下この項において「債務処理計画」という。）に基づき、平成二十五年四月一日から令和十年三月三十一日までの間に当該内国法人に贈与した場合には、次に掲げる要件を満たしているときに限り、所得税法第五十九条第一項第一号の規定の適用については、当該資産の贈与がなかつたものとみなす。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1918.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1920.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十条（エネルギー環境負荷低減推進設備等を取得した場合の特別償却又は法人税額の特別控除に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>電気事業者による再生可能エネルギー電気の調達に関する特別措置法附則第三条第一項の認定を受けた法人の附則第一条第六号に定める日から平成二十四年六月三十日までの間における新令第二十七条の五の規定の適用については、同条第一項中「次に掲げる認定発電設備」とあるのは「次に掲げる再生可能エネルギー発電設備」と、同項第一号中「認定発電設備（」とあるのは「再生可能エネルギー発電設備（」と、「第三条第二項に規定する認定発電設備」とあるのは「附則第三条第一項の認定に係る発電に係る同項の再生可能エネルギー発電設備」と、同項第二号中「認定発電設備」とあるのは「再生可能エネルギー発電設備」とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0123.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0125.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>戸籍法施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十九条の九の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法務大臣は、行政手続における特定の個人を識別するための番号の利用等に関する法律附則第六条第三項に規定する情報提供等記録開示システムを通じて第七十九条の二の四第一項の交付の請求、同条第二項の届出等又は同条第三項の戸籍電子証明書提供用識別符号等の発行等の請求（以下本条において「請求等」という。）をする者に対して、当該請求等に必要な範囲内において、戸籍又は除かれた戸籍の副本に記録されている情報のうち本籍及び戸籍の筆頭に記載した者の氏名その他の当該請求等に必要な情報（電子情報処理組織により自動的に特定したものに限る。）を提供することができる。</p>

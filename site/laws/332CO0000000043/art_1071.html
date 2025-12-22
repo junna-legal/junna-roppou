@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1070.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1072.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十条（みなし法人課税を選択した場合の課税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成四年分の所得税について旧法第二十五条の二第一項の規定の適用を受けた同項の居住者（以下この条において「平成四年分みなし法人課税適用者」という。）の平成四年以前五年内の各年において生じた旧令第十七条の二第三号に規定するみなし法人損失額（旧令第十七条の四第一項及び第十七条の七第四項の規定により平成四年以前において控除されたもの並びに旧令第十七条の五第七項において準用する所得税法（昭和四十年法律第三十三号）第百四十二条第二項の規定により還付を受けるべき金額の計算の基礎となったものを除く。次項において「みなし法人損失額」という。）がある場合における平成五年分以後の所得税については、当該みなし法人損失額が生じた各年（当該みなし法人損失額が昭和六十三年又は平成元年に生じたものであるときは、平成二年）において生じた所得税法第二条第一項第二十五号に規定する純損失の金額（第三項において「純損失の金額」という。）とみなして、同法第七十条第一項の規定を適用する。</p>

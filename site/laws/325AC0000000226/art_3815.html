@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3814.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3816.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（新型コロナウイルス感染症等に係る個人の市町村民税の寄附金税額控除の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村民税の所得割の納税義務者が、指定行事の中止等により生じた入場料金等払戻請求権の行使を令和二年二月一日から政令で定める日までの間にした場合において、当該入場料金等払戻請求権の行使による払戻しをした者に対して政令で定める期間内に当該払戻しを受けた金額以下の金額の寄附金の支出をしたときは、当該寄附金の支出を入場料金等払戻請求権の放棄と、当該支出をした寄附金の額を当該放棄をした部分の入場料金等払戻請求権の価額とみなして、三年新法附則第六十条第三項及び第四項の規定を適用することができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0010.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0012.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八条の三（市町村の境界変更等があつた場合の課税権の承継）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村の境界変更があつたとき、又は市町村の廃置分合があつた場合で当該廃置分合により新たに設置された市町村の地域の全部若しくは一部が従来属していた市町村がなお存続するときは、当該境界変更があつた区域又は新たに設置された市町村の地域の全部若しくは一部が従来属していた市町村（以下本条において「旧市町村」という。）の当該区域又は地域に係る地方団体の徴収金で次の各号に掲げるもの（第二号に掲げる地方税に係る地方団体の徴収金にあつては、当該境界変更又は廃置分合のあつた日の属する年度分以後の年度分として課されるべきものに限る。）の徴収を目的とする権利は、当該区域又は地域によつて、当該区域又は地域が新たに属することとなつた市町村（以下本条において「新市町村」という。）が承継する。</p>

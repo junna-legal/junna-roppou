@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0043.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0045.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社計算規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十二条の二（取締役等が株式会社に対し割当日後にその職務の執行として募集株式を対価とする役務を提供する場合における株主資本の変動額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第二百二条の二第一項（同条第三項の規定により読み替えて適用する場合を含む。）の規定により募集株式を引き受ける者の募集を行う場合において、当該募集株式を引き受ける取締役又は執行役（以下この節及び第五十四条の二において「取締役等」という。）が株式会社に対し当該募集株式に係る割当日（法第二百二条の二第一項第二号に規定する割当日をいう。以下この節及び第五十四条の二において同じ。）後にその職務の執行として当該募集株式を対価とする役務を提供するときは、当該募集に係る株式の発行により各事業年度の末日（臨時計算書類を作成しようとし、又は作成した場合にあっては、臨時決算日。以下この項及び第五項において「株主資本変動日」という。）において増加する資本金の額は、この省令に別段の定めがある場合を除き、第一号に掲げる額から第二号に掲げる額を減じて得た額に株式発行割合（当該募集に際して発行する株式の数を当該募集に際して発行する株式の数及び処分する自己株式の数の合計数で除して得た割合をいう。以下この条において同じ。）を乗じて得た額（零未満である場合にあっては、零。以下この条において「資本金等増加限度額」という。）とする。</p>

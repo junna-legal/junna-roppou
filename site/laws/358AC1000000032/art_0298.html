@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0297.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0299.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十六条（政府の責務）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>政府は、多重債務問題（貸金業を営む者による貸付けに起因して、多数の資金需要者等が重畳的又は累積的な債務を負うことにより、その営む社会的経済的生活に著しい支障が生じている状況をめぐる国民生活上及び国民経済の運営上の諸問題をいう。以下同じ。）の解決の重要性にかんがみ、関係省庁相互間の連携を強化することにより、資金需要者等が借入れ又は返済に関する相談又は助言その他の支援を受けることができる体制の整備、資金需要者への資金の融通を図るための仕組みの充実、違法な貸金業を営む者に対する取締りの強化、貸金業者に対する処分その他の監督の状況の検証、この法律による改正後の規定の施行状況の検証その他多重債務問題の解決に資する施策を総合的かつ効果的に推進するよう努めなければならない。</p>

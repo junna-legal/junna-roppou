@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0217.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0219.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事訴訟法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百七十八条（書面による準備手続終結後の攻撃防御方法の提出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>書面による準備手続を終結した事件について、口頭弁論の期日において、第百七十六条第四項において準用する第百六十五条第二項の書面に記載した事項の陳述がされ、又は前条の規定による確認がされた後に攻撃又は防御の方法を提出した当事者は、相手方の求めがあるときは、相手方に対し、その陳述又は確認前にこれを提出することができなかった理由を説明しなければならない。</p>

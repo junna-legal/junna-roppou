@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0120.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0122.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>一般社団法人及び一般財団法人に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百十五条（責任限定契約）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第百十二条の規定にかかわらず、一般社団法人は、理事（業務執行理事（代表理事、代表理事以外の理事であって理事会の決議によって一般社団法人の業務を執行する理事として選定されたもの及び当該一般社団法人の業務を執行したその他の理事をいう。次項及び第百四十一条第三項において同じ。）又は当該一般社団法人の使用人でないものに限る。）、監事又は会計監査人（以下この条及び第三百一条第二項第十二号において「非業務執行理事等」という。）の第百十一条第一項の責任について、当該非業務執行理事等が職務を行うにつき善意でかつ重大な過失がないときは、定款で定めた額の範囲内であらかじめ一般社団法人が定めた額と最低責任限度額とのいずれか高い額を限度とする旨の契約を非業務執行理事等と締結することができる旨を定款で定めることができる。</p>

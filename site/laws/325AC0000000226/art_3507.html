@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3506.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3508.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（第一条の規定による地方税法の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>別段の定めがあるものを除き、第一条の規定による改正後の地方税法（以下「新地方税法」という。）の規定中地方消費税に関する部分は、この法律の施行の日（以下「施行日」という。）以後に事業者（地方税法第七十二条の七十七第一号に規定する事業者をいう。以下同じ。）が行う課税資産の譲渡等（消費税法（昭和六十三年法律第百八号）第二条第一項第九号に規定する課税資産の譲渡等をいう。以下同じ。）及び施行日以後に保税地域（同項第二号に規定する保税地域をいう。以下同じ。）から引き取られる課税貨物（同項第十一号に規定する課税貨物をいう。以下同じ。）に係る地方消費税について適用し、施行日前に事業者が行った課税資産の譲渡等及び施行日前に保税地域から引き取った課税貨物に係る地方消費税については、なお従前の例による。</p>

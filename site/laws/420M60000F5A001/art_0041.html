@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0040.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0042.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>犯罪による収益の移転防止に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条（外国通貨によりなされる取引の換算基準）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法、令及びこの命令を適用する場合における本邦通貨と外国通貨との間又は異種の外国通貨相互間の換算は、次の各号に掲げる区分及び方法による場合を除き、当該規定においてその額について当該換算をすべき取引又は特定受任行為の代理等が行われる日における外国為替及び外国貿易法（昭和二十四年法律第二百二十八号）第七条第一項に規定する基準外国為替相場又は裁定外国為替相場を用いて行うものとする。</p>

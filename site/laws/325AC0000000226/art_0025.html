@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0024.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0026.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条の四（同族会社の第二次納税義務）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>滞納者がその者を判定の基礎となる株主又は社員として選定した場合に法人税法第二条第十号に規定する会社に該当する会社（以下本章において「同族会社」という。）の株式又は出資を有する場合において、その株式又は出資につき次に掲げる理由があり、かつ、その者の財産（当該株式又は出資を除く。）につき滞納処分をしてもなお徴収すべき地方団体の徴収金に不足すると認められるときは、その者の有する当該株式又は出資（当該滞納に係る地方団体の徴収金の法定納期限（この法律又はこれに基づく条例の規定により地方税を納付し、又は納入すべき期限（修正申告、期限後申告、更正若しくは決定、繰上徴収又は徴収の猶予に係る期限その他政令で定める期限を除く。）をいい、地方税で納期を分けているものの第二期以降の分については、その第一期分の納期限をいい、督促手数料、延滞金、過少申告加算金、不申告加算金、重加算金及び滞納処分費については、その徴収の基因となつた地方税の当該期限をいう。以下本章において同じ。）の一年前までに取得したものを除く。）の価額を限度として、当該会社は、当該滞納に係る地方団体の徴収金の第二次納税義務を負う。</p>

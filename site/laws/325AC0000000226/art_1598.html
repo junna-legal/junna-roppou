@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1597.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1599.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条の三（東日本大震災に係る買換資産の取得期間等の延長の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>附則第四条第二項の規定の適用を受ける道府県民税の所得割の納税義務者（平成二十二年一月一日から平成二十三年三月十一日までの間に同条第一項第一号に規定する譲渡資産の譲渡をした者に限る。）が、東日本大震災に起因するやむを得ない事情により、同号に規定する買換資産を同号に規定する特定譲渡の日の属する年の前年一月一日から当該特定譲渡の日の属する年の翌年十二月三十一日までの期間（以下この項及び第三項において「取得期間」という。）内に取得（同号に規定する取得をいう。以下この項及び第三項において同じ。）をすることが困難となつた場合において、当該取得期間の初日から当該取得期間を経過した日以後二年以内の日で政令で定める日までの期間内に当該買換資産の取得をする見込みであり、かつ、総務省令で定めるところにより市町村長の承認を受けたとき（震災特例法第十二条第二項の税務署長の承認を受けたときを含む。）は、当該取得期間の初日から当該政令で定める日までの期間を取得期間とみなして、附則第四条の規定を適用する。</p>

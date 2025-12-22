@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0103.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0105.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十六条の四（買換えに係る居住用財産の譲渡の場合の取得価額の計算等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第三十六条の二第一項（同条第二項において準用する場合を含む。以下この条において同じ。）の規定の適用を受けた者（前条第一項から第三項までの規定による修正申告書を提出し、又は同条第四項の規定による更正を受け、かつ、第三十六条の二第一項の規定による特例を認められないこととなつた者を除く。）の同条第一項に規定する買換資産について、当該買換資産の取得の日以後その譲渡（譲渡所得の基因となる不動産等の貸付けを含む。）、相続、遺贈又は贈与があつた場合において、譲渡所得の金額を計算するときは、政令で定めるところにより、当該買換資産の取得価額は、次の各号に掲げる場合の区分に応じ、当該各号に定める金額（同項に規定する譲渡資産の譲渡に要した費用があるときは、政令で定めるところにより計算した当該費用の金額を加算した金額）とする。</p>

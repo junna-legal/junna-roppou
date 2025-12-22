@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0107.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0109.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の二十四（銀行持株会社等による議決権の取得等の制限）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>銀行持株会社又はその子会社は、国内の会社（銀行、第五十二条の二十三第一項第一号から第五号まで、第十号、第十二号、第十四号及び第十五号に掲げる会社（同項第十二号に掲げる会社にあつては、特別事業再生会社を除く。）、特例持株会社（当該銀行持株会社が子会社としているものに限る。）並びに特例子会社対象会社並びに特例対象会社を除く。次項から第六項までにおいて同じ。）の議決権については、合算して、その基準議決権数（国内の会社の総株主等の議決権に百分の十五を乗じて得た議決権の数をいう。以下この条及び第六十五条第十七号において同じ。）を超える議決権を取得し、又は保有してはならない。</p>

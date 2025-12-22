@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0383.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0385.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の二の三（特定土地等及び特定株式等に係る相続税の課税価格の計算の特例等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第六十九条の六第一項に規定する政令で定める法人は、相続等（相続若しくは同項に規定する遺贈（贈与をした者の死亡により効力を生ずる贈与を含む。）又は贈与（贈与をした者の死亡により効力を生ずる贈与を除く。）をいう。以下この条において同じ。）により財産を取得した者が当該相続等によりその法人の株式又は出資を取得した時において、当該法人の保有していた資産の価額（当該取得した時における時価をいう。以下この項において同じ。）の合計額のうちに占める法第六十九条の六第一項に規定する特定地域内にあつた動産（金銭及び有価証券を除く。）、不動産、不動産の上に存する権利及び立木（第三項第二号において「動産等」という。）の価額の合計額の割合が十分の三以上である法人とする。</p>

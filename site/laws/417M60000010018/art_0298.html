@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0297.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0299.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百十七条（公告及び通知の方法）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第百三十三条第一項の規定による公告は、法務局若しくは地方法務局の掲示場その他法務局若しくは地方法務局内の公衆の見やすい場所に掲示して行う方法又は法務局若しくは地方法務局の使用に係る電子計算機に備えられたファイルに記録された情報の内容を電気通信回線を通じて情報の提供を受ける者の閲覧に供し、当該情報の提供を受ける者の使用に係る電子計算機に備えられたファイルに当該情報を記録する方法であってインターネットに接続された自動公衆送信装置を使用する方法により二週間行うものとする。</p>

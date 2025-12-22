@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0160.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0162.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の四十五（手続実施基本契約の不履行の事実の公表等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>指定紛争解決機関は、手続実施基本契約により加入貸金業者が負担する義務の不履行が生じた場合において、当該加入貸金業者の意見を聴き、当該不履行につき正当な理由がないと認めるときは、遅滞なく、当該加入貸金業者の商号、名称又は氏名及び当該不履行の事実を公表するとともに、その登録をした内閣総理大臣又は都道府県知事に報告しなければならない。</p>

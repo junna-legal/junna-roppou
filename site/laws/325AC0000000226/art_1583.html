@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1582.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1584.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条の四の二（先物取引の差金等決済に係る損失の繰越控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県民税の所得割の納税義務者の前年前三年内の各年に生じた先物取引の差金等決済に係る損失の金額（この項の規定により前年前において控除されたものを除く。）は、当該先物取引の差金等決済に係る損失の金額の生じた年の末日の属する年度の翌年度の道府県民税について先物取引の差金等決済に係る損失の金額の控除に関する事項を記載した第四十五条の二第一項又は第三項の規定による申告書（第四項において準用する同条第四項の規定による申告書を含む。以下この項において同じ。）を提出した場合（市町村長においてやむを得ない事情があると認める場合には、これらの申告書をその提出期限後において道府県民税の納税通知書が送達される時までに提出した場合を含む。）において、その後の年度分の道府県民税について連続してこれらの申告書（その提出期限後において道府県民税の納税通知書が送達される時までに提出されたものを含む。）を提出しているときに限り、前条第一項後段の規定にかかわらず、政令で定めるところにより、当該納税義務者の同項に規定する先物取引に係る雑所得等の金額を限度として、当該先物取引に係る雑所得等の金額の計算上控除する。</p>

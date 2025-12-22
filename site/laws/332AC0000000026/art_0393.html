@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0392.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0394.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十一条の十二（特定の附置義務駐車施設の用に供されている土地等についての課税価格の計算の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>課税時期において、駐車場法第二条第二号に規定する路外駐車場（同法第十二条の規定による届出に係る駐車場に該当するもののうち政令で定めるものに限る。）で同法第二十条第一項若しくは第二項又は第二十条の二第一項の規定に基づく条例で定めるところにより設けられたこれらの規定に規定する駐車施設（当該条例で定められた基準に適合するために必要な部分として政令で定める部分に限る。）であるもの（以下この項において「特定の附置義務駐車施設」という。）の用に供されている土地等（当該土地等が特定の附置義務駐車施設の用以外の用にも供されているときは、当該土地等のうち当該特定の附置義務駐車施設の用以外の用に供されている部分として政令で定める部分を除く。）については、地価税法第六条から第八条まで及び附則第三条第二項の規定並びに第七十一条の二から第七十一条の六までの規定により地価税が非課税とされるもの並びに第七十一条の七の規定に該当するものを除き、同法第十六条に規定する地価税の課税価格に算入すべき価額は、当該土地等の価額の二分の一に相当する金額とする。</p>

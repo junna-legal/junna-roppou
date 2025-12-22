@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0057.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0059.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商業登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十三条の十九（電子証明書による証明の再度の請求）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第十二条の二（第二項及び第四項を除く。）並びに第三十三条の二、第三十三条の三から第三十三条の五まで、第三十三条の六（第二項第三号及び第四号、第四項、第五項並びに第八項を除く。）、第三十三条の七から第三十三条の十七まで及び前条第一項の規定は、電子証明書に係る法第十二条の二第一項第二号の期間中に第三十三条の十二第一項第二号の登記がされた場合において、第三十三条の八第一項の規定による送信を受けた者が電子証明書による証明を再度請求するときについて準用する。</p>

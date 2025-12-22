@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0067.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0069.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十五条（肉用牛の売却による農業所得の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>農業（所得税法第二条第一項第三十五号に規定する事業をいう。）を営む個人が、昭和五十六年から令和八年までの各年において、次の各号に掲げる売却の方法により当該各号に定める肉用牛を売却した場合において、その売却した肉用牛が全て免税対象飼育牛（家畜改良増殖法（昭和二十五年法律第二百九号）第三十二条の九第一項の規定による農林水産大臣の承認を受けた同項に規定する登録規程に基づく政令で定める登録がされている肉用牛又はその売却価額が百万円未満（その売却した肉用牛が、財務省令で定める交雑牛に該当する場合には八十万円未満とし、財務省令で定める乳牛に該当する場合には五十万円未満とする。）である肉用牛に該当するものをいう。次項において同じ。）であり、かつ、その売却した肉用牛の頭数の合計が千五百頭以内であるときは、当該個人のその売却をした日の属する年分のその売却により生じた事業所得に対する所得税を免除する。</p>

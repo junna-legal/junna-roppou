@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0003.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0005.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳の一部の写しの閲覧並びに住民票の写し等及び除票の写し等の交付に関する省令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（本人等の住民票の写し等の交付の請求の手続及び請求につき明らかにしなければならない事項）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第十二条第一項の規定による住民票の写し（法第六条第三項の規定により磁気ディスクをもつて住民票を調製している市町村（特別区を含む。）にあつては、当該住民票に記録されている事項を記載した書類）又は法第十二条第一項に規定する住民票記載事項証明書（以下「住民票の写し等」という。）の交付の請求は、同条第二項各号及び次項各号に掲げる事項を明らかにするため市町村長が適当と認める書類を提出してしなければならない。</p>

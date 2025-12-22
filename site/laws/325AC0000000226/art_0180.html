@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0179.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0181.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十七条の二（寄附金税額控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、所得割の納税義務者が、前年中に次に掲げる寄附金を支出し、当該寄附金の額の合計額（当該合計額が前年の総所得金額、退職所得金額及び山林所得金額の合計額の百分の三十に相当する金額を超える場合には、当該百分の三十に相当する金額）が二千円を超える場合には、その超える金額の百分の四（当該納税義務者が指定都市の区域内に住所を有する場合には、百分の二）に相当する金額（当該納税義務者が前年中に特例控除対象寄附金を支出し、当該特例控除対象寄附金の額の合計額が二千円を超える場合には、当該百分の四（当該納税義務者が指定都市の区域内に住所を有する場合には、百分の二）に相当する金額に特例控除額を加算した金額。以下この項において「控除額」という。）を当該納税義務者の第三十五条及び前条の規定を適用した場合の所得割の額から控除するものとする。</p>

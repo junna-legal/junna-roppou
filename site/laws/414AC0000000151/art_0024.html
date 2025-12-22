@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0023.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0025.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>情報通信技術を活用した行政の推進等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十四条（共同利用クラウド・コンピューティング・サービスの利用に関する金銭の保管）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>内閣総理大臣は、公共情報システムの効果的かつ効率的な整備及び運用を図るために、共同利用クラウド・コンピューティング・サービスの共同利用の条件に関する内閣総理大臣と当該共同利用クラウド・コンピューティング・サービスを提供する事業者との契約において、公共情報システム整備運用者が当該事業者に支払うべき当該共同利用クラウド・コンピューティング・サービスの利用に係る料金について内閣総理大臣が当該公共情報システム整備運用者から納付を受けた上で内閣総理大臣から当該事業者に引き渡す旨を定めたときは、当該納付を受けた料金その他の公共情報システム整備運用者の当該共同利用クラウド・コンピューティング・サービスの利用に関する金銭を保管することができる。</p>

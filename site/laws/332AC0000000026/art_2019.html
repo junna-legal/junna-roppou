@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2018.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2020.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十八条（特定の取締役等が受ける新株予約権等の行使による株式の取得に係る経済的利益の非課税等に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新租税特別措置法第二十九条の二（第一項及び第五項から第八項までに係る部分に限る。）の規定は、同条第一項に規定する取締役等が会社法施行日以後に行われる同項に規定する付与決議に基づき締結される同項の契約により与えられる同項に規定する特定新株予約権等に係る株式について適用し、旧租税特別措置法第二十九条の二第一項に規定する取締役等が会社法施行日前に行われた同項に規定する付与決議に基づき締結された同項の契約により与えられる同項に規定する特定新株予約権等に係る株式については、なお従前の例による。</p>

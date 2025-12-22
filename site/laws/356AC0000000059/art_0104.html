@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0103.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0105.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>銀行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十二条の二十一の三（顧客の利益の保護のための体制整備）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>銀行持株会社は、その子会社である銀行、当該銀行持株会社の子会社である銀行を所属銀行とする銀行代理業者又は当該銀行持株会社の親金融機関等若しくは子金融機関等が行う取引に伴い、当該銀行持株会社の子会社である銀行、当該銀行持株会社の子会社である銀行を所属銀行とする銀行代理業者又は当該銀行持株会社の子金融機関等が行う業務（銀行業、銀行代理業その他の内閣府令で定める業務に限る。）に係る顧客の利益が不当に害されることのないよう、内閣府令で定めるところにより、当該業務に関する情報を適正に管理し、かつ、当該業務の実施状況を適切に監視するための体制の整備その他必要な措置を講じなければならない。</p>

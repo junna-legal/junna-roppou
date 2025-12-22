@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1555.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1557.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条の三の四</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、予定期間（前条第三項の規定により読み替えて準用する第六百一条第二項の規定により予定期間を延長した場合における当該延長された期間を含む。以下この項において同じ。）が定められている土地の所有者等が、平成十七年四月一日から予定期間の末日までの期間内に、当該予定期間に係る前条第三項の規定により読み替えて準用する第六百一条第三項又は第四項の規定による徴収の猶予の理由の全部又は一部の変更の申出をし、かつ、当該申出に係る土地を非課税土地として使用し、若しくは使用させる予定であること、当該土地について特例譲渡をする予定であること又は当該土地を免除土地として使用し、若しくは使用させる予定であることにつき市町村長の認定を受け、当該認定の日から二年を経過する日までの期間（工場、事務所その他の建物若しくは構築物の建設又は大規模な宅地の造成に要する期間が通常二年を超えることその他の政令で定める理由がある場合には、政令で定める期間とする。以下この条において「変更後予定期間」という。）内に、当該土地を非課税土地として使用し、若しくは使用させたこと、当該土地について特例譲渡をしたこと又は当該土地を免除土地として使用し、若しくは使用させたことにつき市町村長の確認を受けたときは、当該土地に係る特別土地保有税に係る地方団体の徴収金（免除期間、予定期間又は変更後予定期間に係るものに限る。第四項において同じ。）に係る納税義務を免除するものとする。</p>

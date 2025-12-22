@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0266.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0268.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十一条（建築物の敷地が区域、地域又は地区の内外にわたる場合の措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>建築物の敷地がこの法律の規定（第五十二条、第五十三条、第五十四条から第五十六条の二まで、第五十七条の二、第五十七条の三、第六十七条第一項及び第二項並びに別表第三の規定を除く。以下この条において同じ。）による建築物の敷地、構造、建築設備又は用途に関する禁止又は制限を受ける区域（第二十二条第一項の市街地の区域を除く。以下この条において同じ。）、地域（防火地域及び準防火地域を除く。以下この条において同じ。）又は地区（高度地区を除く。以下この条において同じ。）の内外にわたる場合においては、その建築物又はその敷地の全部について敷地の過半の属する区域、地域又は地区内の建築物に関するこの法律の規定又はこの法律に基づく命令の規定を適用する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0127.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0129.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>自動車損害賠償保障法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条（自動車損害賠償保障法の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現に旧法第九十七条の三第一項の規定による使用の届出をしている検査対象軽自動車で附則第二条第一項の規定により検査標章を表示しないものについては、当該自動車を検査対象外軽自動車とみなして前条の規定による改正後の自動車損害賠償保障法第九条の二（同法第五十四条の七において準用する場合を含む。）及び第九条の三（同法第五十四条の八第三項において準用する場合を含む。）（これらの規定に違反する行為に対する罰則を含む。）並びに第五十四条の八第二項の規定を適用する。</p>

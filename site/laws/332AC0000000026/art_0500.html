@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0499.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0501.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（利子所得及び配当所得に関する経過規定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第二章第一節の規定は、この法律の施行の日（以下「施行日」という。）以後に支払を受けるべき利子所得（新法第七条第二項に規定する貸付金債権の利子を含む。以下この項において同じ。）及び配当所得について適用し、同日前に支払を受けるべきであつた利子所得（無記名の公債若しくは社債の利子又は貸付信託若しくは証券投資信託の無記名受益証券につき受ける収益にあつては、施行日前に支払を受けたもの）及び配当所得（無記名株式の配当又は元本の追加信託をすることができる証券投資信託の無記名受益証券につき受ける収益にあつては、施行日前に支払を受けた金額）については、なお従前の例による。</p>

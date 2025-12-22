@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0492.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0494.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十五条（還付加算金の割合の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>各年の還付加算金特例基準割合（平均貸付割合に年〇・五パーセントの割合を加算した割合をいう。）が年七・三パーセントの割合に満たない場合には、国税通則法第五十八条第一項に規定する還付加算金（以下この条及び次条第一項において「還付加算金」という。）の計算の基礎となる期間であつてその年に含まれる期間に対応する還付加算金についての同法第五十八条第一項の規定の適用については、同項中「年七・三パーセントの割合」とあるのは、「租税特別措置法第九十五条（還付加算金の割合の特例）に規定する還付加算金特例基準割合」とする。</p>

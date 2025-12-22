@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0532.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0534.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十一条の六（国際観光旅客税が免除される外交官等の本邦からの出国に係る運送契約の範囲等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第九十条の十六第一項の規定の適用を受ける大使等（同項に規定する大使等をいう。以下この項及び第四項において同じ。）の本邦からの出国のために締結される運送契約は、その締結に際し、当該運送契約による大使等の本邦からの出国が同条第一項に規定する任務を遂行するために必要なものであることを証する書類として財務省令で定めるものを提示し、又は提出し、かつ、当該運送契約により本邦から出国する大使等の氏名その他の財務省令で定める事項を記載した書類を提出して締結されたものでなければならない。</p>

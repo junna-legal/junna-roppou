@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0028.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0030.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十六条（実質課税額等の第二次納税義務）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>滞納者の次の各号に掲げる国税につき滞納処分を執行してもなおその徴収すべき額に不足すると認められるときは、第一号に定める者にあつては同号に規定する収益が生じた財産（その財産の異動により取得した財産及びこれらの財産に基因して取得した財産（以下この条及び次条において「取得財産」という。）を含む。）、第二号に定める者にあつては同号に規定する貸付けに係る財産（取得財産を含む。）、第三号に定める者にあつてはその受けた利益の額を限度として、その滞納に係る国税の第二次納税義務を負う。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0258.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0260.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>戸籍法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>本籍地の市町村長（特別区の区長を含むものとし、地方自治法（昭和二十二年法律第六十七号）第二百五十二条の十九第一項の指定都市（以下この項において「指定都市」という。）にあっては、区長又は総合区長とする。以下この条及び附則第十三条において同じ。）は、第三号施行日から起算して一年を経過した日に、市役所（特別区の区役所を含むものとし、指定都市にあっては、区又は総合区の区役所とする。）又は町村役場の所在地を管轄する法務局又は地方法務局の長（次項において「管轄法務局長等」という。）の許可を得て、附則第一条第三号に掲げる規定の施行の際現に戸籍に記載されている者に係る氏の振り仮名を戸籍に記載するものとする。</p>

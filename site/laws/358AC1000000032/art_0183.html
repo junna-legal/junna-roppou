@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0182.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0184.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条の四（取立てを行う者に対する質問）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>警察本部長は、貸金業者又は貸金業者の貸付けの契約に基づく債権の取立てについて貸金業者その他の者から委託を受けた者による貸付けの契約に基づく債権の取立てが行われているものと認められ、その取立てを行う者について意見陳述事由があると疑うに足りる相当な理由があり、かつ、警察庁長官又は警察本部長が前二条の規定に基づき意見を述べるために必要であると認められる場合には、当該都道府県警察の警察職員に、その取立てを行う者に対し、貸金業者の商号、名称又は氏名並びにその取立てを行う者の氏名及びその弁済受領権限の基礎となる事実について質問させることができる。</p>

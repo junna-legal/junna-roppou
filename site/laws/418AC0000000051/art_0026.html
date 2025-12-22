@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0025.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0027.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>競争の導入による公共サービスの改革に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条（報告の徴収等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国の行政機関等の長等は、公共サービス実施民間事業者による対象公共サービスの適正かつ確実な実施を確保するため必要があると認めるときは、当該公共サービス実施民間事業者に対し、対象公共サービスの実施の状況に関し必要な報告を求め、又はその職員に当該公共サービス実施民間事業者の事務所に立ち入り、当該対象公共サービスの実施の状況若しくは帳簿、書類その他の物件を検査させ、若しくは関係者に質問させることができる。</p>

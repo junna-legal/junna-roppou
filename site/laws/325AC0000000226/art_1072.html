@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1071.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1073.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五百九十五条（特別土地保有税の免税点）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、同一の者について、当該市町村の区域（第一号の市にあつては、当該市の区又は総合区の区域）内において、第五百九十九条第一項第一号の特別土地保有税にあつてはその者が一月一日に所有する土地（第五百八十六条第一項若しくは第二項、第五百八十七条第一項又は第五百八十七条の二第一項本文の規定の適用がある土地を除く。）の合計面積が、第五百九十九条第一項第二号の特別土地保有税にあつてはその者が一月一日前一年以内に取得した土地（当該土地の取得について第五百八十六条第一項若しくは第二項又は第五百八十七条第二項の規定の適用がある土地を除く。以下この条において同じ。）の合計面積が、第五百九十九条第一項第三号の特別土地保有税にあつてはその者が七月一日前一年以内に取得した土地の合計面積が、それぞれ次の各号に掲げる区域の区分に応じ、当該各号に定める面積（以下この節において「基準面積」という。）に満たない場合には、特別土地保有税を課することができない。</p>

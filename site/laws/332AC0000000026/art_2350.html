@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2349.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2351.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条（国外で発行された公社債等の利子所得の分離課税等の経過措置等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成二十二年九月三十日以前に解散（合併による解散及び十月旧法人税法第九十二条第二項に規定する信託特定解散を除く。）をした第十八条の規定による改正前の租税特別措置法（以下附則第百三十条までにおいて「旧租税特別措置法」という。）第三条の三第五項、第六条第三項（同条第十三項において準用する場合を含む。）、第八条の三第五項、第九条の二第四項、第四十一条の九第四項及び第四十一条の十二第四項に規定する内国法人に対するこれらの規定により読み替えて適用する十月旧法人税法の規定の適用については、なお従前の例による。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0231.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0233.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事再生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百六条（住宅資金特別条項を定めた再生計画の取消し等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>住宅資金特別条項を定めた再生計画についての第百八十九条第一項第二号に掲げる事由を理由とする再生計画取消しの申立ては、同条第三項の規定にかかわらず、再生計画の定めによって認められた権利（住宅資金特別条項によって変更された後のものを除く。）の全部（履行された部分を除く。）について裁判所が評価した額の十分の一以上に当たる当該権利を有する再生債権者であって、その有する履行期限が到来した当該権利の全部又は一部について履行を受けていないものに限り、することができる。</p>

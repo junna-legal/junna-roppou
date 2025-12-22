@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0082.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0084.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事執行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十七条（最高価買受申出人又は買受人のための保全処分等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>執行裁判所は、債務者又は不動産の占有者が、価格減少行為等（不動産の価格を減少させ、又は不動産の引渡しを困難にする行為をいう。以下この項において同じ。）をし、又は価格減少行為等をするおそれがあるときは、最高価買受申出人又は買受人の申立てにより、引渡命令の執行までの間、その買受けの申出の額（金銭により第六十六条の保証を提供した場合にあつては、当該保証の額を控除した額）に相当する金銭を納付させ、又は代金を納付させて、次に掲げる保全処分又は公示保全処分を命ずることができる。</p>

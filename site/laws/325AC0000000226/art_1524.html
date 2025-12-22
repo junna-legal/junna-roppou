@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1523.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1525.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市街化区域農地に係る令和六年度から令和八年度までの各年度分の都市計画税の額は、前条の規定により附則第十九条の三の規定の例により算定した当該市街化区域農地に係る当該年度分の都市計画税額が、当該市街化区域農地の当該年度分の都市計画税に係る前年度分の都市計画税の課税標準額に、当該市街化区域農地に係る当該年度分の都市計画税の課税標準となるべき価格の三分の二の額に百分の五を乗じて得た額を加算した額（当該市街化区域農地が当該年度分の固定資産税について第三百四十九条の三（第十八項を除く。）又は附則第十五条から第十五条の三までの規定の適用を受ける市街化区域農地であるときは、当該額にこれらの規定に定める率を乗じて得た額）を当該市街化区域農地に係る当該年度分の都市計画税の課税標準となるべき額とした場合における都市計画税額（以下この条及び附則第二十七条の四の二第一項において「市街化区域農地調整都市計画税額」という。）を超える場合には、当該市街化区域農地調整都市計画税額とする。</p>

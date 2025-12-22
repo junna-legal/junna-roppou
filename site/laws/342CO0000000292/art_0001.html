@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0002.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第一条（定義）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この政令において、「個人番号」、「国民健康保険の被保険者」、「後期高齢者医療の被保険者」、「介護保険の被保険者」、「国民年金の被保険者」、「児童手当の支給を受けている者」、「住民票コード」、「除票」、「転出」、「戸籍の附票の除票」、「転入」、「転居」又は「外国人住民」とは、それぞれ住民基本台帳法（以下「法」という。）第七条第八号の二、第十号から第十一号の二まで若しくは第十三号、第十五条の二第一項、第十五条の三第一項、第二十一条第一項、第二十二条第一項、第二十三条又は第三十条の四十五に規定する個人番号、国民健康保険の被保険者、後期高齢者医療の被保険者、介護保険の被保険者、国民年金の被保険者、児童手当の支給を受けている者、住民票コード、除票、転出、戸籍の附票の除票、転入、転居又は外国人住民をいう。</p>

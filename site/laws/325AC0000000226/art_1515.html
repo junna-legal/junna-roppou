@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1514.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1516.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十一条の二（住宅用地等に対して課する令和六年度から令和八年度までの各年度分の固定資産税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、令和六年度から令和八年度までの各年度分の固定資産税に限り、当該市町村の区域（当該市町村の条例で定める区域を除く。）において、当該区域に所在する住宅用地等（住宅用地、商業地等及び市街化区域農地（附則第十九条の三第三項の規定により読み替えて適用される同条第一項ただし書の適用を受ける市街化区域農地を除く。）をいう。以下この項において同じ。）に係る当該年度分の固定資産税額（当該住宅用地等が当該年度分の固定資産税について附則第十八条又は第十九条の四の規定の適用を受ける住宅用地等であるときは、当該年度分の宅地等調整固定資産税額、商業地等据置固定資産税額、商業地等調整固定資産税額又は市街化区域農地調整固定資産税額とする。以下この項において同じ。）が、次の各号に掲げる年度の区分に応じ、当該各号に定める額を超える場合には、その超えることとなる額に相当する額を、当該住宅用地等に係る当該年度分の固定資産税額から減額することができる。</p>

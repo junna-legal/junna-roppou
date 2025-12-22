@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0045.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0047.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条の九（法定納期限等以前に設定された質権の優先）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>納税者又は特別徴収義務者がその財産上に質権を設定している場合において、その質権が地方団体の徴収金の法定納期限等（次の各号に掲げる地方税については、それぞれ当該各号に定める日とし、当該地方税に係る督促手数料、延滞金、過少申告加算金、不申告加算金、重加算金及び滞納処分費については、その徴収の基因となつた地方税に係る当該各号に定める日とし、その他の地方税に係る地方団体の徴収金については、法定納期限とする。以下この章において同じ。）以前に設定されているものであるときは、その地方団体の徴収金は、その換価代金につき、その質権により担保される債権に次いで徴収する。</p>

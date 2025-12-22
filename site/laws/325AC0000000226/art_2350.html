@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2349.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2351.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（道府県民税若しくは市町村民税の法人税割又は法人の事業税の徴収猶予に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第十五条の三の規定は、昭和五十七年四月一日（以下「施行日」という。）以後に終了する事業年度に係る道府県民税若しくは市町村民税の法人税割又は法人の事業税（施行日以後に終了する事業年度に係る新法第五十三条第一項若しくは第三百二十一条の八第一項又は第七十二条の二十六第一項の規定による申告書（道府県民税又は市町村民税の法人税割にあつては、法人税法（昭和四十年法律第三十四号）第七十一条第一項（同法第七十二条第一項の規定が適用される場合及びこれらの規定を同法第百四十五条において準用する場合を含む。）の規定による申告書に係る法人税額を課税標準として算定した道府県民税又は市町村民税の法人税割額が記載された申告書に限る。）で昭和五十七年六月一日前に提出期限の到来するもの（以下この項において「特定中間申告書」という。）に係る道府県民税若しくは市町村民税の法人税割又は法人の事業税を除く。）について適用し、施行日前に終了した事業年度に係る道府県民税若しくは市町村民税の法人税割又は法人の事業税及び特定中間申告書に係る道府県民税若しくは市町村民税の法人税割又は法人の事業税については、なお従前の例による。</p>

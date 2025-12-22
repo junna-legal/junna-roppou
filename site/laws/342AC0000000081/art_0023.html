@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0022.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0024.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条の三（除票の記載事項）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>除票には、当該除票に係る住民票に記載をしていた事項のほか、当該住民票を消除した事由（転出（市町村の区域外へ住所を移すことをいう。以下同じ。）の場合にあつては、転出により消除した旨及び転出先の住所）及びその事由の生じた年月日（第二十四条の規定による届出に基づき住民票を消除した場合にあつては、転出の予定年月日）又は改製した旨及びその年月日の記載（前条第二項の規定により磁気ディスクをもつて調製する除票にあつては、記録。以下同じ。）をする。</p>

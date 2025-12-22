@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1324.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1326.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七百四十条（大規模の償却資産に対する道府県の課税権）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>大規模の償却資産（新設大規模償却資産を含む。以下この節において同じ。）が所在する市町村（第三百八十九条第一項の規定による配分の結果大規模の償却資産が所在することとなる市町村を含む。以下この条において同じ。）を包括する道府県は、普通税として、第四条第二項各号に掲げるものを課するほか、当該大規模の償却資産に対し、当該大規模の償却資産の価額（第三百四十九条の二、第三百四十九条の三又は第三百四十九条の三の四の規定により固定資産税の課税標準となるべき額をいう。）のうち第三百四十九条の四及び第三百四十九条の五の規定により当該大規模の償却資産が所在する市町村が課することができる固定資産税の課税標準となるべき金額を超える部分の金額を課税標準として、固定資産税を課するものとする。</p>

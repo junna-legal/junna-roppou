@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0029.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0031.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（特定保険募集人の委託又は再委託による登録で課税しないものに係る委託又は再委託の形態）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第三十七号（五）に規定する財務省令で定める委託又は再委託は、一時的な必要に基づき期限を付して行われる委託又は再委託（以下この条において「期限付委託等」という。）で、保険業法（平成七年法律第百五号）第二百七十六条（登録）の特定保険募集人の登録に係る同法第二百七十七条第一項（登録の申請）の登録申請書に当該登録を受けようとする者が同法第二条第三項（定義）に規定する生命保険会社又は同条第十八項に規定する少額短期保険業者からの委託又は再委託を受ける者である旨の記載がない場合の当該期限付委託等とする。</p>

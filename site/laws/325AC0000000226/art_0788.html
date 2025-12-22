@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0787.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0789.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百二十一条の七の三（年金保険者による市町村長に対する通知）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>当該年度の初日において年齢六十五歳以上の者であつて老齢等年金給付の支払を受けているものに対し当該老齢等年金給付の支払をする者（以下この条から第三百二十一条の七の十一までにおいて「年金保険者」という。）は、当該年度の初日の属する年の五月二十五日までに、当該年度の初日において当該老齢等年金給付の支払を受けている者の氏名、住所、性別、生年月日その他総務省令で定める事項、当該老齢等年金給付の種類及び年額並びに当該老齢等年金給付の支払を行う年金保険者の名称を、当該老齢等年金給付の支払を受けている者が当該年度の初日において住所を有する市町村の長に通知しなければならない。</p>

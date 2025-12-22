@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1101.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1103.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六百二十四条（遊休土地に対して課する特別土地保有税の税額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>遊休土地に対して課する特別土地保有税の税額は、次条第二項の課税標準額に前条の税率を乗じて得た額から、同項の遊休土地である土地に対して第三百四十二条及び第三百四十三条の規定により市町村が課すべき当該年度分の固定資産税の課税標準となるべき価格に百分の一・四を乗じて得た額の合計額（当該遊休土地である土地のうちに土地に対して課する特別土地保有税が課される土地がある場合にあつては、当該合計額に当該土地に対して第五百八十五条の規定により市町村が課すべき当該年度分の第五百九十六条に規定する第五百九十九条第一項第一号の特別土地保有税の税額の合計額を加えた額）を控除した額とする。</p>

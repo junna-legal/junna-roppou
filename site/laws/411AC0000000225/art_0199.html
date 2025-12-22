@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0198.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0200.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事再生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百七十四条の二（約定劣後再生債権の届出がある場合における認可等の特則）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第百七十二条の三第二項本文の規定により再生計画案の決議を再生債権を有する者と約定劣後再生債権を有する者とに分かれて行う場合において、再生債権を有する者又は約定劣後再生債権を有する者のいずれかについて同条第一項各号のいずれかに掲げる同意を得られなかったため再生計画案が可決されなかったときにおいても、裁判所は、再生計画案を変更し、その同意が得られなかった種類の債権を有する者のために、破産手続が開始された場合に配当を受けることが見込まれる額を支払うことその他これに準じて公正かつ衡平に当該債権を有する者を保護する条項を定めて、再生計画認可の決定をすることができる。</p>

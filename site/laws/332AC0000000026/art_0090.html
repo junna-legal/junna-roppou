@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0089.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0091.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十三条の二（交換処分等に伴い資産を取得した場合の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人の有する資産で次の各号に規定するものが当該各号に掲げる場合に該当することとなつた場合（当該各号に規定する資産とともに補償金、対価又は清算金（以下この款において「補償金等」という。）を取得した場合を含む。）には、その者については、その選択により、当該各号に規定する収用、買取り又は交換（以下この款において「交換処分等」という。）により譲渡した資産（当該各号に規定する資産とともに補償金等を取得した場合には、当該譲渡した資産のうち当該補償金等の額に対応する部分以外のものとして政令で定める部分）の譲渡がなかつたものとして、第二十八条の四、第三十一条若しくは第三十二条又は所得税法第二十七条、第三十二条、第三十三条若しくは第三十五条の規定を適用することができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1586.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1588.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十六条（長期譲渡所得等に係る国民健康保険税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>世帯主又はその世帯に属する国民健康保険の被保険者若しくは特定同一世帯所属者が附則第三十四条第四項の譲渡所得を有する場合における第七百三条の四、第七百三条の五及び第七百六条の二の規定の適用については、第七百三条の四第六項中「及び山林所得金額の合計額から同条第二項」とあるのは「及び山林所得金額並びに附則第三十四条第四項に規定する長期譲渡所得の金額（租税特別措置法第三十三条の四第一項若しくは第二項、第三十四条第一項、第三十四条の二第一項、第三十四条の三第一項、第三十五条第一項、第三十五条の二第一項、第三十五条の三第一項又は第三十六条の規定に該当する場合には、これらの規定の適用により同法第三十一条第一項に規定する長期譲渡所得の金額から控除する金額を控除した金額。以下この項及び第七百六条の二第一項において「控除後の長期譲渡所得の金額」という。）の合計額から第三百十四条の二第二項」と、「及び山林所得金額の合計額（」とあるのは「及び山林所得金額並びに控除後の長期譲渡所得の金額の合計額（」と、同条第七項中「又は山林所得金額」とあるのは「若しくは山林所得金額又は附則第三十四条第四項に規定する長期譲渡所得の金額」と、第七百三条の五第一項中「及び山林所得金額」とあるのは「及び山林所得金額並びに附則第三十四条第四項に規定する長期譲渡所得の金額」と、第七百六条の二中「及び山林所得金額」とあるのは「及び山林所得金額並びに控除後の長期譲渡所得の金額」とする。</p>

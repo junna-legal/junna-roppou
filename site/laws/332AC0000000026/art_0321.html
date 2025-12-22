@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0320.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0322.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十八条の三（特定の合併等が行われた場合の株主等の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人が旧株（当該法人が有していた株式（出資を含む。以下この条において同じ。）をいう。）を発行した内国法人の合併（適格合併に該当しないものに限る。）により合併法人との間に当該合併法人の発行済株式又は出資（自己が有する自己の株式を除く。第三項において「発行済株式等」という。）の全部を直接又は間接に保有する関係として政令で定める関係がある外国法人のうちいずれか一の外国法人の株式の交付を受けた場合において、当該外国法人の株式が特定軽課税外国法人等（前条第五項第一号に規定する特定軽課税外国法人等をいう。以下この条において同じ。）の株式に該当するときは、法人税法第六十一条の二第二項（同法第百四十二条第二項の規定により準じて計算する場合を含む。）及び第十七項の規定は、適用しない。</p>

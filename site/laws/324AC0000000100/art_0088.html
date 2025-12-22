@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0087.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0089.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条の十九（国土交通大臣による講習の実施）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国土交通大臣は、講習を行う者がいないとき、第二十六条の十三の規定による講習の全部又は一部の休止又は廃止の届出があつたとき、第二十六条の十七の規定により第二十六条第五項の登録を取り消し、又は登録講習実施機関に対し講習の全部若しくは一部の停止を命じたとき、登録講習実施機関が天災その他の事由により講習の全部又は一部を実施することが困難となつたとき、その他必要があると認めるときは、講習の全部又は一部を自ら行うことができる。</p>

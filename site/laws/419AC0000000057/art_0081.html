@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0080.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0082.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>株式会社日本政策金融公庫法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条（経営改善資金特別準備金）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>公庫は、その設立に際し、別表第一第一号の下欄に掲げる資金のうち小規模事業者の経営の改善発達を支援するための資金として政令で定めるものの第十一条第一項第一号の規定による貸付けに係る業務の円滑な運営を確保するため、第四十一条第一号に掲げる業務に係る勘定に経営改善資金特別準備金を設け、これに当該勘定に属する資本準備金のうち政令で定める金額を充てるものとする。</p>

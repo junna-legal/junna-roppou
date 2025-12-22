@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0031.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0033.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条の二十五の二（所得税の徴収が行われない災害等の事由による金銭の払出し）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>勤労者財産形成住宅貯蓄契約又はその履行につき、勤労者財産形成促進法第六条第四項第一号ロ若しくはハ、同項第二号ハ若しくはニ又は同項第三号ハ若しくはニに定める要件に該当しないこととなる事実が発生した場合であつて、当該事実が次に掲げる事由（以下この条及び第二条の二十八第一項において「災害等の事由」という。）により当該災害等の事由が生じた日から同日以後一年を経過する日までの間に発生したものであるとき（当該事実の発生が当該災害等の事由に基因するものであることにつき財務省令で定めるところにより財産形成非課税住宅貯蓄申告書を提出した個人の住所地の所轄税務署長の確認を受け、当該税務署長から交付を受けた当該確認をした旨の記載がある書面を当該勤労者財産形成住宅貯蓄契約に係る金融機関の営業所等に提出した場合に限る。）は、当該事実は、法第四条の二第九項に規定する事実及び第二条の十三第二号に掲げる事実に該当しないものとする。</p>

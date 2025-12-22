@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0006.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0008.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>犯罪による収益の移転防止に関する法律施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七条（金融機関等の特定取引）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>次の各号に掲げる法の規定に規定する政令で定める取引は、当該各号に定める取引（法第三条第三項に規定する犯罪収益移転危険度調査書に記載された当該取引による犯罪による収益の移転の危険性の程度を勘案して簡素な顧客管理を行うことが許容される取引として主務省令で定めるものを除く。以下この項において「対象取引」という。）及び対象取引以外の取引で、疑わしい取引（取引において収受する財産が犯罪による収益である疑い又は顧客等が取引に関し組織的な犯罪の処罰及び犯罪収益の規制等に関する法律（平成十一年法律第百三十六号）第十条の罪若しくは国際的な協力の下に規制薬物に係る不正行為を助長する行為等の防止を図るための麻薬及び向精神薬取締法等の特例等に関する法律（平成三年法律第九十四号）第六条の罪に当たる行為を行っている疑いがあると認められる取引をいう。第九条第一項及び第十三条第二項において同じ。）その他の顧客管理を行う上で特別の注意を要するものとして主務省令で定めるものとする。</p>

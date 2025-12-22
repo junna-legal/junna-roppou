@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0164.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0166.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>一般社団法人及び一般財団法人に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百五十七条（財産の拠出の履行）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>設立者（第百五十二条第二項の場合にあっては、遺言執行者。以下この条、第百六十一条第二項、第百六十六条から第百六十八条まで、第二百条第二項、第三百十九条第三項及び第七章において同じ。）は、第百五十五条の公証人の認証の後遅滞なく、第百五十三条第一項第五号に規定する拠出に係る金銭の全額を払い込み、又は同号に規定する拠出に係る金銭以外の財産の全部を給付しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0382.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0384.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の五十五（個人の事業税の賦課徴収に関する申告又は報告の義務）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人の行う事業に対する事業税の納税義務者で、第七十二条の四十九の十二第一項の規定により計算した個人の事業の所得の金額が第七十二条の四十九の十四第一項の規定による控除額を超えるものは、総務省令の定めるところにより、当該年度の初日の属する年（以下この項及び次項において「当該年」という。）の三月十五日までに（年の中途において事業を廃止した場合には、当該事業の廃止の日から一月以内（当該事業の廃止が納税義務者の死亡によるときは、四月以内）に）、当該年の前年中の事業の所得（年の中途において事業を廃止した場合には、当該年の一月一日から事業の廃止の日までの事業の所得）並びに当該年の前年において生じた譲渡損失の金額（年の中途において事業を廃止した場合には、当該年の一月一日から事業の廃止の日までに生じた譲渡損失の金額）及び第七十二条の四十九の十二第二項及び第三項の事業専従者控除に関する事項その他当該事業の所得の計算に必要な事項を事務所又は事業所所在地の道府県知事に申告しなければならない。</p>

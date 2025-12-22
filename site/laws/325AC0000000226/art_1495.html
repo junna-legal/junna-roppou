@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1494.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1496.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条の九の三（大規模の修繕等が行われたマンションに対する固定資産税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、新築された日から二十年以上を経過したマンション（マンションの管理の適正化の推進に関する法律（平成十二年法律第百四十九号）第二条第一号に規定するマンションであつて、人の居住の用に供する専有部分のうち政令で定める専有部分を有するものをいう。以下この項において同じ。）のうち、同法第五条の二第一項の規定による助言若しくは指導を受けた管理者等（同項に規定する管理組合の管理者等をいう。第三項及び第四項において同じ。）に係るマンション又は同法第五条の二十第一項に規定する管理計画認定マンションで政令で定めるものであつて、令和五年四月一日から令和九年三月三十一日までの間にマンションの建物の外壁について行う修繕又は模様替を含む大規模な工事で総務省令で定めるものが行われたもの（当該工事が行われた棟に限る。以下この条において「特定マンション」という。）に係る区分所有に係る家屋に対して課する固定資産税については、附則第十五条の九第一項若しくは前条第一項の規定の適用がある場合又は当該特定マンションが既にこの項の規定の適用を受けたことがある場合を除き、当該工事が完了した日の属する年の翌年の一月一日（当該工事が完了した日が一月一日である場合には、同日）を賦課期日とする年度分の固定資産税に限り、当該特定マンションに係る区分所有に係る家屋に係る固定資産税額（この項の規定の適用を受ける部分に係る税額として各区分所有者ごとに政令で定めるところにより算定した額の合算額とする。）の三分の一を参酌して六分の一以上二分の一以下の範囲内において市町村の条例で定める割合に相当する額を当該特定マンションに係る区分所有に係る家屋に係る固定資産税額から減額するものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0073.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0075.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条の五（営業所技術者等に関する主任技術者又は監理技術者の職務の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>建設業者は、第二十六条第三項本文に規定する建設工事が次の各号に掲げる要件のいずれにも該当する場合には、第七条（第二号に係る部分に限る。）又は第十五条（第二号に係る部分に限る。）及び同項本文の規定にかかわらず、その営業所の営業所技術者又は特定営業所技術者について、営業所技術者にあつては第二十六条第一項の規定により当該工事現場に置かなければならない主任技術者の職務を、特定営業所技術者にあつては当該主任技術者又は同条第二項の規定により当該工事現場に置かなければならない監理技術者の職務を兼ねて行わせることができる。</p>

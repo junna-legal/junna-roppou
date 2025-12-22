@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1166.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1168.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第千五十条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>被相続人に対して無償で療養看護その他の労務の提供をしたことにより被相続人の財産の維持又は増加について特別の寄与をした被相続人の親族（相続人、相続の放棄をした者及び第八百九十一条の規定に該当し又は廃除によってその相続権を失った者を除く。以下この条において「特別寄与者」という。）は、相続の開始後、相続人に対し、特別寄与者の寄与に応じた額の金銭（以下この条において「特別寄与料」という。）の支払を請求することができる。</p>

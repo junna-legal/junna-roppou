@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0578.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0580.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百四十四条の二十一（軽油引取税に係る免税の手続）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第百四十四条の六に規定する用途に供するため、同条の規定によつてその引取りについて軽油引取税を課さないこととされる軽油（以下この節において「免税軽油」という。）の引取りを行おうとする同条に規定する者（以下この節において「免税軽油使用者」という。）は、政令で定めるところにより、免税軽油使用者の当該免税軽油の使用に係る事務所又は事業所所在地の道府県知事に、当該道府県知事から交付を受けた次項に規定する免税軽油使用者証を提示するとともに、免税軽油の数量、免税軽油の引取りを行おうとする販売業者の事務所又は事業所所在地及び氏名又は名称その他必要な事項を記載した申請書を提出して免税証（免税軽油の引取りであることを証する書面をいう。以下この節において同じ。）の交付を受け、その免税証を当該免税証の交付を行つた道府県に係る登録特別徴収義務者に提出しなければならない。</p>

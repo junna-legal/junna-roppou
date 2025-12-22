@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0025.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0027.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>滞納処分と強制執行等との手続の調整に関する政令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条の十三（電話加入権に対する強制執行等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>滞納処分による差押え後に強制執行若しくは担保権の実行による差押え又は仮差押えの執行がされた電話加入権に対して滞納処分による参加差押えがされているときは、法第二十条の十一第一項においてその例によることとされる第十二条の七第一項（第十二条の十一第一項及び前条において準用する場合を含む。）の書面には、その参加差押え（二以上の参加差押えがされているときは、そのうち最も先にされたもの）をしている徴収職員等の属する庁その他の事務所の名称及び所在並びにその電話加入権を特定するに足りる事項をも記載しなければならない。</p>

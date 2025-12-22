@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0009.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0011.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条の三（勤労者財産形成年金貯蓄の利子所得等の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条第一項に規定する勤労者が、金融機関の営業所等において勤労者財産形成促進法第六条第二項に規定する勤労者財産形成年金貯蓄契約（以下この条において「勤労者財産形成年金貯蓄契約」という。）に基づく預貯金、合同運用信託若しくは有価証券又は生命保険若しくは損害保険の保険料若しくは生命共済の共済掛金で政令で定めるもの（以下この条において「財産形成年金貯蓄」という。）の預入等をする場合において、政令で定めるところにより、その預入等の際当該財産形成年金貯蓄につきこの項の規定の適用を受けようとする旨その他必要な事項を記載した書類（以下この条において「財産形成非課税年金貯蓄申込書」という。）を、前条第一項に規定する賃金の支払者（所得税法第百九十四条第八項に規定する給与所得者の扶養控除等申告書の提出の際に経由した支払者に限る。）の事務所、事業所その他これらに準ずるもので当該賃金の支払事務を取り扱うもの（以下この条において「勤務先」という。）（当該賃金の支払者（勤労者財産形成促進法第十四条第二項に規定する中小企業の事業主に限る。第四項において「特定賃金支払者」という。）が勤労者財産形成年金貯蓄契約に係る事務を同法第十四条第二項に規定する事務代行団体（以下この条において「事務代行団体」という。）に委託をしている場合には、勤務先及び当該委託に係る事務代行団体の事務所その他これに準ずるもので当該事務を行うもの。以下この条において「勤務先等」という。）を経由して提出したときは、次の各号に掲げる場合に限り、当該各号に定めるものについては、所得税を課さない。</p>

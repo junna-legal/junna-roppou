@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0028.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0030.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>公益社団法人及び公益財団法人の認定等に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十九条（無償の役務の提供等に係る費用額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>公益法人が各事業年度において無償により当該法人の事業等に必要な役務の提供（便益の供与及び資産の譲渡を含むものとし、資産として計上すべきものを除く。以下同じ。）を受けたときは、必要対価の額（当該役務の提供を受けた時における当該役務と同等の役務の提供を受けるために必要な対価の額をいう。以下この条において同じ。）を、その事業等の区分に応じ、当該事業年度の費用額に算入することができる。</p>

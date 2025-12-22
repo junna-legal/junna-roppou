@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0128.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0130.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社計算規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百十八条（別記事業を営む会社の計算関係書類についての特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>財務諸表等の用語、様式及び作成方法に関する規則（昭和三十八年大蔵省令第五十九号）別記に掲げる事業（以下この条において「別記事業」という。）を営む会社（企業集団を含む。以下この条において同じ。）が当該別記事業の所管官庁に提出する計算関係書類の用語、様式及び作成方法について、特に法令の定めがある場合又は当該別記事業の所管官庁がこの省令に準じて計算書類準則（以下この条において「準則」という。）を制定した場合には、当該別記事業を営む会社が作成すべき計算関係書類の用語、様式及び作成方法については、第一章から前章までの規定にかかわらず、その法令又は準則の定めによる。</p>

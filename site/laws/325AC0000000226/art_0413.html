@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0412.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0414.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の八十の二（法人課税信託の受託者に関するこの節の規定の適用）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人課税信託の受託者は、各法人課税信託の信託資産等（信託財産に属する資産並びに当該信託財産に属する資産に係る課税資産の譲渡等及び特定課税仕入れをいう。以下この条において同じ。）及び固有資産等（法人課税信託の信託資産等以外の資産、課税資産の譲渡等及び特定課税仕入れをいう。次項において同じ。）ごとに、それぞれ別の者とみなして、この節（第七十二条の七十八から前条まで、第七十二条の八十五、第七十二条の九十一、第七十二条の九十二、第七十二条の九十五、第七十二条の百一から第七十二条の百四まで及び第七十二条の百九から第七十二条の百十一までを除く。以下この条において同じ。）の規定を適用する。</p>

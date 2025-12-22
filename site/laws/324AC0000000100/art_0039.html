@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0038.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0040.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十四条の六（特定建設業者の下請代金の支払期日等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定建設業者が注文者となつた下請契約（下請契約における請負人が特定建設業者又は資本金額が政令で定める金額以上の法人であるものを除く。以下この条において同じ。）における下請代金の支払期日は、第二十四条の四第二項の申出の日（同項ただし書の場合にあつては、その一定の日。以下この条において同じ。）から起算して五十日を経過する日以前において、かつ、できる限り短い期間内において定められなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0002.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>社会保険労務士法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第一条（社会保険労務士の使命）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>社会保険労務士は、労働及び社会保険に関する法令の円滑な実施を通じて適切な労務管理の確立及び個人の尊厳が保持された適正な労働環境の形成に寄与することにより、事業の健全な発達と労働者等の福祉の向上並びに社会保障の向上及び増進に資し、もつて豊かな国民生活及び活力ある経済社会の実現に資することを使命とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0385.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0387.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十一条の五（特定の都市計画駐車場の用に供されている土地等の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>課税時期において、都市計画駐車場（都市計画法第四条第一項に規定する都市計画に定められている同法第十一条第一項第一号に掲げる駐車場をいう。）で駐車場法第二条第二号に規定する路外駐車場に該当するもの（政令で定めるものに限る。以下この条において「特定の都市計画駐車場」という。）の用に供されている土地等（当該土地等が特定の都市計画駐車場の用以外の用にも供されているときは当該土地等のうち当該特定の都市計画駐車場の用以外の用に供されている部分として政令で定める部分を除くものとし、当該特定の都市計画駐車場として使用されている建築物が貸し付けられているものであるときは専ら当該特定の都市計画駐車場として使用されている建築物で政令で定めるものの用に供されている土地等に限る。）については、地価税を課さない。</p>

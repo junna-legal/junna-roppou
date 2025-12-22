@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0109.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0111.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の十八（監理技術者資格者証の交付）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国土交通大臣は、監理技術者資格（建設業の種類に応じ、第十五条第二号イの規定により国土交通大臣が定める試験に合格し、若しくは同号イの規定により国土交通大臣が定める免許を受けていること、第七条第二号イ若しくはロに規定する実務の経験若しくは学科の修得若しくは同号ハの規定による国土交通大臣の認定があり、かつ、第十五条第二号ロに規定する実務の経験を有していること、又は同号ハの規定により同号イ若しくはロに掲げる者と同等以上の能力を有するものとして国土交通大臣がした認定を受けていることをいう。以下同じ。）を有する者の申請により、その申請者に対して、監理技術者資格者証（以下「資格者証」という。）を交付する。</p>

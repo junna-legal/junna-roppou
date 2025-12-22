@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0080.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0082.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十九条の四（退職勤労者が弁済を受ける未払賃金に係る課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>賃金の支払の確保等に関する法律（昭和五十一年法律第三十四号）第七条（同法第十六条の規定により読み替えて適用される場合を含む。以下この条において同じ。）に規定する事業主に係る事業を退職した労働者が同法第七条の規定により同条の未払賃金に係る債務で所得税法第二十八条第一項に規定する給与等に係るものにつき弁済を受けた金額は、当該事業主から当該退職の日において支払を受けるべき同法第三十条第一項に規定する退職手当等の金額とみなして、同法の規定を適用する。</p>

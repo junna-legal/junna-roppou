@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0475.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0477.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十三条の二十四（住宅の用に供する土地の取得に対する不動産取得税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、次の各号のいずれかに該当する場合には、当該土地の取得に対して課する不動産取得税については、当該税額から百五十万円（当該土地に係る不動産取得税の課税標準となるべき価格を当該土地の面積の平方メートルで表した数値で除して得た額に当該土地の上に新築した住宅（政令で定める住宅に限る。以下この条において「特例適用住宅」という。）一戸（共同住宅等にあつては、居住の用に供するために独立的に区画された一の部分で政令で定めるもの）についてその床面積の二倍の面積の平方メートルで表した数値（当該数値が二百を超える場合には、二百とする。）を乗じて得た金額が百五十万円を超えるときは、当該乗じて得た金額）に税率を乗じて得た額を減額するものとする。</p>

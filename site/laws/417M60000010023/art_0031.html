@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>工場抵当登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条（工場財団の分割の場合における登記記録等の移送）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>甲工場財団を分割してその一部を乙工場財団とする分割の登記をする場合において、乙工場財団を組成する工場が申請を受けた登記所の管轄区域内にないこととなったときは、登記官は、分割の登記をした後、遅滞なく、乙工場財団を管轄する登記所に乙工場財団に関する登記記録及び工場財団登記簿の附属書類（電磁的記録に記録されている工場財団登記簿の附属書類を含む。次条第二項において同じ。）又はその謄本並びに工場財団目録を移送するものとする。</p>

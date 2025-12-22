@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0042.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0044.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十九条（裁定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>都道府県知事は、第三十七条の規定による申請に係る農地が、前条第一項の意見書の内容その他当該農地の利用に関する諸事情を考慮して引き続き農業上の利用の増進が図られないことが確実であると見込まれる場合において、農地中間管理機構が当該農地について農地中間管理事業を実施することが当該農地の農業上の利用の増進を図るため必要かつ適当であると認めるときは、その必要の限度において、農地中間管理権を設定すべき旨の裁定をするものとする。</p>

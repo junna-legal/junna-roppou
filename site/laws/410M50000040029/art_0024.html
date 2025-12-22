@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0023.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0025.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>外国為替の取引等の報告に関する省令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十二条（証券の売買の契約等の状況に関する報告等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>令第十八条の七第二項第二号ト又はチに規定する外国為替業務に係る取引又は行為の月中の合計額が百億円に相当する額を超える者のうち、銀行等、金融商品取引業者、保険会社、投資信託委託会社、資産運用会社、証券金融会社又は主としてコール資金の貸付け又はその貸借の媒介を業として行う者（以下この項において「報告機関」という。）は、当該取引又は行為の月中の合計額が百億円に相当する額を超えた月の翌月中の居住者と非居住者との間における外貨証券又は円払証券の売買の契約等（当該報告機関と非居住者との間における証券の売買契約、条件付売買及び貸借取引に係る担保金の受払並びに当該報告機関の媒介等に係る居住者と非居住者との間における証券の売買契約、条件付売買及び貸借取引に係る担保金の受払をいう。）の状況について、報告の対象となった月中に売買の契約等の実績がない場合を除き、次の各号に掲げる区分に応じ、当該各号に掲げる様式による報告書一通を作成し、報告の対象となった月の翌月十五日までに、日本銀行を経由して財務大臣に提出しなければならない。</p>

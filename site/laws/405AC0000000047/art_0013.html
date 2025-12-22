@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不正競争防止法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条（訴訟記録の閲覧等の請求の通知等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>秘密保持命令が発せられた訴訟（全ての秘密保持命令が取り消された訴訟を除く。）に係る訴訟記録につき、民事訴訟法第九十二条第一項の決定があった場合において、当事者から同項に規定する秘密記載部分の閲覧等の請求があり、かつ、その請求の手続を行った者が当該訴訟において秘密保持命令を受けていない者であるときは、裁判所書記官は、同項の申立てをした当事者（その請求をした者を除く。第三項において同じ。）に対し、その請求後直ちに、その請求があった旨を通知しなければならない。</p>

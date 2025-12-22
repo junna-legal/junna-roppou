@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2728.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2730.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第七百条の三及び第七百条の四に規定する場合のほか、次の各号に規定する場合には、当該各号に掲げる引渡し等に対し、当該引渡し等を新法第七百条の三第一項の引取りと、当該各号に定める者を同項の引取りを行う者とみなし、当該引渡し等に係る軽油の数量（第三号の場合において、当該軽油が同条第四項の製造された軽油であって当該軽油を所有する石油製品販売業者（同項に規定する石油製品販売業者をいう。以下この条において同じ。）により製造されたものであるときは、同項の軽油以外の炭化水素油の数量に相当する数量を控除した数量とし、第四号の場合には、当該免税証に記載された軽油の数量とする。）を課税標準として、当該各号に定める者の当該引渡し等に直接関係を有する事務所又は事業所（事務所又は事業所がない者にあっては、住所。第五項において同じ。）所在の道府県において、当該各号に定める者に軽油引取税を課する。</p>

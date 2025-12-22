@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0007.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0009.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条（強制換価の場合の消費税等の優先）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国税通則法第三十九条（強制換価の場合の消費税等の徴収の特例）又は輸入品に対する内国消費税の徴収等に関する法律（昭和三十年法律第三十七号）第八条第一項第三号若しくは第七号（公売又は売却等の場合における内国消費税の徴収）の規定により徴収する消費税等（その滞納処分費を含む。）は、次条から第十七条まで（差押先着手による国税の優先等）及び第十九条から第二十一条まで（先取特権等の優先）の規定にかかわらず、その徴収の基因となつた移出又は公売若しくは売却に係る物品の換価代金につき、他の国税、地方税その他の債権に先だつて徴収する。</p>

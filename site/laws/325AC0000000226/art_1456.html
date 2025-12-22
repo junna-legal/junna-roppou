@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1455.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1457.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十条（不動産取得税の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、預金保険法附則第七条第一項第一号に規定する協定銀行が、同項に規定する協定の定めにより同法附則第八条第一項第一号に規定する内閣総理大臣のあつせんを受けて行う同法附則第七条第一項に規定する破綻金融機関等の同法第二条第十三項に規定する事業の譲受け等若しくは同法第百二十六条の三十四第一項に規定する特定事業譲受け等又は同法附則第八条第一項第二号に規定する預金保険機構の委託（同法附則第十条第一項第一号及び第三号に掲げる場合に係るものに限る。）を受けて行う資産の買取りにより不動産を取得した場合には、当該あつせん又は当該委託の申出が平成十三年四月一日から令和九年三月三十一日までの間に行われたときに限り、第七十三条の二第一項の規定にかかわらず、当該不動産の取得に対しては、不動産取得税を課することができない。</p>

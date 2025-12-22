@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0014.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0016.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（酒類の製造免許で課税しないものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第六十五号（一）に規定する政令で定める製造免許は、酒税法（昭和二十八年法律第六号）第七条第四項（酒類の製造免許）の規定により期限の付された酒類の製造免許を受けている者が当該製造免許に係る製造場（試験のためにのみ酒類を製造する製造場を除く。）において当該期限の満了後引き続いて当該製造免許に係る酒類を製造するために受ける当該酒類の製造免許とする。</p>

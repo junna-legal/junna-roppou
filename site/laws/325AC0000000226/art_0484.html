@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0483.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0485.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十三条の二十七の六（農地中間管理機構の農地の取得に対して課する不動産取得税の納税義務の免除等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、農地中間管理事業の推進に関する法律（平成二十五年法律第百一号）第二条第四項に規定する農地中間管理機構が、農業経営基盤強化促進法（昭和五十五年法律第六十五号）第七条第一号に掲げる事業（同法第四条第一項に規定する農用地等の貸付けであつてその貸付期間（当該貸付期間のうち延長に係るものを除く。）が五年を超えるものを行うことを目的として当該農用地等を取得するものを除く。以下この項において「農地売買事業」という。）の実施により政令で定める区域内の農地、採草放牧地又は開発して農地とすることが適当な土地を取得した場合において、これらの土地（開発して農地とすることが適当な土地について開発をした場合には、開発後の農地）をその取得の日から五年以内（同日から五年以内に、これらの土地について土地改良法第二条第二項に規定する土地改良事業で同項第二号、第三号、第五号又は第七号に掲げるもの（これらの事業に係る調査で国の行政機関の定めた計画に基づくものが行われる場合には、当該調査）が開始された場合において、これらの事業の完了の日として政令で定める日後一年を経過する日がこれらの土地の取得の日から五年を経過する日後に到来することとなつたときは、当該一年を経過する日までの間）に当該農地売買事業の実施により売り渡し、若しくは交換し、又は農業経営基盤強化促進法第七条第三号に掲げる事業の実施により現物出資したときは、当該農地中間管理機構によるこれらの土地の取得に対して課する不動産取得税に係る地方団体の徴収金に係る納税義務を免除するものとする。</p>

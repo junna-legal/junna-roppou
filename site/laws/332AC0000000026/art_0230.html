@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0229.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0231.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十五条の二（医療用機器等の特別償却）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>青色申告書を提出する法人で医療保健業を営むものが、昭和五十四年四月一日から令和九年三月三十一日までの間に、医療用の機械及び装置並びに器具及び備品（政令で定める規模のものに限る。）のうち、高度な医療の提供に資するもの若しくは先進的なものとして政令で定めるもの（以下この項において「医療用機器」という。）でその製作の後事業の用に供されたことのないものを取得し、又は医療用機器を製作して、これを当該法人の営む医療保健業の用に供した場合（所有権移転外リース取引により取得した当該医療用機器をその用に供した場合を除く。）には、その用に供した日を含む事業年度の当該医療用機器の償却限度額は、法人税法第三十一条第一項又は第二項の規定にかかわらず、当該医療用機器の普通償却限度額と特別償却限度額（当該医療用機器の取得価額の百分の十二に相当する金額をいう。）との合計額とする。</p>

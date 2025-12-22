@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0122.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0124.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十二条の八（特定住宅地造成事業等のために土地等を譲渡した場合の譲渡所得の特別控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第三十四条の二第二項第一号に規定する地方公共団体の設立に係る団体で政令で定めるものは、地方公共団体が財産を提供して設立した団体（当該地方公共団体とともに国、地方公共団体及び独立行政法人都市再生機構以外の者が財産を提供して設立した団体を除く。次項において同じ。）で、都市計画その他市街地の整備の計画に従つて宅地の造成を行うことを主たる目的とするものとし、同号に規定する政令で定める事業は、土地開発公社が行う公有地の拡大の推進に関する法律第十七条第一項第一号ニに掲げる土地の取得に係る事業とする。</p>

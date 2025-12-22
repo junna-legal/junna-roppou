@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0018.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0020.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十六条（石油パイプライン事業の用に供する導管に係る変更の許可で課税するものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第九十七号に規定する政令で定める許可は、石油パイプライン事業法（昭和四十七年法律第百五号）第五条第一項（石油パイプライン事業の許可）の許可を受けている者が当該許可に係る導管の延長を増加するために受ける同法第八条第一項（事業用施設等の変更）の導管に係る変更の許可で、当該増加する導管の延長が八キロメートルを超えるものとする。</p>

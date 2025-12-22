@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0354.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0356.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の四十五の二（法人の事業税に係る納期限の延長の場合の延滞金）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第七十二条の二十五第三項（第七十二条の二十八第二項及び第七十二条の二十九第二項において準用する場合を含む。以下この項において同じ。）又は第五項（第七十二条の二十八第二項並びに第七十二条の二十九第二項及び第六項において準用する場合を含む。以下この項において同じ。）の規定の適用を受けている法人は、その適用に係る各事業年度に係る所得割等又は収入割等を納付する場合には、当該税額に、当該各事業年度終了の日後二月を経過した日から第七十二条の二十五第三項又は第五項の規定により延長された当該事業税の申告書の提出期限までの期間の日数に応じ、年七・三パーセントの割合を乗じて計算した金額に相当する延滞金額を加算して納付しなければならない。</p>

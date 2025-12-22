@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0044.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0046.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（振替国債等の利子の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第五条の二第二項に規定する適格外国証券投資信託又は同条第三項に規定する外国年金信託（以下この項、第二十一項及び第二十四項において「適格外国証券投資信託等」という。）の受託者である非居住者又は外国法人が当該適格外国証券投資信託等の信託財産につき支払を受ける同条第一項に規定する振替国債（以下この条において「振替国債」という。）又は同項に規定する振替地方債（以下この条において「振替地方債」という。）の利子について同項の規定の適用を受けようとする場合には、当該非居住者又は外国法人は、その受託した適格外国証券投資信託等の別に、同項に規定する非課税適用申告書（以下この条において「非課税適用申告書」という。）を同項の規定により同項に規定する税務署長に提出するものとする。</p>

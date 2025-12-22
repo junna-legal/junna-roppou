@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0087.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0089.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建物の区分所有等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十条（団地内の建物の一括建替え決議）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>団地内建物の全部が専有部分のある建物であり、かつ、当該団地内建物の敷地（団地内建物が所在する土地及び第五条第一項の規定により団地内建物の敷地とされた土地をいい、これに関する権利を含む。以下この項及び次項において同じ。）が当該団地内建物の区分所有者の共有に属する場合において、当該団地内建物について第六十八条第一項（第一号を除く。）の規定により第六十六条において準用する第三十条第一項の規約が定められているときは、第六十二条第一項の規定にかかわらず、当該団地内建物の敷地の共有者である当該団地内建物の区分所有者で構成される第六十五条に規定する団体又は団地管理組合法人の集会において、当該団地内建物の区分所有者及び議決権の各五分の四以上の多数で、当該団地内建物につき一括して、その全部を取り壊し、かつ、当該団地内建物の敷地（これに関する権利を除く。以下この項において同じ。）若しくはその一部の土地又は当該団地内建物の敷地の全部若しくは一部を含む土地（第三項第一号においてこれらの土地を「再建団地内敷地」という。）に新たに建物を建築する旨の決議（以下この条において「一括建替え決議」という。）をすることができる。</p>

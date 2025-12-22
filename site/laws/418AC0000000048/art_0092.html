@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0091.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0093.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>一般社団法人及び一般財団法人に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十六条（業務の執行に関する検査役の選任）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>一般社団法人の業務の執行に関し、不正の行為又は法令若しくは定款に違反する重大な事実があることを疑うに足りる事由があるときは、総社員の議決権の十分の一（これを下回る割合を定款で定めた場合にあっては、その割合）以上の議決権を有する社員は、当該一般社団法人の業務及び財産の状況を調査させるため、裁判所に対し、検査役の選任の申立てをすることができる。</p>

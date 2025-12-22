@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0160.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0162.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十四条の二（法人課税信託の受託者に関するこの節の規定の適用等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人課税信託の受託者は、各法人課税信託の信託資産等（信託財産に属する資産及び負債並びに当該信託財産に帰せられる収益及び費用をいう。以下この項及び次項において同じ。）及び固有資産等（法人課税信託の信託資産等以外の資産及び負債並びに収益及び費用をいう。同項において同じ。）ごとに、それぞれ別の者とみなして、この節（前条、次条、第二十四条の三、第二十五条、第二十七条から第三十一条まで、第五十二条、第五十三条第三十一項、第五十三条の三、第五十四条、第六十二条、第三款第三目、第七十一条の十六、第四款第三目、第七十一条の三十七、第五款第三目、第七十一条の五十七及び第六款第三目を除く。第三項から第五項までにおいて同じ。）及び第五章第二節（第七百三十九条の五及び第七百三十九条の六を除く。第三項において同じ。）の規定を適用する。</p>

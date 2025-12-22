@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0448.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0450.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事訴訟法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四百一条（電磁的記録に係る訴訟記録の取扱い）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>督促手続に係る訴訟記録のうち、第百三十二条の十第一項本文の規定により電子情報処理組織を用いてされた申立て等に係る部分又は前条第一項の規定により電磁的記録の作成等がされた部分（以下この条において「電磁的記録部分」と総称する。）について、第九十一条第一項又は第三項の規定による訴訟記録の閲覧等の請求があったときは、指定簡易裁判所の裁判所書記官は、当該指定簡易裁判所の使用に係る電子計算機に備えられたファイルに記録された電磁的記録部分の内容を書面に出力した上、当該訴訟記録の閲覧等を当該書面をもってするものとする。</p>

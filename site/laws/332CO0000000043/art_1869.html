@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1868.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1870.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十二条（特殊関係株主等である内国法人に係る特定外国法人に係る所得の課税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新令第三十九条の二十の六第十二項及び第十三項の規定は、新法第六十六条の九の二第五項に規定する特殊関係株主等である内国法人の平成二十三年四月一日以後に終了する事業年度に係る同条第四項に規定する部分課税対象金額を計算する場合の同項に規定する部分適用対象金額について適用し、旧法第六十六条の九の二第五項に規定する特殊関係株主等である内国法人の同日前に終了した事業年度に係る同条第四項に規定する部分課税対象金額を計算する場合の同項に規定する部分適用対象金額については、なお従前の例による。</p>

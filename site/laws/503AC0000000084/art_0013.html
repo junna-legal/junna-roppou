@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>重要施設周辺及び国境離島等における土地等の利用状況の調査及び利用の規制等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（特別注視区域内における土地等に関する所有権等の移転等の届出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特別注視区域内にある土地等（その面積（建物にあっては、床面積。第二号において同じ。）が二百平方メートルを下回らない範囲内で政令で定める規模未満の土地等を除く。以下この項及び第三項において同じ。）に関する所有権又はその取得を目的とする権利（以下この項において「所有権等」という。）の移転又は設定をする契約（予約を含み、当該契約に係る土地等に関する所有権等の移転又は設定を受ける者が国、地方公共団体その他政令で定める者である契約その他当該契約による土地等に関する所有権等の移転又は設定後における当該土地等が特定重要施設の施設機能又は特定国境離島等の離島機能を阻害する行為の用に供されるおそれが少ないものとして政令で定める契約を除く。以下この条及び第二十六条第一号において「土地等売買等契約」という。）を締結する場合には、当事者は、次に掲げる事項を、内閣府令で定めるところにより、あらかじめ、内閣総理大臣に届け出なければならない。</p>

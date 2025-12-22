@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0037.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0039.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社計算規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十八条（株主資本等を引き継ぐ場合における吸収分割承継会社の株主資本等の変動額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定にかかわらず、分割型吸収分割における吸収型再編対価の全部が吸収分割承継会社の株式又は持分である場合であって、吸収分割会社における吸収分割の直前の株主資本等の全部又は一部を引き継ぐものとして計算することが適切であるときには、分割型吸収分割により変動する吸収分割会社の資本金、資本剰余金及び利益剰余金の額をそれぞれ当該吸収分割承継会社の資本金、資本剰余金及び利益剰余金の変動額とすることができる。</p>

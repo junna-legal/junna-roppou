@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0307.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0309.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十七条の八（協同組合等が有する普通出資に係る受取配当等の益金不算入の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>協同組合等の各事業年度において、その有する連合会等（農林中央金庫その他の協同組合等であつてその会員又は組合員が法人税法別表第三の下欄に掲げる根拠法の規定により他の協同組合等及びこれに準ずる法人に限られているものをいう。）に対する出資（協同組織金融機関の優先出資に関する法律に規定する優先出資に該当するものを除く。以下この項において「普通出資」という。）につき支払を受ける配当等の額（法人税法第二十三条第一項に規定する配当等の額をいう。）がある場合には、同条の規定の適用については、当該普通出資は、同条第四項から第六項までの規定にかかわらず、これらの規定に規定する関連法人株式等、完全子法人株式等及び非支配目的株式等のいずれにも該当しないものとする。</p>

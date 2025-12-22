@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0003.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0005.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>犯罪利用預金口座等に係る資金による被害回復分配金の支払等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（公告の求め）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>金融機関は、当該金融機関の預金口座等について、次に掲げる事由その他の事情を勘案して犯罪利用預金口座等であると疑うに足りる相当な理由があると認めるときは、速やかに、当該預金口座等について現に取引の停止等の措置が講じられていない場合においては当該措置を講ずるとともに、主務省令で定めるところにより、預金保険機構に対し、当該預金口座等に係る預金等に係る債権について、主務省令で定める書類を添えて、当該債権の消滅手続の開始に係る公告をすることを求めなければならない。</p>

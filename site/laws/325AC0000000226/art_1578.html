@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1577.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1579.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条の三（特定中小会社が発行した株式に係る譲渡損失の繰越控除等及び譲渡所得等の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県民税の所得割の納税義務者（租税特別措置法第三十七条の十三第一項に規定する特定中小会社（以下この項及び第十一項において「特定中小会社」という。）の同条第一項に規定する特定株式（以下この条において「特定株式」という。）を払込み（当該株式の発行に際してするものに限る。以下この条において同じ。）により取得（同法第二十九条の二第一項本文の規定の適用を受けるものを除く。以下この条において同じ。）をしたもの（当該取得をした日においてその者を判定の基礎となる株主として選定した場合に当該特定中小会社が法人税法第二条第十号に規定する会社に該当することとなるときにおける当該株主その他の政令で定める者であつたものを除く。）又は租税特別措置法第三十七条の十三の二第一項に規定する株式会社の同項に規定する設立特定株式を払込みにより取得をしたもの（当該株式会社の発起人であることその他の政令で定める要件を満たすものに限る。）に限る。第三項、第五項及び第六項において同じ。）について、同法第三十七条の十三の三第一項に規定する適用期間（第六項、第十一項及び第十六項において「適用期間」という。）内に、その有する当該払込みにより取得をした特定株式が株式としての価値を失つたことによる損失が生じた場合として同条第一項各号に掲げる事実が発生したときは、同項各号に掲げる事実が発生したことは当該特定株式の譲渡をしたことと、当該損失の金額として政令で定める金額は当該特定株式の譲渡をしたことにより生じた損失の金額とそれぞれみなして、この項から第十項まで及び附則第三十五条の二第一項から第四項までの規定その他の道府県民税に関する規定を適用する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0027.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0029.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条の二十二（金融機関等において事業譲渡等があつた場合の申告）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>事業の譲渡若しくは合併若しくは分割又は金融機関の営業所等の新設若しくは廃止若しくは業務を行う区域の変更により、財産形成非課税住宅貯蓄申告書を提出した個人が預入等をした財産形成住宅貯蓄のうち当該申告書に係るものに関する事務の全部がその事業の譲渡を受けた第二条の五第一項に規定する者（以下この項において「金融機関等」という。）、その合併により設立した金融機関等若しくはその合併後存続する金融機関等若しくはその分割により資産及び負債の移転を受けた金融機関等の営業所、事務所その他これらに準ずるもの又は同一の金融機関等の他の営業所、事務所その他これらに準ずるもの（以下この条において「移管先の営業所等」という。）に移管された場合には、当該移管先の営業所等の長は、遅滞なく、当該個人に係る勤務先（当該個人が海外転勤者の財産形成非課税住宅貯蓄継続適用申告書を提出した者である場合には、その者に係る出国時勤務先）別に、その旨その他財務省令で定める事項を記載した書類を作成し、これを当該個人に係る勤務先等（当該個人が海外転勤者の財産形成非課税住宅貯蓄継続適用申告書を提出した者である場合には、その者に係る出国時勤務先等）を経由して、当該移管先の営業所等の所在地の所轄税務署長に提出しなければならない。</p>

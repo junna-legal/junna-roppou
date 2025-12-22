@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0007.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0009.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（障害者等の少額公債の利子の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国内に住所を有する個人で障害者等であるものが、金融商品取引業者又は金融機関で政令で定めるものの営業所又は事務所（以下この項において「販売機関の営業所等」という。）において、国債及び地方債で政令で定めるもの（以下この項及び第三項において「公債」という。）を購入する場合において、政令で定めるところにより、その購入の際その公債につきこの項の規定の適用を受けようとする旨、その者の氏名、生年月日及び住所並びに障害者等に該当する旨その他必要な事項を記載した書類（以下この項において「特別非課税貯蓄申込書」という。）を提出したときは、その公債の利子の各計算期間ごとにその計算期間を通じて（その公債が当該計算期間の中途において購入したものである場合には、その購入の日の属する計算期間については、同日から当該計算期間の終了の日までの期間を通じて）次に掲げる要件を満たす場合に限り、当該計算期間に対応する利子については、所得税を課さない。</p>

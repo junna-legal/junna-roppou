@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0187.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0189.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の十八の二（認定特定非営利活動法人等に寄附をした場合の寄附金控除の特例又は所得税額の特別控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人が、認定特定非営利活動法人等（特定非営利活動促進法（平成十年法律第七号）第二条第三項に規定する認定特定非営利活動法人及び同条第四項に規定する特例認定特定非営利活動法人をいう。以下この条において同じ。）に対し、当該認定特定非営利活動法人等の行う同法第二条第一項に規定する特定非営利活動（次項において「特定非営利活動」という。）に係る事業に関連する寄附（その寄附をした者に特別の利益が及ぶと認められるもの及び出資に関する業務に充てられることが明らかなものを除く。以下この項及び次項において同じ。）をした場合（当該寄附に係る支出金を支出した年分の所得税につき次項の規定の適用を受ける場合を除く。）には、当該寄附に係る支出金は、所得税法第七十八条第二項に規定する特定寄附金とみなして、同法の規定を適用する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条の二（個人又は法人の申出による住民基本台帳の一部の写しの閲覧）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、次に掲げる活動を行うために住民基本台帳の一部の写しを閲覧することが必要である旨の申出があり、かつ、当該申出を相当と認めるときは、当該申出を行う者（以下この条及び第五十条において「申出者」という。）が個人の場合にあつては当該申出者又はその指定する者に、当該申出者が法人（法人でない団体で代表者又は管理人の定めのあるものを含む。以下この条及び第十二条の三第四項において同じ。）の場合にあつては当該法人の役職員又は構成員（他の法人と共同して申出をする場合にあつては、当該他の法人の役職員又は構成員を含む。）で当該法人が指定するものに、その活動に必要な限度において、住民基本台帳の一部の写しを閲覧させることができる。</p>

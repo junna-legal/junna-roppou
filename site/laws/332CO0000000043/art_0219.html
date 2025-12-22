@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0218.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0220.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条の十一（償還差益に対する所得税額の法人税額からの控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第四十一条の十二第四項の規定により同項に規定する償還を受ける時に徴収される所得税とみなされたもののうち法人税の額から控除する所得税の額は、当該所得税の額（当該所得税の額が明らかでないときは、その割引債の券面金額から当該割引債に係る発行価額（当該割引債が短期公社債に該当する国債その他財務省令で定める国債（以下この項において「短期国債等」という。）でその発行価額が明らかでないもの以外の割引債であるときは当該割引債に係る最終発行日における発行価額とし、当該割引債が当該短期国債等であるときは当該割引債に係る当該発行価額に準ずるものとして財務省令で定める価額とする。第二十六条の十三第一項第一号及び第五項第二号において「最終発行日における発行価額等」という。）を控除した残額（当該割引債が外国法人が国外において発行したものであるときは、法第四十一条の十二第三項に規定する政令で定める金額）に、当該割引債の発行の際に同条第三項の規定により当該割引債に係る償還差益について徴収された所得税の税率を乗じて計算した金額とし、その割引債が償還期限を繰り上げて償還をされたもの又は当該期限前に買入消却をされたものであるときは、その所得税の額から次条第一項の規定により計算した還付する金額を控除した残額とする。）について、法人税法施行令第百四十条の二の規定により計算した金額とする。</p>

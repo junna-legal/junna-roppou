@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1412.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1414.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条の二（平成十五年中に開設する特定口座への上場株式等の移管等に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>居住者又は国内に恒久的施設を有する非居住者が、平成十五年一月一日から同年十二月三十一日までの間に、証券業者の営業所に新法第三十七条の十一の三第三項第一号に規定する特定口座開設届出書（改正法附則第十三条第三項の規定により同年一月一日に提出されたものとみなされるものを除く。次項において「特定口座開設届出書」という。）を提出して特定口座（同号に規定する特定口座をいう。以下この条において同じ。）を開設する場合には、新法第三十七条の十一の三第三項第二号ハに規定する政令で定める上場株式等は、新措置法令第二十五条の十の二第十四項各号に掲げるもののほか、当該居住者又は国内に恒久的施設を有する非居住者が当該特定口座の開設の日の前日において有する上場株式等のうち次に掲げる上場株式等でその開設の日に当該特定口座に受け入れる上場株式等とする。</p>

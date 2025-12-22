@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0011.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0013.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>信託法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条（詐害信託の否認等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>破産者が委託者としてした信託における破産法（平成十六年法律第七十五号）第百六十条第一項の規定の適用については、同項各号中「これによって利益を受けた者が、その行為の当時」とあるのは「受益者が現に存する場合においては、当該受益者（当該受益者の中に受益権を譲り受けた者がある場合にあっては、当該受益者及びその前に受益権を譲り渡した全ての者）の全部が信託法第十一条第一項に規定する受益者としての指定を受けたことを知った時（受益権を譲り受けた者にあっては、受益権を譲り受けた時）において」と、「知らなかったときは、この限りでない」とあるのは「知っていたときに限る」とする。</p>

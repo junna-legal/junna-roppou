@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0014.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0016.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五条の二（振替国債等の利子の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>非居住者又は外国法人が、特定振替機関、特定口座管理機関若しくは特定間接口座管理機関（以下この条において「特定振替機関等」という。）又は適格外国仲介業者から開設を受けている口座において当該特定振替機関等の国内にある営業所若しくは事務所（以下この条において「営業所等」という。）又は当該適格外国仲介業者の特定国外営業所等を通じて振替記載等を受けている社債、株式等の振替に関する法律第八十八条に規定する振替国債（同法第九十条第三項に規定する分離利息振替国債を除く。以下この条において「振替国債」という。）又は同法第百十三条において準用する同法第六十六条の規定により同法の規定の適用を受けるものとされる地方債（以下この条において「振替地方債」という。）につきその利子（第八条第一項又は第二項の規定の適用があるものを除く。）の支払を受ける場合において、振替国債又は振替地方債の利子につき最初にこの項の規定の適用を受けようとする際、その旨、その者の氏名又は名称及び住所（国内に居所を有する非居住者その他の財務省令で定める者にあつては、財務省令で定める場所。以下この条において同じ。）その他の財務省令で定める事項を記載した書類（以下この条において「非課税適用申告書」という。）を、当該特定振替機関等を経由し、又は当該適格外国仲介業者及び当該適格外国仲介業者が当該振替国債若しくは振替地方債の振替記載等を受ける特定振替機関等（当該適格外国仲介業者が外国再間接口座管理機関である場合には、当該振替国債又は振替地方債の振替記載等に係る外国間接口座管理機関が当該振替国債又は振替地方債の振替記載等を受ける特定振替機関等）を経由して当該特定振替機関等の本店又は主たる事務所の所在地の所轄税務署長に提出しているときは、その支払を受ける利子については、所得税を課さない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1508.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1510.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十九条の二（通常市街化区域農地に対して課する令和元年度以降の各年度分の固定資産税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>令和元年度以降の各年度に係る賦課期日に所在する市街化区域農地（農地のうち、都市計画法第七条第一項に規定する市街化区域内のもの（次に掲げるものを除く。）をいう。以下同じ。）のうち、田園住居地域内市街化区域農地（市街化区域農地のうち、同法第八条第一項第一号に規定する田園住居地域内のものをいう。次条及び附則第二十二条において同じ。）以外のもの（以下この条において「通常市街化区域農地」という。）に対して課する固定資産税の課税標準となるべき価格については、当該通常市街化区域農地とその状況が類似する宅地の固定資産税の課税標準とされる価格に比準する価格により定められるべきものとする。</p>

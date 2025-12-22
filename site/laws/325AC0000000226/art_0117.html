@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0116.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0118.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十条の九の三（更正の請求）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>申告納付又は申告納入に係る地方税の申告書（以下この条において「申告書」という。）を提出した者は、当該申告書に記載した課税標準等若しくは税額等の計算が地方税に関する法令の規定に従つていなかつたこと又は当該計算に誤りがあつたことにより、次の各号のいずれかに該当する場合には、当該申告書に係る地方税の法定納期限から五年以内に限り、総務省令の定めるところにより、地方団体の長に対し、その申告に係る課税標準等又は税額等（当該課税標準等又は税額等に関し更正があつた場合には、当該更正後の課税標準等又は税額等）につき更正をすべき旨の請求をすることができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0020.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0022.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十七条（農地又は採草放牧地の賃貸借の更新）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>農地又は採草放牧地の賃貸借について期間の定めがある場合において、その当事者が、その期間の満了の一年前から六月前まで（賃貸人又はその世帯員等の死亡又は第二条第二項に掲げる事由によりその土地について耕作、採草又は家畜の放牧をすることができないため、一時賃貸をしたことが明らかな場合は、その期間の満了の六月前から一月前まで）の間に、相手方に対して更新をしない旨の通知をしないときは、従前の賃貸借と同一の条件で更に賃貸借をしたものとみなす。</p>

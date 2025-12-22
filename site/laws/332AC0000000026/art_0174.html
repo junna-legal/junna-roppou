@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0173.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0175.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の十二（償還差益等に係る分離課税等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人が昭和六十三年四月一日以後に発行された割引債について支払を受けるべき償還差益については、所得税法第二十二条及び第八十九条並びに第百六十五条の規定にかかわらず、他の所得と区分し、その支払を受けるべき金額（外国法人により国外において発行された割引債の償還差益にあつては、当該外国法人が国内において行う事業に係るものとして政令で定める金額。次項において同じ。）に対し、百分の十八（東京湾横断道路の建設に関する特別措置法（昭和六十一年法律第四十五号）第二条第一項に規定する東京湾横断道路建設事業者が同法第十条第一項の認可を受けて発行する社債及び民間都市開発の推進に関する特別措置法（昭和六十二年法律第六十二号）第三条第一項に規定する民間都市開発推進機構（政令で定めるものに限る。）が同法第八条第三項の認可を受けて発行する債券のうち、割引債に該当するもの（次項及び第三項において「特別割引債」という。）につき支払を受けるべき償還差益については、百分の十六）の税率を適用して所得税を課する。</p>

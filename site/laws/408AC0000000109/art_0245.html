@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0244.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0246.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事訴訟法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百三条の三（遮へいの措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>裁判長は、事案の性質、証人の年齢又は心身の状態、証人と当事者本人又はその法定代理人との関係（証人がこれらの者が行った犯罪により害を被った者であることを含む。次条第二号において同じ。）その他の事情により、証人が当事者本人又はその法定代理人の面前（同条に規定する方法による場合を含む。）において陳述するときは圧迫を受け精神の平穏を著しく害されるおそれがあると認める場合であって、相当と認めるときは、その当事者本人又は法定代理人とその証人との間で、一方から又は相互に相手の状態を認識することができないようにするための措置をとることができる。</p>

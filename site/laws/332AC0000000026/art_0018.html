@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0017.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0019.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七条（特別国際金融取引勘定において経理された預金等の利子の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>外国為替及び外国貿易法（昭和二十四年法律第二百二十八号）第二十一条第三項に規定する金融機関が、平成十年四月一日以後に、外国法人で同項に規定する非居住者であることにつき財務省令で定めるところにより証明がされたものから預入を受け、又は借り入れる預金又は借入金で同項に規定する特別国際金融取引勘定（以下この条において「特別国際金融取引勘定」という。）において経理したものにつき、当該外国法人に対して支払う利子（債券の買戻又は売戻条件付売買取引として政令で定めるものから生ずる差益として政令で定めるものを含む。）については、所得税を課さない。</p>

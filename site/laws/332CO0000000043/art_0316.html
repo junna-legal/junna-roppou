@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0315.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0317.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十九条の七（特定の資産の買換えの場合等の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第六十五条の七第一項に規定する政令で定めるときは、同項に規定する買換資産（以下この条において「買換資産」という。）の取得（建設及び製作を含む。次項において同じ。）をした日を含む事業年度終了の日後に当該買換資産を適格合併、適格分割、適格現物出資又は適格現物分配（以下この項において「適格合併等」という。）により合併法人、分割承継法人、被現物出資法人又は被現物分配法人（以下この項において「合併法人等」という。）に移転する場合において、当該合併法人等が当該取得をした日から一年以内に当該買換資産を当該適格合併等により移転を受ける法第六十五条の七第一項の表の各号の下欄に規定する地域内にある事業の用（同表の第四号の下欄に掲げる資産については、その移転を受ける事業の用）に供する見込みであるときとする。</p>

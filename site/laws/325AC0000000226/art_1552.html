@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1551.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1553.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条の二の二（特別土地保有税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>当分の間、土地の取得の日の属する年の翌々年（当該土地の取得の日が一月一日である場合にあつては、同日の属する年の翌年）の末日の属する年度以後の年度における当該土地に対して課する特別土地保有税の課税標準は、第五百九十三条の規定にかかわらず、第五百九十三条第一項の土地の取得価額又は修正取得価額（当該土地の第五百九十三条第一項の取得価額を、当該土地の取得の日の属する年の翌年の一月一日（当該土地の取得の日が一月一日である場合にあつては、同日）から当該年度の初日の属する年の一月一日までの期間における地価の変動を勘案して政令で定めるところにより修正した額をいう。）のいずれか低い金額とする。</p>

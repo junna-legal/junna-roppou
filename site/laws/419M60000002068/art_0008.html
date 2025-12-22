@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0007.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0009.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>公益社団法人及び公益財団法人の認定等に関する法律施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八条（警察庁長官等からの意見聴取）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>行政庁は、法第八条第二号（法第十一条第四項、第二十五条第四項及び一般社団法人及び一般財団法人に関する法律及び公益社団法人及び公益財団法人の認定等に関する法律の施行に伴う関係法律の整備等に関する法律（平成十八年法律第五十号。以下「整備法」という。）第百四条において準用する場合を含む。）の規定により警察庁長官等の意見を聴こうとするときは、あらかじめ、当該意見聴取に係る法人について法第六条各号に該当するか否かの調査（法第八条第一号及び第三号の規定による意見聴取を含む。）を行うものとする。</p>

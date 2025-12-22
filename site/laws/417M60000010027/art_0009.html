@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0008.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0010.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>船舶登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十一条（所有権に関する登記の申請等における会社法人等番号の提供を要しない場合）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>令第十三条第一項第四号ロの法務省令で定める場合は、申請人が所有権の登記名義人となる者の全ての代表者その他の業務を執行する全ての役員の資格を証する登記事項証明書（商業登記法（昭和三十八年法律第百二十五号）第十条第一項（他の法令において準用する場合を含む。）に規定する登記事項証明書をいう。以下この条において同じ。）を提供して登記の申請をする場合において、当該所有権の登記名義人となる者が同号ロ（１）に規定する会社であるときとする。</p>

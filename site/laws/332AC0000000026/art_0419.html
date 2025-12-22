@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0418.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0420.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十三条の二の二（特定目的会社が資産流動化計画に基づき特定不動産を取得した場合等の所有権の移転登記の税率の軽減）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定目的会社（資産の流動化に関する法律第二条第三項に規定する特定目的会社をいう。以下この項において同じ。）で第一号に掲げる要件を満たすものが、特定目的会社による特定資産の流動化に関する法律等の一部を改正する法律（平成十二年法律第九十七号）の施行の日から令和九年三月三十一日までの間に、同条第四項に規定する資産流動化計画（以下この項において「資産流動化計画」という。）に基づき特定資産（同条第一項に規定する特定資産をいう。以下この項において同じ。）のうち不動産（宅地建物取引業法の宅地又は建物をいう。以下この条において同じ。）の所有権の取得をした場合（当該特定目的会社において運用されている特定資産が第二号に掲げる要件を満たす場合に限る。）には、当該不動産の所有権の移転の登記に係る登録免許税の税率は、財務省令で定めるところにより当該取得後一年以内に登記を受けるものに限り、登録免許税法第九条の規定にかかわらず、千分の十三とする。</p>

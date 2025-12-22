@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0038.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0040.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十条（第三者の権利の目的となつている財産の差押換）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>質権、抵当権、先取特権（第十九条第一項各号（不動産保存の先取特権等）又は第二十条第一項各号（不動産賃貸の先取特権等）に掲げる先取特権に限る。この項を除き、以下同じ。）、留置権、賃借権その他第三者の権利（これらの先取特権以外の先取特権を除く。以下同じ。）の目的となつている財産が差し押えられた場合には、その第三者は、税務署長に対し、滞納者が他に換価の容易な財産で他の第三者の権利の目的となつていないものを有し、かつ、その財産によりその滞納者の国税の全額を徴収することができることを理由として、その財産の公売公告の日（随意契約による売却をする場合には、その売却の日）までに、その差押換を請求することができる。</p>

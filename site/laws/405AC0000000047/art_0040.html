@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0039.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0041.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不正競争防止法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十六条（追徴保全命令）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>裁判所は、第二十一条第一項、第二項、第四項（第四号を除く。）、第五項及び第六項の罪に係る被告事件に関し、同条第十五項の規定により追徴すべき場合に当たると思料するに足りる相当な理由がある場合において、追徴の裁判の執行をすることができなくなるおそれがあり、又はその執行をするのに著しい困難を生ずるおそれがあると認めるときは、検察官の請求により、又は職権で、追徴保全命令を発して、被告人に対し、その財産の処分を禁止することができる。</p>

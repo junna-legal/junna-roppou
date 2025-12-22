@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0033.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0035.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十条（免許等の範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第二十四条第一項に規定する政令で定める免許等は、法別表第一第十三号（二）、第三十二号（五）ロ、（六）ロ若しくは（三十）、第三十三号、第五十一号、第五十二号、第五十四号、第五十五号、第五十九号、第六十一号、第六十四号、第六十五号、第六十六号（三）若しくは（四）、第八十五号、第八十七号の二、第九十二号、第九十六号（一）、第九十七号、第九十八号、第九十九号（一）、第百号（四）、第百一号（（九）を除く。）、第百二号（（四）を除く。）、第百三号、第百四号（一）から（十）まで、第百八号から第百十二号まで、第百十七号の二、第百二十号、第百二十一号、第百二十三号から第百二十六号まで、第百二十八号から第百三十五号まで又は第百三十七号から第百四十二号の二までに掲げる登録、特許、免許、許可、認可、認定、指定又は技能証明（同表第十三号（二）に掲げる登録にあつては、特許登録令（昭和三十五年政令第三十九号）第十六条第六号（職権による登録）の規定により特許庁長官が職権でする仮専用実施権の設定の登録に限る。）とする。</p>

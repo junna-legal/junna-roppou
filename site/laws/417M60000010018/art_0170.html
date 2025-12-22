@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0169.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0171.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百五十四条（職権による登記の抹消の場合の公告の方法）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第七十一条第二項の公告は、抹消すべき登記が登記された登記所の掲示場その他登記所内の公衆の見やすい場所に掲示して行う方法又は登記所の使用に係る電子計算機に備えられたファイルに記録された情報の内容を電気通信回線を通じて情報の提供を受ける者の閲覧に供し、当該情報の提供を受ける者の使用に係る電子計算機に備えられたファイルに当該情報を記録する方法であってインターネットに接続された自動公衆送信装置（著作権法（昭和四十五年法律第四十八号）第二条第一項第九号の五イに規定する自動公衆送信装置をいう。第二百十七条第一項（第二百三十二条第五項、第二百四十四条第四項、第二百四十五条第四項及び第二百四十六条第二項において準用する場合を含む。）において同じ。）を使用する方法により二週間行うものとする。</p>

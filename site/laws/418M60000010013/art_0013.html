@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社計算規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（通則）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>株式会社がその成立後に行う株式の交付（法第四百四十五条第五項に掲げる行為に際しての株式の交付を除く。）による株式会社の資本金等増加限度額（同条第一項に規定する株主となる者が当該株式会社に対して払込み又は給付をした財産の額をいう。以下この節において同じ。）、その他資本剰余金及びその他利益剰余金の額並びに自己株式対価額（第百五十条第二項第八号及び第百五十八条第八号ハ並びに法第四百四十六条第二号並びに第四百六十一条第二項第二号ロ及び第四号に規定する自己株式の対価の額をいう。以下この章において同じ。）については、この款の定めるところによる。</p>

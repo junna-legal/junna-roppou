@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3405.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3407.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十八条（試験研究を行った場合の法人税額の特別控除に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新租税特別措置法第四十二条の四の規定は、法人（租税特別措置法第二条第二項第二号に規定する人格のない社団等を含む。以下附則第四十六条までにおいて同じ。）の施行日以後に開始する事業年度（新租税特別措置法第四十二条の四第八項第三号の通算法人の租税特別措置法第四十二条の四第八項第二号に規定する適用対象事業年度（以下この条において「適用対象事業年度」という。）を除く。）分の法人税及び新租税特別措置法第四十二条の四第八項第三号の通算法人に係る租税特別措置法第二条第二項第十号の四に規定する通算親法人（以下この条及び附則第四十三条第五項において「通算親法人」という。）の施行日以後に開始する事業年度終了の日に終了する当該通算法人の適用対象事業年度分の法人税について適用し、法人の施行日前に開始した事業年度（旧租税特別措置法第四十二条の四第八項第三号の通算法人の適用対象事業年度を除く。）分の法人税及び旧租税特別措置法第四十二条の四第八項第三号の通算法人に係る通算親法人の施行日前に開始した事業年度終了の日に終了する当該通算法人の適用対象事業年度分の法人税については、なお従前の例による。</p>

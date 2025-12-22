@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1967.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1969.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十八条（地方税法の一部改正に伴う経過規定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>中小企業等協同組合、商工組合若しくは商工組合連合会が附則第十三条の規定による改正前の中小企業近代化資金等助成法第三条第一項の規定による政府の助成に係る資金の貸付けを受けて、中小企業経営の近代化若しくは合理化のための中小企業者の共同利用に供する施設を取得した場合又は事業協同組合若しくは事業協同小組合若しくは協同組合連合会が同条第二項の規定による政府の助成に係る施設を地方公共団体から譲渡しを受けた場合における当該施設の取得に対して課する不動産取得税の課税標準の算定については、前条の規定による改正後の地方税法第七十三条の十四第五項の規定にかかわらず、なお従前の例による。</p>

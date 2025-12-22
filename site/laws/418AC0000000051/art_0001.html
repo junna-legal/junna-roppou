@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0002.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>競争の導入による公共サービスの改革に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第一条（趣旨）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律は、国の行政機関等又は地方公共団体が自ら実施する公共サービスに関し、その実施を民間が担うことができるものは民間にゆだねる観点から、これを見直し、民間事業者の創意と工夫が反映されることが期待される一体の業務を選定して官民競争入札又は民間競争入札に付することにより、公共サービスの質の維持向上及び経費の削減を図る改革（以下「競争の導入による公共サービスの改革」という。）を実施するため、その基本理念、公共サービス改革基本方針の策定、官民競争入札及び民間競争入札の手続、落札した民間事業者が公共サービスを実施するために必要な措置、官民競争入札等監理委員会の設置その他必要な事項を定めるものとする。</p>

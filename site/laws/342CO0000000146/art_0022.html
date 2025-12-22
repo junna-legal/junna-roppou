@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0021.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0023.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十九条（一般乗用旅客自動車運送事業の許可で税率が軽減されるものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第百二十五号（一）ロに規定する政令で定める許可は、個人の受ける道路運送法（昭和二十六年法律第百八十三号）第三条第一号ハ（種類）の一般乗用旅客自動車運送事業に係る同法第四条第一項（一般旅客自動車運送事業の許可）の一般旅客自動車運送事業の許可で、当該個人のみが自動車を運転することにより当該事業を行うべき旨の条件の付されたものとする。</p>

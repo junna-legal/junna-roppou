@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0023.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0025.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>農地法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十条（借賃等の増額又は減額の請求権）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>借賃等（耕作の目的で農地につき賃借権又は地上権が設定されている場合の借賃又は地代（その賃借権又は地上権の設定に付随して、農地以外の土地についての賃借権若しくは地上権又は建物その他の工作物についての賃借権が設定され、その借賃又は地代と農地の借賃又は地代とを分けることができない場合には、その農地以外の土地又は工作物の借賃又は地代を含む。）及び農地につき永小作権が設定されている場合の小作料をいう。以下同じ。）の額が農産物の価格若しくは生産費の上昇若しくは低下その他の経済事情の変動により又は近傍類似の農地の借賃等の額に比較して不相当となつたときは、契約の条件にかかわらず、当事者は、将来に向かつて借賃等の額の増減を請求することができる。</p>

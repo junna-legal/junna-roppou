@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0199.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0201.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>破産法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百九十八条（破産債権の除斥等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>異議等のある破産債権（第百二十九条第一項に規定するものを除く。）について最後配当の手続に参加するには、当該異議等のある破産債権を有する破産債権者が、前条第一項の規定による公告が効力を生じた日又は同条第三項の規定による届出があった日から起算して二週間以内に、破産管財人に対し、当該異議等のある破産債権の確定に関する破産債権査定申立てに係る査定の手続、破産債権査定異議の訴えに係る訴訟手続又は第百二十七条第一項の規定による受継があった訴訟手続が係属していることを証明しなければならない。</p>

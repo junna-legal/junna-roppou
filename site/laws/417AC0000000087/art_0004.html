@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0003.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0005.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社法の施行に伴う関係法律の整備等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四条（旧有限会社の設立手続等の効力）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>旧有限会社の設立、資本の増加、合併（合併後存続する会社又は合併によって設立する会社が旧有限会社であるものに限る。）、新設分割、吸収分割（分割によって営業を承継する会社が旧有限会社であるものに限る。）又は旧有限会社法第六十四条第一項若しくは第六十七条第一項の規定による組織変更について施行日前に行った社員総会又は株主総会の決議その他の手続は、施行日前にこれらの行為の効力が生じない場合には、その効力を失う。</p>

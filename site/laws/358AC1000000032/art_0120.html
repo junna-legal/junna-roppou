@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0119.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0121.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の四（法令違反等による認可の取消し、業務の停止、役員の解任等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>内閣総理大臣は、協会が法令、法令に基づく行政官庁の処分若しくは当該協会の定款等（以下この条において「法令等」という。）に違反した場合又は協会員が法令等に違反する行為をしたにもかかわらず、当該協会員に対し法令等を遵守させるために協会がこの法律、この法律に基づく命令若しくは定款等により認められた権能を行使せずその他必要な措置をとることを怠つた場合において、資金需要者等の利益の保護のため必要かつ適当であると認めるときは、その設立の認可を取り消し、一年以内の期間を定めてその業務の全部若しくは一部の停止を命じ、その業務の方法の変更若しくはその業務の一部の禁止を命じ、その役員の解任を命じ、又は定款等に定める必要な措置をとることを命ずることができる。</p>

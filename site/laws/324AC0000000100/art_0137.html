@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0136.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0138.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建設業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十九条の四（営業の禁止）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国土交通大臣又は都道府県知事は、建設業者その他の建設業を営む者に対して第二十八条第三項又は第五項の規定により営業の停止を命ずる場合においては、その者が法人であるときはその役員等及び当該処分の原因である事実について相当の責任を有する政令で定める使用人（当該処分の日前六十日以内においてその役員等又はその政令で定める使用人であつた者を含む。次項において同じ。）に対して、個人であるときはその者及び当該処分の原因である事実について相当の責任を有する政令で定める使用人（当該処分の日前六十日以内においてその政令で定める使用人であつた者を含む。次項において同じ。）に対して、当該停止を命ずる範囲の営業について、当該停止を命ずる期間と同一の期間を定めて、新たに営業を開始すること（当該停止を命ずる範囲の営業をその目的とする法人の役員等になることを含む。）を禁止しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2199.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2201.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十二条（上場株式等に係る配当所得の課税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>居住者又は国内に恒久的施設を有する非居住者が、平成二十一年一月一日から平成二十五年十二月三十一日までの間に支払を受けるべき新租税特別措置法第八条の四第一項に規定する上場株式等の配当等を有する場合には、当該上場株式等の配当等に係る配当所得については、同項前段の規定により上場株式等に係る課税配当所得の金額（同項前段に規定する上場株式等に係る課税配当所得の金額をいう。以下この項において同じ。）に対し課する所得税の額は、同条第一項前段の規定にかかわらず、当該上場株式等に係る課税配当所得の金額の百分の七に相当する額とする。</p>

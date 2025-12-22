@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1449.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1451.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条（法人の土地の譲渡等がある場合の特別税率に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第六十二条の三の規定は、法人が平成八年一月一日以後にする同条第一項に規定する土地の譲渡等（新法第六十三条第一項又は第六十三条の二第一項の規定の適用があるものを除く。）に係る新法第六十二条の三第一項に規定する譲渡利益金額（同条第九項に規定する益金の額に算入された金額で当該土地の譲渡等に係るものを含む。以下この項において「新法の土地譲渡利益金額」という。）について適用し、法人が同日前にした旧法第六十二条の三第一項に規定する土地の譲渡等（旧法第六十三条第一項又は第六十三条の二第一項の規定の適用があるものを除く。）に係る旧法第六十二条の三第一項に規定する譲渡利益金額（同条第九項に規定する益金の額に算入された金額で当該土地の譲渡等に係るものを含む。以下この項において「旧法の土地譲渡利益金額」という。）については、なお従前の例による。</p>

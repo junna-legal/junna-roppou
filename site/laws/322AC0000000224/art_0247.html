@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0246.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0248.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>戸籍法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（電子情報処理組織によって戸籍事務を取り扱う市町村長の指定に係る経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現にこの法律による改正前の戸籍法（以下「旧法」という。）第百十八条第一項（旧法第四条において準用する場合を含む。）の規定による指定を受けている市町村長（特別区の区長を含むものとし、地方自治法第二百五十二条の十九第一項の指定都市にあっては、区長又は総合区長とする。）は、施行日に新法第百十八条第一項（新法第四条において準用する場合を含む。）の規定による指定を受けたものとみなす。</p>

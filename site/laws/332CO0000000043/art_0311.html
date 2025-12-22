@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0310.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0312.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十九条の三（収用換地等の場合の所得の特別控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第六十五条の二第一項に規定する譲渡した資産の譲渡に要した経費で当該補償金等又は交換取得資産に係るものとして政令で定めるところにより計算した金額は、同項に規定する収用換地等（以下この条において「収用換地等」という。）により譲渡をした資産の譲渡に要した経費の金額の合計額が、当該収用換地等に際し譲渡に要する経費に充てるべきものとして交付を受けた金額の合計額を超える場合におけるその超える金額のうち、当該譲渡をした資産に係るものとして財務省令で定めるところにより計算した金額とする。</p>

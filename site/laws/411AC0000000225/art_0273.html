@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0272.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0274.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事再生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百四十七条（再生債権の届出を要しない旨の決定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>裁判所は、再生手続開始の決定をする場合において、第三十九条第一項の規定により中止することとなる破産手続において届出があった破産債権の内容及び原因、破産法第百二十五条第一項本文に規定する異議等のある破産債権の数、当該破産手続における配当の有無その他の事情を考慮して相当と認めるときは、当該決定と同時に、再生債権であって当該破産手続において破産債権としての届出があったもの（同法第九十八条第一項に規定する優先的破産債権である旨の届出があった債権、共助対象外国租税の請求権及び同法第九十七条第六号に規定する罰金等の請求権を除く。以下この条において同じ。）を有する再生債権者は当該再生債権の届出をすることを要しない旨の決定をすることができる。</p>

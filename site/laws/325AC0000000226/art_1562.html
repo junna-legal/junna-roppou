@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1561.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1563.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十二条の四</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>指定都市等は、国際博覧会に関する条約の適用を受けて令和七年に開催される国際博覧会（以下この項において「博覧会」という。）の会場内において設置される公益社団法人二千二十五年日本国際博覧会協会との間に博覧会への出展参加契約を締結した者（博覧会に参加する外国政府、外国の地方公共団体及び国際機関を除く。）が博覧会に関して行う事業で政令で定めるものの用に供する施設に係る事業所等（第七百一条の三十一第一項第五号に規定する事業所等をいう。）において行う事業に対しては、令和九年三月三十一日までに終了する事業年度分に限り、第七百一条の三十二第一項の規定にかかわらず、事業所税を課することができない。</p>

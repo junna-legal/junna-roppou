@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0445.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0447.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十七条の八（みなし製造の規定の適用除外の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>酒税法第四十三条第一項から第九項までの規定は、政令で定めるところにより、酒場、料理店その他酒類を専ら自己の営業場において飲用に供することを業とする者がその営業場において飲用に供するため当該営業場において蒸留酒類（同法第三条第五号に規定する蒸留酒類をいう。次項において同じ。）と他の物品（酒類を除く。）との混和をする場合（同法第七条第一項の規定による酒類の製造免許を受けた者が当該製造免許を受けた製造場において当該混和をする場合又は同法第四十三条第十項の規定に該当する場合を除く。）については、適用しない。</p>

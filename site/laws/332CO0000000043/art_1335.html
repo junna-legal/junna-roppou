@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1334.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1336.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条（法人の準備金に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新法第五十七条の四第一項に規定する法人が施行日以後最初に開始する事業年度（以下この項及び次項において「改正事業年度」という。）の直前の事業年度終了の日（当該法人が改正事業年度に合併をした合併法人である場合には、当該合併の日）において同条第一項に規定する特定原子力発電施設（以下この項において「特定原子力発電施設」という。）に係る原子力発電施設解体準備金の金額（同条第三項に規定する原子力発電施設解体準備金の金額をいう。以下この項において同じ。）を有する場合には、当該法人の改正事業年度における同条の規定の適用については、同条第一項第二号に掲げる金額は、次に掲げる金額のうちいずれか多い金額とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0944.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0946.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四百三十二条（固定資産課税台帳に登録された価格に関する審査の申出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>固定資産税の納税者は、その納付すべき当該年度の固定資産税に係る固定資産について固定資産課税台帳に登録された価格（第三百八十九条第一項、第四百十七条第二項又は第七百四十三条第一項若しくは第二項の規定によつて道府県知事又は総務大臣が決定し、又は修正し市町村長に通知したものを除く。）について不服がある場合においては、第四百十一条第二項の規定による公示の日から納税通知書の交付を受けた日後三月を経過する日まで若しくは第四百十九条第三項の規定による公示の日から同日後三月を経過する日（第四百二十条の更正に基づく納税通知書の交付を受けた者にあつては、当該納税通知書の交付を受けた日後三月を経過する日）までの間において、又は第四百十七条第一項の通知を受けた日から三月以内に、文書をもつて、固定資産評価審査委員会に審査の申出をすることができる。</p>

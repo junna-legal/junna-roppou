@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0054.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0056.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>株式会社日本政策金融公庫法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十四条（信託の受託者等からの業務の受託）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>公庫は、前条の規定による認可を受けて貸付債権等について信託法（平成十八年法律第百八号）第三条第一号に掲げる方法による信託（信託会社等（別表第二の注（１１）に規定する信託会社等をいう。）との間で同号に規定する信託契約を締結する方法によるものに限る。）をし、又は譲渡するときは、当該信託の受託者又は当該貸付債権等の譲受人から当該貸付債権等に係る元利金の回収その他回収に関する業務の全部を受託しなければならない。</p>

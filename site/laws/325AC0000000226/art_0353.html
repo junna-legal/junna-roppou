@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0352.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0354.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の四十四（法人の事業税の不足税額及びその延滞金の徴収）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県の徴税吏員は、第七十二条の三十九、第七十二条の四十一第一項から第三項まで又は第七十二条の四十一の二第一項から第三項までの規定による更正又は決定があつた場合において、不足税額（更正により増加した税額又は決定した税額（第七十二条の二十八の規定による申告書を提出すべき法人がその申告書を提出しなかつたことによる決定の場合には、当該税額に係る中間納付額を控除した税額）をいう。以下法人の行う事業に対する事業税について同じ。）があるときは、第七十二条の四十二の規定による更正又は決定の通知をした日から一月を経過した日を納期限として、これを徴収しなければならない。</p>

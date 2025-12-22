@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1414.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1416.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五条の四の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、平成二十二年度から令和二十年度までの各年度分の個人の道府県民税に限り、所得割の納税義務者が前年分の所得税につき租税特別措置法第四十一条又は第四十一条の二の二の規定の適用を受けた場合（居住年が平成十一年から平成十八年まで又は平成二十一年から令和七年までの各年である場合に限る。）において、前条第一項の規定の適用を受けないときは、第一号に掲げる金額から第二号に掲げる金額を控除した金額（当該金額が零を下回る場合には、零とする。）の五分の二（当該納税義務者が指定都市の区域内に住所を有する場合には、五分の一）に相当する金額（以下この項において「控除額」という。）を、当該納税義務者の第三十五条及び第三十七条の規定を適用した場合の所得割の額から控除するものとする。</p>

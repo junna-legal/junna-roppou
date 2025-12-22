@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0026.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0028.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条（第三章の規定に適合しない建築物に対する措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定行政庁は、建築物の敷地、構造、建築設備又は用途（いずれも第三条第二項（第八十六条の九第一項において準用する場合を含む。）の規定により第三章の規定又はこれに基づく命令若しくは条例の規定の適用を受けないものに限る。）が公益上著しく支障があると認める場合においては、当該建築物の所在地の市町村の議会の同意を得た場合に限り、当該建築物の所有者、管理者又は占有者に対して、相当の猶予期限を付けて、当該建築物の除却、移転、修繕、模様替、使用禁止又は使用制限を命ずることができる。</p>

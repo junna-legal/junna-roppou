@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0296.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0298.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第五十九条の二第一項第一号に規定する政令で定める金額は、まず同項に規定する船舶運航事業者等（次項及び第三項において「船舶運航事業者等」という。）の当該事業年度の収益の額並びに原価の額、費用の額及び損失の額（以下この項において「収益の額等」という。）を財務省令で定めるところにより同号に規定する対外船舶運航事業等（以下この項において「対外船舶運航事業等」という。）による収益の額等と対外船舶運航事業等以外の事業による収益の額等とに区分し、次にその区分された対外船舶運航事業等による収益の額等を財務省令で定めるところにより同号に規定する日本船舶を用いた対外船舶運航事業等（同条第一項に規定する認定計画に記載された同項に規定する計画期間内において営むものに限る。以下この条において「日本船舶外航事業」という。）による収益の額等と日本船舶外航事業以外の対外船舶運航事業等による収益の額等とに区分し、その区分された日本船舶外航事業による収益の額等に基づき法第五十九条の二の規定を適用しないで計算した所得の金額とする。</p>

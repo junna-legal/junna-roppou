@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1499.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1501.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十六条の二（令和二年七月豪雨に係る被災住宅用地等に対する固定資産税及び都市計画税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>令和二年七月豪雨により滅失し、又は損壊した家屋の敷地の用に供されていた土地で令和二年度分の固定資産税について第三百四十九条の三の二の規定の適用を受けたもの（以下この条において「被災住宅用地」という。）のうち、令和七年度又は令和八年度に係る賦課期日において家屋又は構築物の敷地の用に供されている土地以外の土地の全部又は一部で令和二年度に係る賦課期日における当該被災住宅用地の所有者その他の政令で定める者（第五項及び第六項において「被災住宅用地の所有者等」という。）が所有するものに対して課する令和七年度分又は令和八年度分の固定資産税又は都市計画税については、当該土地を令和七年度又は令和八年度に係る賦課期日において第三百四十九条の三の二第一項に規定する住宅用地（以下この項及び第三項において「住宅用地」という。）として使用することができないと市町村長が認める場合に限り、当該土地を住宅用地とみなして、この法律の規定（第三百四十九条の三の二第二項各号及び第三百八十四条の規定を除く。）を適用する。</p>

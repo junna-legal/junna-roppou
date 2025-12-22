@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0188.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0190.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十五条の二十二の四（金融子会社等部分適用対象金額の計算等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第四十条の四第八項各号列記以外の部分に規定する政令で定めるところにより計算した金額は、同条第一項各号に掲げる居住者に係る部分対象外国関係会社（同条第八項各号列記以外の部分に規定する部分対象外国関係会社をいう。以下この条において同じ。）の各事業年度の金融子会社等部分適用対象金額（法第四十条の四第八項に規定する金融子会社等部分適用対象金額をいう。第二十五条の二十三において同じ。）に、当該各事業年度終了の時における当該居住者の当該部分対象外国関係会社に係る第二十五条の十九第二項第一号に規定する請求権等勘案合算割合を乗じて計算した金額とする。</p>

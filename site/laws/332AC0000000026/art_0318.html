@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0317.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0319.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十八条（特定の協同組合等の法人税率の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>協同組合等（特定の地区又は地域に係るものに限る。）の事業年度（清算中の事業年度を除く。）が、次に掲げる要件の全てに該当する場合における当該協同組合等の各事業年度の所得に係る法人税法その他法人税に関する法令の規定の適用については、同法第六十六条第三項中「百分の十九」とあるのは「百分の十九（各事業年度の所得の金額のうち十億円（事業年度が一年に満たない協同組合等については、十億円に当該事業年度の月数を乗じてこれを十二で除して計算した金額とする。）を超える部分の金額については、百分の二十二）」と、同条第十二項中「第四項、第七項及び前項」とあるのは「租税特別措置法第六十八条第一項（特定の協同組合等の法人税率の特例）の規定により読み替えられた第三項」とする。</p>

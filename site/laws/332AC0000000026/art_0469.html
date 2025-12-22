@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0468.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0470.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十条の六（特定の重油を農林漁業の用に供した場合の石油石炭税の還付）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>農林漁業を営む者が、令和十年三月三十一日までに、課税済みの原油等から本邦において製造された関税定率法別表第二七一〇・一九号の一の（三）のＡ又は第二七一〇・二〇号の一の（四）のＡに掲げる重油（同表第二七一〇・一九号の一の（三）のＡの（ａ）若しくは（ｃ）又は第二七一〇・二〇号の一の（四）のＡの（ａ）若しくは（ｃ）に掲げる重油については、農林漁業の用に供するものに限る。）を農林漁業の用に供するため政令で定める方法により購入した場合には、政令で定めるところにより、その購入した重油につき、第九十条の三の二第一号に規定する税率により算出した石油石炭税額に相当する金額を当該重油の製造者に（当該重油の製造者が当該重油の原料とされた課税済みの原油等に係る石油石炭税の納税者でない場合にあつては、当該課税済みの原油等につき当該重油の製造者が当該石油石炭税を納付したものとみなして、当該重油の製造者に）還付する。</p>

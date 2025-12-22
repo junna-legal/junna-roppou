@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0088.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0090.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不正競争防止法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（不正競争防止法の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第一条の規定（前条第三号に掲げる改正規定を除く。）による改正後の不正競争防止法（以下この項において「新不競法」という。）第三条から第五条まで、第十四条及び第十五条第二項の規定は、この法律の施行の日（以下「施行日」という。）前に行われた新不競法第二条第一項第十一号に規定する限定提供データ不正取得行為に相当する行為又は同項第十五号に規定する限定提供データ不正開示行為に相当する行為に係る同項第十一号から第十三号まで、第十五号又は第十六号に掲げる不正競争であって施行日以後に行われるもの（次の各号に掲げる行為に相当する行為に該当するものを除く。）及び施行日前に開始した同項第十四号に規定する限定提供データを使用する行為に相当する行為を継続する行為については、適用しない。</p>

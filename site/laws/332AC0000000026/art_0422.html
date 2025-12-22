@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0421.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0423.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十四条（新幹線鉄道の建設に係る不動産の所有権の移転登記等の免税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定建設線（全国新幹線鉄道整備法（昭和四十五年法律第七十一号）第四条第一項に規定する基本計画に定められた同項に規定する建設線のうち政令で定めるものをいう。）の同法第六条第一項に規定する建設主体として同項の規定により国土交通大臣が指名した法人が、同法第九条第一項の規定による国土交通大臣の認可を受けた当該特定建設線の工事実施計画に係る同法第二条に規定する新幹線鉄道の鉄道事業法第八条第一項に規定する鉄道施設の用に供する土地の所有権若しくは地上権の取得又は建物の建築をする場合には、当該土地の所有権の移転若しくは地上権の設定の登記又は当該建物の所有権の保存の登記については、財務省令で定めるところにより当該取得又は建築後一年以内に登記を受けるものに限り、登録免許税を課さない。</p>

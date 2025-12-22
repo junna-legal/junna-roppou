@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0313.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0315.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十七条の十六（外国組合員に対する課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>投資組合契約（第四十一条の二十一第四項第一号に規定する投資組合契約をいう。以下この条において同じ。）を締結している組合員である外国法人で、当該投資組合契約に基づいて恒久的施設を通じて事業を行うもののうち第四十一条の二十一第一項各号に掲げる要件を満たすものが有する法人税法第百三十八条第一項第一号に掲げる国内源泉所得（同項第二号から第六号までに掲げる国内源泉所得に該当するもの並びに所得税法第百六十一条第一項第八号から第十一号まで及び第十三号から第十六号までに掲げる国内源泉所得に該当するものを除く。）で当該恒久的施設に帰せられるもの（次項において「対象国内源泉所得」という。）については、法人税を課さない。</p>

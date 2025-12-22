@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0010.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0012.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>外国為替及び外国貿易法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十六条の二（支払等の制限）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>主務大臣は、前条第一項の規定により許可を受ける義務を課した場合において、当該許可を受ける義務が課された支払等を当該許可を受けないで行つた者が再び同項の規定により許可を受ける義務が課された支払等を当該許可を受けないで行うおそれがあると認めるときは、その者に対し、一年以内の期間を限り、本邦から外国へ向けた支払（銀行（銀行法（昭和五十六年法律第五十九号）第二条第一項に規定する銀行をいう。第二十一条第三項において同じ。）その他の政令で定める金融機関（以下「銀行等」という。）又は資金移動業者（資金決済に関する法律第二条第三項に規定する資金移動業者をいい、同法第三十七条の二第二項の規定により資金移動業者とみなされる者を含む。以下同じ。）がその顧客の支払に係る為替取引を行う場合における当該為替取引によつてされるもの及び電子決済手段等取引業者等（次の表の上欄に掲げる者をいう。以下同じ。）がその顧客の支払に係る電子決済手段等の移転等（同表の上欄に掲げる者の区分に応じそれぞれ同表の下欄に定める行為をいう。以下同じ。）を行う場合における当該電子決済手段等の移転等によつてされるものを除く。）及び居住者と非居住者との間でする支払等（銀行等又は資金移動業者がその顧客の支払等に係る為替取引を行う場合における当該為替取引によつてされるもの及び電子決済手段等取引業者等がその顧客の支払等に係る電子決済手段等の移転等を行う場合における当該電子決済手段等の移転等によつてされるものその他政令で定めるものを除く。）について、その全部若しくは一部を禁止し、又は政令で定めるところにより許可を受ける義務を課することができる。</p>

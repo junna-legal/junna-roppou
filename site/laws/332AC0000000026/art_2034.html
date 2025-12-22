@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2033.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2035.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百三条（試験研究を行った場合の法人税額の特別控除に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新租税特別措置法第四十二条の四第三項又は第七項に規定する法人のこれらの規定の適用を受けようとする事業年度又は当該事業年度開始の日の前日を含む事業年度の所得の金額の計算上損金の額に算入される同条第一項に規定する試験研究費の額（当該事業年度開始の日の前日を含む事業年度が連結事業年度に該当する場合には、当該連結事業年度の連結所得の金額の計算上損金の額に算入される新租税特別措置法第六十八条の九第一項に規定する試験研究費の額）のうち、旧租税特別措置法第四十四条の三第一項に規定する開発研究用設備の償却費として損金の額に算入された金額がある場合における新租税特別措置法第四十二条の四第三項又は第七項の規定の施行に関し必要な経過措置は、政令で定める。</p>

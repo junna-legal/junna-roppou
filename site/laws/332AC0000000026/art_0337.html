@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0336.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0338.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十条の二（直系尊属から住宅取得等資金の贈与を受けた場合の贈与税の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>令和六年一月一日から令和八年十二月三十一日までの間（第九項、第十一項及び第十二項において「適用期間」という。）にその直系尊属からの贈与により住宅取得等資金の取得をした特定受贈者が、次に掲げる場合に該当するときは、当該贈与により取得をした住宅取得等資金のうち住宅資金非課税限度額（既にこの項の規定の適用を受けて贈与税の課税価格に算入しなかつた金額がある場合には、当該算入しなかつた金額を控除した残額）までの金額については、贈与税の課税価格に算入しない。</p>

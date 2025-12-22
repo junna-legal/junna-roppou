@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2320.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2322.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七条（給与等の支給額が増加した場合の所得税額の特別控除に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>所得税法等の一部を改正する法律（令和三年法律第十一号。以下「改正法」という。）第七条の規定による改正後の租税特別措置法（以下「新法」という。）第十条の五の四第一項の個人が所得税法等の一部を改正する法律（令和二年法律第八号。以下この項及び次項において「令和二年改正法」という。）附則第五十六条第二項に規定する特例対象年分（以下この項及び次項において「特例対象年分」という。）において同条第一項の規定によりなお従前の例によることとされる場合における令和二年改正法第十五条の規定による改正前の租税特別措置法（以下この項及び次項において「令和二年旧法」という。）第十条の五第一項又は第二項の規定の適用を受ける場合における当該特例対象年分に係る新法第十条の五の四第一項に規定する政令で定めるところにより計算した金額は、新令第五条の六の四第二項の規定にかかわらず、当該個人の当該特例対象年分に係る新法第十条の五の四第三項第三号イに規定する雇用者給与等支給額を当該特例対象年分の十二月三十一日における令和二年旧法第十条の五第三項第三号に規定する雇用者の数で除して計算した金額に次に掲げる数を合計した数（当該合計した数が同条第一項第二号イ（１）に規定する地方事業所基準雇用者数を超える場合には、当該地方事業所基準雇用者数）を乗じて計算した金額の百分の二十に相当する金額とする。</p>

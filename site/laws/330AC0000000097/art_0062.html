@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0061.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0063.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>自動車損害賠償保障法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条（保険料率の審査等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>内閣総理大臣は、保険業法第三条第一項又は第百八十五条第一項の免許の申請があつた場合において、同法第五条第一項第四号（同法第百八十七条第五項において準用する場合を含む。以下この項において同じ。）に掲げる基準に適合するかどうかの審査を行うときは、責任保険については、同法第五条第一項第四号に掲げる基準のほか、前条の規定に適合するかどうかを審査しなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0035.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0037.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>登録免許税法施行規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十八条（船舶等の製造工事等に係る事業場の認定で課税しないものの範囲）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法別表第一第百三十号（一）に規定する財務省令で定める認定は、船舶安全法（昭和八年法律第十一号）第六条ノ二（事業場の認定）の認定を受けている者が当該認定に係る船舶安全法の規定に基づく事業場の認定に関する規則（昭和四十八年運輸省令第四十九号）第七条（認定の有効期間）の有効期間が満了した後に引き続き当該認定に係る同令第三条第一項（認定）の船舶又は物件の製造工事又は改造修理工事の能力と同一の能力について受ける同法第六条ノ二の認定とする。</p>

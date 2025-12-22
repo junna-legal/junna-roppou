@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0022.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0024.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>犯罪による収益の移転防止に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十九条（国家公安委員会の意見の陳述）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>国家公安委員会は、特定事業者がその業務に関して前条に規定する規定に違反していると認めるときは、行政庁（都道府県公安委員会を除く。以下この条において同じ。）に対し、当該特定事業者に対し前条の規定による命令を行うべき旨又は他の法令の規定により当該違反を理由として業務の停止その他の処分を行うことができる場合にあっては、当該特定事業者に対し当該処分を行うべき旨の意見を述べることができる。</p>

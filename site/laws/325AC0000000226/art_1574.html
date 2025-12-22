@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1573.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1575.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十五条の二の三（特定管理株式等が価値を失つた場合の株式等に係る譲渡所得等の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県民税の所得割の納税義務者について、その有する租税特別措置法第三十七条の十一の二第一項に規定する特定管理株式等（以下この条において「特定管理株式等」という。）又は同項に規定する特定口座内公社債（以下この条において「特定口座内公社債」という。）が株式又は同法第三十七条の十第二項第七号に規定する公社債（第五項において「公社債」という。）としての価値を失つたことによる損失が生じた場合として同法第三十七条の十一の二第一項各号に掲げる事実が発生したときは、当該事実が発生したことは当該特定管理株式等又は特定口座内公社債の譲渡をしたことと、当該損失の金額として政令で定める金額は附則第三十五条の二の六第二項に規定する上場株式等の譲渡をしたことにより生じた損失の金額とそれぞれみなして、この項から第四項まで、前条第一項から第四項まで及び附則第三十五条の二の六第一項から第七項までの規定その他の道府県民税に関する規定を適用する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0519.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0521.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五条（個人の輸出所得に関する経過規定）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人の旧法第二十一条の二第一項に規定する指定期間内の日を含む各年の当該期間内における旧法第二十一条第一項各号に掲げる取引（以下この条において「輸出取引」という。）による収入金額の合計額が、旧法第二十一条の二第二項に規定する基準輸出金額に当該個人がその年中において事業を営んでいた期間に係る当該指定期間の月数を乗じてこれを十二で除して計算した金額をこえる場合における当該個人のその年中の輸出取引に係る同条第一項各号に掲げる金額の必要な経費への算入については、同条の規定は、なおその効力を有する。</p>

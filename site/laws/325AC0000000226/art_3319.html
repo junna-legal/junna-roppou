@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3318.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3320.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成十九年度分の固定資産税又は都市計画税に限り、市町村は、鉄軌道用地（新法附則第十七条の三第一項に規定する鉄軌道用地をいう。以下この条において同じ。）に対して課する固定資産税又は都市計画税について、新法第三百六十四条第二項の納税通知書の交付期限までに、新法附則第十七条の三第一項の規定による価格等の修正又は決定をすることができない場合には、当該鉄軌道用地について既に決定された価格又は施行日の前日において適用されていた旧法第三百八十八条第一項の固定資産評価基準（当該鉄軌道用地が旧法附則第十七条の二第一項の規定の適用を受ける土地である場合においては、同日において適用されていた旧法第三百八十八条第一項の固定資産評価基準及び旧法附則第十七条の二第一項の修正基準。第三項第一号において同じ。）により算定した価格により仮に算定した当該鉄軌道用地に係る固定資産税額又は都市計画税額に相当する額（以下この条において「仮算定税額」という。）を当該年度の納期の数で除して得た額の範囲において、当該鉄軌道用地に係る固定資産税又は都市計画税をそれぞれの納期において徴収することができる。</p>

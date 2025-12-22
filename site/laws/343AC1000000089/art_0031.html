@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>社会保険労務士法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十四条の十一の二（紛争解決手続代理業務の付記の申請）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>社会保険労務士は、その登録に紛争解決手続代理業務試験に合格した旨の付記（以下「紛争解決手続代理業務の付記」という。）を受けようとするときは、氏名その他厚生労働省令で定める事項を記載した付記申請書を、紛争解決手続代理業務試験に合格したことを証する書類を添付の上、厚生労働省令で定める社会保険労務士会を経由して、連合会に提出しなければならない。</p>

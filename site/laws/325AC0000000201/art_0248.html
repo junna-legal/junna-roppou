@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0247.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0249.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十五条の三（伝統的建造物群保存地区内の制限の緩和）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>文化財保護法第百四十三条第一項又は第二項の伝統的建造物群保存地区内においては、市町村は、同条第一項後段（同条第二項後段において準用する場合を含む。）の条例において定められた現状変更の規制及び保存のための措置を確保するため必要と認める場合においては、国土交通大臣の承認を得て、条例で、第二十一条から第二十五条まで、第二十八条、第四十三条、第四十四条、第五十二条、第五十三条、第五十五条、第五十六条、第六十一条、第六十二条及び第六十七条第一項の規定の全部若しくは一部を適用せず、又はこれらの規定による制限を緩和することができる。</p>

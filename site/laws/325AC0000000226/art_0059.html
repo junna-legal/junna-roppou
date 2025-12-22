@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0058.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0060.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十五条の二（徴収猶予の申請手続等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>徴収の猶予（前条第一項の規定によるものに限る。）の申請をしようとする者は、同項各号のいずれかに該当する事実があること及びその該当する事実に基づき当該徴収の猶予に係る地方団体の徴収金を一時に納付し、又は納入することができない事情の詳細、当該徴収の猶予を受けようとする金額及びその期間その他の当該地方団体の条例で定める事項を記載した申請書に、当該該当する事実を証するに足りる書類、財産目録、担保の提供に関する書類その他の当該地方団体の条例で定める書類を添付し、これを当該地方団体の長に提出しなければならない。</p>

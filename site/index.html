@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -140,7 +158,11 @@ button {
     <label for="artq">条番号</label>
     <input id="artq" inputmode="numeric" placeholder="例：709 / 709-2 / 1-4">
 
-    <button id="btn">🔎 検索</button>
+    <button id="btn">🔍 検索</button>
+
+    <div id="status" class="small" style="margin-top:10px;">
+      <span class="loading"><span class="dot"></span>検索データを読み込み中…</span>
+    </div>
 
     <div class="small">条番号が空で、法令が1件に絞れた場合は、その法令ページへ移動します</div>
   </div>
@@ -191,6 +213,12 @@ function renderResults(items){
 }
 
 function doSearch(){
+  if(!DATA){
+    document.getElementById("status").innerHTML =
+      "<span class='small'>検索データ未読込です（少し待ってからもう一度）</span>";
+    return;
+  }
+
   document.getElementById("lawq").blur();
   document.getElementById("artq").blur();
 
@@ -227,16 +255,40 @@ function doSearch(){
   renderResults(hits);
 }
 
-async function init(){
-  DATA = await (await fetch("search_data.json")).json();
-  const ll = document.getElementById("lawlist");
-  const laws = DATA.laws.slice().sort((a,b)=> (a.title||"").localeCompare(b.title||"", "ja"));
-  ll.innerHTML = laws.map(x=>`<a href="${x.url}">${x.title}</a>`).join(" / ");
-  document.getElementById("lawsPanel").open = false;
+async function loadData(){
+  // 分割manifest → docs結合、lawsは別ファイル
+  const mf = await (await fetch("search_manifest.json")).json();
+  const lawsObj = await (await fetch("search_laws.json")).json();
 
-  document.getElementById("btn").addEventListener("click", doSearch);
-  document.getElementById("lawq").addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
-  document.getElementById("artq").addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
+  let docs = [];
+  for(const fn of (mf.doc_files || [])){
+    const part = await (await fetch(fn)).json();
+    docs = docs.concat(part.docs || []);
+  }
+  return { laws: lawsObj.laws || [], docs };
+}
+
+async function init(){
+  try{
+    DATA = await loadData();
+
+    // 法令一覧表示
+    const ll = document.getElementById("lawlist");
+    const laws = DATA.laws.slice().sort((a,b)=> (a.title||"").localeCompare(b.title||"", "ja"));
+    ll.innerHTML = laws.map(x=>`<a href="${x.url}">${x.title}</a>`).join(" / ");
+    document.getElementById("lawsPanel").open = false;
+
+    document.getElementById("btn").addEventListener("click", doSearch);
+    document.getElementById("lawq").addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
+    document.getElementById("artq").addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
+
+    document.getElementById("status").innerHTML =
+      "<span class='small'>✅ 準備OK（検索できます）</span>";
+  }catch(e){
+    console.error(e);
+    document.getElementById("status").innerHTML =
+      "<span class='small'>❌ 検索データの読み込みに失敗しました</span>";
+  }
 }
 init();
 </script>

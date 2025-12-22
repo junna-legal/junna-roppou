@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0190.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0192.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事執行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百六十七条の十三（総則規定の適用関係）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>少額訴訟債権執行についての第一章及び第二章第一節の規定の適用については、第十三条第一項中「執行裁判所でする手続」とあるのは「第百六十七条の二第二項に規定する少額訴訟債権執行の手続」と、第十六条第一項中「執行裁判所」とあるのは「裁判所書記官」と、第十七条中「執行裁判所の行う民事執行」とあるのは「第百六十七条の二第二項に規定する少額訴訟債権執行」と、第四十条第一項中「執行裁判所又は執行官」とあるのは「裁判所書記官」と、第四十二条第四項中「執行裁判所の裁判所書記官」とあるのは「裁判所書記官」とする。</p>

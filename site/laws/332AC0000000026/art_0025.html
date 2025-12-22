@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0024.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0026.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九条の二（国外で発行された株式の配当所得の源泉徴収等の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>内国法人（所得税法別表第一に掲げる内国法人を除く。次項及び第四項において同じ。）は、昭和六十三年四月一日以後に支払を受けるべき国外において発行された株式（資産の流動化に関する法律第二条第五項に規定する優先出資を含む。）の剰余金の配当又は利益の配当（所得税法第二十四条第一項に規定する利益の配当をいう。）に係る同項に規定する配当等（国外において支払われるものに限る。以下この条において「国外株式の配当等」という。）につき、国内における支払の取扱者で政令で定めるもの（以下この条において「支払の取扱者」という。）を通じてその交付を受ける場合には、その支払を受けるべき国外株式の配当等について所得税を納める義務があるものとし、その支払を受けるべき金額について百分の二十の税率を適用して所得税を課する。</p>

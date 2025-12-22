@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1704.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1706.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八条（施行日前の公売等の猶予及び延滞金額等の免除の特例等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の公布の日からこの法律の施行の日の前日までの間において、滞納者で次の各号の一に該当するもの（旧法においてその例によるものとされる国税徴収法（以下「旧国税徴収法」という。）第十二条ノ二の規定の適用を受ける者を除く。）が地方団体の徴収金の納付又は納入につき誠実な意思を有すると認められるときは、地方団体の長は、その者の納付し、又は納入すべき地方団体の徴収金につき滞納処分による財産の公売又は売却を猶予することができるものとし、その者につき旧国税徴収法第八条後段に規定する事由があるときは、その猶予をした地方税に係る延滞金額及び延滞加算金額を免除することができる。</p>

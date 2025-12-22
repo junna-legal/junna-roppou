@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0188.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0190.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十一条の十八の三（公益社団法人等に寄附をした場合の所得税額の特別控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人が支出した所得税法第七十八条第二項に規定する特定寄附金のうち、次に掲げるもの（同条第一項の規定の適用を受けるものを除く。以下この項において「税額控除対象寄附金」という。）については、その年中に支出した税額控除対象寄附金の額の合計額（その年中に支出した特定寄附金等の金額（同条第二項に規定する特定寄附金の額及び同条第三項の規定又は第四十一条の十八第一項若しくは前条第一項の規定により当該特定寄附金とみなされたものの額並びに次条第一項に規定する控除対象特定新規株式の取得に要した金額として同項に規定する政令で定める金額の合計額をいう。以下この項において同じ。）が、当該個人のその年分の総所得金額、退職所得金額及び山林所得金額の合計額の百分の四十に相当する金額を超える場合には、当該百分の四十に相当する金額から所得控除対象寄附金の額（当該特定寄附金等の金額から税額控除対象寄附金の額の合計額を控除した残額をいう。以下この項において同じ。）を控除した残額）が二千円（その年中に支出した当該所得控除対象寄附金の額がある場合には、二千円から当該所得控除対象寄附金の額を控除した残額）を超える場合には、その年分の所得税の額から、その超える金額の百分の四十に相当する金額（当該金額に百円未満の端数があるときは、これを切り捨てる。）を控除する。</p>

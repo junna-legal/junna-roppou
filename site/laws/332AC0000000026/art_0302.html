@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0301.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0303.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十七条の二（特定の医療法人の法人税率の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>財団たる医療法人又は社団たる医療法人で持分の定めがないもの（清算中のものを除く。）のうち、その事業が医療の普及及び向上、社会福祉への貢献その他公益の増進に著しく寄与し、かつ、公的に運営されていることにつき政令で定める要件を満たすものとして、政令で定めるところにより国税庁長官の承認を受けたもの（医療法第四十二条の二第一項に規定する社会医療法人を除く。）の当該承認を受けた後に終了した各事業年度の所得については、法人税法第六十六条第一項、第二項及び第六項の規定にかかわらず、百分の十九の税率により、法人税を課する。</p>

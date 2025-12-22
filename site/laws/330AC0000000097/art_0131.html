@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0130.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0132.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>自動車損害賠償保障法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十三条（経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行前に海運局長、海運監理部長、海運局若しくは海運監理部の支局その他の地方機関の長（以下「支局長等」という。）又は陸運局長が法律若しくはこれに基づく命令の規定によりした許可、認可その他の処分又は契約その他の行為（以下この条において「処分等」という。）は、政令（支局長等がした処分等にあつては、運輸省令）で定めるところにより、この法律による改正後のそれぞれの法律若しくはこれに基づく命令の規定により相当の地方運輸局長、海運監理部長又は地方運輸局若しくは海運監理部の海運支局その他の地方機関の長（以下「海運支局長等」という。）がした処分等とみなす。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0348.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0350.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十条の四の二（贈与税の納税猶予を適用している場合の特定貸付けの特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>猶予適用者が、贈与者の死亡の日前に前条第一項本文の規定の適用を受ける農地等のうち農地又は採草放牧地の全部又は一部について農地中間管理事業の推進に関する法律第二条第三項に規定する農地中間管理事業（同項第七号に掲げる業務を行う事業を除く。）のために行われる使用貸借による権利又は賃借権（以下この条において「賃借権等」という。）の設定による貸付け（以下この条において「特定貸付け」という。）を行い、当該特定貸付けを行つた日から二月以内に、政令で定めるところにより特定貸付けを行つている旨その他の財務省令で定める事項を記載した届出書を納税地の所轄税務署長に提出した場合には、当該猶予適用者に係る前条第一項ただし書及び第四項の規定の適用については、当該特定貸付けを行つた当該農地又は採草放牧地の全部又は一部（以下この条において「特定貸付農地等」という。）に係る賃借権等の設定はなかつたものと、農業経営は廃止していないものとみなす。</p>

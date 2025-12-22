@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1595.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1597.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十四条（東日本大震災に係る純損失の繰越控除の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>所得割の納税義務者のうち次に掲げる要件のいずれかを満たす者（平成二十三年分の所得税につき青色申告書（所得税法第二条第一項第四十号に規定する青色申告書をいう。第五項において同じ。）を提出している者に限る。）が平成二十三年純損失金額（その者の平成二十三年において生じた第三十二条第八項の純損失の金額をいう。以下この項において同じ。）又は被災純損失金額（震災特例法第七条第四項第三号に規定する被災純損失金額をいい、同年において生じたものを除く。以下この項において同じ。）を有する場合には、当該平成二十三年純損失金額又は当該被災純損失金額の生じた年の末日の属する年度の翌々年度以後五年度内の各年度分の個人の道府県民税に係る第三十二条の規定の適用については、同条第八項中「純損失の金額（」とあるのは「純損失の金額で平成二十三年純損失金額（附則第四十四条第一項に規定する平成二十三年純損失金額をいう。以下この項において同じ。）及び被災純損失金額（附則第四十四条第一項に規定する被災純損失金額をいう。次項において同じ。）以外のもの（」と、「を除く。）」とあるのは「を除く。）並びに当該納税義務者の前年前五年間において生じた平成二十三年純損失金額（この項の規定により前年前において控除されたものを除く。）」と、同条第九項中「純損失の金額」とあるのは「純損失の金額で被災純損失金額以外のもの」と、「で政令で定めるもの」とあるのは「で政令で定めるもの及び当該納税義務者の前年前五年内において生じた被災純損失金額（この項の規定により前年前において控除されたものを除く。）」とする。</p>

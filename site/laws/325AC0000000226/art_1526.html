@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1525.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1527.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の四（商業地等に対して課する令和六年度から令和八年度までの各年度分の都市計画税の減額）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、令和六年度から令和八年度までの各年度分の都市計画税に限り、商業地等に係る当該年度分の都市計画税額（当該商業地等が当該年度分の都市計画税について附則第二十五条の規定の適用を受ける商業地等であるときは、当該年度の宅地等調整都市計画税額、商業地等据置都市計画税額又は商業地等調整都市計画税額とする。以下この条において同じ。）が、当該商業地等に係る当該年度分の都市計画税の課税標準となるべき価格に十分の六以上十分の七未満の範囲内において当該市町村の条例で定める割合を乗じて得た額（当該商業地等が当該年度分の固定資産税について第三百四十九条の三（第十八項を除く。）又は附則第十五条から第十五条の三までの規定の適用を受ける商業地等であるときは、当該額にこれらの規定に定める率を乗じて得た額）を当該商業地等に係る当該年度分の都市計画税の課税標準となるべき額とした場合における都市計画税額を超える場合には、その超えることとなる額に相当する額を、当該商業地等に係る都市計画税額から減額することができる。</p>

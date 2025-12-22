@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0874.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0876.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百六十八条（申請又は申告をしなかつたことによる固定資産税の不足税額及び延滞金の徴収）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、不動産登記法第三十六条、第三十七条第一項若しくは第二項、第四十二条、第四十七条第一項、第五十一条第一項（共用部分である旨の登記又は団地共用部分である旨の登記がある建物の場合に係る部分を除く。）、第二項若しくは第三項若しくは第五十七条の規定によつて登記所に登記の申請をする義務がある者、第三百八十三条若しくは第七百四十五条第一項において準用する第三百八十三条の規定によつて市町村長若しくは道府県知事に申告をする義務がある者又は第三百九十四条の規定によつて道府県知事若しくは総務大臣に申告をする義務がある者がそのすべき申請又は申告をしなかつたこと又は虚偽の申請又は申告をしたことにより第四百十七条又は第七百四十三条第二項の規定によつて当該固定資産の価格（土地及び家屋にあつては基準年度の価格又は第三百四十九条第二項ただし書、第三項ただし書、第四項、第五項ただし書若しくは第六項の規定により当該価格に比準するものとされる価格（以下「比準価格」と総称する。）を、償却資産にあつては賦課期日における価格をいう。以下同様とする。）を決定し、又は修正したことに基づいてその者に係る固定資産税額に不足税額があることを発見した場合においては、直ちにその不足税額のうちその決定があつた日までの納期に係る分（以下本条において「不足税額」という。）を追徴しなければならない。</p>

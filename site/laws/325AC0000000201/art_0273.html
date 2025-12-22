@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0272.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0274.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十四条（不服申立て）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>建築基準法令の規定による特定行政庁、建築主事等若しくは建築監視員、都道府県知事、指定確認検査機関又は指定構造計算適合性判定機関の処分又はその不作為についての審査請求は、行政不服審査法第四条第一号に規定する処分庁又は不作為庁が、特定行政庁、建築主事等若しくは建築監視員又は都道府県知事である場合にあつては当該市町村又は都道府県の建築審査会に、指定確認検査機関である場合にあつては当該処分又は不作為に係る建築物又は工作物について確認その他の建築基準法令の規定による処分をする権限を有する建築主事等が置かれた市町村又は都道府県の建築審査会に、指定構造計算適合性判定機関である場合にあつては第十八条の二第一項の規定により当該指定構造計算適合性判定機関にその構造計算適合性判定を行わせた都道府県知事が統括する都道府県の建築審査会に対してするものとする。</p>

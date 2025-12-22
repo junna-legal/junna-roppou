@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0101.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0103.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十九条の十四（原告が行うべき証拠の申出）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第十九条第一号、第三号、第五号若しくは第六号に掲げる処分又は加算金の決定に係る行政事件訴訟法第三条第二項に規定する処分の取消しの訴えにおいては、その訴えを提起した者が必要経費又は損金の額の存在その他これに類する自己に有利な事実につきその処分の基礎とされた事実と異なる旨を主張しようとするときは、相手方当事者である地方団体がその処分の基礎となつた事実を主張した日以後遅滞なくその異なる事実を具体的に主張し、併せてその事実を証明すべき証拠の申出をしなければならない。</p>

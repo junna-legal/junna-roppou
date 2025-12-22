@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0200.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0202.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十六条の二（住宅借入金等を有する場合の所得税額の特別控除に関する証明書等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>住宅借入金等に係る債権者（当該債権者が前条第十項第五号に規定する特定債権者（以下この項及び次項において「特定債権者」という。）である場合には当該特定債権者に係る同号の当初借入先（同号に規定する契約に従い同号の債権の管理及び回収に係る業務を行つているものに限る。次項において同じ。）とし、当該住宅借入金等が財務省令で定めるものである場合（以下この項において「転貸貸付け等の場合」という。）には当該債権者に準ずる者として財務省令で定める者とする。以下この条において同じ。）は、令和五年一月一日前に法第四十一条第一項の定めるところにより居住の用に供する家屋について同項又は法第四十一条の二の二第一項の規定の適用を受けようとする個人から、当該個人がこれらの規定の適用を受けようとする年の十二月三十一日（その者が死亡した日の属する年にあつては、同日）における当該住宅借入金等の金額その他の事項を証する書類で財務省令で定めるものの交付の申請（転貸貸付け等の場合には、財務省令で定めるところにより行う申請）があつた場合には、当該書類を交付しなければならない。</p>

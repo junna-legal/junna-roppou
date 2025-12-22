@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0011.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0013.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>法の適用に関する通則法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十二条（労働契約の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>労働契約の成立及び効力について第七条又は第九条の規定による選択又は変更により適用すべき法が当該労働契約に最も密接な関係がある地の法以外の法である場合であっても、労働者が当該労働契約に最も密接な関係がある地の法中の特定の強行規定を適用すべき旨の意思を使用者に対し表示したときは、当該労働契約の成立及び効力に関しその強行規定の定める事項については、その強行規定をも適用する。</p>

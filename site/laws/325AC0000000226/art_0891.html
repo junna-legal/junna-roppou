@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0890.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0892.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百八十三条（固定資産の申告）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>固定資産税の納税義務がある償却資産の所有者（第三百八十九条第一項の規定によつて道府県知事若しくは総務大臣が評価すべき償却資産又は第七百四十二条第一項若しくは第三項の規定によつて道府県知事が指定した償却資産の所有者を除く。）は、総務省令の定めるところによつて、毎年一月一日現在における当該償却資産について、その所在、種類、数量、取得時期、取得価額、耐用年数、見積価額その他償却資産課税台帳の登録及び当該償却資産の価格の決定に必要な事項を一月三十一日までに当該償却資産の所在地の市町村長に申告しなければならない。</p>

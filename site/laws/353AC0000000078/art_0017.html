@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0016.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0018.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>仮登記担保契約に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十七条（強制競売等の特則）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>裁判所書記官は、所有権の移転に関する仮登記がされている土地等に対する強制競売又は担保権の実行としての競売において配当要求の終期を定めたときは、仮登記の権利者に対し、その仮登記が、担保仮登記であるときはその旨並びに債権（利息その他の附帯の債権を含む。）の存否、原因及び額を、担保仮登記でないときはその旨を配当要求の終期までに執行裁判所に届け出るべき旨を催告しなければならない。</p>

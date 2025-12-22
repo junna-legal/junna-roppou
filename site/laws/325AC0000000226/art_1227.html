@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1226.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1228.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七百二条（都市計画税の課税客体等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、都市計画法に基づいて行う都市計画事業又は土地区画整理法に基づいて行う土地区画整理事業に要する費用に充てるため、当該市町村の区域で都市計画法第五条の規定により都市計画区域として指定されたもの（以下この項において「都市計画区域」という。）のうち同法第七条第一項に規定する市街化区域（当該都市計画区域について同項に規定する区域区分に関する都市計画が定められていない場合には、当該都市計画区域の全部又は一部の区域で条例で定める区域）内に所在する土地及び家屋に対し、その価格を課税標準として、当該土地又は家屋の所有者に都市計画税を課することができる。</p>

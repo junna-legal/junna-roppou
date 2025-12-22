@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0020.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0022.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十条の四（法人の分割に係る連帯納税の責任）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法人が分割（法人税法（昭和四十年法律第三十四号）第二条第十二号の十に規定する分社型分割を除く。以下この条において同じ。）をした場合には、当該分割により事業を承継した法人（第十四条の九第一項第七号において「分割承継法人」という。）は、当該分割をした法人の次に掲げる地方税（当該地方税に係る督促手数料、延滞金、過少申告加算金、不申告加算金、重加算金及び滞納処分費を含み、その納付し、又は納入する義務が第九条の四第四項の規定により受託者としての権利義務を承継した法人に承継されたもの及びその納付し、又は納入する義務が信託財産限定責任負担債務（信託法第百五十四条に規定する信託財産限定責任負担債務をいう。第十七条の二第一項において同じ。）となるものを除く。）について、連帯して納付し、又は納入する責めに任ずる。</p>

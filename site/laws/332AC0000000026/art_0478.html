@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0477.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0479.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十条の十一の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>平成二十四年五月一日以後に自動車検査証の交付等を受ける検査自動車のうち、初めて道路運送車両法第七条第一項の規定による登録又は同法第六十条第一項後段の規定による車両番号の指定を受けた日の属する月から起算して十八年を経過する月の前月（軽自動車その他の政令で定める検査自動車については、政令で定める月）の初日以後に自動車検査証の交付等を受ける検査自動車（免税対象車等を除く。）に係る自動車重量税の税額は、自動車重量税法第七条第一項及び前条第一項の規定にかかわらず、当分の間、次に掲げる自動車の区分に応じ、一両につき、次に掲げる税率により計算した金額（道路運送車両法第六十三条に規定する臨時検査に係る自動車にあつては、当該金額に〇・五を乗じて得た金額）とする。</p>

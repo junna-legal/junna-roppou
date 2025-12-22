@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0376.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0378.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十九条の三十五の三（特定投資信託に係る受託法人の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第六十八条の三の三第一項に規定する収益の分配の額として政令で定める金額は、当該事業年度に係る投資信託約款（投資信託及び投資法人に関する法律（以下この条において「投資信託法」という。）第四条第一項に規定する委託者指図型投資信託約款又は投資信託法第四十九条第一項に規定する委託者非指図型投資信託約款をいう。以下この条において同じ。）に基づき行われる収益の分配の額（以下この項及び第五項において「総分配額」という。）から超過分配額（当該総分配額が受託法人（法第六十八条の三の三第一項に規定する受託法人をいう。以下この条において同じ。）の当該事業年度終了の時における純資産価額（その有する資産の帳簿価額の合計額からその有する負債の帳簿価額の合計額を減算した金額をいう。）から元本の額を控除した金額を上回る場合におけるその上回る部分の金額として財務省令で定める金額をいう。第五項において同じ。）を控除した金額とする。</p>

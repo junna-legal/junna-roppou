@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0035.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0037.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十条の二（公的給付に係る預金通帳等の保管等の制限）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>貸金業を営む者は、貸付けの契約について、公的給付（法令の規定に基づき国又は地方公共団体がその給付に要する費用又はその給付の事業に関する事務に要する費用の全部又は一部を負担し、又は補助することとされている給付（給与その他対価の性質を有するものを除く。）であつて、法令の規定により譲り渡し、担保に供し、又は差し押さえることができないこととされているものをいう。以下同じ。）がその受給権者である債務者等又は債務者等の親族その他の者（以下この条において「特定受給権者」という。）の預金又は貯金の口座に払い込まれた場合に当該預金又は貯金の口座に係る資金から当該貸付けの契約に基づく債権の弁済を受けることを目的として、次に掲げる行為をしてはならない。</p>

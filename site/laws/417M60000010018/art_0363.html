@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0362.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0364.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（電子情報処理組織を使用する方法による地図等の情報の内容を証明した書面又は土地所在図等の情報の内容を証明した書面の交付の請求）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この省令による改正後の不動産登記規則（以下この条において「新規則」という。）第二百条第四項又は第二百一条第四項において準用する新規則第百九十四条第三項の規定は、不動産登記規則附則第十七条第一項の規定により法務大臣が指定した登記所のうち、法務大臣が別に定める登記所における新規則第二百条第二項の書面又は同令第二百一条第二項の書面の交付の請求について適用する。</p>

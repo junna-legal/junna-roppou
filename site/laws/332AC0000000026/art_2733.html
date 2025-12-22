@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2732.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2734.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十四条（個人の準備金に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新租税特別措置法第二十条第四項、第二十条の二第四項、第二十条の三第六項、第二十二条第五項及び第二十四条の二第四項の規定は、個人の施行日以後に青色申告書の提出の承認を取り消され、又は青色申告書による申告をやめる旨の届出書の提出をした場合におけるその承認の取消しの基因となった事実のあった日又はその届出書の提出をした日（その届出書の提出をした日が青色申告書による申告をやめた年の翌年である場合には、そのやめた年の十二月三十一日。以下この条において「施行日以後取消事実発生日」という。）の属する年分（平成二十七年以後の年分に限る。）の所得税について適用し、個人の施行日前に青色申告書の提出の承認を取り消され、又は青色申告書による申告をやめる旨の届出書の提出をした場合におけるその承認の取消しの基因となった事実のあった日又はその届出書の提出をした日（その届出書の提出をした日が青色申告書による申告をやめた年の翌年である場合には、そのやめた年の十二月三十一日）の属する年分（施行日以後取消事実発生日の属する年分で平成二十六年以前の年分を含む。）及びその翌年分の所得税については、なお従前の例による。</p>

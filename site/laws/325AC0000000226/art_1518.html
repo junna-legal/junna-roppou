@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1517.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1519.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十四条（固定資産の価格等の修正に基づく賦課額の更正の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>附則第十八条、第十九条第一項又は第十九条の四の規定の適用を受ける土地に係る令和六年度から令和八年度までの各年度分の固定資産税に限り、第四百二十条又は第四百三十五条第二項の規定は、調整対象宅地等、調整対象農地又は調整対象市街化区域農地については、第四百十九条第二項又は第四百三十五条第一項の規定によつて土地課税台帳等に登録された価格等の修正が行われたことにより、当該調整対象宅地等、調整対象農地若しくは調整対象市街化区域農地が附則第十八条、第十九条第一項若しくは第十九条の四の規定の適用を受けないこととなる場合又は当該調整対象宅地等、調整対象農地若しくは調整対象市街化区域農地に係る宅地等調整固定資産税額、商業地等据置固定資産税額、商業地等調整固定資産税額、農地調整固定資産税額若しくは市街化区域農地調整固定資産税額に変動がある場合を除き、適用しない。</p>

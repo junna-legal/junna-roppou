@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0783.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0785.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三百二十一条の五の二（給与所得に係る特別徴収税額の納期の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第三百二十一条の四の特別徴収義務者は、その事務所、事業所その他これらに準ずるもので給与の支払事務を取り扱うもの（給与の支払を受ける者が常時十人未満であるものに限る。以下この項において「事務所等」という。）につき、当該特別徴収に係る納入金を納入すべき市町村の長の承認を受けた場合には、六月から十一月まで及び十二月から翌年五月までの各期間（当該各期間のうちその承認を受けた日の属する期間については、その日の属する月から当該期間の最終月までの期間）に当該事務所等において支払つた給与について前条第一項の規定により徴収した給与所得に係る特別徴収税額を、同項の規定にかかわらず、当該各期間に属する最終月の翌月十日までに当該市町村に納入することができる。</p>

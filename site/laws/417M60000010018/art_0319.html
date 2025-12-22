@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0318.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0320.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百三十七条（筆界確定訴訟の確定判決があった場合の取扱い）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>登記官は、その保管する筆界特定手続記録に係る筆界特定がされた筆界について、筆界確定訴訟の判決（訴えを不適法として却下したものを除く。以下本条において同じ。）が確定したときは、当該筆界確定訴訟の判決が確定した旨及び当該筆界確定訴訟に係る事件を特定するに足りる事項を当該筆界特定に係る筆界特定書に明らかにすることができる。</p>

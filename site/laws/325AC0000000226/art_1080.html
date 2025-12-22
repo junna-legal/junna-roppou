@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1079.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1081.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六百二条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、次の各号に掲げる者が、当該各号に定める土地の譲渡をしようとする場合において、市町村長が当該事実を認定したところに基づいて定める日（以下この項において「事実認定日」という。）から二年を経過する日までの期間（大規模な宅地の造成でその造成に要する期間が通常二年を超えることその他その期間を延長することにつきやむを得ない理由があると市町村長が認める場合には、納税義務者の申請に基づき市町村長が定める相当の期間とし、第二号又は第三号に定める土地の譲渡（第二号に定める土地の譲渡にあつては、土地収用法第八十二条の規定により土地をもつて損失を補償するために行われる場合の土地の譲渡を除く。）で、当該土地の譲渡に係る事実認定日がこれらの号に定める日後の日であるもの（第三項において「特定譲渡」という。）にあつては、当該事実認定日からこれらの号に定める日以後二年を経過する日までの期間とする。以下この項において「納税義務の免除に係る期間」という。）内に当該土地の譲渡をし、かつ、当該土地の譲渡があつたことにつき市町村長の確認を受けたときは、当該土地に係る特別土地保有税に係る地方団体の徴収金（納税義務の免除に係る期間に係るものに限る。）に係る納税義務を免除するものとする。</p>

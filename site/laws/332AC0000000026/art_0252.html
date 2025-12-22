@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0251.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0253.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十九条の三</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>青色申告書を提出する法人が、令和七年四月一日から令和十四年三月三十一日までの間に開始する各事業年度（以下この項において「対象事業年度」という。）において、特許権譲渡等取引（居住者（第二条第一項第一号の二に規定する居住者をいう。）若しくは内国法人（関連者であるものを除く。）に対する特定特許権等の譲渡又は他の者（関連者であるものを除く。以下この項において同じ。）に対する特定特許権等の貸付け（特定特許権等に係る権利の設定その他他の者に特定特許権等を使用させる行為を含む。）をいう。以下この項において同じ。）を行つた場合には、次に掲げる金額のうちいずれか少ない金額の百分の三十に相当する金額は、当該対象事業年度の所得の金額の計算上、損金の額に算入する。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0258.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0260.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建築基準法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八十七条の二（既存の一の建築物について二以上の工事に分けて用途の変更に伴う工事を行う場合の制限の緩和）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第三条第二項の規定により第二十七条等の規定の適用を受けない一の建築物について二以上の工事に分けて用途の変更に伴う工事を行う場合（第八十六条の八第一項に規定する場合に該当する場合を除く。）において、特定行政庁が当該二以上の工事の全体計画が次に掲げる基準に適合すると認めたときにおける第三条第二項及び前条第三項の規定の適用については、第三条第二項中「建築、修繕若しくは模様替の工事中の」とあるのは「第八十七条の二第一項の認定を受けた全体計画に係る二以上の工事の工事中若しくはこれらの工事の間の」と、前条第三項中「準用する」とあるのは「準用する。ただし、次条第一項の認定を受けた全体計画に係る二以上の工事のうち最後の工事に着手するまでは、この限りでない」とする。</p>

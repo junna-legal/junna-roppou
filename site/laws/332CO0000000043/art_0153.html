@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0152.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0154.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十五条の十の十一（特定口座内保管上場株式等の譲渡による所得等に対する源泉徴収等の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>特定口座を開設している居住者又は恒久的施設を有する非居住者でその年中に行われた当該特定口座に係る特定口座内保管上場株式等の譲渡又は当該特定口座において処理された上場株式等の信用取引等に係る差金決済（法第三十七条の十一の四第一項に規定する差金決済をいう。以下この条及び第二十五条の十の十三において同じ。）により生ずる法第三十七条の十一の四第二項に規定する源泉徴収選択口座内調整所得金額に係る当該譲渡の対価又は当該差金決済に係る差益に相当する金額について同条第一項の規定の適用を受けようとするものは、当該特定口座が開設されている金融商品取引業者等の営業所の長に、その年最初に当該特定口座に係る特定口座内保管上場株式等の譲渡をする時又は当該特定口座において処理された上場株式等の信用取引等につきその年最初に差金決済を行う時のうちいずれか早い時までに、特定口座源泉徴収選択届出書（同項に規定する特定口座源泉徴収選択届出書をいう。第十三項及び第十五項において同じ。）の提出（同条第一項に規定する提出をいう。第十三項及び第十五項において同じ。）をしなければならない。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0031.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0033.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>外国為替の取引等の報告に関する省令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十八条（貨物の輸出入等に係る保険に関する報告）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>本邦にある損害保険会社（保険業法第二条第四項に規定する損害保険会社及び同条第九項に規定する外国損害保険会社等をいい、非居住者との間の貨物の輸出、輸入又は外国相互間の移動に係る保険契約に関する業務を行う者に限る。）は、毎月中における非居住者との間の貨物の輸出、輸入又は外国相互間の移動に係る保険契約に基づく保険料又は保険金の支払等の状況について、別紙様式第四十九による報告書一通を作成し、翌月二十日までに、日本銀行を経由して財務大臣に提出しなければならない。</p>

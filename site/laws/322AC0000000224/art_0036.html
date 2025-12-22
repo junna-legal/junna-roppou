@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0035.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0037.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>戸籍法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、届出によつて効力を生ずべき認知、縁組、離縁、婚姻又は離婚の届出（以下この条において「縁組等の届出」という。）が市役所又は町村役場に出頭した者によつてされる場合には、当該出頭した者に対し、法務省令で定めるところにより、当該出頭した者が届出事件の本人（認知にあつては認知する者、民法第七百九十七条第一項に規定する縁組にあつては養親となる者及び養子となる者の法定代理人、同法第八百十一条第二項に規定する離縁にあつては養親及び養子の法定代理人となるべき者とする。次項及び第三項において同じ。）であるかどうかの確認をするため、当該出頭した者を特定するために必要な氏名その他の法務省令で定める事項を示す運転免許証その他の資料の提供又はこれらの事項についての説明を求めるものとする。</p>

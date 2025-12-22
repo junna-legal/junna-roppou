@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1033.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1035.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（手持品課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>施行日に、揮発油の製造場及び保税地域以外の場所（沖縄県の区域内の場所を除く。）で新法第八十八条の六の規定により揮発油とみなされる揮発油類似品（以下この条において「みなし揮発油」という。）を所持する揮発油の製造者又は販売業者がある場合において、その数量（二以上の場所で所持する場合には、その合計数量）が五キロリットル以上であるときは、当該みなし揮発油については、その者が揮発油の製造者でないときはこれを揮発油の製造者とみなし、施行日に当該みなし揮発油を揮発油の製造場から移出したものとみなして、一キロリットルにつき、四万五千六百円の揮発油税及び八千二百円の地方道路税を課する。</p>

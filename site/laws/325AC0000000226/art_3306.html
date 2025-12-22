@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3305.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3307.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十五条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、平成十九年十月一日において、平成十九年度分の国民健康保険税の納税義務者が新地方税法第七百六条第二項に規定する老齢等年金給付の支払を受けている年齢六十五歳以上の国民健康保険の被保険者である世帯主（平成二十年四月一日までの間において、年齢六十五歳に達するものを含み、災害その他の特別な事情があることにより、特別徴収の方法によって国民健康保険税を徴収することが著しく困難であると認めるものその他政令で定めるものを除く。以下この条において「特別徴収対象被保険者」という。）について、平成二十年四月一日から同年九月三十日までの間において新地方税法第七百十八条の二第二項に規定する特別徴収対象年金給付（次項において「特別徴収対象年金給付」という。）が支払われる場合においては、それぞれの支払に係る国民健康保険税額として、当該特別徴収対象被保険者に係る支払回数割保険税額の見込額（当該額によることが適当でないと認められる特別な事情がある場合においては、所得の状況その他の事情を勘案して市町村が定める額とする。）を、総務省令で定めるところにより、特別徴収の方法によって徴収することができる。</p>

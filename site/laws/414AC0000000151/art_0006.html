@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0005.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0007.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>情報通信技術を活用した行政の推進等に関する法律</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条（電子情報処理組織による申請等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>申請等のうち当該申請等に関する他の法令の規定において書面等により行うことその他のその方法が規定されているものについては、当該法令の規定にかかわらず、主務省令で定めるところにより、主務省令で定める電子情報処理組織（行政機関等の使用に係る電子計算機（入出力装置を含む。第二十三条第一項を除き、以下同じ。）とその手続等の相手方の使用に係る電子計算機とを電気通信回線で接続した電子情報処理組織をいう。次章を除き、以下同じ。）を使用する方法により行うことができる。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>組合等登記令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十八条（弁護士・外国法事務弁護士共同法人の登記に関する特則）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>弁護士法人又は外国法事務弁護士法人が外国弁護士による法律事務の取扱い等に関する法律（昭和六十一年法律第六十六号）第八十一条第一項の規定により弁護士・外国法事務弁護士共同法人となつたときは、同項に規定する定款の変更の効力が生じた日から二週間以内に、その主たる事務所の所在地において、法人の種類の変更前の弁護士法人又は外国法事務弁護士法人については解散の登記をし、法人の種類の変更後の弁護士・外国法事務弁護士共同法人については設立の登記をしなければならない。</p>

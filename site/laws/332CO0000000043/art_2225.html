@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_2224.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_2226.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十六条（連結法人の外国関係会社に係る所得の課税の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新令第三十九条の百十四の二第一項から第四項まで、第二十五項、第二十六項、第二十八項及び第二十九項、第三十九条の百十五第二項、第五項及び第六項並びに第三十九条の百十七第二項の規定は、新法第六十八条の九十第一項各号に掲げる連結法人の施行日以後に終了する連結事業年度に係る個別課税対象金額等（同項に規定する個別課税対象金額、同条第六項に規定する個別部分課税対象金額及び同条第八項に規定する個別金融子会社等部分課税対象金額をいい、当該連結法人に係る同条第二項第一号に規定する外国関係会社の平成三十年四月一日以後に開始した事業年度に係るものに限る。）を計算する場合について適用し、旧法第六十八条の九十第一項各号に掲げる連結法人の施行日前に終了した連結事業年度に係る同項に規定する個別課税対象金額、同条第六項に規定する個別部分課税対象金額及び同条第八項に規定する個別金融子会社等部分課税対象金額を計算する場合については、なお従前の例による。</p>

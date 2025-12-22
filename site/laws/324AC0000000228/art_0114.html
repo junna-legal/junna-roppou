@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0113.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0115.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>外国為替及び外国貿易法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>この法律の施行の際現に旧法第二十六条第四項に規定する対内直接投資等を行ってはならない期間が満了していない旧法の規定による届出に係る対内直接投資等で、この法律による改正後の外国為替及び外国貿易管理法（以下「新法」という。）第二十六条第三項の規定により報告しなければならない対内直接投資等に該当するものについては、施行日の前日において当該期間が満了したものとみなして、当該届出をした外国投資家は、施行日以後当該対内直接投資等を行うことができる。</p>

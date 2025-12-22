@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0227.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0229.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社更生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二百十一条（更生会社の取締役等に関する特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第百七十三条の規定により更生計画において取締役（更生会社が監査等委員会設置会社である場合にあっては、監査等委員である取締役又はそれ以外の取締役。以下この項及び次項において同じ。）、会計参与、監査役、代表取締役、各委員会の委員、執行役、代表執行役、会計監査人、清算人又は代表清算人の氏名又は名称を定めたときは、これらの者は、更生計画認可の決定の時に、それぞれ、取締役、会計参与、監査役、代表取締役、各委員会の委員、執行役、代表執行役、会計監査人、清算人又は代表清算人となる。</p>

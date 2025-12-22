@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1078.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1080.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六百一条（特別土地保有税の納税義務の免除等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村は、土地の所有者等が、その所有する土地を第五百八十六条第二項の規定の適用がある土地（同項第二十三号、第二十五号及び第二十五号の二に掲げる土地、同項第二十八号に掲げる土地のうち第三百四十八条第二項第一号又は第七号から第八号までに掲げる土地に該当するもの並びに第五百八十六条第二項第三十号に掲げる土地のうち当該市町村の条例で定めるものを除く。以下この条において「非課税土地」という。）として使用し、又は使用させようとする場合において、市町村長が当該事実を認定したところに基づいて定める日から二年を経過する日までの期間（工場、事務所その他の建物若しくは構築物の建設又は農用地の造成その他の用地の造成に要する期間が通常二年を超えることその他その期間を延長することにつきやむを得ない理由があると市町村長が認める場合には、土地の所有者等の申請に基づき市町村長が定める相当の期間。以下この条において「納税義務の免除に係る期間」という。）内に当該土地を非課税土地として使用し、又は使用させ、かつ、これらの使用が開始されたことにつき市町村長の確認を受けたときは、当該土地に係る特別土地保有税に係る地方団体の徴収金（納税義務の免除に係る期間に係るものに限る。第三項及び第七項において同じ。）に係る納税義務を免除するものとする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0149.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0151.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>国税徴収法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第百五十一条の二</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>税務署長は、前条の規定によるほか、滞納者がその国税を一時に納付することによりその事業の継続又はその生活の維持を困難にするおそれがあると認められる場合において、その者が納税について誠実な意思を有すると認められるときは、その国税の納期限（延納又は物納の許可の取消しがあつた場合には、その取消しに係る書面が発せられた日）から六月以内にされたその者の申請に基づき、一年以内の期間を限り、その納付すべき国税（国税通則法第四十六条第一項から第三項まで（納税の猶予の要件等）の規定の適用を受けているものを除く。）につき滞納処分による財産の換価を猶予することができる。</p>

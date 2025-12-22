@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0017.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0019.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>法の適用に関する通則法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十八条（生産物責任の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>前条の規定にかかわらず、生産物（生産され又は加工された物をいう。以下この条において同じ。）で引渡しがされたものの瑕疵かしにより他人の生命、身体又は財産を侵害する不法行為によって生ずる生産業者（生産物を業として生産し、加工し、輸入し、輸出し、流通させ、又は販売した者をいう。以下この条において同じ。）又は生産物にその生産業者と認めることができる表示をした者（以下この条において「生産業者等」と総称する。）に対する債権の成立及び効力は、被害者が生産物の引渡しを受けた地の法による。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0401.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0403.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十四条（特定認定長期優良住宅の所有権の保存登記等の税率の軽減）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人が、長期優良住宅の普及の促進に関する法律の施行の日から令和九年三月三十一日までの間（次項において「特定期間」という。）に同法第十条第二号イに掲げる住宅で住宅用家屋に該当するもの（以下この条において「特定認定長期優良住宅」という。）の新築をし、又は建築後使用されたことのない特定認定長期優良住宅の取得をし、当該個人の居住の用に供した場合には、当該特定認定長期優良住宅の所有権の保存の登記に係る登録免許税の税率は、財務省令で定めるところにより当該特定認定長期優良住宅の新築又は取得後一年以内に登記を受けるものに限り、第七十二条の二及び登録免許税法第九条の規定にかかわらず、千分の一とする。</p>

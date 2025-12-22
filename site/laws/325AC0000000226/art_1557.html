@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1556.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1558.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条の三の五</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、平成十七年四月一日以後において第六百一条第二項（第六百二条第二項及び第六百三条の二の二第二項において準用する場合を含む。）の規定により第六百一条第一項に規定する納税義務の免除に係る期間（以下この項及び次項において「免除期間」という。）を延長する場合、附則第三十一条の三の二第一項若しくは附則第三十一条の三の三第一項の規定によりこれらの規定に規定する予定期間（以下この項及び次項において「予定期間」という。）を定める場合、前条第一項の規定により同項に規定する変更後予定期間（以下この項及び次項において「変更後予定期間」という。）を定める場合、附則第三十一条の三の二第四項若しくは附則第三十一条の三の三第三項において準用する第六百一条第二項の規定により予定期間を延長する場合又は前条第三項の規定により変更後予定期間を延長する場合においては、これらの規定にかかわらず、同日以後において延長し、又は定める期間の合計が十年を超えない範囲内で当該免除期間、予定期間又は変更後予定期間の末日を定めなければならない。</p>

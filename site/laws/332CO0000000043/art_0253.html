@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0252.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0254.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二十七条の四（試験研究を行つた場合の法人税額の特別控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第四十二条の四第四項に規定する他の通算法人の全てが中小企業者に該当するものとして政令で定めるものは、通算親法人である同条第十九項第九号に規定する農業協同組合等の各事業年度終了の日において当該農業協同組合等との間に通算完全支配関係がある他の通算法人の全てが資本金の額又は出資金の額が一億円以下の法人（同項第八号に規定する適用除外事業者（同項第八号の二に規定する政令で定めるものを除く。）に該当するものを除く。）に該当する場合における当該農業協同組合等（次項において「中小通算農業協同組合等」という。）とする。</p>

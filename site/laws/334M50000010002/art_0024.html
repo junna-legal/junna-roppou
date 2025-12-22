@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0023.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0025.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>供託規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十八条（受理手続）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>供託官は、金銭又は有価証券の供託を受理すべきものと認めるときは、供託書正本に、供託を受理する旨、供託番号、一定の納入期日までに供託物を日本銀行に納入すべき旨及びその期日までに供託物を納入しないときは受理の決定は効力を失う旨を記載して記名押印し、これを、財務大臣の定める保管金払込事務等の取扱いに関する規定又は供託有価証券の取扱いに関する規定に従い作成した保管金払込書又は供託有価証券寄託書とともに供託者に交付しなければならない。</p>

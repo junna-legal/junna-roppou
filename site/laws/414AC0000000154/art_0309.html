@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0308.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0310.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社更生法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三条（会社更生法の一部改正に伴う経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>施行日前にされた第二条の規定による改正前の会社更生法（附則第五条第一項、第九項及び第十七項、第十二条第一項並びに第十三条において「旧会社更生法」という。）第十七条又は第二百四十四条第一項の規定による更生手続開始の申立てに係る更生事件（第二条の規定による改正後の会社更生法（以下この条並びに附則第五条第二項から第四項まで、第六項、第七項、第十項から第十二項まで、第十四項、第十五項及び第十七項並びに第十二条第一項第二号及び第三号並びに第二項第二号において「新会社更生法」という。）第二条第三項に規定する更生事件をいう。次項から第五項まで、第七項及び第八項において同じ。）については、なお従前の例による。</p>

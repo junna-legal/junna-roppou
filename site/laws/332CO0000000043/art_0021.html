@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0020.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0022.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条の十七（住宅取得以外の金銭支払等があつた場合の金融機関の営業所等の長の支払事務取扱者に対する通知等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>第二条の九第一項又は第二項の金融機関の営業所等（貸付信託の受益権又は有価証券に係る支払事務の取扱いをする者を除く。）の長は、法第四条の二第一項の規定の適用を受ける貸付信託の受益権又は有価証券で、第二条の九第一項又は第二項の規定によりこれらの規定に規定する金融機関の振替口座簿に記載若しくは記録を受け、又は同条第二項の規定により保管の委託を受けたものに係る勤労者財産形成住宅貯蓄契約又はその履行につき法第四条の二第九項に規定する事実が生じた場合には、直ちに、当該貸付信託の受益権又は有価証券に係る支払事務の取扱いをする者に対し、当該事実が生じた日及び当該貸付信託の受益権又は有価証券の収益の分配又は利子で同項の規定により同条第一項の規定の適用がなかつたものとされる金額その他の財務省令で定める事項を通知しなければならない。</p>

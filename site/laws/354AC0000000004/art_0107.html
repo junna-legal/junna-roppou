@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0106.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0108.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事執行法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第九十七条（建物使用の許可）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>債務者の居住する建物について強制管理の開始決定がされた場合において、債務者が他に居住すべき場所を得ることができないときは、執行裁判所は、申立てにより、債務者及びその者と生計を一にする同居の親族（婚姻又は縁組の届出をしていないが債務者と事実上夫婦又は養親子と同様の関係にある者を含む。以下「債務者等」という。）の居住に必要な限度において、期間を定めて、その建物の使用を許可することができる。</p>

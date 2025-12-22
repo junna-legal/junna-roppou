@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1807.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1809.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第十七条（特定口座内保管上場株式等の譲渡等に係る所得計算等の特例に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>新令第二十五条の十の二第十五項（第三号及び第四号に係る部分に限る。）及び第十六項から第十八項までの規定は、平成二十六年一月一日以後にこれらの号の特定口座に受け入れるこれらの号に規定する贈与、相続又は遺贈により取得したこれらの号に規定する上場株式等について適用し、同日前に旧令第二十五条の十の二第十五項第三号又は第四号の特定口座に受け入れたこれらの号に規定する贈与、相続又は遺贈により取得したこれらの号に規定する上場株式等については、なお従前の例による。</p>

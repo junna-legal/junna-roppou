@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0325.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0327.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の二十四の十一（租税条約の実施に係る更正に伴う事業税額の控除）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>事業を行う法人について、租税条約等の実施に伴う所得税法、法人税法及び地方税法の特例等に関する法律第七条第一項に規定する合意に基づき国税通則法第二十四条又は第二十六条の規定による更正が行われた場合において、当該更正に係る法人税の所得に基づいて道府県知事が第七十二条の三十九第一項若しくは第三項、第七十二条の四十一第一項若しくは第三項又は第七十二条の四十一の二第一項若しくは第三項の規定による更正をしたことに伴い、第十七条又は第七十二条の四十一の四の規定により還付することとなる金額（以下この項及び次項において「租税条約の実施に係る還付すべき金額」という。）が生ずるときは、当該更正があつた日が当該更正に係る更正の請求があつた日の翌日から起算して三月を経過した日以後である場合を除き、第十七条、第十七条の二、第十七条の四及び第七十二条の四十一の四の規定にかかわらず、租税条約の実施に係る還付すべき金額は、当該更正の日の属する事業年度開始の日から一年以内に開始する各事業年度（当該更正の日後に当該法人が適格合併により解散をした場合の当該適格合併に係る合併法人の当該合併の日以後に終了する各事業年度を含む。）の付加価値額、資本金等の額、所得又は収入金額について第七十二条の二十五の規定により納付すべき事業税額、第七十二条の二十八の規定により納付すべき事業税額又は第七十二条の二十九の規定により納付すべき事業税額から順次控除するものとする。</p>

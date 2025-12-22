@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0388.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0390.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法施行令</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の四の四（直系尊属から結婚・子育て資金の一括贈与を受けた場合の贈与税の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>法第七十条の二の三第一項に規定する政令で定める金融機関は、銀行、信用金庫、信用金庫連合会、労働金庫、労働金庫連合会、信用協同組合、信用協同組合連合会（中小企業等協同組合法第九条の九第一項第一号の事業を行う協同組合連合会をいう。）、農林中央金庫及び株式会社商工組合中央金庫並びに貯金の受入れをする農業協同組合、農業協同組合連合会、漁業協同組合、漁業協同組合連合会、水産加工業協同組合及び水産加工業協同組合連合会とする。</p>

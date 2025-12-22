@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0331.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0333.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十二条の二十九（清算中の法人の各事業年度の申告納付）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>清算中の法人は、その清算中に事業年度（残余財産の確定の日の属する事業年度を除く。）が終了した場合には、当該事業年度の付加価値額、所得又は収入金額を解散をしていない法人の付加価値額、所得又は収入金額とみなして、当該事業年度につき第七十二条の十二、第七十二条の十四から第七十二条の二十まで、第七十二条の二十三から第七十二条の二十四の三まで、第七十二条の二十四の五、第七十二条の二十四の六又は第七十二条の二十四の七第一項から第五項までの規定により当該事業年度の付加価値額、所得又は収入金額及びこれらに対する事業税額を計算し、その税額があるときは、当該事業年度終了の日から二月以内に当該事業年度に係る付加価値割、所得割又は収入割を事務所又は事業所所在の道府県に申告納付しなければならない。</p>

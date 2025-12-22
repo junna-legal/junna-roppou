@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0093.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0095.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十条の四十一（市町村長から都道府県知事への附票本人確認情報の通知等）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>市町村長は、戸籍の附票の記載、消除又は第十七条第二号から第三号まで及び第五号から第七号までに掲げる事項の全部若しくは一部についての記載の修正を行つた場合には、当該戸籍の附票の記載等に係る附票本人確認情報（戸籍の附票に記載されている同条第二号から第三号まで及び第五号から第七号までに掲げる事項（戸籍の附票の消除を行つた場合には、当該戸籍の附票に記載されていたこれらの事項）並びに戸籍の附票の記載等に関する事項で政令で定めるものをいう。以下同じ。）を都道府県知事に通知するものとする。</p>

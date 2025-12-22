@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1424.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1426.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第六条（肉用牛の売却による事業所得に係る道府県民税及び市町村民税の課税の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>道府県は、昭和五十七年度から令和九年度までの各年度分の個人の道府県民税に限り、所得割の納税義務者が前年中に租税特別措置法第二十五条第一項各号に掲げる売却の方法により当該各号に定める肉用牛を売却し、かつ、その売却した肉用牛が全て同項に規定する免税対象飼育牛（次項において「免税対象飼育牛」という。）である場合（その売却した肉用牛の頭数の合計が千五百頭以内である場合に限る。）において、第四十五条の二第一項の規定による申告書（その提出期限後において道府県民税の納税通知書が送達される時までに提出されたもの及びその時までに提出された第四十五条の三第一項の確定申告書を含む。次項において同じ。）にその肉用牛の売却に係る同法第二十五条第一項に規定する事業所得の明細に関する事項の記載があるとき（これらの申告書にその記載がないことについてやむを得ない理由があると市町村長が認めるときを含む。次項において同じ。）は、当該事業所得に係る道府県民税の所得割の額として政令で定める額を免除するものとする。</p>

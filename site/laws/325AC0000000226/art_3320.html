@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_3319.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_3321.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第八条（信用協同組合等に係る固定資産税又は都市計画税に関する経過措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>信用協同組合及び信用協同組合連合会（中小企業等協同組合法（昭和二十四年法律第百八十一号）第九条の九第一項第一号に規定する事業を行う協同組合連合会をいう。）、労働金庫及び労働金庫連合会並びに信用金庫及び信用金庫連合会（以下この項から第三項までにおいて「信用協同組合等」という。）のうち施行日において事業規模が大きいものとして政令で定めるもの（当該政令で定める信用協同組合等を全部又は一部の当事者とする合併により設立される信用協同組合等及び当該合併により設立される信用協同組合等を全部又は一部の当事者とする合併により設立される信用協同組合等を含む。次項及び第三項において「特定信用協同組合等」という。）が所有し、かつ、使用する事務所及び倉庫（第三項の規定の適用を受けるものを除く。）に対して課する平成十九年度分及び平成二十年度分の固定資産税又は都市計画税の課税標準は、新法第三百四十九条の三第三十項又は第七百二条第一項の規定により課税標準とされる額に、平成十九年度にあっては六十分の五十三を、平成二十年度にあっては六十分の五十六を、それぞれ乗じて得た額とする。</p>

@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_1603.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_1605.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>地方税法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十一条（東日本大震災による被災家屋の代替家屋等の取得に係る不動産取得税の課税標準の特例）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>東日本大震災により滅失し、又は損壊した家屋（以下この項及び次項において「被災家屋」という。）の所有者その他の政令で定める者が、当該被災家屋に代わるものと道府県知事が認める家屋（以下この項及び次項において「代替家屋」という。）の取得をした場合における当該代替家屋の取得に対して課する不動産取得税の課税標準の算定については、当該取得が令和八年三月三十一日までに行われたときに限り、価格に当該代替家屋の床面積に対する当該被災家屋の床面積の割合（当該割合が一を超える場合は、一）を乗じて得た額を価格から控除するものとする。</p>

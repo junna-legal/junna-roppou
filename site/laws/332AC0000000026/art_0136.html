@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0135.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0137.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>租税特別措置法</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第四十条の二（国等に対して重要文化財を譲渡した場合の譲渡所得の非課税）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>個人が、その有する資産（土地を除く。）で、文化財保護法第二十七条第一項の規定により重要文化財として指定されたものを国、独立行政法人国立文化財機構、独立行政法人国立美術館、独立行政法人国立科学博物館、地方公共団体、地方独立行政法人（地方独立行政法人法第二十一条第六号に掲げる業務を主たる目的とするもののうち政令で定めるものに限る。）又は文化財保護法第百九十二条の二第一項に規定する文化財保存活用支援団体（政令で定めるものに限る。以下この条において同じ。）に譲渡した場合（当該文化財保存活用支援団体に譲渡した場合には、政令で定める場合に限る。）の当該譲渡に係る譲渡所得については、所得税を課さない。</p>

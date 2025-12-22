@@ -126,6 +126,24 @@ button {
 .sp { height: 6px; }
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
+
+/* 読み込み中 */
+.loading {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.8);
+  color:#374151;
+  font-size: 14px;
+}
+.dot {
+  width:10px;height:10px;border-radius:999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
 </style>
 </head>
 <body>
@@ -139,7 +157,6 @@ button {
     <div class='navrow'><a class='navbtn' href='art_0161.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0163.html'>次へ →</a></div>
     <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>商業登記規則</h2>
     <div class="small"><b><span style="margin-right:6px;">🌸</span>第七条（管轄転属の場合の措置）</b></div>
-    <!-- keyは表示しない -->
     <hr>
     <div class="article-body">
       <p class='p'>附則第二条指定登記所であつて、電子情報処理組織指定登記所以外の登記所（以下「電子情報処理組織未指定登記所」という。）である甲登記所の管轄地の一部が、附則第二条の指定がされていない登記所（以下「附則第二条未指定登記所」という。）であつて、電子情報処理組織指定登記所である乙登記所の管轄に転属したときは、乙登記所は、甲登記所から移送を受けた印鑑ファイルの記録を磁気ディスクに記録しなければならない。</p>
