@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>公益社団法人及び公益財団法人の認定等に関する法律施行令（条文一覧）</title>
+<title>公益社団法人及び公益財団法人の認定等に関する法律施行令</title>
 <style>
 :root {
   --bg: #fffafc;
@@ -16,9 +16,7 @@
   --lav:  #f3ecff;
 
   font-family: -apple-system, BlinkMacSystemFont,
-    "Hiragino Maru Gothic ProN",
-    "Hiragino Sans",
-    "Yu Gothic UI",
+    "Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI",
     system-ui, sans-serif;
 
   line-height: 1.75;
@@ -39,11 +37,12 @@ header {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0,0,0,.06);
   padding: 12px 12px;
+  z-index: 10;
 }
 
 main {
   padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -52,9 +51,7 @@ main {
   border-radius: 24px;
   padding: 16px 14px;
   margin-bottom: 14px;
-  box-shadow:
-    0 8px 24px rgba(0,0,0,.04),
-    0 2px 6px rgba(0,0,0,.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.03);
 }
 
 .badge {
@@ -67,13 +64,12 @@ main {
   border: 1px solid rgba(0,0,0,.04);
   font-size: 13px;
   color: #111827;
+  font-weight: 800;
 }
 
 .micon{
-  width: 22px;
-  height: 22px;
-  display: inline-grid;
-  place-items: center;
+  width: 22px; height: 22px;
+  display: inline-grid; place-items: center;
   border-radius: 999px;
   background: rgba(255,255,255,0.85);
   border: 1px solid rgba(0,0,0,.06);
@@ -106,9 +102,7 @@ button {
 
 .navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .navbtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 12px;
   border-radius: 999px;
   text-decoration: none;
@@ -127,11 +121,8 @@ button {
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
 
-/* 読み込み中 */
 .loading {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
+  display:inline-flex; align-items:center; gap:8px;
   padding:8px 10px;
   border-radius:999px;
   border:1px solid rgba(0,0,0,.08);
@@ -144,20 +135,137 @@ button {
   background: linear-gradient(90deg, var(--pink), var(--lav));
   box-shadow: 0 2px 6px rgba(0,0,0,.06);
 }
+
+.artbox{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius: 20px;
+  padding: 14px 12px;
+  margin: 12px 0;
+  background: linear-gradient(180deg, rgba(232,248,245,.35), rgba(243,236,255,.35));
+}
+.arthead{
+  font-weight: 900;
+  margin: 0 0 8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.artnum{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.8);
+  border:1px solid rgba(0,0,0,.06);
+  font-size: 13px;
+}
+.toc a{ text-decoration:none; color:#111827; }
+.toc a:hover{ text-decoration:underline; }
 </style>
 </head>
 <body>
-
-<header><span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>公益社団法人及び公益財団法人の認定等に関する法律施行令</span>　<a class="navbtn" href='../../index.html'>← 検索</a></header>
-<main>
-  <div class="card">
-    <div class="small">LawId: 419CO0000000276</div>
-    <div class='small'>現行版基準日(推定): 2025-04-01</div>
-    <hr>
-    <h3 style="margin:0 0 8px;"><span style="margin-right:6px;">📜</span>条文一覧</h3>
-    <div><a href='art_0001.html'>第一条（特別の利益を与えてはならない法人の関係者）</a></div><div><a href='art_0002.html'>第二条（特定の個人又は団体の利益を図る活動を行う者）</a></div><div><a href='art_0003.html'>第三条（公益法人の社会的信用を維持する上でふさわしくない事業）</a></div><div><a href='art_0004.html'>第四条（特別な利害関係）</a></div><div><a href='art_0005.html'>第五条（他の同一の団体において相互に密接な関係にある者）</a></div><div><a href='art_0006.html'>第六条（会計監査人を置くことを要しない公益法人の基準）</a></div><div><a href='art_0007.html'>第七条（理事の構成の特例の基準）</a></div><div><a href='art_0008.html'>第八条（他の団体の意思決定に関与することができる株式その他の財産を保有することができる場合）</a></div><div><a href='art_0009.html'>第九条（公益目的取得財産残額に相当する額の財産の贈与を受けることができる法人）</a></div>
-  </div>
-</main>
-
+<header><span class='badge'><span class='micon'><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>公益社団法人及び公益財団法人の認定等に関する法律施行令</span> <a class='navbtn' href='../../index.html'>← 検索</a></header><main><div class='card'><div class='small'>LawId: 419CO0000000276</div><div class='small'>現行版基準日(推定): 2025-04-01</div><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div><hr><div class='toc'><div>・ <a href='index.html#a1'>第一条（特別の利益を与えてはならない法人の関係者）</a></div>
+<div>・ <a href='index.html#a2'>第二条（特定の個人又は団体の利益を図る活動を行う者）</a></div>
+<div>・ <a href='index.html#a3'>第三条（公益法人の社会的信用を維持する上でふさわしくない事業）</a></div>
+<div>・ <a href='index.html#a4'>第四条（特別な利害関係）</a></div>
+<div>・ <a href='index.html#a5'>第五条（他の同一の団体において相互に密接な関係にある者）</a></div>
+<div>・ <a href='index.html#a6'>第六条（会計監査人を置くことを要しない公益法人の基準）</a></div>
+<div>・ <a href='index.html#a7'>第七条（理事の構成の特例の基準）</a></div>
+<div>・ <a href='index.html#a8'>第八条（他の団体の意思決定に関与することができる株式その他の財産を保有することができる場合）</a></div>
+<div>・ <a href='index.html#a9'>第九条（公益目的取得財産残額に相当する額の財産の贈与を受けることができる法人）</a></div></div><hr><section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（特別の利益を与えてはならない法人の関係者）</span></div><p class='p'>公益社団法人及び公益財団法人の認定等に関する法律（以下「法」という。）第五条第三号の政令で定める法人の関係者は、次に掲げる者とする。</p>
+<ul class='cute-list'>
+<li>一  当該法人の理事、監事又は使用人</li>
+<li>二  当該法人が一般社団法人である場合にあっては、その社員又は基金（一般社団法人及び一般財団法人に関する法律（平成十八年法律第四十八号。以下「一般社団・財団法人法」という。）第百三十一条に規定する基金をいう。）の拠出者</li>
+<li>三  当該法人が一般財団法人である場合にあっては、その設立者又は評議員</li>
+<li>四  前三号に掲げる者の配偶者又は三親等内の親族</li>
+<li>五  前各号に掲げる者と婚姻の届出をしていないが事実上婚姻関係と同様の事情にある者</li>
+<li>六  前二号に掲げる者のほか、第一号から第三号までに掲げる者から受ける金銭その他の財産によって生計を維持する者</li>
+<li>七  第二号又は第三号に掲げる者が法人である場合にあっては、その法人が事業活動を支配する法人又はその法人の事業活動を支配する者として内閣府令で定めるもの</li>
+</ul></section>
+<section class='artbox' id='a2'><div class='arthead'><span class='artnum'>🍬 第二条（特定の個人又は団体の利益を図る活動を行う者）</span></div><p class='p'>法第五条第四号の政令で定める特定の個人又は団体の利益を図る活動を行う者は、次に掲げる者とする。</p>
+<ul class='cute-list'>
+<li>一  株式会社その他の営利事業を営む者に対して寄附その他の特別の利益を与える活動（公益法人に対して当該公益法人が行う公益目的事業のために寄附その他の特別の利益を与えるものを除く。）を行う個人又は団体</li>
+<li>二  社員その他の構成員又は会員若しくはこれに類するものとして内閣府令で定める者（以下この号において「社員等」という。）の相互の支援、交流、連絡その他の社員等に共通する利益を図る活動を行うことを主たる目的とする団体</li>
+</ul></section>
+<section class='artbox' id='a3'><div class='arthead'><span class='artnum'>🍬 第三条（公益法人の社会的信用を維持する上でふさわしくない事業）</span></div><p class='p'>法第五条第五号の政令で定める公益法人の社会的信用を維持する上でふさわしくない事業は、次に掲げる事業とする。</p>
+<ul class='cute-list'>
+<li>一  投機的な取引を行う事業</li>
+<li>二  利息制限法（昭和二十九年法律第百号）第一条の規定により計算した金額を超える利息の契約又は同法第四条第一項に規定する割合を超える賠償額の予定をその内容に含む金銭を目的とする消費貸借による貸付けを行う事業</li>
+<li>三  風俗営業等の規制及び業務の適正化等に関する法律（昭和二十三年法律第百二十二号）第二条第五項に規定する性風俗関連特殊営業</li>
+</ul></section>
+<section class='artbox' id='a4'><div class='arthead'><span class='artnum'>🍬 第四条（特別な利害関係）</span></div><p class='p'>法第五条第十号の政令で定める特別な利害関係は、一方の者と他方の者との間において、当該他方の者が次に掲げる者に該当する関係とする。</p>
+<ul class='cute-list'>
+<li>一  当該一方の者と婚姻の届出をしていないが事実上婚姻関係と同様の事情にある者</li>
+<li>二  当該一方の者の使用人</li>
+<li>三  前二号に掲げる者以外の者であって、当該一方の者から受ける金銭その他の財産によって生計を維持しているもの</li>
+<li>四  前二号に掲げる者の配偶者</li>
+<li>五  第一号から第三号までに掲げる者の三親等内の親族であって、これらの者と生計を一にするもの</li>
+</ul></section>
+<section class='artbox' id='a5'><div class='arthead'><span class='artnum'>🍬 第五条（他の同一の団体において相互に密接な関係にある者）</span></div><p class='p'>法第五条第十一号の政令で定める相互に密接な関係にある者は、次に掲げる者とする。</p>
+<ul class='cute-list'>
+<li>一  当該他の同一の団体の理事以外の役員（法人でない団体で代表者又は管理人の定めのあるものにあっては、その代表者又は管理人）又は業務を執行する社員である者</li>
+<li>二  次に掲げる団体においてその職員（国会議員及び地方公共団体の議会の議員を除く。）である者</li>
+<li>イ  国の機関</li>
+<li>イ</li>
+<li>国の機関</li>
+<li>ロ  地方公共団体</li>
+<li>ロ</li>
+<li>地方公共団体</li>
+<li>ハ  独立行政法人通則法（平成十一年法律第百三号）第二条第一項に規定する独立行政法人</li>
+<li>ハ</li>
+<li>独立行政法人通則法（平成十一年法律第百三号）第二条第一項に規定する独立行政法人</li>
+<li>ニ  国立大学法人法（平成十五年法律第百十二号）第二条第一項に規定する国立大学法人又は同条第三項に規定する大学共同利用機関法人</li>
+<li>ニ</li>
+<li>国立大学法人法（平成十五年法律第百十二号）第二条第一項に規定する国立大学法人又は同条第三項に規定する大学共同利用機関法人</li>
+<li>ホ  地方独立行政法人法（平成十五年法律第百十八号）第二条第一項に規定する地方独立行政法人</li>
+<li>ホ</li>
+<li>地方独立行政法人法（平成十五年法律第百十八号）第二条第一項に規定する地方独立行政法人</li>
+<li>ヘ  特殊法人（特別の法律により特別の設立行為をもって設立された法人であって、総務省設置法（平成十一年法律第九十一号）第四条第一項第八号の規定の適用を受けるものをいう。第九条第一号において同じ。）又は認可法人（特別の法律により設立され、かつ、その設立に関し行政官庁の認可を要する法人をいう。）</li>
+<li>ヘ</li>
+<li>特殊法人（特別の法律により特別の設立行為をもって設立された法人であって、総務省設置法（平成十一年法律第九十一号）第四条第一項第八号の規定の適用を受けるものをいう。第九条第一号において同じ。）又は認可法人（特別の法律により設立され、かつ、その設立に関し行政官庁の認可を要する法人をいう。）</li>
+</ul></section>
+<section class='artbox' id='a6'><div class='arthead'><span class='artnum'>🍬 第六条（会計監査人を置くことを要しない公益法人の基準）</span></div><p class='p'>法第五条第十三号ただし書の政令で定める勘定の額は次の各号に掲げる額とし、同条第十三号ただし書の政令で定める基準は当該各号に掲げる額の区分に応じ当該各号に定める額とする。</p>
+<ul class='cute-list'>
+<li>一  一般社団法人にあっては一般社団・財団法人法第二条第二号に規定する最終事業年度、一般財団法人にあっては同条第三号に規定する最終事業年度に係る損益計算書の収益の部に計上した額の合計額</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                      百億円</p>
+<ul class='cute-list'>
+<li>二  前号の損益計算書の費用及び損失の部に計上した額の合計額</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                      百億円</p>
+<ul class='cute-list'>
+<li>三  一般社団法人にあっては一般社団・財団法人法第二条第二号の貸借対照表、一般財団法人にあっては同条第三号の貸借対照表の負債の部に計上した額の合計額</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                      五十億円</p></section>
+<section class='artbox' id='a7'><div class='arthead'><span class='artnum'>🍬 第七条（理事の構成の特例の基準）</span></div><p class='p'>法第五条第十五号ただし書の政令で定める勘定の額は次に掲げる額とし、同号ただし書の政令で定める基準は三千万円とする。</p>
+<ul class='cute-list'>
+<li>一  一般社団法人にあっては一般社団・財団法人法第二条第二号に規定する最終事業年度、一般財団法人にあっては同条第三号に規定する最終事業年度に係る損益計算書の収益の部に計上した額の合計額</li>
+<li>二  前号の損益計算書の費用及び損失の部に計上した額の合計額</li>
+</ul></section>
+<section class='artbox' id='a8'><div class='arthead'><span class='artnum'>🍬 第八条（他の団体の意思決定に関与することができる株式その他の財産を保有することができる場合）</span></div><p class='p'>法第五条第十八号ただし書の政令で定める場合は、株主総会その他の団体の財務及び営業又は事業の方針を決定する機関における議決権の過半数を有していない場合とする。</p></section>
+<section class='artbox' id='a9'><div class='arthead'><span class='artnum'>🍬 第九条（公益目的取得財産残額に相当する額の財産の贈与を受けることができる法人）</span></div><p class='p'>法第五条第二十号トの政令で定める法人は、次に掲げる法人とする。</p>
+<ul class='cute-list'>
+<li>一  特殊法人（株式会社であるものを除く。）</li>
+<li>二  日本赤十字社</li>
+<li>三  前二号に掲げる法人以外の法人のうち、次のいずれにも該当するもの</li>
+<li>イ  法令の規定により、当該法人の主たる目的が、学術、技芸、慈善、祭祀し、宗教その他の公益に関する事業を行うものであることが定められていること。</li>
+<li>イ</li>
+<li>法令の規定により、当該法人の主たる目的が、学術、技芸、慈善、祭祀し、宗教その他の公益に関する事業を行うものであることが定められていること。</li>
+<li>ロ  法令又は定款その他の基本約款（ホにおいて「法令等」という。）の規定により、各役員について、当該役員及びその配偶者又は三親等内の親族である役員の合計数が役員の総数の三分の一を超えないことが定められていること。</li>
+<li>ロ</li>
+<li>法令又は定款その他の基本約款（ホにおいて「法令等」という。）の規定により、各役員について、当該役員及びその配偶者又は三親等内の親族である役員の合計数が役員の総数の三分の一を超えないことが定められていること。</li>
+<li>ハ  社員その他の構成員に剰余金の分配を受ける権利を与えることができないものであること。</li>
+<li>ハ</li>
+<li>社員その他の構成員に剰余金の分配を受ける権利を与えることができないものであること。</li>
+<li>ニ  社員その他の構成員又は役員及びこれらの者の配偶者又は三親等内の親族に対して特別の利益を与えないものであること。</li>
+<li>ニ</li>
+<li>社員その他の構成員又は役員及びこれらの者の配偶者又は三親等内の親族に対して特別の利益を与えないものであること。</li>
+<li>ホ  法令等の規定により、残余財産を当該法人の目的に類似する目的のために処分し、又は国若しくは地方公共団体に帰属させることが定められていること。</li>
+<li>ホ</li>
+<li>法令等の規定により、残余財産を当該法人の目的に類似する目的のために処分し、又は国若しくは地方公共団体に帰属させることが定められていること。</li>
+</ul></section><hr><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div></div></main>
 </body>
 </html>

@@ -16,9 +16,7 @@
   --lav:  #f3ecff;
 
   font-family: -apple-system, BlinkMacSystemFont,
-    "Hiragino Maru Gothic ProN",
-    "Hiragino Sans",
-    "Yu Gothic UI",
+    "Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI",
     system-ui, sans-serif;
 
   line-height: 1.75;
@@ -39,11 +37,12 @@ header {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0,0,0,.06);
   padding: 12px 12px;
+  z-index: 10;
 }
 
 main {
   padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -52,9 +51,7 @@ main {
   border-radius: 24px;
   padding: 16px 14px;
   margin-bottom: 14px;
-  box-shadow:
-    0 8px 24px rgba(0,0,0,.04),
-    0 2px 6px rgba(0,0,0,.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.03);
 }
 
 .badge {
@@ -67,13 +64,12 @@ main {
   border: 1px solid rgba(0,0,0,.04);
   font-size: 13px;
   color: #111827;
+  font-weight: 800;
 }
 
 .micon{
-  width: 22px;
-  height: 22px;
-  display: inline-grid;
-  place-items: center;
+  width: 22px; height: 22px;
+  display: inline-grid; place-items: center;
   border-radius: 999px;
   background: rgba(255,255,255,0.85);
   border: 1px solid rgba(0,0,0,.06);
@@ -106,9 +102,7 @@ button {
 
 .navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .navbtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 12px;
   border-radius: 999px;
   text-decoration: none;
@@ -127,11 +121,8 @@ button {
 .cute-list { margin: 8px 0 14px 18px; padding: 0; }
 .cute-list li { margin: 8px 0; }
 
-/* 読み込み中 */
 .loading {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
+  display:inline-flex; align-items:center; gap:8px;
   padding:8px 10px;
   border-radius:999px;
   border:1px solid rgba(0,0,0,.08);
@@ -144,6 +135,32 @@ button {
   background: linear-gradient(90deg, var(--pink), var(--lav));
   box-shadow: 0 2px 6px rgba(0,0,0,.06);
 }
+
+.artbox{
+  border:1px solid rgba(0,0,0,.08);
+  border-radius: 20px;
+  padding: 14px 12px;
+  margin: 12px 0;
+  background: linear-gradient(180deg, rgba(232,248,245,.35), rgba(243,236,255,.35));
+}
+.arthead{
+  font-weight: 900;
+  margin: 0 0 8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.artnum{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.8);
+  border:1px solid rgba(0,0,0,.06);
+  font-size: 13px;
+}
+.toc a{ text-decoration:none; color:#111827; }
+.toc a:hover{ text-decoration:underline; }
 </style>
 </head>
 <body>
@@ -236,7 +253,7 @@ function doSearch(){
       return;
     }
     const pseudo = lawMatched.slice(0,200).map(x=>({
-      law: x.title, article: "（条文一覧）", url: x.url, snippet:""
+      law: x.title, article: "（条文）", url: x.url, snippet:""
     }));
     renderResults(pseudo);
     return;
@@ -256,7 +273,6 @@ function doSearch(){
 }
 
 async function loadData(){
-  // 分割manifest → docs結合、lawsは別ファイル
   const mf = await (await fetch("search_manifest.json")).json();
   const lawsObj = await (await fetch("search_laws.json")).json();
 
@@ -272,7 +288,6 @@ async function init(){
   try{
     DATA = await loadData();
 
-    // 法令一覧表示
     const ll = document.getElementById("lawlist");
     const laws = DATA.laws.slice().sort((a,b)=> (a.title||"").localeCompare(b.title||"", "ja"));
     ll.innerHTML = laws.map(x=>`<a href="${x.url}">${x.title}</a>`).join(" / ");
