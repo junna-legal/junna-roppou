@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>民事執行法 第百六十八条の二（明渡しの催告）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>民事執行法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0195.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0197.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>民事執行法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第百六十八条の二（明渡しの催告）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>執行官は、不動産等の引渡し又は明渡しの強制執行の申立てがあつた場合において、当該強制執行を開始することができるときは、次項に規定する引渡し期限を定めて、明渡しの催告（不動産等の引渡し又は明渡しの催告をいう。以下この条において同じ。）をすることができる。</p>
+<p class='p'>                      ただし、債務者が当該不動産等を占有していないときは、この限りでない。</p>
+<div class='sp'></div>
+<p class='p'>２  引渡し期限（明渡しの催告に基づき第六項の規定による強制執行をすることができる期限をいう。以下この条において同じ。）は、明渡しの催告があつた日から一月を経過する日とする。</p>
+<p class='p'>                      ただし、執行官は、執行裁判所の許可を得て、当該日以後の日を引渡し期限とすることができる。</p>
+<div class='sp'></div>
+<p class='p'>３  執行官は、明渡しの催告をしたときは、その旨、引渡し期限及び第五項の規定により債務者が不動産等の占有を移転することを禁止されている旨を、当該不動産等の所在する場所に公示書その他の標識を掲示する方法により、公示しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>４  執行官は、引渡し期限が経過するまでの間においては、執行裁判所の許可を得て、引渡し期限を延長することができる。</p>
+<p class='p'>                      この場合においては、執行官は、引渡し期限の変更があつた旨及び変更後の引渡し期限を、当該不動産等の所在する場所に公示書その他の標識を掲示する方法により、公示しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>５  明渡しの催告があつたときは、債務者は、不動産等の占有を移転してはならない。</p>
+<p class='p'>                      ただし、債権者に対して不動産等の引渡し又は明渡しをする場合は、この限りでない。</p>
+<div class='sp'></div>
+<p class='p'>６  明渡しの催告後に不動産等の占有の移転があつたときは、引渡し期限が経過するまでの間においては、占有者（第一項の不動産等を占有する者であつて債務者以外のものをいう。以下この条において同じ。）に対して、第一項の申立てに基づく強制執行をすることができる。</p>
+<p class='p'>                      この場合において、第四十二条及び前条の規定の適用については、当該占有者を債務者とみなす。</p>
+<div class='sp'></div>
+<p class='p'>７  明渡しの催告後に不動産等の占有の移転があつたときは、占有者は、明渡しの催告があつたことを知らず、かつ、債務者の占有の承継人でないことを理由として、債権者に対し、強制執行の不許を求める訴えを提起することができる。</p>
+<p class='p'>                      この場合においては、第三十六条、第三十七条及び第三十八条第三項の規定を準用する。</p>
+<div class='sp'></div>
+<p class='p'>８  明渡しの催告後に不動産等を占有した占有者は、明渡しの催告があつたことを知つて占有したものと推定する。</p>
+<div class='sp'></div>
+<p class='p'>９  第六項の規定により占有者に対して強制執行がされたときは、当該占有者は、執行異議の申立てにおいて、債権者に対抗することができる権原により目的物を占有していること、又は明渡しの催告があつたことを知らず、かつ、債務者の占有の承継人でないことを理由とすることができる。</p>
+<div class='sp'></div>
+<p class='p'>１０  明渡しの催告に要した費用は、執行費用とする。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0195.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0197.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

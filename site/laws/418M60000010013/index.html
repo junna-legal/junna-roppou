@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>会社計算規則（条文一覧）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header><span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>会社計算規則</span>　<a class="navbtn" href='../../index.html'>← 検索</a></header>
+<main>
+  <div class="card">
+    <div class="small">LawId: 418M60000010013</div>
+    <div class='small'>現行版基準日(推定): 2025-03-31</div>
+    <hr>
+    <h3 style="margin:0 0 8px;"><span style="margin-right:6px;">📜</span>条文一覧</h3>
+    <div><a href='art_0001.html'>第一条（目的）</a></div><div><a href='art_0002.html'>第二条（定義）</a></div><div><a href='art_0003.html'>第三条（会計慣行のしん酌）</a></div><div><a href='art_0004.html'>第四条</a></div><div><a href='art_0005.html'>第五条（資産の評価）</a></div><div><a href='art_0006.html'>第六条（負債の評価）</a></div><div><a href='art_0007.html'>第七条（組織変更の際の資産及び負債の評価替えの禁止）</a></div><div><a href='art_0008.html'>第八条（組織再編行為の際の資産及び負債の評価）</a></div><div><a href='art_0009.html'>第九条（持分会社の出資請求権）</a></div><div><a href='art_0010.html'>第十条（会社以外の法人が会社となる場合における資産及び負債の評価）</a></div><div><a href='art_0011.html'>第十一条</a></div><div><a href='art_0012.html'>第十二条</a></div><div><a href='art_0013.html'>第十三条（通則）</a></div><div><a href='art_0014.html'>第十四条（募集株式を引き受ける者の募集を行う場合）</a></div><div><a href='art_0015.html'>第十五条（株式の取得に伴う株式の発行等をする場合）</a></div><div><a href='art_0016.html'>第十六条（株式無償割当てをする場合）</a></div><div><a href='art_0017.html'>第十七条（新株予約権の行使があった場合）</a></div><div><a href='art_0018.html'>第十八条（取得条項付新株予約権の取得をする場合）</a></div><div><a href='art_0019.html'>第十九条（単元未満株式売渡請求を受けた場合）</a></div><div><a href='art_0020.html'>第二十条（法第四百六十二条第一項に規定する義務を履行する株主に対して株式を交付すべき場合）</a></div><div><a href='art_0021.html'>第二十一条（設立時又は成立後の株式の交付に伴う義務が履行された場合）</a></div><div><a href='art_0022.html'>第二十二条（法第四百四十五条第四項の規定による準備金の計上）</a></div><div><a href='art_0023.html'>第二十三条（減少する剰余金の額）</a></div><div><a href='art_0024.html'>第二十四条</a></div><div><a href='art_0025.html'>第二十五条（資本金の額）</a></div><div><a href='art_0026.html'>第二十六条（資本準備金の額）</a></div><div><a href='art_0027.html'>第二十七条（その他資本剰余金の額）</a></div><div><a href='art_0028.html'>第二十八条（利益準備金の額）</a></div><div><a href='art_0029.html'>第二十九条（その他利益剰余金の額）</a></div><div><a href='art_0030.html'>第三十条（資本金の額）</a></div><div><a href='art_0031.html'>第三十一条（資本剰余金の額）</a></div><div><a href='art_0032.html'>第三十二条（利益剰余金の額）</a></div><div><a href='art_0033.html'>第三十三条（組織変更後持分会社の社員資本）</a></div><div><a href='art_0034.html'>第三十四条（組織変更後株式会社の株主資本）</a></div><div><a href='art_0035.html'>第三十五条（吸収型再編対価の全部又は一部が吸収合併存続会社の株式又は持分である場合における吸収合併存続会社の株主資本等の変動額）</a></div><div><a href='art_0036.html'>第三十六条（株主資本等を引き継ぐ場合における吸収合併存続会社の株主資本等の変動額）</a></div><div><a href='art_0037.html'>第三十七条（吸収型再編対価の全部又は一部が吸収分割承継会社の株式又は持分である場合における吸収分割承継会社の株主資本等の変動額）</a></div><div><a href='art_0038.html'>第三十八条（株主資本等を引き継ぐ場合における吸収分割承継会社の株主資本等の変動額）</a></div><div><a href='art_0039.html'>第三十九条</a></div><div><a href='art_0040.html'>第三十九条の二</a></div><div><a href='art_0041.html'>第四十条（吸収分割会社の自己株式の処分）</a></div><div><a href='art_0042.html'>第四十一条（株式交換完全子会社の自己株式の処分）</a></div><div><a href='art_0043.html'>第四十二条（株式移転完全子会社の自己株式の処分）</a></div><div><a href='art_0044.html'>第四十二条の二（取締役等が株式会社に対し割当日後にその職務の執行として募集株式を対価とする役務を提供する場合における株主資本の変動額）</a></div><div><a href='art_0045.html'>第四十二条の三（取締役等が株式会社に対し割当日前にその職務の執行として募集株式を対価とする役務を提供する場合における株主資本の変動額）</a></div><div><a href='art_0046.html'>第四十三条（株式会社の設立時の株主資本）</a></div><div><a href='art_0047.html'>第四十四条（持分会社の設立時の社員資本）</a></div><div><a href='art_0048.html'>第四十五条（支配取得に該当する場合における新設合併設立会社の株主資本等）</a></div><div><a href='art_0049.html'>第四十六条（共通支配下関係にある場合における新設合併設立会社の株主資本等）</a></div><div><a href='art_0050.html'>第四十七条（株主資本等を引き継ぐ場合における新設合併設立会社の株主資本等）</a></div><div><a href='art_0051.html'>第四十八条（その他の場合における新設合併設立会社の株主資本等）</a></div><div><a href='art_0052.html'>第四十九条（単独新設分割の場合における新設分割設立会社の株主資本等）</a></div><div><a href='art_0053.html'>第五十条（株主資本等を引き継ぐ場合における新設分割設立会社の株主資本等）</a></div><div><a href='art_0054.html'>第五十一条（共同新設分割の場合における新設分割設立会社の株主資本等）</a></div><div><a href='art_0055.html'>第五十二条</a></div><div><a href='art_0056.html'>第五十三条（評価・換算差額等又はその他の包括利益累計額）</a></div><div><a href='art_0057.html'>第五十四条（土地再評価差額金を計上している会社を当事者とする組織再編行為等における特則）</a></div><div><a href='art_0058.html'>第五十四条の二</a></div><div><a href='art_0059.html'>第五十五条</a></div><div><a href='art_0060.html'>第五十六条</a></div><div><a href='art_0061.html'>第五十七条</a></div><div><a href='art_0062.html'>第五十八条（成立の日の貸借対照表）</a></div><div><a href='art_0063.html'>第五十九条（各事業年度に係る計算書類）</a></div><div><a href='art_0064.html'>第六十条（臨時計算書類）</a></div><div><a href='art_0065.html'>第六十一条（連結計算書類）</a></div><div><a href='art_0066.html'>第六十二条（連結会計年度）</a></div><div><a href='art_0067.html'>第六十三条（連結の範囲）</a></div><div><a href='art_0068.html'>第六十四条（事業年度に係る期間の異なる子会社）</a></div><div><a href='art_0069.html'>第六十五条（連結貸借対照表）</a></div><div><a href='art_0070.html'>第六十六条（連結損益計算書）</a></div><div><a href='art_0071.html'>第六十七条（連結株主資本等変動計算書）</a></div><div><a href='art_0072.html'>第六十八条（連結子会社の資産及び負債の評価等）</a></div><div><a href='art_0073.html'>第六十九条（持分法の適用）</a></div><div><a href='art_0074.html'>第七十条（成立の日の貸借対照表）</a></div><div><a href='art_0075.html'>第七十一条（各事業年度に係る計算書類）</a></div><div><a href='art_0076.html'>第七十二条（通則）</a></div><div><a href='art_0077.html'>第七十三条（貸借対照表等の区分）</a></div><div><a href='art_0078.html'>第七十四条（資産の部の区分）</a></div><div><a href='art_0079.html'>第七十五条（負債の部の区分）</a></div><div><a href='art_0080.html'>第七十六条（純資産の部の区分）</a></div><div><a href='art_0081.html'>第七十七条（たな卸資産及び工事損失引当金の表示）</a></div><div><a href='art_0082.html'>第七十八条（貸倒引当金等の表示）</a></div><div><a href='art_0083.html'>第七十九条（有形固定資産に対する減価償却累計額の表示）</a></div><div><a href='art_0084.html'>第八十条（有形固定資産に対する減損損失累計額の表示）</a></div><div><a href='art_0085.html'>第八十一条（無形固定資産の表示）</a></div><div><a href='art_0086.html'>第八十二条（関係会社株式等の表示）</a></div><div><a href='art_0087.html'>第八十三条（繰延税金資産等の表示）</a></div><div><a href='art_0088.html'>第八十四条（繰延資産の表示）</a></div><div><a href='art_0089.html'>第八十五条（連結貸借対照表ののれん）</a></div><div><a href='art_0090.html'>第八十六条（新株予約権の表示）</a></div><div><a href='art_0091.html'>第八十七条（通則）</a></div><div><a href='art_0092.html'>第八十八条（損益計算書等の区分）</a></div><div><a href='art_0093.html'>第八十九条（売上総損益金額）</a></div><div><a href='art_0094.html'>第九十条（営業損益金額）</a></div><div><a href='art_0095.html'>第九十一条（経常損益金額）</a></div><div><a href='art_0096.html'>第九十二条（税引前当期純損益金額）</a></div><div><a href='art_0097.html'>第九十三条（税等）</a></div><div><a href='art_0098.html'>第九十四条（当期純損益金額）</a></div><div><a href='art_0099.html'>第九十五条</a></div><div><a href='art_0100.html'>第九十六条</a></div><div><a href='art_0101.html'>第九十七条（通則）</a></div><div><a href='art_0102.html'>第九十八条（注記表の区分）</a></div><div><a href='art_0103.html'>第九十九条（注記の方法）</a></div><div><a href='art_0104.html'>第百条（継続企業の前提に関する注記）</a></div><div><a href='art_0105.html'>第百一条（重要な会計方針に係る事項に関する注記）</a></div><div><a href='art_0106.html'>第百二条（連結計算書類の作成のための基本となる重要な事項に関する注記等）</a></div><div><a href='art_0107.html'>第百二条の二（会計方針の変更に関する注記）</a></div><div><a href='art_0108.html'>第百二条の三（表示方法の変更に関する注記）</a></div><div><a href='art_0109.html'>第百二条の三の二（会計上の見積りに関する注記）</a></div><div><a href='art_0110.html'>第百二条の四（会計上の見積りの変更に関する注記）</a></div><div><a href='art_0111.html'>第百二条の五（誤謬の訂正に関する注記）</a></div><div><a href='art_0112.html'>第百三条（貸借対照表等に関する注記）</a></div><div><a href='art_0113.html'>第百四条（損益計算書に関する注記）</a></div><div><a href='art_0114.html'>第百五条（株主資本等変動計算書に関する注記）</a></div><div><a href='art_0115.html'>第百六条（連結株主資本等変動計算書に関する注記）</a></div><div><a href='art_0116.html'>第百七条（税効果会計に関する注記）</a></div><div><a href='art_0117.html'>第百八条（リースに関する注記）</a></div><div><a href='art_0118.html'>第百九条（金融商品に関する注記）</a></div><div><a href='art_0119.html'>第百十条（賃貸等不動産に関する注記）</a></div><div><a href='art_0120.html'>第百十一条（持分法損益等に関する注記）</a></div><div><a href='art_0121.html'>第百十二条（関連当事者との取引に関する注記）</a></div><div><a href='art_0122.html'>第百十三条（一株当たり情報に関する注記）</a></div><div><a href='art_0123.html'>第百十四条（重要な後発事象に関する注記）</a></div><div><a href='art_0124.html'>第百十五条（連結配当規制適用会社に関する注記）</a></div><div><a href='art_0125.html'>第百十五条の二（収益認識に関する注記）</a></div><div><a href='art_0126.html'>第百十五条の三（国際最低課税額に対する法人税等に関する注記）</a></div><div><a href='art_0127.html'>第百十六条（その他の注記）</a></div><div><a href='art_0128.html'>第百十七条</a></div><div><a href='art_0129.html'>第百十八条（別記事業を営む会社の計算関係書類についての特例）</a></div><div><a href='art_0130.html'>第百十九条（会社法以外の法令の規定による準備金等）</a></div><div><a href='art_0131.html'>第百二十条（国際会計基準で作成する連結計算書類に関する特則）</a></div><div><a href='art_0132.html'>第百二十条の二（修正国際基準で作成する連結計算書類に関する特則）</a></div><div><a href='art_0133.html'>第百二十条の三（米国基準で作成する連結計算書類に関する特則）</a></div><div><a href='art_0134.html'>第百二十一条</a></div><div><a href='art_0135.html'>第百二十二条（監査役の監査報告の内容）</a></div><div><a href='art_0136.html'>第百二十三条（監査役会の監査報告の内容等）</a></div><div><a href='art_0137.html'>第百二十四条（監査報告の通知期限等）</a></div><div><a href='art_0138.html'>第百二十五条（計算関係書類の提供）</a></div><div><a href='art_0139.html'>第百二十六条（会計監査報告の内容）</a></div><div><a href='art_0140.html'>第百二十七条（会計監査人設置会社の監査役の監査報告の内容）</a></div><div><a href='art_0141.html'>第百二十八条（会計監査人設置会社の監査役会の監査報告の内容等）</a></div><div><a href='art_0142.html'>第百二十八条の二（監査等委員会の監査報告の内容）</a></div><div><a href='art_0143.html'>第百二十九条（監査委員会の監査報告の内容）</a></div><div><a href='art_0144.html'>第百三十条（会計監査報告の通知期限等）</a></div><div><a href='art_0145.html'>第百三十一条（会計監査人の職務の遂行に関する事項）</a></div><div><a href='art_0146.html'>第百三十二条（会計監査人設置会社の監査役等の監査報告の通知期限）</a></div><div><a href='art_0147.html'>第百三十三条（計算書類等の提供）</a></div><div><a href='art_0148.html'>第百三十四条（連結計算書類の提供）</a></div><div><a href='art_0149.html'>第百三十五条</a></div><div><a href='art_0150.html'>第百三十六条</a></div><div><a href='art_0151.html'>第百三十七条</a></div><div><a href='art_0152.html'>第百三十八条（貸借対照表の要旨の区分）</a></div><div><a href='art_0153.html'>第百三十九条（資産の部）</a></div><div><a href='art_0154.html'>第百四十条（負債の部）</a></div><div><a href='art_0155.html'>第百四十一条（純資産の部）</a></div><div><a href='art_0156.html'>第百四十二条（貸借対照表の要旨への付記事項）</a></div><div><a href='art_0157.html'>第百四十三条</a></div><div><a href='art_0158.html'>第百四十四条（金額の表示の単位）</a></div><div><a href='art_0159.html'>第百四十五条（表示言語）</a></div><div><a href='art_0160.html'>第百四十六条（別記事業）</a></div><div><a href='art_0161.html'>第百四十七条（貸借対照表等の電磁的方法による公開の方法）</a></div><div><a href='art_0162.html'>第百四十八条（不適正意見がある場合等における公告事項）</a></div><div><a href='art_0163.html'>第百四十九条（最終事業年度の末日における控除額）</a></div><div><a href='art_0164.html'>第百五十条（最終事業年度の末日後に生ずる控除額）</a></div><div><a href='art_0165.html'>第百五十一条（欠損の額）</a></div><div><a href='art_0166.html'>第百五十二条（計算書類に関する事項）</a></div><div><a href='art_0167.html'>第百五十三条</a></div><div><a href='art_0168.html'>第百五十四条</a></div><div><a href='art_0169.html'>第百五十五条</a></div><div><a href='art_0170.html'>第百五十六条（臨時計算書類の利益の額）</a></div><div><a href='art_0171.html'>第百五十七条（臨時計算書類の損失の額）</a></div><div><a href='art_0172.html'>第百五十八条（その他減ずるべき額）</a></div><div><a href='art_0173.html'>第百五十九条（剰余金の配当等に関して責任をとるべき取締役等）</a></div><div><a href='art_0174.html'>第百六十条</a></div><div><a href='art_0175.html'>第百六十一条</a></div><div><a href='art_0176.html'>第百六十二条（損失の額）</a></div><div><a href='art_0177.html'>第百六十三条（利益額）</a></div><div><a href='art_0178.html'>第百六十四条（剰余金額）</a></div><div><a href='art_0179.html'>第百六十五条（欠損額）</a></div><div><a href='art_0180.html'>第百六十六条（純資産額）</a></div><div><a href='art_0181.html'>第一条（施行期日）</a></div><div><a href='art_0182.html'>第二条（法施行前の株式の交付に伴う義務が履行された場合に関する経過措置）</a></div><div><a href='art_0183.html'>第三条（委員会設置会社の作成すべき計算書類等に関する経過措置）</a></div><div><a href='art_0184.html'>第四条（貸借対照表等の公告に関する経過措置）</a></div><div><a href='art_0185.html'>第五条（剰余金の額に関する経過措置）</a></div><div><a href='art_0186.html'>第六条（剰余金の分配を決定する機関の特則に関する要件）</a></div><div><a href='art_0187.html'>第七条（提供計算書類の提供等に関する経過措置）</a></div><div><a href='art_0188.html'>第八条（連結配当規制適用会社に関する注記に関する経過措置）</a></div><div><a href='art_0189.html'>第九条（計算書類の提供方法に関する経過措置）</a></div><div><a href='art_0190.html'>第十条（連結計算書類の提供方法に関する経過措置）</a></div><div><a href='art_0191.html'>第十一条（募集株式の交付に係る費用等に関する特則）</a></div><div><a href='art_0192.html'>第一条（施行期日）</a></div><div><a href='art_0193.html'>第一条（施行期日）</a></div><div><a href='art_0194.html'>第五条（募集株式の交付に係る費用等に関する経過措置）</a></div><div><a href='art_0195.html'>第六条（吸収合併等に際しての計算に関する経過措置）</a></div><div><a href='art_0196.html'>第一条（施行期日）</a></div><div><a href='art_0197.html'>第四条（計算書類等に関する経過措置）</a></div><div><a href='art_0198.html'>第五条（株式交換等に際しての計算に関する経過措置）</a></div><div><a href='art_0199.html'>第一条（施行期日）</a></div><div><a href='art_0200.html'>第八条（計算関係書類に関する経過措置）</a></div><div><a href='art_0201.html'>第九条（募集株式の発行等に際しての計算に関する経過措置）</a></div><div><a href='art_0202.html'>第十条（吸収合併等に際しての計算に関する経過措置）</a></div><div><a href='art_0203.html'>第十一条（会社の設立に際しての計算に関する経過措置）</a></div><div><a href='art_0204.html'>第一条（施行期日）</a></div><div><a href='art_0205.html'>第二条（国際会計基準で作成する連結計算書類に関する経過措置）</a></div><div><a href='art_0206.html'>第三条（米国基準で作成する連結計算書類に関する経過措置）</a></div><div><a href='art_0207.html'>第一条（施行期日）</a></div><div><a href='art_0208.html'>第二条（経過措置）</a></div><div><a href='art_0209.html'>第一条（施行期日）</a></div><div><a href='art_0210.html'>第二条（経過措置）</a></div><div><a href='art_0211.html'>第一条（施行期日）</a></div><div><a href='art_0212.html'>第三条（会社計算規則の一部改正に伴う経過措置）</a></div><div><a href='art_0213.html'>第一条（施行期日）</a></div><div><a href='art_0214.html'>第三条（会社計算規則の一部改正に伴う経過措置）</a></div><div><a href='art_0215.html'>第一条（施行期日）</a></div><div><a href='art_0216.html'>第三条（会社計算規則の一部改正に伴う経過措置）</a></div><div><a href='art_0217.html'>第一条（施行期日）</a></div><div><a href='art_0218.html'>第三条（会社計算規則の一部改正に伴う経過措置）</a></div><div><a href='art_0219.html'>第一条（施行期日）</a></div><div><a href='art_0220.html'>第二条（経過措置）</a></div><div><a href='art_0221.html'>第一条（施行期日）</a></div><div><a href='art_0222.html'>第二条（経過措置）</a></div><div><a href='art_0223.html'>第一条（施行期日）</a></div><div><a href='art_0224.html'>第二条（経過措置）</a></div><div><a href='art_0225.html'>第一条（施行期日）</a></div><div><a href='art_0226.html'>第二条（失効）</a></div><div><a href='art_0227.html'>第一条（施行期日）</a></div><div><a href='art_0228.html'>第二条（経過措置）</a></div><div><a href='art_0229.html'>第一条（施行期日）</a></div><div><a href='art_0230.html'>第一条（施行期日）</a></div><div><a href='art_0231.html'>第二条（失効）</a></div><div><a href='art_0232.html'>第三条（会社計算規則の一部改正に伴う経過措置）</a></div><div><a href='art_0233.html'>第一条（施行期日）</a></div><div><a href='art_0234.html'>第二条（失効）</a></div><div><a href='art_0235.html'>第一条（施行期日）</a></div><div><a href='art_0236.html'>第二条（経過措置）</a></div><div><a href='art_0237.html'>第一条（施行期日）</a></div><div><a href='art_0238.html'>第二条（経過措置）</a></div>
+  </div>
+</main>
+
+</body>
+</html>

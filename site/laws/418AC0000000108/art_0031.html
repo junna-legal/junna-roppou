@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>信託法 第三十一条（利益相反行為の制限）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>信託法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>信託法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第三十一条（利益相反行為の制限）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>受託者は、次に掲げる行為をしてはならない。</p>
+<ul class='cute-list'>
+<li>一  信託財産に属する財産（当該財産に係る権利を含む。）を固有財産に帰属させ、又は固有財産に属する財産（当該財産に係る権利を含む。）を信託財産に帰属させること。</li>
+<li>二  信託財産に属する財産（当該財産に係る権利を含む。）を他の信託の信託財産に帰属させること。</li>
+<li>三  第三者との間において信託財産のためにする行為であって、自己が当該第三者の代理人となって行うもの</li>
+<li>四  信託財産に属する財産につき固有財産に属する財産のみをもって履行する責任を負う債務に係る債権を被担保債権とする担保権を設定することその他第三者との間において信託財産のためにする行為であって受託者又はその利害関係人と受益者との利益が相反することとなるもの</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>２  前項の規定にかかわらず、次のいずれかに該当するときは、同項各号に掲げる行為をすることができる。</p>
+<p class='p'>                      ただし、第二号に掲げる事由にあっては、同号に該当する場合でも当該行為をすることができない旨の信託行為の定めがあるときは、この限りでない。</p>
+<ul class='cute-list'>
+<li>一  信託行為に当該行為をすることを許容する旨の定めがあるとき。</li>
+<li>二  受託者が当該行為について重要な事実を開示して受益者の承認を得たとき。</li>
+<li>三  相続その他の包括承継により信託財産に属する財産に係る権利が固有財産に帰属したとき。</li>
+<li>四  受託者が当該行為をすることが信託の目的の達成のために合理的に必要と認められる場合であって、受益者の利益を害しないことが明らかであるとき、又は当該行為の信託財産に与える影響、当該行為の目的及び態様、受託者の受益者との実質的な利害関係の状況その他の事情に照らして正当な理由があるとき。</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>３  受託者は、第一項各号に掲げる行為をしたときは、受益者に対し、当該行為についての重要な事実を通知しなければならない。</p>
+<p class='p'>                      ただし、信託行為に別段の定めがあるときは、その定めるところによる。</p>
+<div class='sp'></div>
+<p class='p'>４  第一項及び第二項の規定に違反して第一項第一号又は第二号に掲げる行為がされた場合には、これらの行為は、無効とする。</p>
+<div class='sp'></div>
+<p class='p'>５  前項の行為は、受益者の追認により、当該行為の時にさかのぼってその効力を生ずる。</p>
+<div class='sp'></div>
+<p class='p'>６  第四項に規定する場合において、受託者が第三者との間において第一項第一号又は第二号の財産について処分その他の行為をしたときは、当該第三者が同項及び第二項の規定に違反して第一項第一号又は第二号に掲げる行為がされたことを知っていたとき又は知らなかったことにつき重大な過失があったときに限り、受益者は、当該処分その他の行為を取り消すことができる。</p>
+<p class='p'>                      この場合においては、第二十七条第三項及び第四項の規定を準用する。</p>
+<div class='sp'></div>
+<p class='p'>７  第一項及び第二項の規定に違反して第一項第三号又は第四号に掲げる行為がされた場合には、当該第三者がこれを知っていたとき又は知らなかったことにつき重大な過失があったときに限り、受益者は、当該行為を取り消すことができる。</p>
+<p class='p'>                      この場合においては、第二十七条第三項及び第四項の規定を準用する。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0030.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0032.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

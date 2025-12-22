@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>住民基本台帳法 第十一条の二（個人又は法人の申出による住民基本台帳の一部の写しの閲覧）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>住民基本台帳法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>住民基本台帳法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第十一条の二（個人又は法人の申出による住民基本台帳の一部の写しの閲覧）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>市町村長は、次に掲げる活動を行うために住民基本台帳の一部の写しを閲覧することが必要である旨の申出があり、かつ、当該申出を相当と認めるときは、当該申出を行う者（以下この条及び第五十条において「申出者」という。）が個人の場合にあつては当該申出者又はその指定する者に、当該申出者が法人（法人でない団体で代表者又は管理人の定めのあるものを含む。以下この条及び第十二条の三第四項において同じ。）の場合にあつては当該法人の役職員又は構成員（他の法人と共同して申出をする場合にあつては、当該他の法人の役職員又は構成員を含む。）で当該法人が指定するものに、その活動に必要な限度において、住民基本台帳の一部の写しを閲覧させることができる。</p>
+<ul class='cute-list'>
+<li>一  統計調査、世論調査、学術研究その他の調査研究のうち、総務大臣が定める基準に照らして公益性が高いと認められるものの実施</li>
+<li>二  公共的団体が行う地域住民の福祉の向上に寄与する活動のうち、公益性が高いと認められるものの実施</li>
+<li>三  営利以外の目的で行う居住関係の確認のうち、訴訟の提起その他特別の事情による居住関係の確認として市町村長が定めるものの実施</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>２  前項の申出は、総務省令で定めるところにより、次に掲げる事項を明らかにしてしなければならない。</p>
+<ul class='cute-list'>
+<li>一  申出者の氏名及び住所（申出者が法人の場合にあつては、その名称、代表者又は管理人の氏名及び主たる事務所の所在地）</li>
+<li>二  住民基本台帳の一部の写しの閲覧により知り得た事項（以下この条及び第五十条において「閲覧事項」という。）の利用の目的</li>
+<li>三  住民基本台帳の一部の写しを閲覧する者（以下この条及び第五十条において「閲覧者」という。）の氏名及び住所</li>
+<li>四  閲覧事項の管理の方法</li>
+<li>五  申出者が法人の場合にあつては、当該法人の役職員又は構成員のうち閲覧事項を取り扱う者の範囲</li>
+<li>六  前項第一号に掲げる活動に係る申出の場合にあつては、調査研究の成果の取扱い</li>
+<li>七  前各号に掲げるもののほか、総務省令で定める事項</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>３  個人である申出者は、前項第二号に掲げる利用の目的（以下この条及び第五十条において「利用目的」という。）を達成するために当該申出者及び閲覧者以外の者に閲覧事項を取り扱わせることが必要な場合には、第一項の申出をする際に、その旨並びに閲覧事項を取り扱う者として当該申出者が指定する者の氏名及び住所をその市町村長に申し出ることができる。</p>
+<div class='sp'></div>
+<p class='p'>４  前項の規定による申出を受けた市町村長は、当該申出に相当な理由があると認めるときは、その申出を承認することができる。</p>
+<p class='p'>                    この場合において、当該承認を受けた申出者は、当該申出者が指定した者（当該承認を受けた者に限る。以下この条及び第五十条において「個人閲覧事項取扱者」という。）にその閲覧事項を取り扱わせることができる。</p>
+<div class='sp'></div>
+<p class='p'>５  法人である申出者は、閲覧者及び第二項第五号に掲げる範囲に属する者のうち当該申出者が指定するもの（以下この条及び第五十条において「法人閲覧事項取扱者」という。）以外の者にその閲覧事項を取り扱わせてはならない。</p>
+<div class='sp'></div>
+<p class='p'>６  申出者は、閲覧者、個人閲覧事項取扱者又は法人閲覧事項取扱者による閲覧事項の漏えいの防止その他の閲覧事項の適切な管理のために必要な措置を講じなければならない。</p>
+<div class='sp'></div>
+<p class='p'>７  申出者、閲覧者、個人閲覧事項取扱者又は法人閲覧事項取扱者は、本人の事前の同意を得ないで、当該閲覧事項を利用目的以外の目的のために利用し、又は当該閲覧事項に係る申出者、閲覧者、個人閲覧事項取扱者及び法人閲覧事項取扱者以外の者に提供してはならない。</p>
+<div class='sp'></div>
+<p class='p'>８  市町村長は、閲覧者若しくは申出者が偽りその他不正の手段により第一項の規定による住民基本台帳の一部の写しの閲覧をし、若しくはさせた場合又は申出者、閲覧者、個人閲覧事項取扱者若しくは法人閲覧事項取扱者が前項の規定に違反した場合において、個人の権利利益を保護するため必要があると認めるときは、当該閲覧事項に係る申出者、当該閲覧をし、若しくはさせた者又は当該違反行為をした者に対し、当該閲覧事項が利用目的以外の目的で利用され、又は当該閲覧事項に係る申出者、閲覧者、個人閲覧事項取扱者及び法人閲覧事項取扱者以外の者に提供されないようにするための措置を講ずることを勧告することができる。</p>
+<div class='sp'></div>
+<p class='p'>９  市町村長は、前項の規定による勧告を受けた者が正当な理由がなくてその勧告に係る措置を講じなかつた場合において、個人の権利利益が不当に侵害されるおそれがあると認めるときは、その者に対し、その勧告に係る措置を講ずることを命ずることができる。</p>
+<div class='sp'></div>
+<p class='p'>１０  市町村長は、前二項の規定にかかわらず、閲覧者若しくは申出者が偽りその他不正の手段により第一項の規定による住民基本台帳の一部の写しの閲覧をし、若しくはさせた場合又は申出者、閲覧者、個人閲覧事項取扱者若しくは法人閲覧事項取扱者が第七項の規定に違反した場合において、個人の権利利益が不当に侵害されることを防止するため特に措置を講ずる必要があると認めるときは、当該閲覧事項に係る申出者、当該閲覧をし、若しくはさせた者又は当該違反行為をした者に対し、当該閲覧事項が利用目的以外の目的で利用され、又は当該閲覧事項に係る申出者、閲覧者、個人閲覧事項取扱者及び法人閲覧事項取扱者以外の者に提供されないようにするための措置を講ずることを命ずることができる。</p>
+<div class='sp'></div>
+<p class='p'>１１  市町村長は、この条の規定の施行に必要な限度において、申出者に対し、必要な報告をさせることができる。</p>
+<div class='sp'></div>
+<p class='p'>１２  市町村長は、毎年少なくとも一回、第一項の申出に係る住民基本台帳の一部の写しの閲覧（同項第三号に掲げる活動に係るものを除く。）の状況について、申出者の氏名（申出者が法人の場合にあつては、その名称及び代表者又は管理人の氏名）、利用目的の概要その他総務省令で定める事項を公表するものとする。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0012.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0014.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

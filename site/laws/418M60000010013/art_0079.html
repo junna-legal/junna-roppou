@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>会社計算規則 第七十五条（負債の部の区分）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>会社計算規則</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0078.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0080.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>会社計算規則</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第七十五条（負債の部の区分）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>負債の部は、次に掲げる項目に区分しなければならない。</p>
+<p class='p'>                      この場合において、各項目は、適当な項目に細分しなければならない。</p>
+<ul class='cute-list'>
+<li>一  流動負債</li>
+<li>二  固定負債</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>２  次の各号に掲げる負債は、当該各号に定めるものに属するものとする。</p>
+<ul class='cute-list'>
+<li>一  次に掲げる負債</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                          流動負債</p>
+<ul class='cute-list'>
+<li>イ  支払手形（通常の取引に基づいて発生した手形債務をいう。）</li>
+<li>イ</li>
+<li>支払手形（通常の取引に基づいて発生した手形債務をいう。）</li>
+<li>ロ  買掛金（通常の取引に基づいて発生した事業上の未払金をいう。）</li>
+<li>ロ</li>
+<li>買掛金（通常の取引に基づいて発生した事業上の未払金をいう。）</li>
+<li>ハ  前受金（受注工事、受注品等に対する前受金をいう。）</li>
+<li>ハ</li>
+<li>前受金（受注工事、受注品等に対する前受金をいう。）</li>
+<li>ニ  引当金（資産に係る引当金及び一年内に使用されないと認められるものを除く。）</li>
+<li>ニ</li>
+<li>引当金（資産に係る引当金及び一年内に使用されないと認められるものを除く。）</li>
+<li>ホ  通常の取引に関連して発生する未払金又は預り金で一般の取引慣行として発生後短期間に支払われるもの</li>
+<li>ホ</li>
+<li>通常の取引に関連して発生する未払金又は預り金で一般の取引慣行として発生後短期間に支払われるもの</li>
+<li>ヘ  未払費用</li>
+<li>ヘ</li>
+<li>未払費用</li>
+<li>ト  前受収益</li>
+<li>ト</li>
+<li>前受収益</li>
+<li>チ  リース負債のうち、一年内に期限が到来するもの</li>
+<li>チ</li>
+<li>リース負債のうち、一年内に期限が到来するもの</li>
+<li>リ  資産除去債務のうち、一年内に履行されると認められるもの</li>
+<li>リ</li>
+<li>資産除去債務のうち、一年内に履行されると認められるもの</li>
+<li>ヌ  その他の負債であって、一年内に支払われ、又は返済されると認められるもの</li>
+<li>ヌ</li>
+<li>その他の負債であって、一年内に支払われ、又は返済されると認められるもの</li>
+<li>二  次に掲げる負債</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                          固定負債</p>
+<ul class='cute-list'>
+<li>イ  社債</li>
+<li>イ</li>
+<li>社債</li>
+<li>ロ  長期借入金</li>
+<li>ロ</li>
+<li>長期借入金</li>
+<li>ハ  引当金（資産に係る引当金、前号ニに掲げる引当金及びニに掲げる退職給付引当金を除く。）</li>
+<li>ハ</li>
+<li>引当金（資産に係る引当金、前号ニに掲げる引当金及びニに掲げる退職給付引当金を除く。）</li>
+<li>ニ  退職給付引当金（連結貸借対照表にあっては、退職給付に係る負債）</li>
+<li>ニ</li>
+<li>退職給付引当金（連結貸借対照表にあっては、退職給付に係る負債）</li>
+<li>ホ  繰延税金負債</li>
+<li>ホ</li>
+<li>繰延税金負債</li>
+<li>ヘ  のれん</li>
+<li>ヘ</li>
+<li>のれん</li>
+<li>ト  リース負債のうち、前号チに掲げるもの以外のもの</li>
+<li>ト</li>
+<li>リース負債のうち、前号チに掲げるもの以外のもの</li>
+<li>チ  資産除去債務のうち、前号リに掲げるもの以外のもの</li>
+<li>チ</li>
+<li>資産除去債務のうち、前号リに掲げるもの以外のもの</li>
+<li>リ  その他の負債であって、流動負債に属しないもの</li>
+<li>リ</li>
+<li>その他の負債であって、流動負債に属しないもの</li>
+</ul>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0078.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0080.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

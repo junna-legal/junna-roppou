@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>建物の区分所有等に関する法律 第六十一条（建物の一部が滅失した場合の復旧等）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>建物の区分所有等に関する法律</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0078.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0080.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>建物の区分所有等に関する法律</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第六十一条（建物の一部が滅失した場合の復旧等）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>建物の価格の二分の一以下に相当する部分が滅失したときは、各区分所有者は、滅失した共用部分及び自己の専有部分を復旧することができる。</p>
+<p class='p'>                      ただし、共用部分については、復旧の工事に着手するまでに第三項、次条第一項又は第七十条第一項の決議があつたときは、この限りでない。</p>
+<div class='sp'></div>
+<p class='p'>２  前項の規定により共用部分を復旧した者は、他の区分所有者に対し、復旧に要した金額を第十四条に定める割合に応じて償還すべきことを請求することができる。</p>
+<div class='sp'></div>
+<p class='p'>３  第一項本文に規定する場合には、集会において、滅失した共用部分を復旧する旨の決議をすることができる。</p>
+<div class='sp'></div>
+<p class='p'>４  前三項の規定は、規約で別段の定めをすることを妨げない。</p>
+<div class='sp'></div>
+<p class='p'>５  第一項本文に規定する場合を除いて、建物の一部が滅失したときは、集会において、区分所有者及び議決権の各四分の三以上の多数で、滅失した共用部分を復旧する旨の決議をすることができる。</p>
+<div class='sp'></div>
+<p class='p'>６  前項の決議をした集会の議事録には、その決議についての各区分所有者の賛否をも記載し、又は記録しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>７  第五項の決議があつた場合において、その決議の日から二週間を経過したときは、次項の場合を除き、その決議に賛成した区分所有者（その承継人を含む。以下この条において「決議賛成者」という。）以外の区分所有者は、決議賛成者の全部又は一部に対し、建物及びその敷地に関する権利を時価で買い取るべきことを請求することができる。</p>
+<p class='p'>                      この場合において、その請求を受けた決議賛成者は、その請求の日から二月以内に、他の決議賛成者の全部又は一部に対し、決議賛成者以外の区分所有者を除いて算定した第十四条に定める割合に応じて当該建物及びその敷地に関する権利を時価で買い取るべきことを請求することができる。</p>
+<div class='sp'></div>
+<p class='p'>８  第五項の決議の日から二週間以内に、決議賛成者がその全員の合意により建物及びその敷地に関する権利を買い取ることができる者を指定し、かつ、その指定された者（以下この条において「買取指定者」という。）がその旨を決議賛成者以外の区分所有者に対して書面で通知したときは、その通知を受けた区分所有者は、買取指定者に対してのみ、前項前段に規定する請求をすることができる。</p>
+<div class='sp'></div>
+<p class='p'>９  買取指定者は、前項の規定による書面による通知に代えて、法務省令で定めるところにより、同項の規定による通知を受けるべき区分所有者の承諾を得て、電磁的方法により買取指定者の指定がされた旨を通知することができる。</p>
+<p class='p'>                      この場合において、当該買取指定者は、当該書面による通知をしたものとみなす。</p>
+<div class='sp'></div>
+<p class='p'>１０  買取指定者が第七項前段に規定する請求に基づく売買の代金に係る債務の全部又は一部の弁済をしないときは、決議賛成者（買取指定者となつたものを除く。以下この項及び第十五項において同じ。）は、連帯してその債務の全部又は一部の弁済の責めに任ずる。</p>
+<p class='p'>                      ただし、決議賛成者が買取指定者に資力があり、かつ、執行が容易であることを証明したときは、この限りでない。</p>
+<div class='sp'></div>
+<p class='p'>１１  第五項の集会を招集した者（買取指定者の指定がされているときは、当該買取指定者。次項において同じ。）は、決議賛成者以外の区分所有者に対し、四月以上の期間を定めて、第七項前段に規定する請求をするか否かを確答すべき旨を書面で催告することができる。</p>
+<div class='sp'></div>
+<p class='p'>１２  第五項の集会を招集した者は、前項の規定による書面による催告に代えて、法務省令で定めるところにより、同項に規定する区分所有者の承諾を得て、電磁的方法により第七項前段に規定する請求をするか否かを確答すべき旨を催告することができる。</p>
+<p class='p'>                      この場合において、当該第五項の集会を招集した者は、当該書面による催告をしたものとみなす。</p>
+<div class='sp'></div>
+<p class='p'>１３  第十一項に規定する催告を受けた区分所有者は、同項の規定により定められた期間を経過したときは、第七項前段に規定する請求をすることができない。</p>
+<div class='sp'></div>
+<p class='p'>１４  第五項に規定する場合において、建物の一部が滅失した日から六月以内に同項、次条第一項又は第七十条第一項の決議がないときは、各区分所有者は、他の区分所有者に対し、建物及びその敷地に関する権利を時価で買い取るべきことを請求することができる。</p>
+<div class='sp'></div>
+<p class='p'>１５  第二項、第七項、第八項及び前項の場合には、裁判所は、償還若しくは買取りの請求を受けた区分所有者、買取りの請求を受けた買取指定者又は第十項本文に規定する債務について履行の請求を受けた決議賛成者の請求により、償還金又は代金の支払につき相当の期限を許与することができる。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0078.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0080.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>非訟事件手続法 第五十三条（証拠調べ）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>非訟事件手続法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0053.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0055.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>非訟事件手続法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第五十三条（証拠調べ）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>非訟事件の手続における証拠調べについては、民事訴訟法第二編第四章第一節から第六節までの規定（同法第百七十九条、第百八十二条、第百八十七条から第百八十九条まで、第二百七条第二項、第二百八条、第二百二十四条（同法第二百二十九条第二項及び第二百三十二条第一項において準用する場合を含む。）及び第二百二十九条第四項の規定を除く。）を準用する。</p>
+<div class='sp'></div>
+<p class='p'>２  前項において準用する民事訴訟法の規定による即時抗告は、執行停止の効力を有する。</p>
+<div class='sp'></div>
+<p class='p'>３  当事者が次の各号のいずれかに該当するときは、裁判所は、二十万円以下の過料に処する。</p>
+<ul class='cute-list'>
+<li>一  第一項において準用する民事訴訟法第二百二十三条第一項（同法第二百三十一条において準用する場合を含む。）の規定による提出の命令に従わないとき、又は正当な理由なく第一項において準用する同法第二百三十二条第一項において準用する同法第二百二十三条第一項の規定による提示の命令に従わないとき。</li>
+<li>二  書証を妨げる目的で第一項において準用する民事訴訟法第二百二十条（同法第二百三十一条において準用する場合を含む。）の規定により提出の義務がある文書（同法第二百三十一条に規定する文書に準ずる物件を含む。）を滅失させ、その他これを使用することができないようにしたとき、又は検証を妨げる目的で検証の目的を滅失させ、その他これを使用することができないようにしたとき。</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>４  当事者が次の各号のいずれかに該当するときは、裁判所は、十万円以下の過料に処する。</p>
+<ul class='cute-list'>
+<li>一  正当な理由なく第一項において準用する民事訴訟法第二百二十九条第二項（同法第二百三十一条において準用する場合を含む。）において準用する同法第二百二十三条第一項の規定による提出の命令に従わないとき。</li>
+<li>二  対照の用に供することを妨げる目的で対照の用に供すべき筆跡又は印影を備える文書その他の物件を滅失させ、その他これを使用することができないようにしたとき。</li>
+<li>三  第一項において準用する民事訴訟法第二百二十九条第三項（同法第二百三十一条において準用する場合を含む。）の規定による決定に正当な理由なく従わないとき、又は当該決定に係る対照の用に供すべき文字を書体を変えて筆記したとき。</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>５  裁判所は、当事者本人を尋問する場合には、その当事者に対し、非訟事件の手続の期日に出頭することを命ずることができる。</p>
+<div class='sp'></div>
+<p class='p'>６  民事訴訟法第百九十二条から第百九十四条までの規定は前項の規定により出頭を命じられた当事者が正当な理由なく出頭しない場合について、同法第二百九条第一項及び第二項の規定は出頭した当事者が正当な理由なく宣誓又は陳述を拒んだ場合について準用する。</p>
+<div class='sp'></div>
+<p class='p'>７  この条に規定するもののほか、証拠調べにおける過料についての裁判に関しては、第五編の規定（第百十九条の規定並びに第百二十条及び第百二十二条の規定中検察官に関する部分を除く。）を準用する。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0053.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0055.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

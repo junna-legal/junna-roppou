@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>不動産登記法 第二条（定義）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>不動産登記法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0001.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0003.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>不動産登記法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第二条（定義）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>この法律において、次の各号に掲げる用語の意義は、それぞれ当該各号に定めるところによる。</p>
+<ul class='cute-list'>
+<li>一  不動産</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        土地又は建物をいう。</p>
+<ul class='cute-list'>
+<li>二  不動産の表示</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        不動産についての第二十七条第一号、第三号若しくは第四号、第三十四条第一項各号、第四十三条第一項、第四十四条第一項各号又は第五十八条第一項各号に規定する登記事項をいう。</p>
+<ul class='cute-list'>
+<li>三  表示に関する登記</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        不動産の表示に関する登記をいう。</p>
+<ul class='cute-list'>
+<li>四  権利に関する登記</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        不動産についての次条各号に掲げる権利に関する登記をいう。</p>
+<ul class='cute-list'>
+<li>五  登記記録</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        表示に関する登記又は権利に関する登記について、一筆の土地又は一個の建物ごとに第十二条の規定により作成される電磁的記録（電子的方式、磁気的方式その他人の知覚によっては認識することができない方式で作られる記録であって、電子計算機による情報処理の用に供されるものをいう。以下同じ。）をいう。</p>
+<ul class='cute-list'>
+<li>六  登記事項</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        この法律の規定により登記記録として登記すべき事項をいう。</p>
+<ul class='cute-list'>
+<li>七  表題部</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記記録のうち、表示に関する登記が記録される部分をいう。</p>
+<ul class='cute-list'>
+<li>八  権利部</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記記録のうち、権利に関する登記が記録される部分をいう。</p>
+<ul class='cute-list'>
+<li>九  登記簿</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記記録が記録される帳簿であって、磁気ディスク（これに準ずる方法により一定の事項を確実に記録することができる物を含む。以下同じ。）をもって調製するものをいう。</p>
+<ul class='cute-list'>
+<li>十  表題部所有者</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        所有権の登記がない不動産の登記記録の表題部に、所有者として記録されている者をいう。</p>
+<ul class='cute-list'>
+<li>十一  登記名義人</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記記録の権利部に、次条各号に掲げる権利について権利者として記録されている者をいう。</p>
+<ul class='cute-list'>
+<li>十二  登記権利者</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        権利に関する登記をすることにより、登記上、直接に利益を受ける者をいい、間接に利益を受ける者を除く。</p>
+<ul class='cute-list'>
+<li>十三  登記義務者</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        権利に関する登記をすることにより、登記上、直接に不利益を受ける登記名義人をいい、間接に不利益を受ける登記名義人を除く。</p>
+<ul class='cute-list'>
+<li>十四  登記識別情報</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        第二十二条本文の規定により登記名義人が登記を申請する場合において、当該登記名義人自らが当該登記を申請していることを確認するために用いられる符号その他の情報であって、登記名義人を識別することができるものをいう。</p>
+<ul class='cute-list'>
+<li>十五  変更の登記</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記事項に変更があった場合に当該登記事項を変更する登記をいう。</p>
+<ul class='cute-list'>
+<li>十六  更正の登記</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        登記事項に錯誤又は遺漏があった場合に当該登記事項を訂正する登記をいう。</p>
+<ul class='cute-list'>
+<li>十七  地番</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        第三十五条の規定により一筆の土地ごとに付す番号をいう。</p>
+<ul class='cute-list'>
+<li>十八  地目</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        土地の用途による分類であって、第三十四条第二項の法務省令で定めるものをいう。</p>
+<ul class='cute-list'>
+<li>十九  地積</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        一筆の土地の面積であって、第三十四条第二項の法務省令で定めるものをいう。</p>
+<ul class='cute-list'>
+<li>二十  表題登記</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        表示に関する登記のうち、当該不動産について表題部に最初にされる登記をいう。</p>
+<ul class='cute-list'>
+<li>二十一  家屋番号</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        第四十五条の規定により一個の建物ごとに付す番号をいう。</p>
+<ul class='cute-list'>
+<li>二十二  区分建物</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        一棟の建物の構造上区分された部分で独立して住居、店舗、事務所又は倉庫その他建物としての用途に供することができるものであって、建物の区分所有等に関する法律（昭和三十七年法律第六十九号。以下「区分所有法」という。）第二条第三項に規定する専有部分であるもの（区分所有法第四条第二項の規定により共用部分とされたものを含む。）をいう。</p>
+<ul class='cute-list'>
+<li>二十三  附属建物</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        表題登記がある建物に附属する建物であって、当該表題登記がある建物と一体のものとして一個の建物として登記されるものをいう。</p>
+<ul class='cute-list'>
+<li>二十四  抵当証券</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>                        抵当証券法（昭和六年法律第十五号）第一条第一項に規定する抵当証券をいう。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0001.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0003.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>

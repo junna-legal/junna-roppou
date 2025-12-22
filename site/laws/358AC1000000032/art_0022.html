@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>貸金業法 第十三条（返済能力の調査）</title>
+<style>
+:root {
+  --bg: #fffafc;
+  --card: #ffffff;
+  --text: #374151;
+  --sub: #9ca3af;
+
+  --pink: #fde2e4;
+  --mint: #e8f8f5;
+  --lav:  #f3ecff;
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Maru Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    system-ui, sans-serif;
+
+  line-height: 1.75;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 12px 12px;
+}
+
+main {
+  padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 16px 14px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.04),
+    0 2px 6px rgba(0,0,0,.03);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pink), var(--lav));
+  border: 1px solid rgba(0,0,0,.04);
+  font-size: 13px;
+  color: #111827;
+}
+
+.micon{
+  width: 22px;
+  height: 22px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.micon svg{ width: 18px; height: 18px; display:block; }
+
+.small { color: var(--sub); font-size: 0.92em; margin-top: 6px; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,.08); margin: 12px 0; }
+
+label { display: block; font-weight: 800; margin-top: 10px; }
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+}
+
+button {
+  font-size: 16px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: linear-gradient(90deg, var(--mint), var(--lav));
+  color: #111827;
+  margin-top: 10px;
+}
+
+.navrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.navbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.10);
+  background: #fff;
+  color: #111827;
+}
+.navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
+.navbtn:active { opacity: .7; }
+
+.result { padding: 10px 4px; border-bottom: 1px dashed rgba(0,0,0,.12); }
+.result a { text-decoration: none; display: block; color: #111827; }
+
+.p { margin: 0 0 12px; }
+.sp { height: 6px; }
+.cute-list { margin: 8px 0 14px 18px; padding: 0; }
+.cute-list li { margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge"><span class="micon"><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>貸金業法</span>
+  　<a class="navbtn" href='../../index.html'>← 検索</a>
+</header>
+<main>
+  <div class="card">
+    <div class='navrow'><a class='navbtn' href='art_0021.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0023.html'>次へ →</a></div>
+    <h2 style="margin:10px 0 4px;"><span style="margin-right:6px;">🧸</span>貸金業法</h2>
+    <div class="small"><b><span style="margin-right:6px;">🌸</span>第十三条（返済能力の調査）</b></div>
+    <!-- keyは表示しない -->
+    <hr>
+    <div class="article-body">
+      <p class='p'>貸金業者は、貸付けの契約を締結しようとする場合には、顧客等の収入又は収益その他の資力、信用、借入れの状況、返済計画その他の返済能力に関する事項を調査しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>２  貸金業者が個人である顧客等と貸付けの契約（極度方式貸付けに係る契約その他の内閣府令で定める貸付けの契約を除く。）を締結しようとする場合には、前項の規定による調査を行うに際し、指定信用情報機関が保有する信用情報を使用しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>３  貸金業者は、前項の場合において、次の各号に掲げる場合のいずれかに該当するときは、第一項の規定による調査を行うに際し、資金需要者である個人の顧客（以下この節において「個人顧客」という。）から源泉徴収票（所得税法（昭和四十年法律第三十三号）第二百二十六条第一項に規定する源泉徴収票をいう。以下この項及び第十三条の三第三項において同じ。）その他の当該個人顧客の収入又は収益その他の資力を明らかにする事項を記載し、又は記録した書面又は電磁的記録として内閣府令で定めるものの提出又は提供を受けなければならない。</p>
+<p class='p'>                      ただし、貸金業者が既に当該個人顧客の源泉徴収票その他の当該個人顧客の収入又は収益その他の資力を明らかにする事項を記載し、又は記録した書面又は電磁的記録として内閣府令で定めるものの提出又は提供を受けている場合は、この限りでない。</p>
+<ul class='cute-list'>
+<li>一  次に掲げる金額を合算した額（次号イにおいて「当該貸金業者合算額」という。）が五十万円を超える場合</li>
+<li>イ  当該貸付けの契約（貸付けに係る契約に限る。ロにおいて同じ。）に係る貸付けの金額（極度方式基本契約にあつては、極度額（当該貸金業者が当該個人顧客に対し当該極度方式基本契約に基づく極度方式貸付けの元本の残高の上限として極度額を下回る額を提示する場合にあつては、当該下回る額））</li>
+<li>イ</li>
+<li>当該貸付けの契約（貸付けに係る契約に限る。ロにおいて同じ。）に係る貸付けの金額（極度方式基本契約にあつては、極度額（当該貸金業者が当該個人顧客に対し当該極度方式基本契約に基づく極度方式貸付けの元本の残高の上限として極度額を下回る額を提示する場合にあつては、当該下回る額））</li>
+<li>ロ  当該個人顧客と当該貸付けの契約以外の貸付けに係る契約を締結しているときは、その貸付けの残高（極度方式基本契約にあつては、極度額（当該貸金業者が当該個人顧客に対し当該極度方式基本契約に基づく極度方式貸付けの元本の残高の上限として極度額を下回る額を提示している場合にあつては、当該下回る額））の合計額</li>
+<li>ロ</li>
+<li>当該個人顧客と当該貸付けの契約以外の貸付けに係る契約を締結しているときは、その貸付けの残高（極度方式基本契約にあつては、極度額（当該貸金業者が当該個人顧客に対し当該極度方式基本契約に基づく極度方式貸付けの元本の残高の上限として極度額を下回る額を提示している場合にあつては、当該下回る額））の合計額</li>
+<li>二  次に掲げる金額を合算した額（次条第二項において「個人顧客合算額」という。）が百万円を超える場合（前号に掲げる場合を除く。）</li>
+<li>イ  当該貸金業者合算額</li>
+<li>イ</li>
+<li>当該貸金業者合算額</li>
+<li>ロ  指定信用情報機関から提供を受けた信用情報により判明した当該個人顧客に対する当該貸金業者以外の貸金業者の貸付けの残高の合計額</li>
+<li>ロ</li>
+<li>指定信用情報機関から提供を受けた信用情報により判明した当該個人顧客に対する当該貸金業者以外の貸金業者の貸付けの残高の合計額</li>
+</ul>
+<div class='sp'></div>
+<p class='p'>４  貸金業者は、顧客等と貸付けの契約を締結した場合には、内閣府令で定めるところにより、第一項の規定による調査に関する記録を作成し、これを保存しなければならない。</p>
+<div class='sp'></div>
+<p class='p'>５  前各項の規定は、極度方式基本契約の極度額（貸金業者が極度方式基本契約の相手方に対し当該極度方式基本契約に基づく極度方式貸付けの元本の残高の上限として極度額を下回る額を提示している場合にあつては、当該下回る額）を増額する場合（当該極度方式基本契約の相手方の利益の保護に支障を生ずることがない場合として内閣府令で定めるものを除く。）について準用する。</p>
+<p class='p'>                      この場合において、必要な技術的読替えは、政令で定める。</p>
+    </div>
+    <hr>
+    <div class='navrow'><a class='navbtn' href='art_0021.html'>← 前へ</a><a class='navbtn primary' href='index.html'>📜 一覧</a><a class='navbtn' href='art_0023.html'>次へ →</a></div>
+  </div>
+</main>
+
+</body>
+</html>
