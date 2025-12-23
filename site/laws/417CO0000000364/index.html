@@ -161,10 +161,124 @@ button {
 }
 .toc a{ text-decoration:none; color:#111827; }
 .toc a:hover{ text-decoration:underline; }
+/* アンカー移動でヘッダーに隠れないようにする */
+.artbox{
+  scroll-margin-top: 90px;
+}
+/* 法令ページのヘッダー内：条番号ジャンプ */
+.headbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+/* 条番号ジャンプ行 */
+.headjump{
+  display:flex;
+  gap:8px;
+  width:100%;
+  justify-content:flex-end;  /* 右寄せ */
+}
+
+/* ★ここで幅を狭くする */
+.headjump input{
+  flex: 0 0 auto;
+  width: min(150px, 55vw);   /* ←狭め（数値は好みで調整） */
+  padding: 9px 10px;
+  border-radius: 999px;
+}
+
+.headjump button{
+  margin-top:0;
+  padding: 9px 12px;
+  border-radius: 999px;
+  white-space:nowrap;
+}
+
+/* 小さい画面は少しだけ広げる（入力しやすさ優先） */
+@media (max-width: 520px){
+  .headjump input{
+    width: min(220px, 62vw);
+  }
+/* ふわっと感UP */
+.card{
+  box-shadow: 0 10px 30px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.04);
+}
+
+/* ボタンをぷにっと */
+button, .navbtn{
+  transition: transform .06s ease, filter .12s ease;
+}
+button:active, .navbtn:active{
+  transform: translateY(1px) scale(0.98);
+  filter: brightness(0.98);
+}
+
+/* 見出しバッジをもっと“お菓子”っぽく */
+.badge{
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+
+
+/* 入力欄を“ぷに” */
+input{
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+}
+input:focus{
+  outline: none;
+  border-color: rgba(244,114,182,.35);
+  box-shadow: 0 0 0 4px rgba(244,114,182,.10);
+}
+
+}
+
 </style>
 </head>
 <body>
-<header><span class='badge'><span class='micon'><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>会社法施行令</span> <a class='navbtn' href='../../index.html'>← 検索</a></header><main><div class='card'><div class='small'>LawId: 417CO0000000364</div><div class='small'>現行版基準日(推定): 2021-03-01</div><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div><hr><div class='toc'><div>・ <a href='index.html#a1'>第一条（書面に記載すべき事項等の電磁的方法による提供の承諾等）</a></div>
+<header><div class='headbar'><div class='headrow'><span class='badge'><span class='micon'><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>会社法施行令</span><a class='navbtn' href='../../index.html'>← 検索</a></div>
+<div class="headjump">
+  <input id="jumpArt" inputmode="numeric" placeholder="条番号（例：709 / 709-2）">
+  <button id="jumpBtn" type="button">移動</button>
+</div>
+
+<script>
+function normArt(s){
+  s = (s||"").trim();
+  if(!s) return "";
+  s = s.replace(/\s+/g,"");
+  s = s.replace("／","/").replace("−","-").replace("―","-").replace("–","-");
+  s = s.replace(/の/g,"-").replace(/\//g,"-");
+  s = s.replace(/^第/,"").replace(/条$/,"");
+  let m = s.match(/^(\d+)(?:-|の|ノ)(\d+)$/);
+  if(m) return m[1] + "_" + m[2];
+  if(/^\d+$/.test(s)) return s;
+  return s.replace(/-/g,"_");
+}
+
+function goArt(){
+  const inp = document.getElementById("jumpArt");
+  const k = normArt(inp.value);
+  if(!k) return;
+  const id = "a" + k;
+  const el = document.getElementById(id);
+  if(!el){ inp.blur(); return; }
+  inp.blur();
+  el.scrollIntoView({behavior:"smooth", block:"start"});
+  setTimeout(()=>{ location.hash = "#" + id; }, 50);
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  document.getElementById("jumpBtn")?.addEventListener("click", goArt);
+  document.getElementById("jumpArt")?.addEventListener("keydown", e=>{
+    if(e.key==="Enter") goArt();
+  });
+});
+</script>
+</div></header><main><div class='card'><div class='small'>LawId: 417CO0000000364</div><div class='small'>現行版基準日(推定): 2021-03-01</div><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div><hr><div class='toc'><div>・ <a href='index.html#a1'>第一条（書面に記載すべき事項等の電磁的方法による提供の承諾等）</a></div>
 <div>・ <a href='index.html#a2'>第二条（電磁的方法による通知の承諾等）</a></div>
 <div>・ <a href='index.html#a3'>第三条（電子公告調査機関の登録及びその更新の申請に係る手数料の額）</a></div>
 <div>・ <a href='index.html#a4'>第四条（電子公告調査機関の登録の有効期間）</a></div></div><hr><section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（書面に記載すべき事項等の電磁的方法による提供の承諾等）</span></div><p class='p'>次に掲げる規定に規定する事項を電磁的方法（会社法（以下「法」という。）第二条第三十四号に規定する電磁的方法をいう。以下同じ。）により提供しようとする者（次項において「提供者」という。）は、法務省令で定めるところにより、あらかじめ、当該事項の提供の相手方に対し、その用いる電磁的方法の種類及び内容を示し、書面又は電磁的方法による承諾を得なければならない。</p>

@@ -161,6 +161,81 @@ button {
 }
 .toc a{ text-decoration:none; color:#111827; }
 .toc a:hover{ text-decoration:underline; }
+/* アンカー移動でヘッダーに隠れないようにする */
+.artbox{
+  scroll-margin-top: 90px;
+}
+/* 法令ページのヘッダー内：条番号ジャンプ */
+.headbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+}
+/* 条番号ジャンプ行 */
+.headjump{
+  display:flex;
+  gap:8px;
+  width:100%;
+  justify-content:flex-end;  /* 右寄せ */
+}
+
+/* ★ここで幅を狭くする */
+.headjump input{
+  flex: 0 0 auto;
+  width: min(150px, 55vw);   /* ←狭め（数値は好みで調整） */
+  padding: 9px 10px;
+  border-radius: 999px;
+}
+
+.headjump button{
+  margin-top:0;
+  padding: 9px 12px;
+  border-radius: 999px;
+  white-space:nowrap;
+}
+
+/* 小さい画面は少しだけ広げる（入力しやすさ優先） */
+@media (max-width: 520px){
+  .headjump input{
+    width: min(220px, 62vw);
+  }
+/* ふわっと感UP */
+.card{
+  box-shadow: 0 10px 30px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.03);
+  border: 1px solid rgba(0,0,0,.04);
+}
+
+/* ボタンをぷにっと */
+button, .navbtn{
+  transition: transform .06s ease, filter .12s ease;
+}
+button:active, .navbtn:active{
+  transform: translateY(1px) scale(0.98);
+  filter: brightness(0.98);
+}
+
+/* 見出しバッジをもっと“お菓子”っぽく */
+.badge{
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+
+
+/* 入力欄を“ぷに” */
+input{
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+}
+input:focus{
+  outline: none;
+  border-color: rgba(244,114,182,.35);
+  box-shadow: 0 0 0 4px rgba(244,114,182,.10);
+}
+
+}
+
 </style>
 </head>
 <body>
