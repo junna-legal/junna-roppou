@@ -30,15 +30,16 @@ body {
   overflow-x: hidden;
 }
 
-header {
+header{
   position: sticky;
   top: 0;
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0,0,0,.06);
-  padding: 12px 12px;
+  padding: 10px 12px; /* ← 12→10 にして少し低く */
   z-index: 10;
 }
+
 
 main {
   padding: 14px 12px calc(24px + env(safe-area-inset-bottom));
@@ -148,7 +149,7 @@ button {
   margin: 0 0 8px;
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:4px;
 }
 .artnum{
   display:inline-flex;
@@ -184,7 +185,7 @@ button {
 /* ★ここで幅を狭くする */
 .headjump input{
   flex: 0 0 auto;
-  width: min(150px, 55vw);   /* ←狭め（数値は好みで調整） */
+  width: min(80px, 55vw);   /* ←狭め（数値は好みで調整） */
   padding: 9px 10px;
   border-radius: 999px;
 }
@@ -235,50 +236,123 @@ input:focus{
 }
 
 }
+.hit { outline: 3px solid rgba(253, 226, 228, .9); }
+.mark { background: rgba(253, 226, 228, .75); border-radius: 6px; padding: 0 2px; }
+/* ===== iPhone等の狭い画面だけ、ヘッダー内検索UIを圧縮 ===== */
+.lawbar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.lawbar .field{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+.lawbar .field-kw{
+  flex: 0 1 auto;   /* ← “必要な分だけ”に寄せる */
+}
+
+.lawbar input{
+  width:auto;
+}
+
+.lawbar .artjump{
+  width: 9.5em;         /* 条番号は短めでOK */
+  max-width: 45vw;
+  flex: 0 0 auto;
+}
+
+.lawbar .kw{
+  flex: 1 1 9.5em;       /* ★キーワードを広げる（優先） */
+  min-width: 12em;
+  max-width: 45vw;
+}
+
+/* ボタンを少し小さく */
+.lawbar .mini-btn{
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+/* iPhone想定のさらに圧縮 */
+@media (max-width: 480px){
+  header{ padding: 10px 10px; }
+  .badge{ padding: 6px 10px; font-size: 12px; }
+  .micon{ width: 20px; height: 20px; }
+  .lawbar{ gap:6px; }
+
+/* 変更後：iPhoneでも同じ幅 */
+.lawbar .artjump,
+.lawbar .kw{
+  width: 7.0em;
+  max-width: 42vw;
+}
+
+
+  /* 入力自体も少し小さめ */
+  .lawbar input{
+    padding: 9px 10px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+}
+/* 検索結果表示（kwstatus）が横幅を食って折り返し崩れないようにする */
+.lawbar .kwstatus{
+  flex: 0 0 100%;          /* 常に「次の行」に回す */
+  margin-left: 0;
+  margin-top: 4px;
+  white-space: nowrap;      /* 1行にする */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* 長いときは… */
+}
+.lawbar{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  column-gap:4px;  /* 横の間 */
+  row-gap:4px;     /* 縦の間 */
+}
+
 
 </style>
 </head>
 <body>
-<header><div class='headbar'><div class='headrow'><span class='badge'><span class='micon'><svg viewBox='0 0 64 64' aria-hidden='true'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde2e4'/><stop offset='1' stop-color='#f3ecff'/></linearGradient></defs><circle cx='32' cy='34' r='22' fill='url(#g)' stroke='rgba(0,0,0,0.08)'/><circle cx='20' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='44' cy='40' r='4' fill='#ffd6e7' opacity='0.9'/><circle cx='24' cy='32' r='3.2' fill='#1f2937'/><circle cx='40' cy='32' r='3.2' fill='#1f2937'/><circle cx='23' cy='31' r='1' fill='#ffffff' opacity='0.9'/><circle cx='39' cy='31' r='1' fill='#ffffff' opacity='0.9'/><path d='M28 40 Q32 43 36 40' fill='none' stroke='#1f2937' stroke-width='2.4' stroke-linecap='round'/><path d='M23 18 C22 12 26 10 28 16 C29 20 25 22 23 18 Z' fill='#fde2e4' stroke='rgba(0,0,0,0.06)'/><path d='M41 18 C40 12 44 10 46 16 C47 20 43 22 41 18 Z' fill='#f3ecff' stroke='rgba(0,0,0,0.06)'/></svg></span>利息制限法</span><a class='navbtn' href='../../index.html'>← 検索</a></div>
-<div class="headjump">
-  <input id="jumpArt" inputmode="numeric" placeholder="条番号（例：709 / 709-2）">
-  <button id="jumpBtn" type="button">移動</button>
-</div>
 
-<script>
-function normArt(s){
-  s = (s||"").trim();
-  if(!s) return "";
-  s = s.replace(/\s+/g,"");
-  s = s.replace("／","/").replace("−","-").replace("―","-").replace("–","-");
-  s = s.replace(/の/g,"-").replace(/\//g,"-");
-  s = s.replace(/^第/,"").replace(/条$/,"");
-  let m = s.match(/^(\d+)(?:-|の|ノ)(\d+)$/);
-  if(m) return m[1] + "_" + m[2];
-  if(/^\d+$/.test(s)) return s;
-  return s.replace(/-/g,"_");
-}
 
-function goArt(){
-  const inp = document.getElementById("jumpArt");
-  const k = normArt(inp.value);
-  if(!k) return;
-  const id = "a" + k;
-  const el = document.getElementById(id);
-  if(!el){ inp.blur(); return; }
-  inp.blur();
-  el.scrollIntoView({behavior:"smooth", block:"start"});
-  setTimeout(()=>{ location.hash = "#" + id; }, 50);
-}
+<header>
+  <div class="navrow" style="justify-content:space-between; gap:10px;">
+    <span class="badge"><span class="micon">🐰</span>利息制限法</span>
+    <a class="navbtn" href="../../index.html">← 検索</a>
+  </div>
 
-document.addEventListener("DOMContentLoaded", ()=>{
-  document.getElementById("jumpBtn")?.addEventListener("click", goArt);
-  document.getElementById("jumpArt")?.addEventListener("keydown", e=>{
-    if(e.key==="Enter") goArt();
-  });
-});
-</script>
-</div></header><main><div class='card'><div class='small'>LawId: 329AC0000000100</div><div class='small'>現行版基準日(推定): 2010-06-18</div><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div><hr><div class='toc'><div>・ <a href='index.html#a1'>第一条（利息の制限）</a></div>
+  <div class="lawbar" style="margin-top:6px;">
+    <div class="field" style="flex:0 1 auto;">
+      <span class="small" style="font-weight:800;">条番号</span>
+      <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
+      <button id="artbtn" class="mini-btn">移動</button>
+    </div>
+
+    <div class="field field-kw">
+      <span class="small" style="font-weight:800;">ＫＷ</span>
+      <input id="kw" class="kw" placeholder="法令内検索">
+      <button id="kwbtn" class="mini-btn">検索</button>
+      <button id="kwprev" class="mini-btn">前</button>
+      <button id="kwnext" class="mini-btn">次</button>
+      <span id="kwstatus" class="small kwstatus"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <div class="small">LawId: 329AC0000000100</div>
+    <div class='small'>現行版基準日(推定): 2010-06-18</div>
+    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
+    <hr>
+    <div class="toc"><div>・ <a href='index.html#a1'>第一条（利息の制限）</a></div>
 <div>・ <a href='index.html#a2'>第二条（利息の天引き）</a></div>
 <div>・ <a href='index.html#a3'>第三条（みなし利息）</a></div>
 <div>・ <a href='index.html#a4'>第四条（賠償額の予定の制限）</a></div>
@@ -295,7 +369,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 <div>・ <a href='index.html#a32'>第三十二条（政令への委任）</a></div>
 <div>・ <a href='index.html#a66'>第六十六条（政府の責務）</a></div>
 <div>・ <a href='index.html#a67'>第六十七条（検討）</a></div>
-<div>・ <a href='index.html#a1'>第一条（施行期日）</a></div></div><hr><section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（利息の制限）</span></div><p class='p'>金銭を目的とする消費貸借における利息の契約は、その利息が次の各号に掲げる場合に応じ当該各号に定める利率により計算した金額を超えるときは、その超過部分について、無効とする。</p>
+<div>・ <a href='index.html#a1'>第一条（施行期日）</a></div></div>
+    <hr>
+    <section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（利息の制限）</span></div><p class='p'>金銭を目的とする消費貸借における利息の契約は、その利息が次の各号に掲げる場合に応じ当該各号に定める利率により計算した金額を超えるときは、その超過部分について、無効とする。</p>
 <ul class='cute-list'>
 <li>一  元本の額が十万円未満の場合</li>
 </ul>
@@ -436,6 +512,169 @@ document.addEventListener("DOMContentLoaded", ()=>{
 <section class='artbox' id='a32'><div class='arthead'><span class='artnum'>🍬 第三十二条（政令への委任）</span></div><p class='p'>附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。</p></section>
 <section class='artbox' id='a66'><div class='arthead'><span class='artnum'>🍬 第六十六条（政府の責務）</span></div><p class='p'>政府は、多重債務問題（貸金業を営む者による貸付けに起因して、多数の資金需要者等が重畳的又は累積的な債務を負うことにより、その営む社会的経済的生活に著しい支障が生じている状況をめぐる国民生活上及び国民経済の運営上の諸問題をいう。以下同じ。）の解決の重要性にかんがみ、関係省庁相互間の連携を強化することにより、資金需要者等が借入れ又は返済に関する相談又は助言その他の支援を受けることができる体制の整備、資金需要者への資金の融通を図るための仕組みの充実、違法な貸金業を営む者に対する取締りの強化、貸金業者に対する処分その他の監督の状況の検証、この法律による改正後の規定の施行状況の検証その他多重債務問題の解決に資する施策を総合的かつ効果的に推進するよう努めなければならない。</p></section>
 <section class='artbox' id='a67'><div class='arthead'><span class='artnum'>🍬 第六十七条（検討）</span></div><p class='p'>２  政府は、出資の受入れ、預り金及び金利等の取締りに関する法律及び利息制限法に基づく金利の規制の在り方について、この法律の施行後二年六月以内に、資金需給の状況その他の経済金融情勢、貸付けの利率の設定の状況その他貸金業者の業務の実態等を勘案し、第五条及び第七条の規定による改正後の規定を円滑に実施するために講ずべき施策の必要性の有無について検討を加え、その検討の結果に応じて所要の見直しを行うものとする。</p></section>
-<section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（施行期日）</span></div><p class='p'>この法律は、平成二十年十月一日から施行する。</p></section><hr><div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div></div></main>
+<section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（施行期日）</span></div><p class='p'>この法律は、平成二十年十月一日から施行する。</p></section>
+    <hr>
+    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
+  </div>
+</main>
+
+<script>
+(function(){
+  const $ = (id)=>document.getElementById(id);
+
+  function headerH(){
+    const h = document.querySelector("header");
+    return h ? h.getBoundingClientRect().height : 70;
+  }
+
+  function scrollToNode(node){
+    if(!node) return;
+    const rect = node.getBoundingClientRect();
+    const y = window.pageYOffset + rect.top - Math.ceil(headerH()) - 10;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
+  let marks = [];
+  let pos = -1;
+
+  function clearMarks(){
+    document.querySelectorAll(".mark").forEach(m=>{
+      const t = document.createTextNode(m.textContent);
+      m.replaceWith(t);
+    });
+    marks = [];
+    pos = -1;
+    document.querySelectorAll(".artbox").forEach(b=>b.classList.remove("hit"));
+  }
+
+  function norm(s){ return (s||"").toLowerCase(); }
+
+  function markTextNode(node, q){
+    const text = node.nodeValue || "";
+    const qn = norm(q);
+    const tn = norm(text);
+
+    let idx = tn.indexOf(qn);
+    if(idx === -1) return false;
+
+    const frag = document.createDocumentFragment();
+    let cur = 0;
+
+    while(idx !== -1){
+      const before = text.slice(cur, idx);
+      if(before) frag.appendChild(document.createTextNode(before));
+
+      const mid = text.slice(idx, idx + q.length);
+      const span = document.createElement("span");
+      span.className = "mark";
+      span.textContent = mid;
+      frag.appendChild(span);
+
+      cur = idx + q.length;
+      idx = tn.indexOf(qn, cur);
+    }
+
+    const after = text.slice(cur);
+    if(after) frag.appendChild(document.createTextNode(after));
+
+    node.parentNode.replaceChild(frag, node);
+    return true;
+  }
+
+  function markInElement(el, q){
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while(walker.nextNode()) nodes.push(walker.currentNode);
+
+    let found = false;
+    for(const node of nodes){
+      if(!(node.nodeValue||"").trim()) continue;
+      if(markTextNode(node, q)) found = true;
+    }
+    return found;
+  }
+
+  function setStatus(msg){
+    const s = $("kwstatus");
+    if(s) s.textContent = msg || "";
+  }
+
+  function collectMarks(){
+    marks = Array.from(document.querySelectorAll(".mark"));
+    pos = marks.length ? 0 : -1;
+
+    document.querySelectorAll(".artbox").forEach(b=>{
+      if(b.querySelector(".mark")) b.classList.add("hit");
+    });
+  }
+
+  function runSearch(){
+    const q = ($("kw")?.value || "").trim();
+    clearMarks();
+    if(!q){ setStatus(""); return; }
+
+    const boxes = Array.from(document.querySelectorAll(".artbox"));
+    boxes.forEach(b=>{ markInElement(b, q); });
+
+    collectMarks();
+
+    if(marks.length){
+      setStatus("ヒット: " + marks.length + " / 1");
+      scrollToNode(marks[0]);
+    }else{
+      setStatus("（ヒットなし）");
+    }
+  }
+
+  function goNext(){
+    if(!marks.length) return;
+    pos = (pos + 1) % marks.length;
+    setStatus("ヒット: " + marks.length + " / " + (pos+1));
+    scrollToNode(marks[pos]);
+  }
+
+  function goPrev(){
+    if(!marks.length) return;
+    pos = (pos - 1 + marks.length) % marks.length;
+    setStatus("ヒット: " + marks.length + " / " + (pos+1));
+    scrollToNode(marks[pos]);
+  }
+
+  async function jumpArticle(){
+    const v = ($("artjump")?.value || "").trim();
+    if(!v) return;
+
+    const normv = (v.replace("／","/").replace("―","-").replace("−","-").replace("–","-")
+                   .replace("の","-").replace("/", "-").replace(/\s+/g,""));
+
+    try{
+      const map = await (await fetch("artmap.json")).json();
+      const anchor = map[normv];
+      if(anchor){
+        const el = document.getElementById(anchor);
+        if(el) scrollToNode(el);
+        else location.hash = "#" + anchor;
+        return;
+      }
+    }catch(e){}
+
+    const guess = "a" + normv.replace("-", "_");
+    const el = document.getElementById(guess);
+    if(el) scrollToNode(el);
+    else location.hash = "#" + guess;
+  }
+
+  $("kwbtn")?.addEventListener("click", runSearch);
+  $("kw")?.addEventListener("keydown", (e)=>{ if(e.key==="Enter") runSearch(); });
+  $("kwnext")?.addEventListener("click", goNext);
+  $("kwprev")?.addEventListener("click", goPrev);
+
+  $("artbtn")?.addEventListener("click", jumpArticle);
+  $("artjump")?.addEventListener("keydown", (e)=>{ if(e.key==="Enter") jumpArticle(); });
+
+})();
+</script>
+
+
 </body>
 </html>
