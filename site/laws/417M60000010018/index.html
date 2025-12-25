@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 417M60000010018</div>
     <div class='small'>現行版基準日(推定): 2025-10-01</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（定義）</a></div>
 <div>・ <a href='index.html#a2'>第二条（登記の前後）</a></div>
@@ -4207,8 +4206,6 @@ button:active{
 <p class='p'>２３  新不動産登記規則第百五十八条の十四第一項、第二項及び第四項の規定は、前項において準用する新不動産登記規則第百五十八条の三十第四項の規定により第十八項の登記の抹消をしようとする場合について準用する。</p></section>
 <section class='artbox' id='a3'><div class='arthead'><span class='artnum'>🍬 第三条（相続人電子申出等に関する経過措置）</span></div><p class='p'>新不動産登記規則中相続人電子申出（新不動産登記規則第百五十八条の二第十号に規定する相続人電子申出をいう。）、第百五十八条の三十二第五項第一号に掲げる方法による申出及び第百五十八条の三十五第六項第一号（新不動産登記規則第百五十八条の三十六第二項において準用する場合を含む。）に掲げる方法による申出に関する規定並びに前条第五項第一号に掲げる方法による申出に関する規定は、不動産登記規則附則第三条第一項の規定による改製を終えていない登記簿（電子情報処理組織による取扱いに適合しない登記簿を含む。）に係る申出については、適用しない。</p></section>
 <section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（施行期日）</span></div><p class='p'>この省令は、令和七年十月一日から施行する。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -4283,7 +4280,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -4308,7 +4306,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

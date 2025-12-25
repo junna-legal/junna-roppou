@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 410M50000040029</div>
     <div class='small'>現行版基準日(推定): 2025-04-01</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（報告を要しない支払等の範囲）</a></div>
 <div>・ <a href='index.html#a2'>第二条（銀行等又は資金移動業者を経由しない支払等の報告）</a></div>
@@ -1354,8 +1353,6 @@ button:active{
 <section class='artbox' id='a3'><div class='arthead'><span class='artnum'>🍬 第三条</span></div><p class='p'>新省令別紙様式第一及び第二による報告書については、当分の間、改正前の外国為替の取引等の報告に関する省令別紙様式第一及び第二による報告書を取り繕い使用することができる。</p></section>
 <section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（施行期日）</span></div><p class='p'>この省令は、令和六年十二月一日から施行する。</p></section>
 <section class='artbox' id='a2'><div class='arthead'><span class='artnum'>🍬 第二条（経過措置）</span></div><p class='p'>この省令の施行の日前に行われた取引、行為又は支払等に係る報告義務のうち、この省令による改正前の外国為替の取引等の報告に関する省令附則第十七条の規定により履行することを要しないとされているものについては、なお従前の例による。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -1430,7 +1427,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -1455,7 +1453,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

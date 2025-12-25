@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 329AC0000000100</div>
     <div class='small'>現行版基準日(推定): 2010-06-18</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（利息の制限）</a></div>
 <div>・ <a href='index.html#a2'>第二条（利息の天引き）</a></div>
@@ -394,8 +393,6 @@ button:active{
 <section class='artbox' id='a66'><div class='arthead'><span class='artnum'>🍬 第六十六条（政府の責務）</span></div><p class='p'>政府は、多重債務問題（貸金業を営む者による貸付けに起因して、多数の資金需要者等が重畳的又は累積的な債務を負うことにより、その営む社会的経済的生活に著しい支障が生じている状況をめぐる国民生活上及び国民経済の運営上の諸問題をいう。以下同じ。）の解決の重要性にかんがみ、関係省庁相互間の連携を強化することにより、資金需要者等が借入れ又は返済に関する相談又は助言その他の支援を受けることができる体制の整備、資金需要者への資金の融通を図るための仕組みの充実、違法な貸金業を営む者に対する取締りの強化、貸金業者に対する処分その他の監督の状況の検証、この法律による改正後の規定の施行状況の検証その他多重債務問題の解決に資する施策を総合的かつ効果的に推進するよう努めなければならない。</p></section>
 <section class='artbox' id='a67'><div class='arthead'><span class='artnum'>🍬 第六十七条（検討）</span></div><p class='p'>２  政府は、出資の受入れ、預り金及び金利等の取締りに関する法律及び利息制限法に基づく金利の規制の在り方について、この法律の施行後二年六月以内に、資金需給の状況その他の経済金融情勢、貸付けの利率の設定の状況その他貸金業者の業務の実態等を勘案し、第五条及び第七条の規定による改正後の規定を円滑に実施するために講ずべき施策の必要性の有無について検討を加え、その検討の結果に応じて所要の見直しを行うものとする。</p></section>
 <section class='artbox' id='a1'><div class='arthead'><span class='artnum'>🍬 第一条（施行期日）</span></div><p class='p'>この法律は、平成二十年十月一日から施行する。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -470,7 +467,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -495,7 +493,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

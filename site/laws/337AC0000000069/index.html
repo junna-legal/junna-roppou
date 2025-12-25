@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 337AC0000000069</div>
     <div class='small'>現行版基準日(推定): 2025-05-30</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（建物の区分所有）</a></div>
 <div>・ <a href='index.html#a2'>第二条（定義）</a></div>
@@ -1006,8 +1005,6 @@ button:active{
 <div class='sp'></div>
 <p class='p'>公布の日</p></section>
 <section class='artbox' id='a18'><div class='arthead'><span class='artnum'>🍬 第十八条（政令への委任）</span></div><p class='p'>この附則に定めるもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -1082,7 +1079,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -1107,7 +1105,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

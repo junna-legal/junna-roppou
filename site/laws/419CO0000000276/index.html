@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 419CO0000000276</div>
     <div class='small'>現行版基準日(推定): 2025-04-01</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（特別の利益を与えてはならない法人の関係者）</a></div>
 <div>・ <a href='index.html#a2'>第二条（特定の個人又は団体の利益を図る活動を行う者）</a></div>
@@ -316,8 +315,6 @@ button:active{
 <li>ニ 社員その他の構成員又は役員及びこれらの者の配偶者又は三親等内の親族に対して特別の利益を与えないものであること。</li>
 <li>ホ 法令等の規定により、残余財産を当該法人の目的に類似する目的のために処分し、又は国若しくは地方公共団体に帰属させることが定められていること。</li>
 </ul></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -392,7 +389,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -417,7 +415,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

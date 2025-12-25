@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 129AC0000000089</div>
     <div class='small'>現行版基準日(推定): 2025-10-01</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（基本原則）</a></div>
 <div>・ <a href='index.html#a2'>第二条（解釈の基準）</a></div>
@@ -5960,8 +5959,6 @@ button:active{
 <section class='artbox' id='a17'><div class='arthead'><span class='artnum'>🍬 第十七条（啓発活動）</span></div><p class='p'>政府は、この法律による改正後のそれぞれの法律（次条及び附則第十九条第二項において「改正後の各法律」という。）の円滑な施行のため、新民法第七百六十六条第一項又は第二項（これらの規定を新民法第七百四十九条、第七百七十一条及び第七百八十八条において準用する場合を含む。）の規定により子の監護について必要な事項を定めることの重要性について父母が理解と関心を深めることができるよう、必要な広報その他の啓発活動を行うものとする。</p></section>
 <section class='artbox' id='a18'><div class='arthead'><span class='artnum'>🍬 第十八条（周知）</span></div><p class='p'>政府は、改正後の各法律の円滑な施行のため、新民法第八百十九条各項の規定による親権者の定め方、新民法第八百二十四条の二第一項第三号の急迫の事情の意義、同条第二項の監護及び教育に関する日常の行為の意義その他の改正後の各法律の規定の趣旨及び内容について、国民に周知を図るものとする。</p></section>
 <section class='artbox' id='a19'><div class='arthead'><span class='artnum'>🍬 第十九条（検討）</span></div><p class='p'>政府は、施行日までに、父母が協議上の離婚をする場合における新民法第八百十九条第一項の規定による親権者の定めが父母の双方の真意に出たものであることを確認するための措置について検討を加え、その結果に基づいて必要な法制上の措置その他の措置を講ずるものとする。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -6036,7 +6033,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -6061,7 +6059,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 

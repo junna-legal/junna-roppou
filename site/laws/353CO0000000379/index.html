@@ -209,20 +209,20 @@ button:active{
     <a class="navbtn" href="../../index.html">← 検索</a>
   </div>
 
-  <div class="lawbar" style="margin-top:6px;">
-    <div class="field" style="flex:0 1 auto;">
+  <div class="lawbar" style="margin-top:10px;">
+    <div class="field">
       <span class="small" style="font-weight:800;">条番号</span>
       <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
-    <div class="field field-kw">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+    <div class="field" style="flex:1;">
+      <span class="small" style="font-weight:800;">キーワード</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
       <button id="kwnext" class="mini-btn">次</button>
-      <span id="kwstatus" class="small kwstatus"></span>
+      <span id="kwstatus" class="small" style="margin-left:6px;"></span>
     </div>
   </div>
 </header>
@@ -231,7 +231,6 @@ button:active{
   <div class="card">
     <div class="small">LawId: 353CO0000000379</div>
     <div class='small'>現行版基準日(推定): 2021-07-15</div>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
     <hr>
     <div class="toc"><div>・ <a href='index.html#a1'>第一条（認定手数料）</a></div>
 <div>・ <a href='index.html#a2'>第二条（受験手数料）</a></div>
@@ -354,8 +353,6 @@ button:active{
 <section class='artbox' id='a2'><div class='arthead'><span class='artnum'>🍬 第二条（司法書士法施行令の一部改正に伴う経過措置）</span></div><p class='p'>第六条の規定による改正後の司法書士法施行令（次項において「新司法書士法施行令」という。）第四条（第一号に係る部分に限る。）の規定の適用については、旧円滑化団体（改正法附則第三条第一項に規定する旧円滑化団体をいい、同項及び同条第二項の規定によりなお従前の例により同条第一項に規定する農地売買等事業（以下「農地売買等事業」という。）を行うものに限る。以下同じ。）であって一般社団法人又は一般財団法人であるものは、同号に定める農地中間管理機構とみなす。</p>
 <div class='sp'></div>
 <p class='p'>２  新司法書士法施行令第四条（第七号に係る部分に限る。）の規定の適用については、改正法附則第三条第一項及び第二項の規定によりなお従前の例により行われる農地売買等事業は同号に掲げる事業とみなし、旧円滑化団体（市町村であるものを除く。）は同号に定める者とみなす。</p></section>
-    <hr>
-    <div class='navrow'><span class='small'>← 前へ</span><a class='navbtn primary' href='../../index.html'>🔍 検索</a><span class='small'>次へ →</span></div>
   </div>
 </main>
 
@@ -430,7 +427,8 @@ button:active{
     let found = false;
     for(const node of nodes){
       if(!(node.nodeValue||"").trim()) continue;
-      if(markTextNode(node, q)) found = true;
+      const ok = markTextNode(node, q);
+      if(ok) found = true;
     }
     return found;
   }
@@ -455,7 +453,7 @@ button:active{
     if(!q){ setStatus(""); return; }
 
     const boxes = Array.from(document.querySelectorAll(".artbox"));
-    boxes.forEach(b=>{ markInElement(b, q); });
+    boxes.forEach(b=> markInElement(b, q));
 
     collectMarks();
 
