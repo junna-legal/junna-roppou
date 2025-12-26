@@ -145,6 +145,19 @@ button:active{
   color: #111827;
   transition: transform .06s ease, filter .12s ease;
 }
+/* ← 検索 ボタンだけ小さく */
+.navbtn.navbtn-back{
+  padding: 6px 10px;
+  font-size: 13px;
+  gap: 6px;
+}
+@media (max-width: 480px){
+  .navbtn.navbtn-back{
+    padding: 5px 9px;
+    font-size: 12px;
+  }
+}
+
 .navbtn.primary { background: linear-gradient(90deg, var(--mint), var(--lav)); }
 .navbtn:active { transform: translateY(1px) scale(0.98); filter: brightness(0.98); }
 
@@ -193,7 +206,7 @@ button:active{
   .micon{ width: 20px; height: 20px; }
   .lawbar{ gap:6px; }
   .lawbar .artjump{ width: 7.5em; max-width: 42vw; }
-  .lawbar .kw{ flex: 1 1 14em; min-width: 10em; max-width: 72vw; }
+  .lawbar .kw{ flex: 0 0 auto; min-width: 7.5em; max-width: 42vw; }
   .lawbar input{ padding: 9px 10px; border-radius: 14px; font-size: 15px; }
 }
 </style>
@@ -206,18 +219,18 @@ button:active{
 <header>
   <div class="navrow" style="justify-content:space-between; gap:10px;">
     <span class="badge"><span class="micon">🐰</span>商業登記法</span>
-    <a class="navbtn" href="../../index.html">← 検索</a>
+    <a class="navbtn navbtn-back" href="../../index.html">← 検索</a>
   </div>
 
   <div class="lawbar" style="margin-top:10px;">
     <div class="field">
-      <span class="small" style="font-weight:800;">条番号</span>
-      <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709 / 709-2">
+      <span class="small" style="font-weight:600;">条番号</span>
+      <input id="artjump" class="artjump" inputmode="numeric" placeholder="例: 709">
       <button id="artbtn" class="mini-btn">移動</button>
     </div>
 
     <div class="field" style="flex:1;">
-      <span class="small" style="font-weight:800;">ＫＷ</span>
+      <span class="small" style="font-weight:600;">語</span>
       <input id="kw" class="kw" placeholder="法令内検索">
       <button id="kwbtn" class="mini-btn">検索</button>
       <button id="kwprev" class="mini-btn">前</button>
@@ -1518,7 +1531,7 @@ button:active{
     collectMarks();
 
     if(marks.length){
-      setStatus("ヒット: " + marks.length + " / 1");
+      setStatus(marks.length + " / 1");
       scrollToNode(marks[0]);
     }else{
       setStatus("（ヒットなし）");
@@ -1528,14 +1541,14 @@ button:active{
   function goNext(){
     if(!marks.length) return;
     pos = (pos + 1) % marks.length;
-    setStatus("ヒット: " + marks.length + " / " + (pos+1));
+    setStatus(marks.length + " / " + (pos+1));
     scrollToNode(marks[pos]);
   }
 
   function goPrev(){
     if(!marks.length) return;
     pos = (pos - 1 + marks.length) % marks.length;
-    setStatus("ヒット: " + marks.length + " / " + (pos+1));
+    setStatus(marks.length + " / " + (pos+1));
     scrollToNode(marks[pos]);
   }
 
